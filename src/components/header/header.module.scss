@@ -1,0 +1,80 @@
+@import 'src/styles/colors.scss';
+
+.header {
+    padding: 21px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 16px;
+            color: var(--font-color);
+        }
+
+        span {
+            padding: 0 8px;
+            color: $yellow;
+        }
+
+        .icons {
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+
+            a {
+                padding: 0 3px;
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+
+    // styles navbar mobile
+    .navbar-mobile {
+        display: flex;
+
+        button {
+            img {
+                width: 23px;
+            }
+        }
+    }
+
+    .navbar-mobile div {
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: $white;
+        z-index: 10;
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 18px 35px;
+
+            &:hover {
+                background-color: #f9c9302e;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        .navbar {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .header {
+        .navbar-mobile {
+            display: none;
+        }
+    }
+}
