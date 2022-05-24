@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 394px;
+  height: 155px;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: solid 2px #e83324;
+  display: flex;
+
+  .cardImage {
+    width: 151px;
+    height: 151px;
+    border-right: solid 2px #e83324;
+    border-radius: 8px;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+
+    .cardName {
+      font-family: Gotham;
+      font-size: 28px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #1b1628;
+      margin-bottom: 16px;
+    }
+
+    .cardText {
+      font-family: Bariol;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #1b1628;
+    }
+  }
+}
