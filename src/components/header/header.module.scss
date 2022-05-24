@@ -37,29 +37,100 @@
         display: flex;
 
         button {
+            z-index: 12;
+          
             img {
                 width: 23px;
             }
         }
-    }
 
-    .navbar-mobile div {
-        width: 100%;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        background-color: $white;
-        z-index: 10;
-
-        a {
-            display: block;
+        // container glass
+        .container-glass {
             width: 100%;
-            padding: 18px 35px;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(6px);
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            z-index: 10;
 
-            &:hover {
-                background-color: #f9c9302e;
+            // container principal options
+            .container-options {
+                background-color: var(--background);
+                color: var(--font-color);
+                width: 75%;
+                height: 100%;
+                border-radius: 0 8px 8px 0;
+                border: solid 2px $orange-red;
+                box-shadow: 5px 0 6px 0 rgba(0, 0, 0, 0.21);
+
+                // container brand
+                .container-brand {
+                    padding: 20px 10px;
+
+                    img {
+                        width: 122px;
+                    }
+                }
+
+                // styles links options
+                .container-links {
+                    margin-right: 61px;
+
+                    .container-options-links {
+                        margin-top: 18px;
+
+                        a {
+                            display: block;
+                            margin: 0px 0px 0px 42px;
+                            padding: 8px 0px;
+                            font-size: 24px;
+                            line-height: 1.33;
+
+                            .line-gradient {
+                                background: linear-gradient(to right, #f9c930 25%, #f2957c 49%, #7192f3 75%);
+                                height: 2px;
+                                margin-top: 17px;
+                                width: 95%;
+                            }
+                        }
+                    }
+                }
+
+                // icons at end the menu
+                .icons {
+                    align-items: center;
+                    display: flex;
+                    margin-left: 40px;
+                    margin-top: 29px;
+
+                    a {
+                        padding: 0 3px;
+                        margin-right: 12px;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+
+            .slide-left {
+                animation: slideLeft 250ms;
             }
         }
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-400px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
 

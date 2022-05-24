@@ -1,44 +1,26 @@
 import Container from '../container/Container'
 import styles from './header.module.scss'
-import { NavMobile } from './NavMobile'
-import Link from 'next/link'
+import { themeChanger } from './helpers/themeChanger';
+import { NavMobile } from './NavMobile';
+import { NavDesktop } from './components/NavDesktop';
 
-const links = ['Lore', 'Whitepaper', 'Community', 'Careers', 'Roadmap']
+const links = ['Lore', 'Whitepaper', 'Roadmap', 'Careers', 'Community']
 
 const Header = () => {
+
+    const { theme } = themeChanger();
+
     return (
         <Container>
             <header className={styles.header}>
-                <Link href='/'>
-                    <a>
-                        <img src='./images/rcm-logo-red.svg' alt='RCM Logo' />
-                    </a>
-                </Link>
-                <nav className={styles.navbar}>
-                    <div>
-                        {links.map((link, index) => (
-                            <a key={index} href={`/${link.toLowerCase()}`}>
-                                {index !== 0 && <span>|</span>}
-                                {link}
-                            </a>
-                        ))}
-                    </div>
-                    <div className={styles.icons}>
-                        <a href=''>
-                            <img src='./images/discord-icon.svg' />
-                        </a>
-                        <a href=''>
-                            <img src='./images/ig-icon.svg' />
-                        </a>
-                        <a href=''>
-                            <img src='./images/open-sea-icon.svg' />
-                        </a>
-                        <a href=''>
-                            <img src='./images/twitter-icon.svg' />
-                        </a>
-                    </div>
-                </nav>
+                {
+                    theme != 'dark'
+                        ? (<a href="/community"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' /></a>)
+                        : (<a href="/community"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' /></a>)
+                }
+                <NavDesktop links={links} />
                 <NavMobile links={links} />
+
             </header>
         </Container>
     )
