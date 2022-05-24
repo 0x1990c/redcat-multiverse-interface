@@ -29,14 +29,14 @@ const Lore: NextPage = () => {
       {/* Page contents */}
       <div className={styles.pageContentContainer}>
         {/* THE RED CAT SECTION */}
-        <LoreBigTitleSection title={RED_CAT_MULTIVERSE} texts={RED_CAT_MULTIVERSE_TEXTS} />
+        <LoreBigTitleSection className={styles.redCatTitle} title={RED_CAT_MULTIVERSE} texts={RED_CAT_MULTIVERSE_TEXTS} />
         {/* RED CAT SUB SECTIONS */}
         {RED_CAT_CONTENTS.map((content: any, idx) => (
           <LoreSubTitleSection title={content.subTitle} texts={content.texts} key={idx} />
         ))}
 
         {/* FIGMENTS */}
-        <LoreBigTitleSection title={FIGMENTS_TITLE} texts={FIGMENTS_TEXTS} />
+        <LoreBigTitleSection className={styles.figmentTitle} title={FIGMENTS_TITLE} texts={FIGMENTS_TEXTS} />
         {/* FIGMENTS cards */}
         <div className={styles.figmentCardContainer}>
           {FIGMENTS_CARDS.map((cardContent, idx) => (
