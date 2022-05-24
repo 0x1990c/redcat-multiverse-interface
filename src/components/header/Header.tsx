@@ -11,7 +11,7 @@ const Header = () => {
     const { theme } = themeChanger();
 
     return (
-        <Container>
+        <Container className={styles.headerContainer}>
             <header className={styles.header}>
                 {
                     theme != 'dark'
