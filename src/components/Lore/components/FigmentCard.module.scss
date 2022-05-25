@@ -21,26 +21,27 @@
     margin-left: 20px;
 
     .cardName {
-      font-family: Gotham;
+      font-family: 'Gotham';
       font-size: 28px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: #1b1628;
+      color: --var(--font-color);
       margin-bottom: 16px;
+      text-transform: uppercase;
     }
 
     .cardText {
-      font-family: Bariol;
+      font-family: 'Bariol';
       font-size: 18px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.33;
       letter-spacing: normal;
-      color: #1b1628;
+      color: --var(--font-color);
     }
   }
 }

@@ -1,7 +1,7 @@
 @import 'src/styles/colors.scss';
 
 .bigTitle {
-  font-family: Gotham;
+  font-family: 'Gotham';
   font-size: 62px;
   font-weight: 900;
   font-stretch: normal;
@@ -13,14 +13,14 @@
 }
 
 .subTitle {
-  font-family: Gotham;
+  font-family: 'Gotham';
   font-size: 48px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #1b1628;
+  color: --var(--font-color);
 }
 
 .textSentence {
@@ -31,6 +31,6 @@
   font-style: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: #1b1628;
+  color: --var(--font-color);
   margin-bottom: 20px;
 }
