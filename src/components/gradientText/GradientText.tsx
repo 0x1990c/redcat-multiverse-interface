@@ -17,6 +17,7 @@ const getGradientScale = (gradient: string[]): string => {
 
 const GradientText = (props: GradientTextProps) => {
     const { text, element, innerColor, gradient } = props
+    // eslint-disable-next-line react/no-children-prop
     const gradientElement = React.createElement(element, {
         children: text,
         className: styles.gradient_text,

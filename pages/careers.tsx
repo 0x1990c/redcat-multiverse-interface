@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes'
 import styles from '../src/styles/careers.module.scss'
 
 const careers = () => {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const { theme, systemTheme } = useTheme()
 	const currentTheme = theme === "system" ? systemTheme : theme
 	return (
