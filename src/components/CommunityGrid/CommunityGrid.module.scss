@@ -38,13 +38,6 @@
     font-family: Gotham Ultra;
   }
 
-  .numeration::after {
-    content: '>';
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out;
-  }
-
   .numeration:hover:after {
     opacity: 1;
   }
@@ -80,21 +73,32 @@
 .item_a {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border: solid 2px #e83324;
-  background-color: #e83324;
+  background-color: #f9c930;
   grid-area: item_a;
-  height: 352.7px;
+  height: 314px;
   z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 8px;
+  }
 }
 
-
-
 .item_b {
-  border: solid 2px #f9c930;
-  background-color: #f9c930;
+  background-color: #f2957c;
   grid-area: item_b;
-  height: 352.7px;
+  height: 395px;
   z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
 }
 
 .item_c {
@@ -102,46 +106,75 @@
   grid-area: item_c;
   height: 468px;
   z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
 }
 
 .item_d {
-  border: solid 2px #1b1628;
-  background-color: var(--background-com-card);
-  color: var(--font-color-com-card);
+  background-color: #e83324;
+  color: #fff;
   grid-area: item_d;
   height: 237.3px;
   z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
 }
 
 .item_e {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border: solid 2px #1b1628;
-  background-color: var(--background-com-card);
-  color: var(--font-color-com-card);
+  background-color: #e83324;
+  color: #fff;
   grid-area: item_e;
   height: 225px;
   z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 20%;
+    top: 15%;
+  }
 }
 
 .item_f {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border: solid 2px #f2957c;
-  background-color: #f2957c;
+  background-color: var(--background-com-card);
+  color: var(--font-color-com-card);
   grid-area: item_f;
   height: 230px;
   z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .item_g {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border: solid 2px #e83324;
-  background-color: #e83324;
+  background-color: #7192f3;
   grid-area: item_g;
   height: 237.3px;
   z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
 }
 
 
