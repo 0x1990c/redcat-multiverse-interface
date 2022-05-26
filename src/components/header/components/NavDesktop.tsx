@@ -24,7 +24,7 @@ export const NavDesktop = ({ links }: any) => {
 			</div>
 			{/* nav icons social media */}
 			<LinksIcons />
-			<RadioSwitch className={styles.themeSwitch} onClick={handleClick} />
+			<RadioSwitch className={styles.themeSwitch} onChange={handleClick} checked={currentTheme === 'dark'} />
 		</nav>
 	)
 }
