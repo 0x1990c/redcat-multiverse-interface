@@ -67,13 +67,13 @@ const RoadmapTimeline = () => {
   const btnEnd = useRef(null);
 
   const btnReference = (id) => {
-    const lastId = contents.length - 1 ;
+    const lastId = contents.length - 1;
     return (
-      id === '0' ? btnStart 
-      :
-      id === lastId.toString() ? btnEnd
-      :
-      null
+      id === '0' ? btnStart
+        :
+        id === lastId.toString() ? btnEnd
+          :
+          null
     );
   }
 
@@ -86,8 +86,8 @@ const RoadmapTimeline = () => {
     const heightEnd = btnEnd.current.offsetHeight;
 
     setRoadMapDimension({
-      top: top + heightStart, 
-      left: left + width/2 - 7.5, 
+      top: top + heightStart,
+      left: left + width / 2 - 7.5,
       bottom: bottom - heightEnd,
       height: bottom - heightEnd - top,
     });
@@ -150,62 +150,62 @@ const RoadmapTimeline = () => {
       </div>
     </div>
   )
-  :
-  (
-    <div className={cx(styles.roadmap_container)}>
-      <div
-        className={cx(styles.vertical_lines)}
-        style={{
-          top: roadMapDimension.top,
-          left: roadMapDimension.left,
-          height: roadMapDimension.height,
-        }}>
+    :
+    (
+      <div className={cx(styles.roadmap_container)}>
+        <div
+          className={cx(styles.vertical_lines)}
+          style={{
+            top: roadMapDimension.top,
+            left: roadMapDimension.left,
+            height: roadMapDimension.height,
+          }}>
           <div className={cx(styles.rcm_dark_blue)}></div>
           <div className={cx(styles.rcm_yellow)}></div>
           <div className={cx(styles.rcm_red)}></div>
           <div className={cx(styles.rcm_orange)}></div>
           <div className={cx(styles.rcm_light_blue)}></div>
         </div>
-      <div ref={roadMapCont}>
-        {contents.map((content, contId) => (
-          <div 
-            className={
-              cx(styles[content.buttonLabel.toLowerCase()],
-              styles.general)} 
-            key={contId}>
-            <div className={cx(styles.container_corner)}>
-              <div className={cx(styles.container_general, styles.container)}>
-                <div className={cx(styles.title_general, styles.title)} >
-                  {content.title}
+        <div ref={roadMapCont}>
+          {contents.map((content, contId) => (
+            <div
+              className={
+                cx(styles[content.buttonLabel.toLowerCase()],
+                  styles.general)}
+              key={contId}>
+              <div className={cx(styles.container_corner)}>
+                <div className={cx(styles.container_general, styles.container)}>
+                  <div className={cx(styles.title_general, styles.title)} >
+                    {content.title}
+                  </div>
+                  <div className={cx(styles.bullets_general, styles.bullets)}>
+                    <ul className={cx(styles.bullet_list_general)}>
+                      {content.bullets.map((bullet, bullId) => (
+                        <li key={bullId}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className={cx(styles.bullets_general, styles.bullets)}>
-                  <ul className={cx(styles.bullet_list_general)}>
-                    {content.bullets.map((bullet, bullId) => (
-                      <li key={bullId}>{bullet}</li>
-                    ))}
-                  </ul>
+                <div className={cx(styles.corner_general, styles.container, styles.corner)}>
                 </div>
               </div>
-              <div className={cx(styles.corner_general, styles.container, styles.corner)}>                
+              <div>
+                <div
+                  className={cx(styles.state_btn_general, styles.state_button)}
+                  ref={btnReference(content.id)}>
+                  {content.buttonLabel}
+                </div>
+              </div>
+              <div>
+                <div className={cx(styles.period_general)}>
+                  {content.period}
+                </div>
               </div>
             </div>
-            <div>
-              <div 
-                className={cx(styles.state_btn_general, styles.state_button)}
-                ref={btnReference(content.id)}>
-                {content.buttonLabel}
-              </div>
-            </div>
-            <div>
-              <div className={cx(styles.period_general)}>
-                {content.period}
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
 }
- 
+
 export default RoadmapTimeline;
