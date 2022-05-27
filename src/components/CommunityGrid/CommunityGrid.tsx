@@ -117,5 +117,3 @@ const CommunityGrid = () => {
 }
 
 export default CommunityGrid;
-
-
