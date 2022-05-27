@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <Container>
       <footer>
-        {/* <button onClick={handleClick}>Toggle dark mode</button> */}
+        <button onClick={handleClick}>Toggle dark mode</button>
       </footer>
     </Container>
   )

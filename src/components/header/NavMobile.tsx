@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import styles from './header.module.scss'
 import { useState } from 'react';
 import { themeChanger } from './helpers/themeChanger';
