@@ -7,6 +7,8 @@ import { Flip } from "gsap/dist/Flip";
 import TeamGrid from '../../components/Team/TeamGrid'
 import CloseIcon from '../Icons/CloseIcon';
 import CommunityTeam from './modals/CommunityTeam';
+import CommunityRCMLabs from './modals/CommunityRCMLabs';
+import CommunityRCMInsiders from './modals/CommunityRCMInsiders';
 
 // gsap.registerPlugin(Flip);
 
@@ -16,15 +18,18 @@ const CommunityModal = ({ content, closeModal }: any) => {
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
   const closeIconColor = () => {
-    if (currentTheme === 'dark') {
-      switch (item) {
-        case 'item_e':
-          return '#e83324';
-        default:
-          return '#fff';
-      }
+    switch (item) {
+      case 'item_b':
+        return '#f2957c';
+      case 'item_c':
+        return '#7192f3';
+      case 'item_d':
+        return '#f2957c';
+      case 'item_e':
+        return '#e83324';
+      default:
+        return currentTheme === 'dark' ? '#fff' : '#000';
     }
-    return '#000';
   }
 
   const modalContentComponent = () => {
@@ -34,9 +39,9 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_b':
         return (<p>This is manifesto</p>)
       case 'item_c':
-        return (<p>This is rcm labs</p>)
+        return (<CommunityRCMLabs />)
       case 'item_d':
-        return (<p>This is RCM insiders</p>)
+        return (<CommunityRCMInsiders />)
       case 'item_e':
         return (<CommunityTeam />)
       case 'item_f':
