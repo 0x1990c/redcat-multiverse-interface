@@ -18,6 +18,10 @@ const Community: NextPage = () => {
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
         <CommunityGrid />
+        <div className={styles.contactSection}>
+          <p>connect to the multiverse</p>
+          <img src='./images/community/community_08.png' />
+        </div>
       </Container>
     </div>
   )
