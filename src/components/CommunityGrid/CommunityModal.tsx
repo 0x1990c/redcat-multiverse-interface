@@ -1,19 +1,16 @@
-import React from 'react'
 import cx from 'classnames';
 import styles from "./CommunityModal.module.scss"
-import { useTheme } from 'next-themes'
 import { gsap } from "gsap";
 import { Flip } from "gsap/dist/Flip";
 import TeamGrid from '../../components/Team/TeamGrid'
+
 import CloseIcon from '../Icons/CloseIcon';
 import CommunityTeam from './modals/CommunityTeam';
 
 // gsap.registerPlugin(Flip);
 
 const CommunityModal = ({ content, closeModal }: any) => {
-  const { systemTheme, theme } = useTheme();
   const { title, text, item, id } = content;
-
   const currentTheme = theme === 'system' ? systemTheme : theme;
   const closeIconColor = () => {
     if (currentTheme === 'dark') {
@@ -51,12 +48,27 @@ const CommunityModal = ({ content, closeModal }: any) => {
   return (
     <div className={cx(styles.community_modal, styles[item])}>
       <div className={styles.close} onClick={closeModal}>
-        <CloseIcon width='48px' height='48px' fill={closeIconColor()} />
+        <Image src={CloseIcon} width={48} height={48} />
       </div>
       <div className={cx(styles.header)}>
         <h3 className={styles.title}>{title}</h3>
       </div>
-      {modalContentComponent()}
+      <div className={cx(styles.main_content)}>
+        {id === '6' ? (
+          <div>
+            <p className={styles.description}>Here’s our team of the curious and crazy game changers.</p>
+            <TeamGrid />
+          </ div>
+        )
+          :
+          (
+            <div className={cx(styles.content)}>
+              {text && text.map((value: string, index: string) => (
+                <p className={value.length > 20 ? styles.text_section : styles.title_section} key={index}>{value}</p>
+              ))}
+            </div>
+          )}
+      </div>
     </div>
   );
 }

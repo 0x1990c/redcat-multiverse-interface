@@ -6,6 +6,7 @@ declare interface GradientTextProps {
     text: string
     innerColor: string
     gradient: string[]
+    fontSize?: string
 }
 
 const getGradientScale = (gradient: string[]): string => {
@@ -16,8 +17,7 @@ const getGradientScale = (gradient: string[]): string => {
 }
 
 const GradientText = (props: GradientTextProps) => {
-    const { text, element, innerColor, gradient } = props
-    // eslint-disable-next-line react/no-children-prop
+    const { text, element, innerColor, gradient, fontSize = '' } = props
     const gradientElement = React.createElement(element, {
         children: text,
         className: styles.gradient_text,
@@ -28,6 +28,7 @@ const GradientText = (props: GradientTextProps) => {
             'background-clip': 'text',
             '-webkit-background-clip': 'text',
             '-moz-background-clip': 'text',
+            fontSize: fontSize,
         }
     })
 

@@ -1,11 +1,8 @@
-@import '../../styles/colors.scss';
-
 .community_modal {
   padding: 30px 40px;
   border-radius: 8px;
   height: 100%;
   position: relative;
-  background: var(--background);
 
   .close {
     position: absolute;
@@ -25,7 +22,7 @@
       letter-spacing: 1px;
       font-size: 62px;
       font-weight: 900;
-      color: var(--font-color);
+      color: var(--background);
     }
 
   }
@@ -64,24 +61,33 @@
 
 .item_a {
   border: solid 2px #e83324;
+  background-color: #e83324;
 }
 
 .item_b {
   border: solid 2px #f9c930;
+  background-color: #f9c930;
 }
 
-.item_c {}
+.item_c {
+  background-color: #7192f3;
+}
 
 .item_d {
   border: solid 2px #1b1628;
+  background-color: var(--background-com-card);
+  color: var(--font-color-com-card);
 }
 
 .item_e {
-  border: solid 2px $orange-red;
+  border: solid 2px #1b1628;
+  background-color: var(--background-com-card);
+  color: var(--font-color-com-card);
 }
 
 .item_f {
   border: solid 2px #f2957c;
+  background-color: #f2957c;
 }
 
 .item_g {

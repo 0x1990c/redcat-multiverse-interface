@@ -1,0 +1,103 @@
+@import 'src/styles/colors.scss';
+
+.full {
+  height: 100vh;
+}
+
+.orange-red {
+  background-color: $orange-red;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+.light-blue {
+  background-color: $blue-light;
+}
+
+.main_title {
+  height: 800px;
+  width: 100%;
+  //background: #01011A;
+  color: #fff;
+  //overflow: hidden;
+  position: absolute;
+  //object-fit: cover;
+}
+
+
+.container-info {
+  padding: 50px 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  .subtitle {
+    font-size: 44px;
+    color: black;
+    position: relative;
+    top: -15px;
+  }
+
+  .line-gradient {
+    background: linear-gradient(to right, #f9c930 25%, #e83324 49%, #7192f3 75%);
+    height: 2px;
+    margin-top: 17px;
+    width: 50%;
+    margin: auto;
+  }
+
+  .container-info-develop {
+    margin: 28px 0px;
+
+    .develop {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+      color: #fff;
+    }
+  }
+
+  .container-info-brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 162px;
+      margin: 25px 35px;
+    }
+  }
+
+  .container-info-footer {
+    margin: 15px 0px;
+
+    p {
+      font-size: 24px;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .container-info {
+    h1 {
+      font-size: 40px !important;
+    }
+
+    .subtitle {
+      top: -10px;
+    }
+
+    .line-gradient {
+      width: 95%;
+    }
+  }
+
+}
