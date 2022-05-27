@@ -5,7 +5,7 @@ import { Flip } from "gsap/dist/Flip";
 
 gsap.registerPlugin(Flip);
 
-const CommunityCard = ({ content, contId, dimensions, handleClick }: any) => {
+const CommunityCard = ({ content, contId, handleClick }: any) => {
 
   const { id, item, title, numeration, label } = content;
 
