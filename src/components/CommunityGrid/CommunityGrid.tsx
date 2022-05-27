@@ -5,24 +5,11 @@ import CommunityModal from './CommunityModal'
 import styles from './CommunityGrid.module.scss'
 import { gsap, Power1 } from "gsap";
 import { Flip } from "gsap/dist/Flip";
+import { useScreenWidth } from '../../hooks/useScreenCheck';
 import { contents } from './constants';
 
 const CommunityGrid = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-  const [dimension, setDimension] = useState(0);
-
-  const updateDimension = () => {
-    setDimension(window.innerWidth);
-    setIsMobile(dimension <= 1024);
-  }
-
-  useEffect(() => {
-    updateDimension();
-    window.addEventListener('resize', updateDimension);
-    return () => window.removeEventListener('resize', updateDimension);
-
-  }, [dimension]);
+  const { isMobile } = useScreenWidth();
 
   const commGridRef: any = useRef(null);
   const commCardExpRef = useRef(null);
@@ -62,6 +49,7 @@ const CommunityGrid = () => {
   const [modalContent, setModalContent] = useState<any>({});
 
   const handleClick = (id: number) => {
+    console.log('xxx ===>', id)
     setIsModalOpen(!isModalOpen);
     // !isMobile && animateCard(commGridRef.current, commCardExpRef.current);
     setModalContent(contents[id]);
