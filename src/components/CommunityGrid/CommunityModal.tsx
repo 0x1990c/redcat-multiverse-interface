@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { Flip } from "gsap/dist/Flip";
 import TeamGrid from '../../components/Team/TeamGrid'
 import CloseIcon from '../Icons/CloseIcon';
+import CommunityTeam from './modals/CommunityTeam';
 
 // gsap.registerPlugin(Flip);
 
@@ -37,7 +38,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_d':
         return (<p>This is RCM insiders</p>)
       case 'item_e':
-        return (<p>This is team modal</p>)
+        return (<CommunityTeam />)
       case 'item_f':
         return (<p>this is updates</p>)
       case 'item_g':
