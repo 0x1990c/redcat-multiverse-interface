@@ -1,12 +1,10 @@
 import { useRef } from 'react'
-import Image from 'next/image'
 import cx from 'classnames';
-import styles from './TeamCard.module.scss'
+import styles from './CommunityTeamCard.module.scss'
 
-const TeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any) => {
-
+const CommunityTeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any) => {
   const {
-    photoURL,
+    imageCard,
     firstName,
     lastName,
     role,
@@ -31,14 +29,13 @@ const TeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any) => {
       onClick={handleClick}
       ref={boxReference}
     >
-      <div className={cx(styles.photo)}>
-        <Image
-          src={photoURL}
-          alt={role + ': ' + firstName + ' ' + lastName}
-          width={154}
-          height={154}
-        />
-      </div>
+      <img
+        className={cx(styles.photo)}
+        src={imageCard}
+        alt={role + ': ' + firstName + ' ' + lastName}
+        width={154}
+        height={154}
+      />
       <div className={cx(styles.personal_info)}>
         <div className={cx(styles.full_name)} >
           {firstName + ' ' + lastName}
@@ -46,17 +43,9 @@ const TeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any) => {
         <div className={cx(styles.role)}>
           {role}
         </div>
-        <div className={cx(styles.contact)}>
-          <a href=''>
-            <img src='./images/discord-icon.svg' />
-          </a>
-          <a href=''>
-            <img src='./images/ig-icon.svg' />
-          </a>
-        </div>
       </div>
     </div>
   );
 }
 
-export default TeamCard;
+export default CommunityTeamCard;
