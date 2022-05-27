@@ -7,7 +7,7 @@ gsap.registerPlugin(Flip);
 
 const CommunityCard = ({ content, contId, handleClick }: any) => {
 
-  const { id, item, title, numeration, label } = content;
+  const { id, item, title, numeration, label, image } = content;
 
   return (
     <div className={cx(styles.community_card, styles[item])}
@@ -17,6 +17,7 @@ const CommunityCard = ({ content, contId, handleClick }: any) => {
         <div className={styles.numeration}>{numeration}</div>
         <p className={styles.label}>{label}</p>
       </div>
+      <img src={image} className={styles.cardImage} />
     </div>
   );
 }

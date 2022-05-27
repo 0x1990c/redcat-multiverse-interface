@@ -1,17 +1,18 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Container from '../container/Container'
 import styles from './header.module.scss'
 import { themeChanger } from './helpers/themeChanger';
 import { NavMobile } from './NavMobile';
 import { NavDesktop } from './components/NavDesktop';
 
-const links = ['Lore', 'Whitepaper', 'Roadmap', 'Careers', 'Community']
+const links = ['Community', 'Lore', 'Whitepaper', 'Roadmap', "ICNFT", "PLE", 'Careers']
 
 const Header = () => {
 
     const { theme } = themeChanger();
 
     return (
-        <Container>
+        <Container className={styles.headerContainer}>
             <header className={styles.header}>
                 {
                     theme != 'dark'
