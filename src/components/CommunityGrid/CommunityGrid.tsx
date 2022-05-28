@@ -7,6 +7,7 @@ import { gsap, Power1 } from "gsap";
 import { Flip } from "gsap/dist/Flip";
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import { contents } from './constants';
+import CommunitySubscribeForm from './CommunitySubscribeForm';
 
 const CommunityGrid = () => {
   const { isMobile } = useScreenWidth();
@@ -45,10 +46,10 @@ const CommunityGrid = () => {
   }, []);
 
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isSubscribeFormOpen, setIsSubscribeFormOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>({});
 
   const handleClick = (id: number) => {
-    console.log('xxx ===>', id)
     setIsModalOpen(!isModalOpen);
     setModalContent(contents[id]);
   }
@@ -56,6 +57,14 @@ const CommunityGrid = () => {
   const closeModal = () => {
     setIsModalOpen(false);
     setModalContent({})
+  }
+
+  const openSubscribeForm = () => {
+    setIsSubscribeFormOpen(true);
+  }
+
+  const closeSubscribeForm = () => {
+    setIsSubscribeFormOpen(false);
   }
 
   return isMobile ? (
@@ -107,9 +116,18 @@ const CommunityGrid = () => {
             )}
           </div>
         </div>
+        <div className={styles.contactSection} onClick={openSubscribeForm}>
+          <p>connect to the multiverse</p>
+          <img src='./images/community/community_08.png' />
+        </div>
         <div className={cx(isModalOpen ? styles.expanded_container : styles.hidden_container)}>
           <div className={cx(styles.inner_container)} style={commGridDimension} >
             <CommunityModal content={modalContent} closeModal={closeModal} />
+          </div>
+        </div>
+        <div className={cx(isSubscribeFormOpen ? styles.expanded_container : styles.hidden_container)}>
+          <div className={cx(styles.inner_container)} style={commGridDimension} >
+            <CommunitySubscribeForm closeModal={closeModal} />
           </div>
         </div>
       </div>

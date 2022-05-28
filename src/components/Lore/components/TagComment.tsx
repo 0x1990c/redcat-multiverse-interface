@@ -1,4 +1,4 @@
-import LoreTagCommentBox from "./LoreCommentBox";
+import LoreTagCommentBox from "./LoreTagCommentBox";
 import { LORE_HERO_COMMENT } from "../constants";
 import styles from "./TagComment.module.scss";
 

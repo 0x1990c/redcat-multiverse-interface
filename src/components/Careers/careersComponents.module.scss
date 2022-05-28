@@ -1,108 +1,125 @@
 @import 'src/styles/colors.scss';
 
 .container-background {
-    height: 100vh;
+  height: 100vh;
 
-    .container-description {
-        margin: 12px 0px;
-    }
+  .container-description {
+    margin: 12px 0px;
 
     p {
-        font-size: 18px;
+      font-family: 'Bariol';
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      color: --var(--font-color);
+      margin-bottom: 20px;
+    }
+
+    .valueTitle {
+      font-family: 'Gotham Ultra';
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.33;
+    color: --var(--font-color);
+    font-family: 'Bariol';
+  }
+
+  .container-cards {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    padding: 25px 0px;
+
+    .card {
+      width: 437px;
+      padding: 22px 23px;
+      border-radius: 8px;
+      margin-right: 11px;
+      margin-bottom: 15px;
+
+      .category {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 16px;
+      }
+
+      .description {
+        margin-bottom: 26px;
         line-height: 1.33;
-        color: --var(--font-color);
-        font-family: 'Bariol';
+      }
+
+      .button {
+        padding: 5px 24px;
+        background-color: $orange-red;
+        border-radius: 8px;
+        color: white;
+        float: right;
+      }
+
     }
-
-    .container-cards {
-        display: flex;
-        width: 70%;
-        flex-wrap: wrap;
-        padding: 25px 0px;
-
-        .card {
-            width: 437px;
-            padding: 22px 23px;
-            border-radius: 8px;
-            margin-right: 11px;
-            margin-bottom: 15px;
-
-            .category {
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 14px;
-            }
-
-            .title {
-                font-size: 24px;
-                font-weight: 900;
-                margin-bottom: 16px;
-            }
-
-            .description {
-                margin-bottom: 26px;
-                line-height: 1.33;
-            }
-
-            .button {
-                padding: 5px 24px;
-                background-color: $orange-red;
-                border-radius: 8px;
-                color: white;
-                float: right;
-            }
-
-        }
-    }
+  }
 }
 
 .border-red {
-    border: solid 2px $orange-red;
+  border: solid 2px $orange-red;
 }
 
 .border-blue {
-    border: solid 2px $blue-light;
+  border: solid 2px $blue-light;
 }
 
 .border-orange {
-    border: solid 2px $orange-light;
+  border: solid 2px $orange-light;
 }
 
 .border-yellow {
-    border: solid 2px $yellow;
+  border: solid 2px $yellow;
 }
 
 .color-red {
-    color: $orange-red;
+  color: $orange-red;
 }
 
 .color-blue {
-    color: $blue-light;
+  color: $blue-light;
 }
 
 .color-orange {
-    color: $orange-light;
+  color: $orange-light;
 }
 
 .color-yellow {
-    color: $yellow;
+  color: $yellow;
 }
 
 @media screen and (max-width: 1341px) {
-    .container-cards {
-        width: 100% !important;
-    }
+  .container-cards {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 935px) {
-    .card {
-        margin-right: 0px !important;
-    }
+  .card {
+    margin-right: 0px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .container-button {
-        display: flex;
-        justify-content: center;
-    }
+  .container-button {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -5,7 +5,7 @@ import { themeChanger } from './helpers/themeChanger';
 import { NavMobile } from './NavMobile';
 import { NavDesktop } from './components/NavDesktop';
 
-const links = ['Community', 'Lore', 'Whitepaper', 'Roadmap', "ICNFT", "PLE", 'Careers']
+const links = ['Community', 'Multiverse', 'Whitepaper', 'Roadmap', "ICNFT", "PLE", 'Careers']
 
 const Header = () => {
 

@@ -5,7 +5,7 @@ import CommunityGrid from '../src/components/CommunityGrid/CommunityGrid'
 import { useTheme } from 'next-themes'
 import styles from '../src/styles/community.module.scss'
 
-const Community: NextPage = () => {
+const ICNFT: NextPage = () => {
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
   return (
@@ -13,7 +13,7 @@ const Community: NextPage = () => {
       <Container className={styles.container}>
         <GradientText
           element='h1'
-          text='COMMUNITY'
+          text='NFT COLLECTION'
           innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
@@ -23,4 +23,4 @@ const Community: NextPage = () => {
   )
 }
 
-export default Community
+export default ICNFT;

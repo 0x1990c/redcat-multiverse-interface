@@ -15,14 +15,14 @@
 
   .commentContentContainer {
     position: relative;
-    width: 729px;
+    width: fit-content;
     margin-left: 220px;
     margin-top: -170px;
 
     .commentContentText {
-      width: calc(100% - 40px);
+      width: 100%;
       position: absolute;
-      font-family: Bariol;
+      font-family: 'Bariol';
       font-size: 24px;
       font-weight: normal;
       font-stretch: normal;
@@ -30,8 +30,9 @@
       line-height: 1.33;
       letter-spacing: normal;
       color: #fff;
-      top: 20px;
-      left: 20px;
+      padding: 25px;
+      top: 0px;
+      left: 0px;
     }
   }
 }
