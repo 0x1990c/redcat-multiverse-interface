@@ -1,0 +1,27 @@
+.manifestoContainer {
+  font-family: 'Bariol';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--font-color);
+  display: flex;
+  margin-top: 20px;
+
+  .leftCol {
+    p {
+      margin-bottom: 26px;
+      max-width: 673px;
+    }
+  }
+
+  .rightCol {
+    margin-left: 120px;
+
+    img {
+      width: 324px;
+    }
+  }
+}

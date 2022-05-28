@@ -9,6 +9,9 @@ import CloseIcon from '../Icons/CloseIcon';
 import CommunityTeam from './modals/CommunityTeam';
 import CommunityRCMLabs from './modals/CommunityRCMLabs';
 import CommunityRCMInsiders from './modals/CommunityRCMInsiders';
+import CommunityManifesto from './modals/CommunityManifesto';
+import CommunityUpdates from './modals/CommunityUpdates';
+import CommunityPress from './modals/CommunityPress';
 
 // gsap.registerPlugin(Flip);
 
@@ -37,7 +40,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_a':
         return (<p>this is white paper modal</p>)
       case 'item_b':
-        return (<p>This is manifesto</p>)
+        return (<CommunityManifesto />)
       case 'item_c':
         return (<CommunityRCMLabs />)
       case 'item_d':
@@ -45,9 +48,9 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_e':
         return (<CommunityTeam />)
       case 'item_f':
-        return (<p>this is updates</p>)
+        return (<CommunityUpdates />)
       case 'item_g':
-        return (<p>this is PRESS</p>)
+        return (<CommunityPress />)
       default:
         return (<p>Oops, something went wrong!!!</p>)
     }
