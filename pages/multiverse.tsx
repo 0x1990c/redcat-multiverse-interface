@@ -8,7 +8,7 @@ import LoreSubTitleSection from '../src/components/Lore/components/LoreSubTitleS
 import FigmentCard from '../src/components/Lore/components/LoreFigmentCard';
 import { useTheme } from 'next-themes'
 import { FIGMENTS_TITLE, FIGMENTS_TEXTS, RED_CAT_MULTIVERSE, RED_CAT_MULTIVERSE_TEXTS, RED_CAT_CONTENTS, FIGMENTS_CARDS } from '../src/components/Lore/constants';
-import styles from '../src/styles/lore.module.scss'
+import styles from '../src/styles/multiverse.module.scss'
 import LoreFooter from '../src/components/Lore/components/LoreFooter';
 
 
