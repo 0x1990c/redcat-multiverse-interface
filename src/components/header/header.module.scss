@@ -50,6 +50,14 @@
             align-items: center;
             margin-left: 8px;
         }
+
+        &.darkPage {
+            background-color: $dark-blue;
+
+            a {
+                color: $white;
+            }
+        }
     }
 
     // styles navbar mobile
