@@ -17,9 +17,6 @@ export const LinksIcons = () => {
 			<a href=''>
 				<img src='./images/twitter-icon.svg' />
 			</a>
-			<a>
-				{renderThemechanger()}
-			</a>
 			<a href=''>
 				<img src='./images/ig-icon.svg' />
 			</a>

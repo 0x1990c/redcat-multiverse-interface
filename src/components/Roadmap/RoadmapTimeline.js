@@ -148,6 +148,11 @@ const RoadmapTimeline = () => {
           </div>
         ))}
       </div>
+      <div className={styles.extendedBtnContainer}>
+        <a className={styles.extendedBtn} href='https://google.com' target='_blank' rel="noreferrer">
+          For extended RCM Labs road map, please click here
+        </a>
+      </div>
     </div>
   )
     :

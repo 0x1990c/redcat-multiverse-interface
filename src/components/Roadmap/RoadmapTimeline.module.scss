@@ -363,4 +363,13 @@
     height: 20px;
     margin: -10px;
   }
+
+  .extendedBtnContainer {
+    .extendedBtn {
+      width: 218px;
+      font-family: 'Bariol';
+      font-size: 12px;
+      text-align: center;
+    }
+  }
 }
