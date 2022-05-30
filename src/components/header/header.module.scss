@@ -88,9 +88,16 @@
                 // container brand
                 .container-brand {
                     padding: 20px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
                     img {
                         width: 122px;
+                    }
+
+                    .themeSwitch {
+                        line-height: 1;
                     }
                 }
 
