@@ -50,6 +50,14 @@
             align-items: center;
             margin-left: 8px;
         }
+
+        &.darkPage {
+            background-color: $dark-blue;
+
+            a {
+                color: $white;
+            }
+        }
     }
 
     // styles navbar mobile
@@ -88,9 +96,16 @@
                 // container brand
                 .container-brand {
                     padding: 20px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
                     img {
                         width: 122px;
+                    }
+
+                    .themeSwitch {
+                        line-height: 1;
                     }
                 }
 
