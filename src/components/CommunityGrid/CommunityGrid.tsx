@@ -75,6 +75,10 @@ const CommunityGrid = () => {
           <CommunityCard content={content} key={contId} handleClick={handleClick} />
         ))}
       </div>
+      <div className={styles.contactSection} onClick={openSubscribeForm}>
+        <p>connect to the multiverse</p>
+        <img src='./images/community/community_08.png' />
+      </div>
       <div className={cx(isModalOpen ? styles.expanded_container : styles.hidden_container)}>
         <div className={cx(styles.inner_container)} style={commGridDimension} >
           <CommunityModal content={modalContent} closeModal={closeModal} />

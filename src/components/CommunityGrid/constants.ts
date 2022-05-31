@@ -47,7 +47,7 @@ export const contents = [
   },
   {
     id: '5',
-    title: "UPDATES",
+    title: "UPDATES (SOON)",
     numeration: "06",
     label: "Keep up on the latest in the Red Cat Multiverse",
     column: "column_1",
@@ -56,7 +56,7 @@ export const contents = [
   },
   {
     id: '6',
-    title: "PRESS",
+    title: "PRESS (SOON)",
     numeration: "07",
     label: "The Red Cat Multiverse is in the media!",
     column: "column_1",

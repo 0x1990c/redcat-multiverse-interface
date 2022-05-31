@@ -6,7 +6,7 @@
 }
 
 .community_grid {
-  padding-top: 50px;
+  padding-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -118,6 +118,7 @@
     position: absolute;
     right: 10px;
     bottom: 0;
+    z-index: -1;
   }
 }
 
@@ -183,7 +184,6 @@
   }
 }
 
-
 .hidden_container {
   visibility: hidden;
 }
@@ -229,7 +229,7 @@
   }
 
   p {
-    font-family: 'Gotham';
+    font-family: 'Gotham Ultra';
     font-size: 34px;
     font-weight: 900;
     font-stretch: normal;
@@ -245,6 +245,14 @@
     height: 100px;
     right: 50px;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .item_e {
+    .cardImage {
+      right: 5%;
+    }
   }
 }
 
@@ -264,6 +272,7 @@
   .item_a,
   .item_b,
   .item_e,
+  .item_d,
   .item_f,
   .item_g {
     height: 148px;
@@ -288,6 +297,46 @@
     .text {
       font-size: 10px;
       line-height: normal;
+    }
+  }
+
+  .item_d {
+    .cardImage {
+      max-width: 52px;
+      max-height: 72px;
+      right: 0;
+    }
+  }
+
+  .item_e {
+    .cardImage {
+      max-width: 100px;
+      max-height: 75px;
+    }
+  }
+
+  .item_c {
+    .cardImage {
+      max-width: 120px;
+      max-height: 138px;
+    }
+  }
+
+  .item_g {
+    .cardImage {
+      width: 63px;
+      height: 121px;
+    }
+  }
+
+  .contactSection {
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      max-height: 100%;
+      right: 0;
     }
   }
 }

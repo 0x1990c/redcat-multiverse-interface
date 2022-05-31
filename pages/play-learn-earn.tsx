@@ -23,6 +23,12 @@ const ICNFT: NextPage = () => {
     }
   }
 
+  const handleBoxScrollToBottom = () => {
+    console.log('activeTabIdx', activeTabIdx);
+    setActiveTabIdx((activeTabIdx + 1) % 3);
+    console.log('scroll is at bottom now');
+  }
+
   return (
     <div className={`${styles.container}`}>
       <img src='./images/ple/ple_background.png' className={styles.background} />
@@ -42,7 +48,7 @@ const ICNFT: NextPage = () => {
           ))}
         </div>
         {/* Description Box */}
-        <PLEDescriptionBox texts={items[activeTabIdx].texts} />
+        <PLEDescriptionBox texts={items[activeTabIdx].texts} onScrollAtBottom={handleBoxScrollToBottom} />
         {/* Tag comment */}
         <PLETagComment text={items[activeTabIdx].comment} />
       </div>
