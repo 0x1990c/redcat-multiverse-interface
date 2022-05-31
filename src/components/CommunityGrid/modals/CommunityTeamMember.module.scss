@@ -1,0 +1,49 @@
+.teamMemberContainer {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 339px;
+    height: 369px;
+  }
+
+  .memberInfo {
+    color: var(--font-color);
+
+    .fullName {
+      margin-top: 25px;
+      margin-bottom: 7px;
+      font-family: 'Gotham Medium';
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
+
+    .role {
+      font-family: 'Bariol';
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .teamMemberContainer {
+    max-width: 450px;
+
+    img {
+      width: 282px;
+      height: 320px;
+    }
+  }
+}

@@ -1,16 +1,17 @@
 @import '../../styles/colors.scss';
 
 .community_modal {
-  padding: 74px 42px;
+  padding: 50px 40px;
   border-radius: 8px;
   height: 100%;
   position: relative;
   background: var(--background);
+  overflow-y: auto;
 
   .close {
     position: absolute;
     right: 2%;
-    top: 4%;
+    top: 30px;
     cursor: pointer;
   }
 
@@ -21,7 +22,7 @@
     align-items: center;
 
     .title {
-      font-family: Gotham Ultra;
+      font-family: 'Gotham Ultra';
       letter-spacing: 1px;
       font-size: 62px;
       font-weight: 900;
@@ -67,13 +68,15 @@
 }
 
 .item_b {
-  border: solid 2px #f9c930;
+  border: solid 2px #f2957c;
 }
 
-.item_c {}
+.item_c {
+  border: solid 2px #7192f3;
+}
 
 .item_d {
-  border: solid 2px #1b1628;
+  border: solid 2px #f2957c;
 }
 
 .item_e {
@@ -92,8 +95,7 @@
 
 @media screen and (max-width: 480px) {
   .community_modal {
-    top: -10px;
-    padding: 10px;
+    padding: 20px 16px;
 
     .close {
       right: 1%;
@@ -102,8 +104,8 @@
 
     .header {
       .title {
-        font-size: 32px;
-        margin-top: 16px;
+        font-size: 30px;
+        margin-top: 0px;
       }
 
     }

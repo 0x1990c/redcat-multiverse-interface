@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import cx from 'classnames';
+import parse from 'html-react-parser';
 import { title } from 'process';
 import styles from './RoadmapTimeline.module.scss'
 import useDimensions from '../../utilities/useDimension'
@@ -32,7 +33,10 @@ const contents = [
   {
     id: '3',
     title: 'GIFTED ORIENTATION',
-    bullets: ['Closed Beta release(Initially for Genesis NFT holders)', 'dNFT collection sale(open to public)'],
+    bullets: [
+      'Closed Beta release <span style="color: #e83324;">(Initially for Genesis NFT holders)</span>',
+      'dNFT collection sale <span style="color: #7192f3;">(open to public)</span>'
+    ],
     buttonLabel: 'Future',
     period: 'Q3 2022',
     alignment: 'right',
@@ -136,7 +140,7 @@ const RoadmapTimeline = () => {
                   <div className={cx(styles.bullets_general, styles.bullets)}>
                     <ul className={cx(styles.bullet_list_general)}>
                       {content.bullets.map((bullet, bullId) => (
-                        <li key={bullId}>{bullet}</li>
+                        <li key={bullId}>{parse(bullet)}</li>
                       ))}
                     </ul>
                   </div>
@@ -147,6 +151,11 @@ const RoadmapTimeline = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.extendedBtnContainer}>
+        <a className={styles.extendedBtn} href='https://google.com' target='_blank' rel="noreferrer">
+          For extended RCM Labs road map, please click here
+        </a>
       </div>
     </div>
   )
@@ -181,7 +190,7 @@ const RoadmapTimeline = () => {
                   <div className={cx(styles.bullets_general, styles.bullets)}>
                     <ul className={cx(styles.bullet_list_general)}>
                       {content.bullets.map((bullet, bullId) => (
-                        <li key={bullId}>{bullet}</li>
+                        <li key={bullId}>{parse(bullet)}</li>
                       ))}
                     </ul>
                   </div>
@@ -203,6 +212,11 @@ const RoadmapTimeline = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.extendedBtnContainer}>
+          <a className={styles.extendedBtn} href='https://google.com' target='_blank' rel="noreferrer">
+            For extended RCM Labs road map, please click here
+          </a>
         </div>
       </div>
     );

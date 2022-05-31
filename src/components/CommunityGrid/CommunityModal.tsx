@@ -1,29 +1,44 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import cx from 'classnames';
 import styles from "./CommunityModal.module.scss"
 import { useTheme } from 'next-themes'
 import { gsap } from "gsap";
 import { Flip } from "gsap/dist/Flip";
-import TeamGrid from '../../components/Team/TeamGrid'
+import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
+import CommunityTeam from './modals/CommunityTeam';
+import CommunityRCMLabs from './modals/CommunityRCMLabs';
+import CommunityRCMInsiders from './modals/CommunityRCMInsiders';
+import CommunityManifesto from './modals/CommunityManifesto';
+import CommunityUpdates from './modals/CommunityUpdates';
+import CommunityPress from './modals/CommunityPress';
 
 // gsap.registerPlugin(Flip);
 
 const CommunityModal = ({ content, closeModal }: any) => {
   const { systemTheme, theme } = useTheme();
   const { title, text, item, id } = content;
+  const { isMobile } = useScreenWidth();
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  useEffect(() => {
+    console.log('community modal');
+  }, [])
+
   const closeIconColor = () => {
-    if (currentTheme === 'dark') {
-      switch (item) {
-        case 'item_e':
-          return '#e83324';
-        default:
-          return '#fff';
-      }
+    switch (item) {
+      case 'item_b':
+        return '#f2957c';
+      case 'item_c':
+        return '#7192f3';
+      case 'item_d':
+        return '#f2957c';
+      case 'item_e':
+        return '#e83324';
+      default:
+        return currentTheme === 'dark' ? '#fff' : '#000';
     }
-    return '#000';
   }
 
   const modalContentComponent = () => {
@@ -31,26 +46,34 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_a':
         return (<p>this is white paper modal</p>)
       case 'item_b':
-        return (<p>This is manifesto</p>)
+        return (<CommunityManifesto />)
       case 'item_c':
-        return (<p>This is rcm labs</p>)
+        return (<CommunityRCMLabs />)
       case 'item_d':
-        return (<p>This is RCM insiders</p>)
+        return (<CommunityRCMInsiders />)
       case 'item_e':
-        return (<p>This is team modal</p>)
+        return (<CommunityTeam />)
       case 'item_f':
-        return (<p>this is updates</p>)
+        return (<CommunityUpdates />)
       case 'item_g':
-        return (<p>this is PRESS</p>)
+        return (<CommunityPress />)
       default:
-        return (<p>Oops, something went wrong!!!</p>)
+        return (<p>Empty modal</p>)
     }
   }
+
+  const closeIconSize = () => {
+    if (isMobile) {
+      return { width: '24px', height: '24px' };
+    }
+    return { width: '48px', height: '48px' };
+  }
+
 
   return (
     <div className={cx(styles.community_modal, styles[item])}>
       <div className={styles.close} onClick={closeModal}>
-        <CloseIcon width='48px' height='48px' fill={closeIconColor()} />
+        <CloseIcon width={closeIconSize().width} height={closeIconSize().height} fill={closeIconColor()} />
       </div>
       <div className={cx(styles.header)}>
         <h3 className={styles.title}>{title}</h3>
