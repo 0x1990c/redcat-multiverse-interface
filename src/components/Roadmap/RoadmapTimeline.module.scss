@@ -115,7 +115,7 @@
   }
 
   .bullet_list_general {
-    list-style-type: circle;
+    list-style-type: disc;
     list-style-position: inside;
     padding-left: 15px;
   }
@@ -371,5 +371,11 @@
       font-size: 12px;
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .general_mobile {
+    column-gap: 20px;
   }
 }
