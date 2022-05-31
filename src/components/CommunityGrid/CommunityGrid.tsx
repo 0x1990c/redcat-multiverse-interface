@@ -37,7 +37,8 @@ const CommunityGrid = () => {
 
       setCommGridDimensions({
         width: width + marginRight + paddingRight + marginLeft + paddingLeft,
-        height: height - marginTop - paddingTop - marginBottom - paddingBottom,
+        height: height - marginTop - paddingTop - marginBottom - paddingBottom + 139 + 12, // hardcoded for contact section
+        // height: height - marginTop - paddingTop - marginBottom - paddingBottom, // hardcoded for contact section
         top: top + marginTop + paddingTop,
         left: left + marginLeft + paddingLeft,
         //commGridRef: commGridRef.current,
