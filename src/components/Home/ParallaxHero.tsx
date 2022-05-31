@@ -103,8 +103,8 @@ const ParallaxHero = () => {
         </div>
       </MouseParallaxChild>
       <MouseParallaxChild
-        factorX={0.08}
-        factorY={0.05}
+        factorX={0.02}
+        factorY={0.02}
         updateStyles={{
           position: "absolute",
           width: "100%",
