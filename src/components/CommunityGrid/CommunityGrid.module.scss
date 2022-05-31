@@ -37,11 +37,29 @@
     margin: 0px;
     padding: 0px;
     font-family: Gotham Ultra;
+    display: flex;
+    align-items: center;
+
+    .numberArrowIcon {
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      .numberArrowIcon {
+        opacity: 1;
+      }
+    }
+
   }
 
-  .numeration:hover:after {
-    opacity: 1;
-  }
+  // .numeration::after {
+  //   content: "\f105";
+  //   position: absolute;
+  //   opacity: 0;
+  //   transition: opacity 0.7s ease-in-out;
+  // }
 
   .label {
     font-size: 18px;
@@ -53,15 +71,15 @@
 
 }
 
-.community_card::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  border-radius: 8px;
-  opacity: 0;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s ease-in-out;
-}
+// .community_card::after {
+//   content: '';
+//   position: absolute;
+//   z-index: -1;
+//   border-radius: 8px;
+//   opacity: 0;
+//   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+//   transition: opacity 0.3s ease-in-out;
+// }
 
 .community_card:hover {
   transform: scale(1.009, 1.009);
@@ -82,7 +100,6 @@
   background-color: #f9c930;
   grid-area: item_a;
   height: 314px;
-  z-index: 0;
 
   .cardImage {
     position: absolute;
@@ -90,6 +107,7 @@
     right: 0;
     width: 100%;
     border-radius: 8px;
+    z-index: -1;
   }
 }
 

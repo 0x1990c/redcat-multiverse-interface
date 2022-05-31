@@ -51,8 +51,21 @@ const CommunityGrid = () => {
   const [modalContent, setModalContent] = useState<any>({});
 
   const handleClick = (id: number) => {
-    setIsModalOpen(!isModalOpen);
-    setModalContent(contents[id]);
+    console.log('id ==', id);
+    const numberId = parseInt(`${id}`);
+    if (numberId === 0 || numberId === 2) {
+      setIsModalOpen(!isModalOpen);
+      setModalContent(contents[id]);
+      return;
+    }
+
+    if (numberId === 1) {
+      console.log('id========>', id);
+      // should be white paper url
+      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      return;
+    }
+
   }
 
   const closeModal = () => {
