@@ -35,6 +35,15 @@
       letter-spacing: normal;
     }
   }
+}
 
+@media screen and (max-width: 1250px) {
+  .teamMemberContainer {
+    max-width: 450px;
 
+    img {
+      width: 282px;
+      height: 320px;
+    }
+  }
 }
