@@ -254,10 +254,10 @@
     grid-template-rows: auto;
     grid-gap: 7px;
     grid-template-areas:
-      "item_a item_c"
       "item_e item_c"
-      "item_f item_g"
-      "item_b item_d";
+      "item_a item_c"
+      "item_d item_b"
+      "item_f item_g";
   }
 
   .item_a,
