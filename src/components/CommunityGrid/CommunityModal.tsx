@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import cx from 'classnames';
 import styles from "./CommunityModal.module.scss"
 import { useTheme } from 'next-themes'
@@ -21,6 +21,11 @@ const CommunityModal = ({ content, closeModal }: any) => {
   const { isMobile } = useScreenWidth();
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  useEffect(() => {
+    console.log('community modal');
+  }, [])
+
   const closeIconColor = () => {
     switch (item) {
       case 'item_b':
@@ -53,7 +58,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_g':
         return (<CommunityPress />)
       default:
-        return (<p>Oops, something went wrong!!!</p>)
+        return (<p>Empty modal</p>)
     }
   }
 
@@ -63,6 +68,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
     }
     return { width: '48px', height: '48px' };
   }
+
 
   return (
     <div className={cx(styles.community_modal, styles[item])}>

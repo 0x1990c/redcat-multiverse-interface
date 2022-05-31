@@ -6,6 +6,7 @@
   height: 100%;
   position: relative;
   background: var(--background);
+  overflow-y: auto;
 
   .close {
     position: absolute;
@@ -94,9 +95,7 @@
 
 @media screen and (max-width: 480px) {
   .community_modal {
-    top: -10px;
     padding: 20px 16px;
-    height: fit-content;
 
     .close {
       right: 1%;

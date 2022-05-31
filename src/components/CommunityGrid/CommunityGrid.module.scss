@@ -202,21 +202,20 @@
   }
 }
 
-.hidden_container {
-  visibility: hidden;
+.modalBackDrop {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  // background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 50px 30px;
+  z-index: 999;
 }
 
-.expanded_container {
-  visibility: visible;
-}
-
-.inner_container {
-  border-radius: 8px;
-  position: absolute;
-  //top: -500px;
-  //left: -600px;
-  //position: fixed;
-  //background: #F4DB33;
+.modalContainer {
+  height: calc(100vh - 100px);
 }
 
 .contactSection {
@@ -275,6 +274,14 @@
 }
 
 @media (max-width:1024px) {
+  .modalBackDrop {
+    padding: 17px 8px 30px 8px;
+  }
+
+  .modalContainer {
+    height: calc(100vh - 50px);
+  }
+
   .community_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
