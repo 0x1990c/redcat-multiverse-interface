@@ -16,47 +16,61 @@ const CommunityGrid = () => {
 
   const [commGridDimension, setCommGridDimensions] = useState<any>({});
 
-  useEffect(() => {
-    if (commGridRef) {
-      const width = commGridRef.current.offsetWidth;
-      const height = commGridRef.current.offsetHeight;
+  // useEffect(() => {
+  //   if (commGridRef) {
+  //     const width = commGridRef.current.offsetWidth;
+  //     const height = commGridRef.current.offsetHeight;
 
-      const cssObj = window.getComputedStyle(commGridRef.current, null);
-      const marginTop = parseFloat(cssObj.marginTop);
-      const marginRight = parseFloat(cssObj.marginRight);
-      const marginBottom = parseFloat(cssObj.marginBottom);
-      const marginLeft = parseFloat(cssObj.marginLeft);
+  //     const cssObj = window.getComputedStyle(commGridRef.current, null);
+  //     const marginTop = parseFloat(cssObj.marginTop);
+  //     const marginRight = parseFloat(cssObj.marginRight);
+  //     const marginBottom = parseFloat(cssObj.marginBottom);
+  //     const marginLeft = parseFloat(cssObj.marginLeft);
 
-      const paddingTop = parseFloat(cssObj.paddingTop);
-      const paddingRight = parseFloat(cssObj.paddingRight);
-      const paddingBottom = parseFloat(cssObj.paddingBottom);
-      const paddingLeft = parseFloat(cssObj.paddingLeft);
+  //     const paddingTop = parseFloat(cssObj.paddingTop);
+  //     const paddingRight = parseFloat(cssObj.paddingRight);
+  //     const paddingBottom = parseFloat(cssObj.paddingBottom);
+  //     const paddingLeft = parseFloat(cssObj.paddingLeft);
 
-      const top = commGridRef.current.offsetTop;
-      const left = commGridRef.current.offsetLeft;
+  //     const top = commGridRef.current.offsetTop;
+  //     const left = commGridRef.current.offsetLeft;
 
-      setCommGridDimensions({
-        width: width + marginRight + paddingRight + marginLeft + paddingLeft,
-        height: height - marginTop - paddingTop - marginBottom - paddingBottom + 139 + 12, // hardcoded for contact section
-        // height: height - marginTop - paddingTop - marginBottom - paddingBottom, // hardcoded for contact section
-        top: top + marginTop + paddingTop,
-        left: left + marginLeft + paddingLeft,
-        //commGridRef: commGridRef.current,
-      })
-    }
-  }, []);
+  //     setCommGridDimensions({
+  //       width: width + marginRight + paddingRight + marginLeft + paddingLeft,
+  //       height: height - marginTop - paddingTop - marginBottom - paddingBottom + 139 + 12, // hardcoded for contact section
+  //       // height: height - marginTop - paddingTop - marginBottom - paddingBottom, // hardcoded for contact section
+  //       top: top + marginTop + paddingTop,
+  //       left: left + marginLeft + paddingLeft,
+  //       //commGridRef: commGridRef.current,
+  //     })
+  //   }
+  // }, []);
 
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [isSubscribeFormOpen, setIsSubscribeFormOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>({});
 
   const handleClick = (id: number) => {
-    setIsModalOpen(!isModalOpen);
-    setModalContent(contents[id]);
+    const numberId = parseInt(`${id}`);
+
+    document.body.style.overflowY = isModalOpen ? 'auto' : 'hidden';
+
+    if (numberId === 0 || numberId === 2) {
+      setIsModalOpen(!isModalOpen);
+      setModalContent(contents[id]);
+      return;
+    }
+
+    if (numberId === 1) {
+      // should be white paper url
+      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      return;
+    }
   }
 
   const closeModal = () => {
     setIsModalOpen(false);
+    document.body.style.overflowY = 'auto';
     setModalContent({})
   }
 
@@ -79,11 +93,13 @@ const CommunityGrid = () => {
         <p>connect to the multiverse</p>
         <img src='./images/community/community_08.png' />
       </div>
-      <div className={cx(isModalOpen ? styles.expanded_container : styles.hidden_container)}>
-        <div className={cx(styles.inner_container)} style={commGridDimension} >
-          <CommunityModal content={modalContent} closeModal={closeModal} />
+      {isModalOpen === true && (
+        <div className={cx(styles.modalBackDrop)} style={commGridDimension} >
+          <div className={styles.modalContainer}>
+            <CommunityModal content={modalContent} closeModal={closeModal} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   )
     :
@@ -125,16 +141,20 @@ const CommunityGrid = () => {
           <p>connect to the multiverse</p>
           <img src='./images/community/community_08.png' />
         </div>
-        <div className={cx(isModalOpen ? styles.expanded_container : styles.hidden_container)}>
-          <div className={cx(styles.inner_container)} style={commGridDimension} >
-            <CommunityModal content={modalContent} closeModal={closeModal} />
+        {isModalOpen === true && (
+          <div className={styles.modalBackDrop}>
+            <div className={styles.modalContainer}>
+              <CommunityModal content={modalContent} closeModal={closeModal} />
+            </div>
           </div>
-        </div>
-        <div className={cx(isSubscribeFormOpen ? styles.expanded_container : styles.hidden_container)}>
-          <div className={cx(styles.inner_container)} style={commGridDimension} >
+        )
+        }
+
+        {/* <div className={cx(isSubscribeFormOpen ? styles.expanded_container : styles.hidden_container)}>
+          <div className={cx(styles.modalBackDrop)} style={commGridDimension} >
             <CommunitySubscribeForm closeModal={closeModal} />
           </div>
-        </div>
+        </div> */}
       </div>
     );
 }

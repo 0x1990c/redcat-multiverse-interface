@@ -6,6 +6,7 @@
   height: 100%;
   position: relative;
   background: var(--background);
+  overflow-y: auto;
 
   .close {
     position: absolute;
@@ -94,8 +95,7 @@
 
 @media screen and (max-width: 480px) {
   .community_modal {
-    top: -10px;
-    padding: 10px;
+    padding: 20px 16px;
 
     .close {
       right: 1%;
@@ -104,8 +104,8 @@
 
     .header {
       .title {
-        font-size: 32px;
-        margin-top: 16px;
+        font-size: 30px;
+        margin-top: 0px;
       }
 
     }

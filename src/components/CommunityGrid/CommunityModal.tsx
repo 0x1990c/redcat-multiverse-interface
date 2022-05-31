@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import cx from 'classnames';
 import styles from "./CommunityModal.module.scss"
 import { useTheme } from 'next-themes'
 import { gsap } from "gsap";
 import { Flip } from "gsap/dist/Flip";
-import TeamGrid from '../../components/Team/TeamGrid'
+import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
 import CommunityTeam from './modals/CommunityTeam';
 import CommunityRCMLabs from './modals/CommunityRCMLabs';
@@ -18,8 +18,14 @@ import CommunityPress from './modals/CommunityPress';
 const CommunityModal = ({ content, closeModal }: any) => {
   const { systemTheme, theme } = useTheme();
   const { title, text, item, id } = content;
+  const { isMobile } = useScreenWidth();
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  useEffect(() => {
+    console.log('community modal');
+  }, [])
+
   const closeIconColor = () => {
     switch (item) {
       case 'item_b':
@@ -52,14 +58,22 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_g':
         return (<CommunityPress />)
       default:
-        return (<p>Oops, something went wrong!!!</p>)
+        return (<p>Empty modal</p>)
     }
   }
+
+  const closeIconSize = () => {
+    if (isMobile) {
+      return { width: '24px', height: '24px' };
+    }
+    return { width: '48px', height: '48px' };
+  }
+
 
   return (
     <div className={cx(styles.community_modal, styles[item])}>
       <div className={styles.close} onClick={closeModal}>
-        <CloseIcon width='48px' height='48px' fill={closeIconColor()} />
+        <CloseIcon width={closeIconSize().width} height={closeIconSize().height} fill={closeIconColor()} />
       </div>
       <div className={cx(styles.header)}>
         <h3 className={styles.title}>{title}</h3>

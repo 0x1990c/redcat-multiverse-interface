@@ -64,11 +64,28 @@
   }
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
   .team_grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 14px;
-    row-gap: 14px;
-    margin: 35px 0;
+    // grid-template-columns: repeat(2, 1fr);
+    // column-gap: 14px;
+    // row-gap: 14px;
+    // margin: 35px 0;
+    // justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .leftCol {
+    width: 100%;
+  }
+
+  .teamDescription {
+    font-size: 13px;
+  }
+
+  .rightCol {
+    display: none;
   }
 }
