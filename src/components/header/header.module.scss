@@ -1,16 +1,19 @@
 @import 'src/styles/colors.scss';
 
 .headerContainer {
-    position: relative;
-    z-index: 9999;
-    // width: 100%;
-    // top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .header {
-    padding: 21px 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 21px 21px;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
 
     .navbar {
         display: flex;
