@@ -54,6 +54,16 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .leftCol {
+    max-width: 570px;
+  }
+
+  .team_grid {
+    column-gap: 6px;
+  }
+}
+
 @media (max-width:1024px) {
   .team_grid {
     grid-template-columns: repeat(2, 1fr);
