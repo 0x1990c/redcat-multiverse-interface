@@ -3,7 +3,6 @@ import cx from 'classnames';
 import { useScreenWidth } from '../../../hooks/useScreenCheck';
 import CommunityTeamCard from './CommunityTeamCard'
 import styles from './CommunityTeam.module.scss'
-import TeamCardModal from './TeamCardModal'
 import { teamMembers } from '../constants';
 import CommunityTeamMember from './CommunityTeamMember';
 
@@ -28,8 +27,10 @@ const CommunityTeam = () => {
   })
 
   const handleOnSelect = ({ index, boxLocation }: { index: number, boxLocation: BoxLocation }) => {
-    setSelected(index === selected ? null : index)
-    setSelectedBoxLocation(boxLocation)
+    if (index !== selected) {
+      setSelected(index);
+    }
+    setSelectedBoxLocation(boxLocation);
   }
 
   const selectedMember = selected === null ? null : teamMembers[selected]
@@ -45,7 +46,7 @@ const CommunityTeam = () => {
           <div className={styles.teamDescription}>
             <p>Here’s our team of curious and crazy game changers.</p>
             <p>
-              The RCM Labs leadership team is supported by more than 50 highly accomplished individuals from around the globe. This specialized group includes thought leaders, community managers, artists, advisors and collaborators who are all contributing to the success of this project. It also includes more than 25 investors from the U.S., Europe and As
+              The RCM Labs leadership team is supported by more than 50 highly accomplished individuals from around the globe. This specialized group includes thought leaders, community managers, artists, advisors and collaborators who are all contributing to the success of this project. It also includes more than 25 investors from the U.S., Europe and Asia.
             </p>
           </div>
           <div className={cx(styles.team_grid)}>

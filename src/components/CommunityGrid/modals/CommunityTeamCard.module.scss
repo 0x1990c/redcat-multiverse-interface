@@ -5,13 +5,13 @@
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 177px;
+  height: 177px;
 
   .photo {
     background-color: transparent;
-    width: 200px;
-    height: 200px;
+    width: 177px;
+    height: 177px;
     border-radius: 8px;
   }
 
@@ -30,7 +30,7 @@
 
     .full_name {
       font-family: 'Gotham Medium';
-      font-size: 16px;
+      font-size: 12px;
       color: var(--font-color-team-card-personinfo);
       text-transform: uppercase;
       padding-top: 5px;
@@ -40,7 +40,7 @@
 
     .role {
       font-family: 'Bariol';
-      font-size: 14px;
+      font-size: 12px;
       color: var(--font-color-team-card-personinfo);
       padding: 0px 0;
     }
