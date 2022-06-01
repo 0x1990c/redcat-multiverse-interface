@@ -23,7 +23,6 @@
 
     p {
       margin-bottom: 26px;
-
       font-family: 'Bariol';
       font-size: 18px;
       font-weight: normal;
@@ -31,15 +30,40 @@
       font-style: normal;
       line-height: 1.33;
       letter-spacing: normal;
-      color: #1b1628;
+      color: var(--font-color);
     }
   }
 
   .rightCol {
-    margin-left: 120px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
-    img {
-      width: 324px;
+@media screen and (max-width: 1024px) {
+  .rcmInsiderContainer {
+    flex-direction: column;
+
+    .leftCol {
+      .subTitle {
+        font-size: 13px;
+
+        &:first-child {
+          margin-top: 20px;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .rightCol {
+      justify-content: center;
+      margin-top: 0;
     }
   }
 }

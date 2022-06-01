@@ -36,6 +36,11 @@ const CommunityGrid = () => {
       window.open('https://redcatmultiverse.substack.com/', '_blank');
       return;
     }
+
+    // Updates
+    if (numberId === 5) {
+      window.open('https://redcatmultiverse.substack.com/', '_blank');
+    }
   }
 
   const closeModal = () => {
