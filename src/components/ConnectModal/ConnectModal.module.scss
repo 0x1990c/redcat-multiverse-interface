@@ -1,0 +1,149 @@
+@import '../../styles/colors.scss';
+
+.modalBackDrop {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 40px 30px;
+}
+
+.modalWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer {
+  position: absolute;
+  max-height: 620px;
+  height: 100%;
+  width: 100%;
+  max-width: 1379px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 46px 40px;
+  border-radius: 8px;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    // linear-gradient(to right, $blue-blue 25%, $orange 49%, $yellow 75%) border-box;
+    linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+  border: 2px solid transparent;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.title {
+  max-width: 718px;
+  // height: 158px;
+  // margin: 0px 512px 163px 0;
+  font-family: 'Gotham Medium';
+  font-size: 62px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--font-color);
+}
+
+.submitForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.formInput {
+  display: flex;
+  margin-top: 100px;
+
+  input {
+    width: 400px;
+    height: 65px;
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+    border: 2px solid transparent;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 25px;
+    font-size: 21px;
+    color: var(--font-color);
+  }
+
+  button {
+    width: 200px;
+    height: 65px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: #e83324;
+    font-family: 'Gotham Medium';
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modalBackDrop {
+    padding: 25px 10px;
+  }
+
+  .modalContainer {
+    padding: 21px 16px;
+  }
+
+  .title {
+    max-width: 304px;
+    font-family: 'Gotham Ultra';
+    font-size: 30px;
+  }
+
+  .background {
+    left: unset;
+    right: 0;
+  }
+
+  .formInput {
+    flex-direction: column;
+
+    input {
+      width: 315px;
+      background:
+        linear-gradient(var(--background), var(--background)) padding-box,
+        linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+      border: 2px solid transparent;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 315px;
+      border-radius: 8px;
+      margin-top: 25px;
+    }
+  }
+}

@@ -7,7 +7,7 @@ import { NavMobileLinks } from './components/NavMobileLinks';
 import { LinksIcons } from './components/LinksIcons';
 import RadioSwitch from '../RadioSwitch/RadioSwitch';
 
-export const NavMobile = ({ links }: any) => {
+export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 	const { setTheme } = useTheme();
 	const [show, setShow] = useState(false);
 	const { theme } = themeChanger();
@@ -18,6 +18,11 @@ export const NavMobile = ({ links }: any) => {
 
 	const handleSwitchTheme = () => {
 		setTheme(theme === 'dark' ? 'light' : 'dark');
+	}
+
+	const handleOpenConnectModal = () => {
+		onOpenConnectModal();
+		setShow(false);
 	}
 
 	return (
@@ -45,7 +50,7 @@ export const NavMobile = ({ links }: any) => {
 									<RadioSwitch className={styles.themeSwitch} onChange={handleSwitchTheme} checked={theme === 'dark'} />
 								</div>
 								<div className={styles['container-links']}>
-									<NavMobileLinks links={links} />
+									<NavMobileLinks links={links} onOpenConnectModal={handleOpenConnectModal} />
 									<LinksIcons />
 								</div>
 							</div>
