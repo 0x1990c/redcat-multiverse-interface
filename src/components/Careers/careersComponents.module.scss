@@ -109,6 +109,20 @@
   color: $yellow;
 }
 
+
+
+@media screen and (max-width: 1583px) {
+  .container-cards {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .card {
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 1341px) {
   .container-cards {
     width: 100% !important;
