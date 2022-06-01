@@ -23,6 +23,7 @@
       font-size: 24px;
       font-weight: 500;
     }
+
   }
 
   p {
@@ -49,12 +50,15 @@
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 14px;
+        font-family: 'Gill Sans MT';
+        font-weight: 400;
       }
 
       .title {
         font-size: 24px;
         font-weight: 900;
         margin-bottom: 16px;
+        font-family: "Gotham Ultra";
       }
 
       .description {
@@ -104,6 +108,20 @@
 
 .color-yellow {
   color: $yellow;
+}
+
+
+
+@media screen and (max-width: 1583px) {
+  .container-cards {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .card {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 1341px) {
