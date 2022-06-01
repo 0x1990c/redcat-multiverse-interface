@@ -6,9 +6,10 @@ export const NavMobileLinks = ({ links }: any) => {
 		<div className={styles['container-options-links']}>
 			{
 				links.map((link: any, index: any) => (
-					<a className={styles.option} key={index} href={`/${link.toLowerCase()}`}>
-						{link}
-						<div className={styles['line-gradient']}> </div>
+					<a className={styles.option} key={index} href={`/${link.link.toLowerCase()}`}>
+						{link.name}
+						<div className={styles['line-gradient']}></div>
+						{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
 					</a>
 				))
 			}
