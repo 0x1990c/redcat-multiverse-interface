@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import cx from 'classnames';
+import parse from 'html-react-parser';
 import { title } from 'process';
 import styles from './RoadmapTimeline.module.scss'
 import useDimensions from '../../utilities/useDimension'
