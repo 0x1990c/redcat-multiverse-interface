@@ -42,7 +42,7 @@
     font-size: 44px;
     color: black;
     position: relative;
-    top: -15px;
+    top: -10px;
   }
 
   .line-gradient {
@@ -686,6 +686,21 @@
 
 @media screen and(max-width: 576px) {
 
+  .subtitle {
+    font-size: 33px !important;
+  }
+
+  .ledge {
+    background-position-x: right !important;
+  }
+
+  .container-info-brands {
+    img {
+      width: 100px !important;
+      margin: 10px !important;
+    }
+  }
+
   .container-margin {
     margin: 40px 0px;
   }
@@ -809,7 +824,25 @@
 }
 
 @media screen and(max-width: 480px) {
+  .container-title {
+    h1 {
+      font-size: 28px !important;
+    }
+  }
+
+  .subtitle {
+    font-size: 33px !important;
+    top: -5px !important;
+  }
+
+  .container-info-brands {
+    img {
+      width: 60px !important;
+      margin: 10px !important;
+    }
+  }
+
   .container-carousel {
-    padding: 8px !important;
+    padding: 18px !important;
   }
 }

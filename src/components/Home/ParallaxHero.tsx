@@ -1,5 +1,6 @@
 import { useParallax } from 'react-scroll-parallax';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import styles from './HomeHero.module.scss'
 
 const ParallaxHero = () => {
 
@@ -71,7 +72,7 @@ const ParallaxHero = () => {
           height: "100%",
         }}
       >
-        <div className='text' style={{
+        <div className={styles.ledge} style={{
           backgroundImage: "url(/images/HomeHero/Ledge.png)",
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
