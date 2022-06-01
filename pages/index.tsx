@@ -1,26 +1,25 @@
 import type { NextPage } from 'next'
-import GradientText from '../src/components/gradientText/GradientText'
-import Container from '../src/components/container/Container'
-import CommunityGrid from '../src/components/CommunityGrid/CommunityGrid'
-import { useTheme } from 'next-themes'
-import styles from '../src/styles/community.module.scss'
+import { ParallaxProvider } from 'react-scroll-parallax';
+import ParallaxHero from '../src/components/Home/ParallaxHero'
+import { DevelopBy } from '../src/components/Home/DevelopBy';
+import { Conversation } from '../src/components/Home/Conversation';
+import { Announcements } from '../src/components/Home/Announcements';
+import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 
-const Community: NextPage = () => {
-    const { theme, systemTheme } = useTheme()
-    const currentTheme = theme === "system" ? systemTheme : theme
+const Home: NextPage = () => {
+
     return (
-        <div>
-            <Container className={styles.container}>
-                <GradientText
-                    element='h1'
-                    text='COMMUNITY'
-                    innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
-                    gradient={['#f9c930', '#f2957c', '#7192f3']}
-                />
-                <CommunityGrid />
-            </Container>
-        </div>
+        <>
+            <ParallaxProvider>
+                <ParallaxHero />
+            </ParallaxProvider>
+
+            <DevelopBy />
+            <Conversation />
+            <Announcements />
+            <PlayLearnEarn />
+        </>
     )
 }
 
-export default Community
+export default Home
