@@ -23,9 +23,10 @@ export const NavDesktop = ({ links }: any) => {
 		<nav className={`${styles.navbar} ${isDarkBackgroundPage() ? styles.darkPage : ''}`}>
 			<div>
 				{links.map((link: any, index: any) => (
-					<a key={index} href={`/${link.toLowerCase()}`}>
+					<a key={index} href={`/${link.link.toLowerCase()}`} className={styles.soonPage}>
 						{index !== 0 && <span>|</span>}
-						{link}
+						{link.name}
+						{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
 					</a>
 				))}
 			</div>

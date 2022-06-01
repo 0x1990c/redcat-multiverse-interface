@@ -5,7 +5,18 @@ import { themeChanger } from './helpers/themeChanger';
 import { NavMobile } from './NavMobile';
 import { NavDesktop } from './components/NavDesktop';
 
-const links = ['Community', 'Multiverse', 'Whitepaper', 'Roadmap', "InceptionNFT", "Play-Learn-Earn", 'Careers']
+const links = ['Community', 'Multiverse', 'Whitepaper', 'Roadmap', "InceptionNFT", "Play-Learn-Earn", 'Careers', 'Connect']
+
+const headerLinks = [
+  { name: 'Community', link: 'community', finished: true },
+  { name: 'Multiverse', link: 'multiverse', finished: false },
+  { name: 'Whitepaper', link: 'whitepaper', finished: true },
+  { name: 'Roadmap', link: 'roadmap', finished: true },
+  { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
+  { name: 'Play-Learn-Earn', link: 'play-learn-earn', finished: true },
+  { name: 'Careers', link: 'careers', finished: true },
+  { name: 'Connect', link: 'connect', finished: true },
+]
 
 const Header = () => {
 
@@ -19,8 +30,8 @@ const Header = () => {
             ? (<a href="/"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
             : (<a href="/"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
         }
-        <NavDesktop links={links} />
-        <NavMobile links={links} />
+        <NavDesktop links={headerLinks} />
+        <NavMobile links={headerLinks} />
 
       </header>
     </Container>
