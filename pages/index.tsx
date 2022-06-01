@@ -1,12 +1,25 @@
 import type { NextPage } from 'next'
-import Home from './realIndex'
+import { ParallaxProvider } from 'react-scroll-parallax';
+import ParallaxHero from '../src/components/Home/ParallaxHero'
+import { DevelopBy } from '../src/components/Home/DevelopBy';
+import { Conversation } from '../src/components/Home/Conversation';
+import { Announcements } from '../src/components/Home/Announcements';
+import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 
-const HomePage: NextPage = () => {
+const Home: NextPage = () => {
+
     return (
         <>
-            <Home />
+            <ParallaxProvider>
+                <ParallaxHero />
+            </ParallaxProvider>
+
+            <DevelopBy />
+            <Conversation />
+            <Announcements />
+            <PlayLearnEarn />
         </>
     )
 }
 
-export default HomePage
+export default Home
