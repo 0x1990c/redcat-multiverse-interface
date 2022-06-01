@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import cx from 'classnames';
 import styles from "./CommunityModal.module.scss"
 import { useTheme } from 'next-themes'
@@ -19,6 +19,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
   const { systemTheme, theme } = useTheme();
   const { title, text, item, id } = content;
   const { isMobile } = useScreenWidth();
+  const [memberModalOpen, setMemberModalOpen] = useState(false);
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
@@ -41,6 +42,28 @@ const CommunityModal = ({ content, closeModal }: any) => {
     }
   }
 
+  const closeIconSize = () => {
+    if (isMobile) {
+      return { width: '24px', height: '24px' };
+    }
+    return { width: '48px', height: '48px' };
+  }
+
+  const handleOpenMemberModal = () => {
+    console.log('handleOpenMemberModal');
+    setMemberModalOpen(true);
+  }
+
+  const handleClose = () => {
+    if (memberModalOpen) {
+      setMemberModalOpen(false);
+    }
+
+    if (!memberModalOpen) {
+      closeModal();
+    }
+  }
+
   const modalContentComponent = () => {
     switch (item) {
       case 'item_a':
@@ -52,7 +75,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_d':
         return (<CommunityRCMInsiders />)
       case 'item_e':
-        return (<CommunityTeam />)
+        return (<CommunityTeam memberModalOpen={memberModalOpen} onOpenMemberModal={handleOpenMemberModal} />)
       case 'item_f':
         return (<CommunityUpdates />)
       case 'item_g':
@@ -62,17 +85,9 @@ const CommunityModal = ({ content, closeModal }: any) => {
     }
   }
 
-  const closeIconSize = () => {
-    if (isMobile) {
-      return { width: '24px', height: '24px' };
-    }
-    return { width: '48px', height: '48px' };
-  }
-
-
   return (
-    <div className={cx(styles.community_modal, styles[item])}>
-      <div className={styles.close} onClick={closeModal}>
+    <div className={cx(styles.community_modal, styles[item], memberModalOpen ? styles.memberModal : '')}>
+      <div className={styles.close} onClick={handleClose}>
         <CloseIcon width={closeIconSize().width} height={closeIconSize().height} fill={closeIconColor()} />
       </div>
       <div className={cx(styles.header)}>

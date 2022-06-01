@@ -16,36 +16,6 @@ const CommunityGrid = () => {
 
   const [commGridDimension, setCommGridDimensions] = useState<any>({});
 
-  // useEffect(() => {
-  //   if (commGridRef) {
-  //     const width = commGridRef.current.offsetWidth;
-  //     const height = commGridRef.current.offsetHeight;
-
-  //     const cssObj = window.getComputedStyle(commGridRef.current, null);
-  //     const marginTop = parseFloat(cssObj.marginTop);
-  //     const marginRight = parseFloat(cssObj.marginRight);
-  //     const marginBottom = parseFloat(cssObj.marginBottom);
-  //     const marginLeft = parseFloat(cssObj.marginLeft);
-
-  //     const paddingTop = parseFloat(cssObj.paddingTop);
-  //     const paddingRight = parseFloat(cssObj.paddingRight);
-  //     const paddingBottom = parseFloat(cssObj.paddingBottom);
-  //     const paddingLeft = parseFloat(cssObj.paddingLeft);
-
-  //     const top = commGridRef.current.offsetTop;
-  //     const left = commGridRef.current.offsetLeft;
-
-  //     setCommGridDimensions({
-  //       width: width + marginRight + paddingRight + marginLeft + paddingLeft,
-  //       height: height - marginTop - paddingTop - marginBottom - paddingBottom + 139 + 12, // hardcoded for contact section
-  //       // height: height - marginTop - paddingTop - marginBottom - paddingBottom, // hardcoded for contact section
-  //       top: top + marginTop + paddingTop,
-  //       left: left + marginLeft + paddingLeft,
-  //       //commGridRef: commGridRef.current,
-  //     })
-  //   }
-  // }, []);
-
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [isSubscribeFormOpen, setIsSubscribeFormOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>({});
@@ -55,7 +25,7 @@ const CommunityGrid = () => {
 
     document.body.style.overflowY = isModalOpen ? 'auto' : 'hidden';
 
-    if (numberId === 0 || numberId === 2) {
+    if (numberId === 0 || numberId === 2 || numberId === 3 || numberId === 4) {
       setIsModalOpen(!isModalOpen);
       setModalContent(contents[id]);
       return;
