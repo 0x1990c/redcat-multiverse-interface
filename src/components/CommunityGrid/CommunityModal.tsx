@@ -55,13 +55,16 @@ const CommunityModal = ({ content, closeModal }: any) => {
   }
 
   const handleClose = () => {
-    if (memberModalOpen) {
-      setMemberModalOpen(false);
-    }
+    // if (memberModalOpen) {
+    //   setMemberModalOpen(false);
+    // }
 
-    if (!memberModalOpen) {
-      closeModal();
-    }
+    setMemberModalOpen(false);
+    closeModal();
+  }
+
+  const handleCloseMemberModal = () => {
+    setMemberModalOpen(false);
   }
 
   const modalContentComponent = () => {
@@ -75,7 +78,9 @@ const CommunityModal = ({ content, closeModal }: any) => {
       case 'item_d':
         return (<CommunityRCMInsiders />)
       case 'item_e':
-        return (<CommunityTeam memberModalOpen={memberModalOpen} onOpenMemberModal={handleOpenMemberModal} />)
+        return (
+          <CommunityTeam memberModalOpen={memberModalOpen} onOpenMemberModal={handleOpenMemberModal} onCloseMemberModal={handleCloseMemberModal} />
+        )
       case 'item_f':
         return (<CommunityUpdates />)
       case 'item_g':
