@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Container from '../container/Container'
 import styles from './header.module.scss'
+import connectModalStyles from '../../components/ConnectModal/ConnectModal.module.scss';
 import { themeChanger } from './helpers/themeChanger';
 import { NavMobile } from './NavMobile';
 import { NavDesktop } from './components/NavDesktop';
-
-const links = ['Community', 'Multiverse', 'Whitepaper', 'Roadmap', "InceptionNFT", "Play-Learn-Earn", 'Careers', 'Connect']
+import { useState } from 'react';
+import ConnectModal from '../ConnectModal/ConnectModal';
 
 const headerLinks = [
   { name: 'Community', link: 'community', finished: true },
@@ -19,8 +20,18 @@ const headerLinks = [
 ]
 
 const Header = () => {
-
+  const [isConnectModalOpen, setIsConnectModalOpen] = useState(false);
   const { theme } = themeChanger();
+
+  const handleOpenConnectModal = () => {
+    document.body.style.overflowY = 'hidden';
+    setIsConnectModalOpen(true);
+  }
+
+  const handleCloseConnectModal = () => {
+    document.body.style.overflowY = 'auto';
+    setIsConnectModalOpen(false);
+  }
 
   return (
     <Container className={styles.headerContainer}>
@@ -30,9 +41,17 @@ const Header = () => {
             ? (<a href="/community"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
             : (<a href="/community"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
         }
-        <NavDesktop links={headerLinks} />
-        <NavMobile links={headerLinks} />
+        <NavDesktop links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
+        <NavMobile links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
+        {/* Connect Modal part */}
+        {isConnectModalOpen && (
+          <div className={connectModalStyles.modalBackDrop}>
+            <div className={connectModalStyles.modalWrapper}>
+              <ConnectModal onClose={handleCloseConnectModal} />
+            </div>
 
+          </div>
+        )}
       </header>
     </Container>
   )

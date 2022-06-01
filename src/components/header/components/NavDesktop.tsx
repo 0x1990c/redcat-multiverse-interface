@@ -6,7 +6,7 @@ import styles from '../header.module.scss'
 import RadioSwitch from '../../RadioSwitch/RadioSwitch';
 
 
-export const NavDesktop = ({ links }: any) => {
+export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const router = useRouter();
 	const { systemTheme, theme, setTheme } = useTheme();
 
@@ -19,16 +19,39 @@ export const NavDesktop = ({ links }: any) => {
 
 	const isDarkBackgroundPage = () => darkBackgroundPages.includes(router.pathname);
 
+	const handleConnectClick = () => {
+		onOpenConnectModal()
+	}
+
 	return (
 		<nav className={`${styles.navbar} ${isDarkBackgroundPage() ? styles.darkPage : ''}`}>
 			<div>
-				{links.map((link: any, index: any) => (
-					<a key={index} href={`/${link.link.toLowerCase()}`} className={styles.soonPage}>
-						{index !== 0 && <span>|</span>}
-						{link.name}
-						{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
-					</a>
-				))}
+				{links.map((link: any, index: any) => {
+					if (link.link === 'whitepaper') {
+						return (
+							<a className={styles.option} key={index} href='https://redcatmultiverse.substack.com/' target='_blank' rel="noreferrer">
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						)
+					}
+					if (link.link === 'connect') {
+						return (
+							<a className={styles.option} key={index} target='_blank' rel="noreferrer" onClick={handleConnectClick}>
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						)
+					}
+					return (
+						<a key={index} href={`/${link.link.toLowerCase()}`} className={styles.soonPage}>
+							{index !== 0 && <span>|</span>}
+							{link.name}
+							{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
+						</a>
+					)
+
+				})}
 			</div>
 			{/* nav icons social media */}
 			<LinksIcons />
