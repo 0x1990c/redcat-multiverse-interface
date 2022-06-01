@@ -31,6 +31,19 @@
             font-size: 16px;
             // color: $white;
             color: --var(--font-color);
+
+            &.soonPage {
+                position: relative;
+
+                span.soonBadge {
+                    color: white;
+                    background: $orange-red;
+                    border-radius: 16px;
+                    position: absolute;
+                    left: 40%;
+                    top: -20px;
+                }
+            }
         }
 
         span {
@@ -126,6 +139,20 @@
                             padding: 8px 0px;
                             font-size: 24px;
                             line-height: 1.33;
+                            position: relative;
+
+                            span.soonBadge {
+                                font-family: 'Gotham Medium';
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: #fff;
+                                background: $orange-red;
+                                border-radius: 10px;
+                                position: absolute;
+                                padding: 2px;
+                                right: 0;
+                                top: 16px;
+                            }
 
                             .line-gradient {
                                 background: linear-gradient(to right, #f9c930 25%, #f2957c 49%, #7192f3 75%);
