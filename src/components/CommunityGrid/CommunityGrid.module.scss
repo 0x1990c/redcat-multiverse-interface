@@ -211,11 +211,15 @@
   top: 0;
   left: 0;
   padding: 50px 30px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .modalContainer {
-  height: calc(100vh - 100px);
+  // height: calc(100vh - 100px);
+  // height: 620px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .contactSection {

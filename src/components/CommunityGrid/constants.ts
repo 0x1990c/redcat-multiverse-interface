@@ -72,7 +72,7 @@ export const teamMembers = [
     firstName: 'S.Binici',
     lastName: 'KAYA',
     role: 'CEO',
-    bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder.Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others.Binici studied Physics, Mathematics, Engineering and an MBA.She is an MIT alumna.',
+    bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder.Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others.Binici studied Physics, Mathematics, Engineering and an MBA. She is an MIT alumna.',
   },
   {
     imageCard: './images/community/team/Matthew.jpg',
@@ -127,7 +127,7 @@ export const rcmInsiderContents = [
   {
     title: 'MEERKAT BAG NFTS',
     texts: [
-      'Inspired by the Loot project, Meerkat Bag NFTs are utility NFTs which provide building block primitives, upon which a foundational asset class can be built within the RedCat Multiverse.Meerkat Bags provide an opportunity to start with the content, before moving to gameplay, which in turn creates a purpose- driven community, rather than a product.Meerkat Bags are a collection of 888 NFTs, which have a unique combination of four character traits such as power skills, positive personality traits, even personality traits, and quirky traits.',
+      'Inspired by the Loot project, Meerkat Bag NFTs are utility NFTs which provide building block primitives, upon which a foundational asset class can be built within the RedCat Multiverse. Meerkat Bags provide an opportunity to start with the content, before moving to gameplay, which in turn creates a purpose- driven community, rather than a product.Meerkat Bags are a collection of 888 NFTs, which have a unique combination of four character traits such as power skills, positive personality traits, even personality traits, and quirky traits.',
       'Meerkat Bags essentially provide a prompt or building block primitive - upon which a foundational Multiverse asset Genius can be built.Meerkat Bags are exclusively created for hyper social RedCat Multiverse community members. '
     ]
   },

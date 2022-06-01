@@ -9,7 +9,7 @@ const CommunityTeamMember = ({ info }: any) => {
     bio
   } = info;
   return (<div className={styles.teamMemberContainer}>
-    <img src={image} />
+    <img src={image} alt="TM" />
     <div className={styles.memberInfo}>
       <div className={styles.fullName}>{`${firstName} ${lastName}`}</div>
       <div className={styles.role}>{role}</div>

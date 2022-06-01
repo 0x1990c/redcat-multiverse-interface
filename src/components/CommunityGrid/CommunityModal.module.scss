@@ -1,10 +1,15 @@
 @import '../../styles/colors.scss';
 
 .community_modal {
-  padding: 50px 40px;
+  position: absolute;
+  height: 620px;
+  max-width: 1379px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 25px 40px;
   border-radius: 8px;
-  height: 100%;
-  position: relative;
   background: var(--background);
   overflow-y: auto;
 
@@ -24,6 +29,7 @@
     .title {
       font-family: 'Gotham Ultra';
       letter-spacing: 1px;
+      line-height: 1;
       font-size: 62px;
       font-weight: 900;
       color: var(--font-color);
@@ -93,9 +99,24 @@
 }
 
 
+@media (max-width:1024px) {
+  .community_modal {
+    height: 100%;
+
+    &.memberModal {
+      height: fit-content;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .community_modal {
     padding: 20px 16px;
+
+    &.item_c {
+      padding-bottom: 0;
+      height: fit-content;
+    }
 
     .close {
       right: 1%;
