@@ -16,8 +16,8 @@ const Header = () => {
       <header className={styles.header}>
         {
           theme != 'dark'
-            ? (<a href="/community"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
-            : (<a href="/community"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
+            ? (<a href="/"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
+            : (<a href="/"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
         }
         <NavDesktop links={links} />
         <NavMobile links={links} />
