@@ -1,9 +1,7 @@
-import { themeChanger } from '../helpers/themeChanger';
 import styles from '../header.module.scss'
 
 
 export const LinksIcons = () => {
-	const { renderThemechanger } = themeChanger();
 
 	return (
 		<div className={styles.icons}>
