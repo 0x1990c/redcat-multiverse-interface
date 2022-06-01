@@ -9,15 +9,26 @@ export const Carousel = () => {
         <div id="slide-1" className={styles.sliderItem}>
           <img src="./images/community/insiders/slider_1.gif" alt="" />
           <div className={styles.sliderDesc}>
-            Made by:&nbsp;
-            <span>Nick name</span>
+            <div>
+              Made by:&nbsp;<span>Nick name</span>
+            </div>
           </div>
         </div>
         <div id="slide-2" className={styles.sliderItem}>
           <img src="./images/community/insiders/slider_2.jpg" alt="" />
+          <div className={styles.sliderDesc}>
+            <div>
+              Made by:&nbsp;<span>Nick name</span>
+            </div>
+          </div>
         </div>
         <div id="slide-3" className={styles.sliderItem}>
           <img src="./images/community/insiders/slider_3.jpg" alt="" />
+          <div className={styles.sliderDesc}>
+            <div>
+              Made by:&nbsp;<span>Nick name</span>
+            </div>
+          </div>
         </div>
       </div>
       <Link href="#slide-1" scroll={false}>
