@@ -17,7 +17,6 @@ const CommunityGrid = () => {
   const [commGridDimension, setCommGridDimensions] = useState<any>({});
 
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [isSubscribeFormOpen, setIsSubscribeFormOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>({});
 
   const handleClick = (id: number) => {
@@ -49,24 +48,12 @@ const CommunityGrid = () => {
     setModalContent({})
   }
 
-  const openSubscribeForm = () => {
-    setIsSubscribeFormOpen(true);
-  }
-
-  const closeSubscribeForm = () => {
-    setIsSubscribeFormOpen(false);
-  }
-
   return isMobile ? (
     <div>
       <div className={styles.community_grid}>
         {contents.map((content, contId) => (
           <CommunityCard content={content} key={contId} handleClick={handleClick} />
         ))}
-      </div>
-      <div className={styles.contactSection} onClick={openSubscribeForm}>
-        <p>connect to the multiverse</p>
-        <img src='./images/community/community_08.png' />
       </div>
       {isModalOpen === true && (
         <div className={cx(styles.modalBackDrop)} style={commGridDimension} >
@@ -111,10 +98,6 @@ const CommunityGrid = () => {
             }
             )}
           </div>
-        </div>
-        <div className={styles.contactSection} onClick={openSubscribeForm}>
-          <p>connect to the multiverse</p>
-          <img src='./images/community/community_08.png' />
         </div>
         {isModalOpen === true && (
           <div className={styles.modalBackDrop}>
