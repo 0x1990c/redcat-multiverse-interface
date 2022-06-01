@@ -10,7 +10,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const router = useRouter();
 	const { systemTheme, theme, setTheme } = useTheme();
 
-	const darkBackgroundPages = ['/multiverse', '/play-learn-earn']
+	const darkBackgroundPages = ['/', '/multiverse', '/play-learn-earn']
 
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 	const handleClick = () => {
