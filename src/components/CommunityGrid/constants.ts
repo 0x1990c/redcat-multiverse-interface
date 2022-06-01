@@ -72,7 +72,7 @@ export const teamMembers = [
     firstName: 'S.Binici',
     lastName: 'KAYA',
     role: 'CEO',
-    bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder.Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others.Binici studied Physics, Mathematics, Engineering and an MBA.She is an MIT alumna.',
+    bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder.Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others.Binici studied Physics, Mathematics, Engineering and an MBA. She is an MIT alumna.',
   },
   {
     imageCard: './images/community/team/Matthew.jpg',

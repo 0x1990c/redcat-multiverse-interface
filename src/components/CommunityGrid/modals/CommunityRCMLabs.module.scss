@@ -1,6 +1,5 @@
 .rcmLabsContainer {
   font-family: 'Bariol';
-  font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -15,12 +14,15 @@
     .leftCol {
       .rcmLabsDesc {
         margin-bottom: 26px;
+        margin-top: 20px;
         max-width: 729px;
+        font-size: 22px;
       }
 
       .storyTxt {
         max-width: 510px;
         margin-bottom: 26px;
+        font-size: 18px;
       }
     }
 
@@ -28,7 +30,9 @@
       margin-top: 80px;
 
       img {
-        width: 618px;
+        position: absolute;
+        bottom: 0;
+        width: 517px;
       }
     }
   }
@@ -39,15 +43,42 @@
     font-size: 13px;
 
     .rcmLabsContent {
-      margin-top: 35px;
+      margin-top: 38px;
       flex-direction: column;
+
+      .leftCol {
+        .rcmLabsDesc {
+          margin-top: 0;
+          font-size: 13px;
+        }
+
+        .storyTxt {
+          font-size: 13px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
 
       .rightCol {
         margin-top: 0;
 
         img {
+          position: unset;
           width: 244px;
+          float: right;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .rcmLabsContainer {
+    .rcmLabsContent {
+      .leftCol {
+        max-width: 332px;
       }
     }
   }
