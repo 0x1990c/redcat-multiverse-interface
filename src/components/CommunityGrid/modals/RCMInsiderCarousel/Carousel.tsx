@@ -32,13 +32,13 @@ export const Carousel = () => {
         </div>
       </div>
       <Link href="#slide-1" scroll={false}>
-        <span>1</span>
+        <span></span>
       </Link>
       <Link href="#slide-2" scroll={false}>
-        <span>2</span>
+        <span></span>
       </Link>
       <Link href="#slide-3" scroll={false}>
-        <span>3</span>
+        <span></span>
       </Link>
     </div>
   )
