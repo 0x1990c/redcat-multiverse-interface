@@ -1,7 +1,10 @@
+import React from 'react';
 import { useTheme } from 'next-themes'
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
 import styles from './ConnectModal.module.scss';
+
+
 
 const ConnectModal = ({ onClose }: any) => {
   const { systemTheme, theme } = useTheme();
@@ -28,6 +31,21 @@ const ConnectModal = ({ onClose }: any) => {
     onClose();
   }
 
+  const handleClick = async () => {
+    console.log('subscribe');
+    const res = await fetch('/api/subscribe', {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: 'POST'
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log('error ==>', error);
+      return;
+    }
+  }
 
   return (
     <div className={styles.modalContainer}>
@@ -40,7 +58,7 @@ const ConnectModal = ({ onClose }: any) => {
       <div className={styles.submitForm}>
         <div className={styles.formInput}>
           <input type='email' placeholder='email@email.com' />
-          <button>SUBSCRIBE</button>
+          <button onClick={handleClick}>SUBSCRIBE</button>
         </div>
       </div>
     </div>
