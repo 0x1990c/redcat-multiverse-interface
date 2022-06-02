@@ -32,7 +32,7 @@ export const DevelopBy = () => {
 			></div>
 
 			<div className={styles['container-info-develop']}>
-				<p className={styles.develop}> DEVELOPED BY MINDS FROM </p>
+				<p className={styles.develop}> DEVELOPED BY MINDS FROM: </p>
 			</div>
 
 			<div className={styles['container-info-brands']}>
