@@ -26,11 +26,19 @@ export const NavMobileLinks = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
+					if (link.finished == false) {
+						return (
+							<a className={styles.option} key={index} rel="noreferrer">
+								{link.name}
+								<div className={styles['line-gradient']}></div>
+								{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
+							</a>
+						)
+					}
 					return (
 						<a className={styles.option} key={index} href={`/${link.link.toLowerCase()}`}>
 							{link.name}
 							<div className={styles['line-gradient']}></div>
-							{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
 						</a>
 					)
 				})
