@@ -1,3 +1,5 @@
+@import 'src/styles/colors.scss';
+
 .manifestoContainer {
   font-family: 'Bariol';
   font-size: 18px;
@@ -6,22 +8,86 @@
   font-style: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--font-color);
   display: flex;
   margin-top: 20px;
 
   .leftCol {
-    p {
-      margin-bottom: 26px;
-      max-width: 673px;
+    max-width: 673px;
+
+    .subTitle {
+      font-family: 'Gotham Medium';
+      font-size: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .item {
+      padding: 10px 20px;
+      color: #fff;
+      margin-bottom: 15px;
+      border-radius: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.backOrangeRed {
+        background: $orange-red;
+      }
+
+      &.backOrangeLight {
+        background: $orange-light;
+      }
+
+      &.backBlue {
+        background: $blue-light;
+      }
+
+      &.backBlack {
+        background: #000;
+      }
+
+      &.backYellow {
+        background: $yellow;
+      }
+
     }
   }
 
   .rightCol {
-    margin-left: 120px;
-
     img {
       width: 324px;
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .manifestoContainer {
+    font-size: 13px;
+    line-height: 1.23;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    .leftCol {
+      .subTitle {
+        font-size: 16px;
+        // margin-bottom: ;
+      }
+    }
+
+    .rightCol {
+      width: 100%;
+
+      img {
+        position: unset;
+        width: 190px;
+        float: right;
+        margin-top: 10px;
+      }
     }
   }
 }

@@ -10,7 +10,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const router = useRouter();
 	const { systemTheme, theme, setTheme } = useTheme();
 
-	const darkBackgroundPages = ['/multiverse', '/play-learn-earn']
+	const darkBackgroundPages = ['/', '/multiverse', '/play-learn-earn']
 
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 	const handleClick = () => {
@@ -43,14 +43,21 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
+					if (link.finished === false) {
+						return (
+							<a key={index} className={styles.soonPage} rel="noreferrer">
+								{index !== 0 && <span>|</span>}
+								{link.name}
+								{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
+							</a>
+						)
+					}
 					return (
 						<a key={index} href={`/${link.link.toLowerCase()}`} className={styles.soonPage}>
 							{index !== 0 && <span>|</span>}
 							{link.name}
-							{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
 						</a>
 					)
-
 				})}
 			</div>
 			{/* nav icons social media */}
