@@ -148,12 +148,21 @@
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .mobileContainer {
+    display: none;
+  }
+}
+
 .mobileContainer {
   margin-top: 76px;
-  background: url('/images/ple/ple_background.png');
+  background: url('/images/ple/ple_background.jpg');
   width: 100%;
   padding: 30px;
   padding-bottom: 120px;
+  background-position-x: -1350px;
+  background-position-y: -100px;
+  background-size: cover;
 
   .title {
     margin-bottom: 27px;

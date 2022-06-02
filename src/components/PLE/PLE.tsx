@@ -40,7 +40,7 @@ const PLE = () => {
   return (<>
     {/* Desktop version  */}
     <div className={`${styles.container}`}>
-      <img src='./images/ple/ple_background.png' className={styles.background} />
+      <img src='./images/ple/ple_background.jpg' className={styles.background} />
       <div className={styles.title}>
         <GradientText
           element='h1'
