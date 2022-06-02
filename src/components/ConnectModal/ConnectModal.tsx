@@ -32,19 +32,42 @@ const ConnectModal = ({ onClose }: any) => {
   }
 
   const handleClick = async () => {
-    console.log('subscribe');
-    const res = await fetch('/api/subscribe', {
+    try {
+
+    } catch (error) {
+      console.log('error =>', error);
+    }
+    console.log('subscribe xxx', process.env.CC_APIKEY, process.env.CC_ACCESSTOKEN, process.env.CC_RCM_LIST_ID);
+    const subscribeData = {
+      lists: [
+        {
+          id: `${process.env.CC_RCM_LIST_ID}`
+        }
+      ],
+      email_addresses: [
+        {
+          "email_address": "hdl@example.com"
+        }
+      ]
+    }
+    const res = await fetch(`https://api.constantcontact.com/v2/contacts?action_by=ACTION_BY_OWNER&api_key=${process.env.CC_APIKEY}`, {
       headers: {
         "Content-Type": "application/json",
+        'Authorization': `Bearer ${process.env.CC_ACCESSTOKEN}`,
+        'Access-Control-Allow-Origin': "*",
+        'Access-Control-Allow-Headers': '*'
       },
-      method: 'POST'
+      method: 'POST',
+      body: JSON.stringify(subscribeData)
     });
 
-    const { error } = await res.json();
-    if (error) {
-      console.log('error ==>', error);
-      return;
-    }
+    console.log('res', res);
+
+    // const { error } = await res.json();
+    // if (error) {
+    //   console.log('error ==>', error);
+    //   return;
+    // }
   }
 
   return (
