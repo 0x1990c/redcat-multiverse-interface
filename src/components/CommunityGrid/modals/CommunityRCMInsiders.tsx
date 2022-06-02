@@ -1,5 +1,6 @@
 import { rcmInsiderContents } from '../constants';
 import styles from './CommunityRCMInsiders.module.scss';
+import { Carousel } from './RCMInsiderCarousel/Carousel';
 
 const CommunityRCMInsiders = () => {
   return (<div className={styles.rcmInsiderContainer}>
@@ -10,7 +11,7 @@ const CommunityRCMInsiders = () => {
       </div>))}
     </div>
     <div className={styles.rightCol}>
-      <img src='./images/community/rcm_insider.gif' />
+      <Carousel />
     </div>
   </div>);
 };

@@ -29,7 +29,10 @@ const CommunityCard = ({ content, contId, handleClick }: any) => {
           )}
 
         </div>
-        <p className={styles.label}>{label}</p>
+        <p className={styles.label}>{item === 'item_g'
+          ? (<strong style={{ fontSize: '28px' }}>{label}</strong>)
+          : label
+        }</p>
       </div>
 
     </div>

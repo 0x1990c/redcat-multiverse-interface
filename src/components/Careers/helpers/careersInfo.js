@@ -5,8 +5,8 @@ export const careersInfo = [
     category: 'Multiverse',
     title: 'Game Designer',
     description: 'Do you have a comprehensive knowledge of game design? We’re not looking for coders or engineers, but rather someone who has an overall understanding of game systems and design.',
-    button: 'Apply here'
-
+    button: 'Apply here',
+    external: 'https://redcatmultiverse.substack.com/'
   },
   {
     border: 'border-blue',
@@ -14,8 +14,8 @@ export const careersInfo = [
     category: 'Engineering',
     title: 'Full Stack Engineer',
     description: 'Do you have a comprehensive knowledge of game design? We’re not looking for coders or engineers, but rather someone who has an overall understanding of game systems and design.',
-    button: 'Apply here'
-
+    button: 'Apply here',
+    external: 'https://redcatmultiverse.substack.com/'
   },
   {
     border: 'border-orange',
@@ -23,8 +23,8 @@ export const careersInfo = [
     category: 'Creative',
     title: 'Visual Artist',
     description: 'Do you have a comprehensive knowledge of game design? We’re not looking for coders or engineers, but rather someone who has an overall understanding of game systems and design.',
-    button: 'Apply here'
-
+    button: 'Apply here',
+    external: 'https://redcatmultiverse.substack.com/'
   },
   {
     border: 'border-yellow',
@@ -32,7 +32,7 @@ export const careersInfo = [
     category: 'Business',
     title: 'Marketing operations',
     description: 'Do you have a comprehensive knowledge of game design? We’re not looking for coders or engineers, but rather someone who has an overall understanding of game systems and design.',
-    button: 'Apply here'
-
+    button: 'Apply here',
+    external: 'https://redcatmultiverse.substack.com/'
   },
 ]
