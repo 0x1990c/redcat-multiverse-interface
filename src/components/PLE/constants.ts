@@ -3,7 +3,7 @@ export const items = [
     id: 0,
     title: 'PLAY',
     texts: [
-      "1 - With over 100 unique characters, and over a dozen potential transformations, there are characters to fit your tastes and play style. Each character is also an NFT, which you own.",
+      "With over 100 unique characters, and over a dozen potential transformations, there are characters to fit your tastes and play style. Each character is also an NFT, which you own.",
       "The multiverse is filled with all kinds of beings, so characters come in a variety of forms and themes, from the cute and cuddly to the more serious or even frightening.They’re the main tool you’ll use to play the game, each with their own traits and abilities.With all kinds of characters for you to fall in love with, including personifications of colors, humans from different times, beings from other planets and dimensions, and concepts come to life.With over 100 unique characters, with over a dozen potential transformations, there are assets to fit your tastes and play style.",
       "Each character is also an NFT, which you own.You can develop and use them, or you can eventually sell or trade them to others in the community.",
       "With over 100 unique characters, and over a dozen potential transformations, there are characters to fit your tastes and play style. Each character is also an NFT, which you own.",
