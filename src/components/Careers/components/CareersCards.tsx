@@ -6,7 +6,7 @@ export const CareersCards = ({ card, index }: any) => {
 	const { border, colorText, category, title, description, button, external } = card;
 
 	const handleClick = () => {
-		window.open('https://redcatmultiverse.substack.com/', '_blank');
+		window.open(external, '_blank');
 	}
 
 	return (

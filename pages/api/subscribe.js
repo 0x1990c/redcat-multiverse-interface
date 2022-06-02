@@ -15,13 +15,12 @@ async function subscribe(req, res) {
       ],
       email_addresses: [
         {
-          "email_address": "hxxxxxxcccdl@example.com"
+          "email_address": req.body.email
         }
       ]
     }
     await cc.contacts.create(subscribeData, { action_by: 'ACTION_BY_OWNER' })
   } catch (error) {
-    // console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 

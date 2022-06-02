@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTheme } from 'next-themes'
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
 import styles from './ConnectModal.module.scss';
 
 
-
 const ConnectModal = ({ onClose }: any) => {
+  const [email, setEmail] = useState();
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [resultShow, setResultShow] = useState(false);
   const { systemTheme, theme } = useTheme();
   const { isMobile } = useScreenWidth();
 
@@ -32,58 +35,34 @@ const ConnectModal = ({ onClose }: any) => {
   }
 
   const handleClick = async () => {
-
-
-    // try {
-
-    // } catch (error) {
-    //   console.log('error =>', error);
-    // }
-    // console.log('subscribe xxx', process.env.CC_APIKEY, process.env.CC_ACCESSTOKEN, process.env.CC_RCM_LIST_ID);
-    // const subscribeData = {
-    //   lists: [
-    //     {
-    //       id: `${process.env.CC_RCM_LIST_ID}`
-    //     }
-    //   ],
-    //   email_addresses: [
-    //     {
-    //       "email_address": "hcccdl@example.com"
-    //     }
-    //   ]
-    // }
-    // const res = await fetch(`https://api.constantcontact.com/v2/contacts?action_by=ACTION_BY_OWNER&api_key=${process.env.CC_APIKEY}`, {
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     'Authorization': `Bearer ${process.env.CC_ACCESSTOKEN}`,
-    //     'Access-Control-Allow-Origin': "*",
-    //     'Access-Control-Allow-Headers': '*'
-    //   },
-    //   method: 'POST',
-    //   body: JSON.stringify(subscribeData)
-    // });
-
-    // console.log('res', res);
-
-    // const { error } = await res.json();
-    // if (error) {
-    //   console.log('error ==>', error);
-    //   return;
-    // }
-
+    setIsSubscribing(true);
+    setIsError(false);
+    setResultShow(false);
     const res = await fetch("/api/subscribe", {
       headers: {
         "Content-Type": "application/json",
       },
       method: "POST",
+      body: JSON.stringify({
+        email
+      })
     });
-
 
     const { error } = await res.json();
     if (error) {
-      console.log(error);
+      console.log('eeror', error);
+      setIsError(true);
+      setIsSubscribing(false);
+      setResultShow(true);
       return;
     }
+    setIsError(false);
+    setIsSubscribing(false);
+    setResultShow(true);
+  }
+
+  const handleChange = (e: any) => {
+    setEmail(e.target.value);
   }
 
   return (
@@ -96,9 +75,16 @@ const ConnectModal = ({ onClose }: any) => {
       <p className={styles.title}>CONNECT TO THE MULTIVERSE</p>
       <div className={styles.submitForm}>
         <div className={styles.formInput}>
-          <input type='email' placeholder='email@email.com' />
-          <button onClick={handleClick}>SUBSCRIBE</button>
+          <input type='email' placeholder='email@email.com' onChange={handleChange} />
+          <button onClick={handleClick}>
+            {isSubscribing ? 'SUSCRIBING...' : 'SUBSCRIBE'}
+          </button>
         </div>
+        {resultShow && (
+          <p className={`${styles.resultText} ${isError ? styles.error : ''}`}>
+            {isError ? 'Something went wrong!' : 'Successfully done!'}
+          </p>
+        )}
       </div>
     </div>
   )
