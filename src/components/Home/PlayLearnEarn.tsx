@@ -20,7 +20,7 @@ export const PlayLearnEarn = () => {
             <div className={styles['container-title']}>
               <h2> LEARN </h2>
               <p>
-                TAutomation is becoming a bigger and bigger part of the workplace, so the skills people need to prosper professionally are changing again.People are becoming more valuable for their ability to assess and make good decisions, as well as their ability to effectively communicate, and the Red Cat Multiverse will help you hone those skills. <a href=''>Click here for more!</a>
+                Automation is becoming a bigger and bigger part of the workplace, so the skills people need to prosper professionally are changing. People are becoming more valuable for their ability to assess and make good decisions, as well as their ability to effectively communicate, and the RedCat Multiverse will help you hone those skills. <a href=''>Click here for more!</a>
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@ export const PlayLearnEarn = () => {
           <div className={styles['container-title']}>
             <h2> EARN </h2>
             <p>
-              Your NFTs are your gateway into the multiverse!Every RedCat Multiverse NFT is an in-game asset, for you to use and develop.In addition to their in-game value, your NFTs have real world value in cryptocurrency!Characters also come in several rarities, which also affect their overall value, making the few Legendary characters in the game special.There are also customizations and items which can only be earned, making them valuable flex, or valuable assets in the marketplace. <a href=''>Click here for more!</a>
+              Your NFTs are your gateway into the multiverse! Every RedCat Multiverse NFT is an in-game asset, for you to use and develop.In addition to their in-game value, your NFTs have real world value in cryptocurrency! Characters also come in several rarities, which affect their overall value, making the few Legendary characters in the game special.There are also customizations and items which can only be earned, making them valuable flex, or valuable assets in the marketplace. <a href=''>Click here for more!</a>
             </p>
           </div>
         </div>
