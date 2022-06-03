@@ -7,13 +7,13 @@ export const Carousel = () => {
     <div className={styles.slider}>
       <div className={styles.slides}>
         <div id="slide-1">
-          <img src="./images/HomeHero/tags/tag-2-left.png" alt="" />
+          <img src="./images/HomeHero/carousel/PlikpliCarousel.png" alt="" />
         </div>
         <div id="slide-2">
-          <img src="./images/HomeHero/tags/tag-2-right.png" alt="" />
+          <img src="./images/HomeHero/carousel/SanuraCarousel.png" alt="" />
         </div>
         <div id="slide-3">
-          <img src="./images/HomeHero/tags/tag-2-left.png" alt="" />
+          <img src="./images/HomeHero/carousel/WellsCarousel.png" alt="" />
         </div>
       </div>
       <Link href="#slide-1" scroll={false}>
