@@ -3,7 +3,7 @@ export const contents = [
     id: '0',
     title: "TEAM",
     numeration: "01",
-    label: "Here’s our team of the curious and crazy game changers.",
+    label: "Check out our team of curious (and crazy) game changers.",
     column: "column_1",
     item: 'item_e',
     image: "./images/community/community_01.png"
@@ -22,7 +22,7 @@ export const contents = [
     id: '2',
     title: "RCM LABS",
     numeration: "03",
-    label: "It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to learn skills that go beyond playing games and make them more employable?",
+    label: "It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to master skills that go beyond playing games and make them more employable?",
     column: "column_3",
     item: 'item_c',
     image: "./images/community/community_03.png"
@@ -49,7 +49,7 @@ export const contents = [
     id: '5',
     title: "UPDATES",
     numeration: "06",
-    label: "Keep up on the latest in the Red Cat Multiverse",
+    label: "Keep up on the latest in the RedCat Multiverse",
     column: "column_1",
     item: 'item_f',
     image: "./images/community/community_06.png"
@@ -118,21 +118,21 @@ export const teamMembers = [
 ];
 
 export const rcmLabsTexts = [
-  'In the Summer of 2021, we merged our 2019 research findings on soft skills with blockchain gaming and this is how the RedCat Multiverse was born with the world’s first Play-Learn-Earn model.',
-  'RedCat Multiverse is a highly engaging blockchain game that provides socio - emotional activities, building skill mastery and expanding relationships.',
-  'Our vision for RedCat Multiverse is that all citizens will  learn about themselves, others, patterns, motives, metaphors, motifs, relationships, skills, science, math, art, history, coding, languages, technology all inside a storytelling engine.'
+  'In the Summer of 2021, we merged our 2019 research findings on soft skills with blockchain gaming and this is how the RedCat Multiverse was born with the world’s first Play>>Learn>>Earn model.',
+  'RedCat Multiverse is a highly-engaging blockchain game that provides socio-emotional activities, building skill mastery and expanding relationships.',
+  'Our vision for RedCat Multiverse is that all citizens will learn about themselves, others, patterns, motives, metaphors, motifs, relationships, skills, science, math, art, history, coding, languages, technology all inside a storytelling engine.'
 ];
 
 export const rcmInsiderContents = [
   {
     title: 'MEERKAT BAG NFTS',
     texts: [
-      'Inspired by the Loot project, Meerkat Bag NFTs are utility NFTs which provide building block primitives, upon which a foundational asset class can be built within the RedCat Multiverse. Meerkat Bags provide an opportunity to start with the content, before moving to gameplay, which in turn creates a purpose- driven community, rather than a product.Meerkat Bags are a collection of 888 NFTs, which have a unique combination of four character traits such as power skills, positive personality traits, even personality traits, and quirky traits.',
-      'Meerkat Bags essentially provide a prompt or building block primitive - upon which a foundational Multiverse asset Genius can be built.Meerkat Bags are exclusively created for hyper social RedCat Multiverse community members. '
+      'Meerkat Bag NFTs are utility NFTs which provide building block primitives, upon which a foundational asset class can be built within the RedCat Multiverse. Meerkat Bags provide an opportunity to start with the content, before moving to gameplay, which in turn creates a purpose-driven community, rather than a product. Meerkat Bags are a collection of 888 NFTs, which have a unique combination of four character traits such as power skills, positive personality traits, even personality traits and quirky traits.',
+      'Meerkat Bags essentially provide a prompt or building block primitive - upon which a foundational Multiverse asset Genius can be built. Meerkat Bags are exclusively created for hypersocial RedCat Multiverse community members.'
     ]
   },
   {
     title: 'RCM FELLOWS',
-    texts: ['We are also building tools to bridge the gap between the real world as well as existing Web 2.0 platforms like YouTube and Web 3.0 platforms.RCM Insiders who substantially contribute to multiverse development will become eligible to be RCM Fellows, important members who will be responsible for shaping this engagement and potentially get compensated for their contribution.']
+    texts: ['RCM Insiders who substantially contribute to multiverse development will become eligible to be RCM Fellows, important members who will be responsible for shaping this engagement and potentially be compensated for their contribution.']
   }
 ];

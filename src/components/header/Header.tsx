@@ -14,7 +14,7 @@ const headerLinks = [
   { name: 'Whitepaper', link: 'whitepaper', finished: true },
   { name: 'Roadmap', link: 'roadmap', finished: true },
   { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
-  { name: 'Play-Learn-Earn', link: 'play-learn-earn', finished: true },
+  { name: 'Play>>Learn>>Earn', link: 'play-learn-earn', finished: true },
   { name: 'Careers', link: 'careers', finished: true },
   { name: 'Connect', link: 'connect', finished: true },
 ]
