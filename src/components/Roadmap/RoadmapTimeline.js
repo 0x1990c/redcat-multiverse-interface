@@ -53,7 +53,18 @@ const contents = [
   {
     id: '5',
     title: 'New Era of Smart Fun Expands',
-    bullets: ['Live design balance updates', 'New campaigns & more power skills', 'New Figment NFTs(characters)', 'Visual upgrades with more universes', 'Land in the Convergence & PVE game mode', '3rd party and community content', 'Introduction of DAOs', 'Open metaverse'],
+    bullets: [
+      'Live design balance updates',
+      'New campaigns & more power skills',
+      'New Figment NFTs(characters)',
+      'Introduction of DAOs',
+      'Introduction of DEFI Liquidity Pools',
+      'Visual upgrades with more universes',
+      'Land in the Convergence & PVE game mode',
+      '3rd party and community content',
+      'Introduction of DAOs',
+      'Open metaverse'
+    ],
     buttonLabel: 'Future',
     period: '2023 & Beyond',
     alignment: 'right',
