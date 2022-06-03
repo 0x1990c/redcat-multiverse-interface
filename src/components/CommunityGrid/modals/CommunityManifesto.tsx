@@ -14,7 +14,7 @@ const CommunityManifesto = () => {
         <p>Here’s to the game changers who, as Steve Jobs said, “stay hungry, stay foolish…”</p>
         <p>Meet Sanura, the Red Cat. Together, you will tear down antiquated walls and reimagine a better future!</p>
       </div>
-      <div className={`${styles.item} ${styles.backBlack}`}>
+      <div className={`${styles.item} ${styles.backDarkBlue}`}>
         Together, we can build more immersive experiences!
       </div>
       <div className={`${styles.item} ${styles.backYellow}`}>

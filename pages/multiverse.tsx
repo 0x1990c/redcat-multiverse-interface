@@ -7,9 +7,15 @@ import LoreBigTitleSection from '../src/components/Lore/components/LoreBigTitleS
 import LoreSubTitleSection from '../src/components/Lore/components/LoreSubTitleSection';
 import FigmentCard from '../src/components/Lore/components/LoreFigmentCard';
 import { useTheme } from 'next-themes'
-import { FIGMENTS_TITLE, FIGMENTS_TEXTS, RED_CAT_MULTIVERSE, RED_CAT_MULTIVERSE_TEXTS, RED_CAT_CONTENTS, FIGMENTS_CARDS } from '../src/components/Lore/constants';
+import {
+  FIGMENTS_TITLE,
+  FIGMENTS_TEXTS,
+  RED_CAT_MULTIVERSE,
+  RED_CAT_MULTIVERSE_TEXTS,
+  RED_CAT_CONTENTS,
+  FIGMENTS_CARDS
+} from '../src/components/Lore/constants';
 import styles from '../src/styles/multiverse.module.scss'
-import LoreFooter from '../src/components/Lore/components/LoreFooter';
 
 
 const Lore: NextPage = () => {
@@ -20,7 +26,7 @@ const Lore: NextPage = () => {
       <Container className={`${styles.container} ${styles.hero_banner}`}>
         <GradientText
           element='h1'
-          text='LORE'
+          text='MULTIVERSE'
           innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
@@ -44,8 +50,6 @@ const Lore: NextPage = () => {
           ))}
         </div>
       </div>
-      {/* LORE footer - rocket cat */}
-      <LoreFooter />
     </div>
   )
 }
