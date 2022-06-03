@@ -6,7 +6,7 @@ const CommunityRCMLabs = () => {
     <div className={styles.rcmLabsContent}>
       <div className={styles.leftCol}>
         <p className={styles.rcmLabsDesc}>
-          It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to learn skills that go beyond playing games and make them more employable?
+          It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to master skills that go beyond playing games and make them more employable?
         </p>
         {rcmLabsTexts.map((txt: any, idx: any) => (<p key={idx} className={styles.storyTxt}>
           {txt}

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Router from "next/router";
 import styles from './carousel.module.scss'
 
 export const Carousel = () => {
@@ -10,7 +9,7 @@ export const Carousel = () => {
           <img src="./images/community/insiders/slider_1.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>Nick name</span>
+              Made by:&nbsp;<span>SLnZ#0178</span>
             </div>
           </div>
         </div>
@@ -18,7 +17,7 @@ export const Carousel = () => {
           <img src="./images/community/insiders/slider_2.jpg" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>Nick name</span>
+              Made by:&nbsp;<span>Defa Bad Holder#3190</span>
             </div>
           </div>
         </div>
@@ -26,7 +25,7 @@ export const Carousel = () => {
           <img src="./images/community/insiders/slider_3.jpg" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>Nick name</span>
+              Made by:&nbsp;<span>RyTiex#5590</span>
             </div>
           </div>
         </div>

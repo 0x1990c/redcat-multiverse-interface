@@ -12,13 +12,13 @@ const CommunityManifesto = () => {
       </div>
       <div className={`${styles.item} ${styles.backOrangeRed}`}>
         <p>Here’s to the game changers who, as Steve Jobs said, “stay hungry, stay foolish…”</p>
-        <p>Meet Sanura, the RedCat. Together, you will tear down antiquated walls, and reimagine a better future!</p>
+        <p>Meet Sanura, the Red Cat. Together, you will tear down antiquated walls and reimagine a better future!</p>
       </div>
       <div className={`${styles.item} ${styles.backBlack}`}>
         Together, we can build more immersive experiences!
       </div>
       <div className={`${styles.item} ${styles.backYellow}`}>
-        Let’s learn, grow, and dream…together!
+        Let’s learn, grow and dream…together!
       </div>
     </div>
     <div className={styles.rightCol}>

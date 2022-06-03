@@ -9,7 +9,7 @@ const contents = [
   {
     id: '0',
     title: 'The Red Cat Arrives',
-    bullets: ['Pre-production started', 'Core design completed', 'Meerkat Bag NFTs minted'],
+    bullets: ['Pre-production started', 'Core design completed', 'First minting of Meerkat Bag NFTs', 'RedCat Multiverse community begins'],
     buttonLabel: 'Done',
     period: 'Q4 2021 & Q1 2022',
     alignment: 'left',
@@ -17,25 +17,26 @@ const contents = [
   {
     id: '1',
     title: 'First Looks',
-    bullets: ['Multiverse video'],
+    bullets: ['Multiverse video', 'RedCat Multiverse game simulator built in-house', 'RedCat Multiverse White Paper published', 'Pre-seed funding finalized'],
     buttonLabel: 'Upcoming',
     period: 'Q2 2022',
     alignment: 'right',
   },
   {
     id: '2',
-    title: 'THE GIFTED ARRIVE',
-    bullets: ['Genesis NFT collection sale'],
+    title: 'Inception Begins',
+    bullets: ['Inception NFT collection announced', 'Inception NFT Sale (Summer 2022)'],
     buttonLabel: 'Upcoming',
     period: 'Q2 2022',
     alignment: 'left',
   },
   {
     id: '3',
-    title: 'GIFTED ORIENTATION',
+    title: 'RedCat Multiverse Orientation',
     bullets: [
-      'Closed Beta release <span style="color: #e83324;">(Initially for Genesis NFT holders)</span>',
-      'dNFT collection sale <span style="color: #7192f3;">(open to public)</span>'
+      'Closed Beta release <span style="color: #e83324;">(Initially for Inception NFT Holders and select RCM Insiders)</span>',
+      'dNFT collection sale <span style="color: #7192f3;">(open to public)</span>',
+      'RedCat Multiverse Tokenomics published'
     ],
     buttonLabel: 'Future',
     period: 'Q3 2022',
