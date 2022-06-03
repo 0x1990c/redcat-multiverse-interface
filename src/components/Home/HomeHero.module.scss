@@ -257,7 +257,6 @@
 
 
       p {
-        font-size: 18px !important;
 
         &::after {
           left: 128px !important;
@@ -355,7 +354,7 @@
 
   // annoucements
   .container-annoucements {
-    margin: 0px 100px;
+    margin: 0px 48px;
   }
 
   .containter-img {
@@ -364,7 +363,7 @@
 
   // multiverse{
   .container-multiverse {
-    margin: 0px 150px;
+    margin: 0px 55px;
   }
 
 }
@@ -688,18 +687,14 @@
 
 
 @media screen and(max-width: 576px) {
-
-  .container-title {
-
+  .container-conversation-text {
     p {
-      font-size: 24px;
-
-      a {
-        color: $orange-red;
-        text-decoration: underline;
-      }
+      font-size: 13px !important;
+      line-height: 16px !important;
     }
   }
+
+
 
   .subtitle {
     font-size: 33px !important;
@@ -772,8 +767,17 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 16px !important;
       font-family: 'Gotham Ultra';
+    }
+
+    p {
+      font-size: 14px !important;
+
+      a {
+        color: $orange-red;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -805,11 +809,12 @@
           text-transform: uppercase;
           font-weight: 900;
           margin-top: 15px;
+          margin-bottom: 15px;
         }
 
         p {
           text-align: left;
-          font-size: 18px;
+          font-size: 13px;
           margin-bottom: 20px;
         }
 
@@ -833,6 +838,10 @@
 
   .container-multiverse {
     padding: 0px 45px;
+  }
+
+  .container-carousel {
+    padding-top: 0px !important;
   }
 }
 
