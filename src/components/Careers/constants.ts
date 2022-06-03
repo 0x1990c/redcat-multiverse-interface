@@ -6,6 +6,6 @@ export const description = [
 ]
 
 export const values = {
-  title: "RCM LAB VALUES:",
+  title: "RCMLABS VALUES",
   texts: ["RCM Labs team members seek excellence and continuous improvement in everything they do. They drive initiatives, seek feedback and iterate with momentum. RCM Labs team members are curious about the ecosystem and the world.  They are never afraid to bring new ideas and initiatives forward."]
 };
