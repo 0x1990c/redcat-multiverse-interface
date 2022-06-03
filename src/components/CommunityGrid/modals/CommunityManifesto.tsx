@@ -22,7 +22,7 @@ const CommunityManifesto = () => {
       </div>
     </div>
     <div className={styles.rightCol}>
-      <img src='./images/community/manifesto@2x.png' />
+      <img src='./images/community/manifesto_galss.jpeg' />
     </div>
   </div >);
 };
