@@ -1,6 +1,15 @@
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 import styles from '../../../styles/ple.module.scss';
 
 const PLETagCommentMobile = ({ text }: any) => {
+  const { theme, systemTheme } = useTheme()
+  const [currentTheme, setCurrentTheme] = useState<string | any>('light');
+
+  useEffect(() => {
+    theme === "system" ? setCurrentTheme(systemTheme) : setCurrentTheme(theme);
+  }, [setCurrentTheme, systemTheme, theme]);
+
   return (<div className={styles.pleTagCommentMobile}>
     <div className={styles.pleTagCommentBoxMobile}>
       <svg width="329" height="258" viewBox="0 0 329 258" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -16,10 +25,9 @@ const PLETagCommentMobile = ({ text }: any) => {
         </defs>
         <g transform="matrix(-1 0 0 1 323 6)" fill="none" fillRule="evenodd">
           <use fill="#000" filter="url(#s9ufl84j0a)" xlinkHref="#rdsrutumrb" />
-          <use stroke="#F9C930" strokeWidth="2" fill="#FFF" xlinkHref="#rdsrutumrb" />
+          <use stroke="#F9C930" strokeWidth="2" fill={currentTheme === 'dark' ? '#1B1628' : '#FFF'} xlinkHref="#rdsrutumrb" />
         </g>
       </svg>
-
       <p>{text}</p>
     </div>
     <img src="./images/tag.png" alt="TAG" />
