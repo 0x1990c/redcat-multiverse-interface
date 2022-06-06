@@ -15,6 +15,9 @@ export const Carousel = () => {
         <div id="slide-3">
           <img src="./images/HomeHero/carousel/PlikpliCarousel.png" alt="" />
         </div>
+        <div id="slide-4">
+          <img src="./images/HomeHero/carousel/FuYijunCarousel.jpg" alt="" />
+        </div>
       </div>
       <Link href="#slide-1" scroll={false}>
         <span>1</span>
@@ -24,6 +27,9 @@ export const Carousel = () => {
       </Link>
       <Link href="#slide-3" scroll={false}>
         <span>3</span>
+      </Link>
+      <Link href="#slide-4" scroll={false}>
+        <span>4</span>
       </Link>
     </div>
   )
