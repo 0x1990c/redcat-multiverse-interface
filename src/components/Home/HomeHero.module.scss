@@ -217,6 +217,11 @@
   }
 }
 
+.container-info-description {
+  display: flex;
+  align-items: center;
+}
+
 
 /*
   -------------------------
@@ -460,7 +465,6 @@
     }
 
     .container-img {
-      min-width: 310px;
       height: auto !important;
     }
   }
@@ -596,6 +600,7 @@
 
   .container-title {
     padding: 45px 35px;
+    margin-bottom: 15px;
 
     h1 {
       font-family: 'Gotham Ultra';
@@ -669,7 +674,6 @@
     }
 
     .container-img {
-      height: 270px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 50%;
@@ -759,6 +763,8 @@
   // annoucements
 
   .container-title {
+    margin-bottom: 15px;
+
     h1 {
       font-family: 'Gotham Ultra';
       font-size: 38px;
@@ -828,7 +834,7 @@
     }
 
     .container-img {
-      height: 270px;
+      height: 300px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 50%;
@@ -847,6 +853,8 @@
 
 @media screen and(max-width: 480px) {
   .container-title {
+    margin-bottom: 15px;
+
     h1 {
       font-size: 28px !important;
     }
