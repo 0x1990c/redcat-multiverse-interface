@@ -19,6 +19,7 @@ export const Carousel = () => {
           <img src="./images/HomeHero/carousel/FuYijunCarousel.jpg" alt="" />
         </div>
       </div>
+
       <Link href="#slide-1" scroll={false}>
         <span>1</span>
       </Link>
