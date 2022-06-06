@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react'
 import styles from './HomeHero.module.scss'
 import { Carousel } from './Carousel';
