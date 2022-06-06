@@ -1,6 +1,6 @@
 .container {
   padding-top: 180px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .hero_banner {
@@ -12,33 +12,66 @@
 }
 
 .tagCommentContainer {
-  position: absolute;
-  bottom: -120px;
-  left: 90px;
+  position: relative;
+  display: flex;
 }
 
 .pageContentContainer {
-  margin-left: 90px;
-  max-width: 1188px;
+  width: 100%;
+  padding-left: 90px;
+  max-width: 1237px;
   padding-top: 50px;
+  padding-right: 50px;
 }
 
 .redCatTitle {
-  margin-bottom: 60px;
+  margin-top: 120px;
 }
 
 .figmentTitle {
-  margin-top: 150px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 .figmentCardContainer {
   display: flex;
-  max-width: 80%;
+  max-width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
 
   .cardItem {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pageContentContainer {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pageContentContainer {
+    // width: ;
+    padding: 35px;
+    padding-top: 0;
+  }
+
+  .tagCommentContainer {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .figmentCardContainer {
+
+    .cardItem {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .figmentCardContainer {
+    flex-direction: column;
   }
 }
