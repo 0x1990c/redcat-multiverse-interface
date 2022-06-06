@@ -14,10 +14,10 @@ export const Carousel = () => {
           </div>
         </div>
         <div id="slide-2" className={styles.sliderItem}>
-          <img src="./images/community/insiders/slider_2.jpg" alt="" />
+          <img src="./images/community/insiders/slider_2.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>Defa Bad Holder#3190</span>
+              Made by:&nbsp;<span>Lindemann</span>
             </div>
           </div>
         </div>

@@ -1,6 +1,11 @@
 import styles from './CommunityManifesto.module.scss';
+import { useTheme } from 'next-themes';
 
 const CommunityManifesto = () => {
+  const { theme, systemTheme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+
   return (<div className={styles.manifestoContainer}>
     <div className={styles.leftCol}>
       <p className={styles.subTitle}>A brand new journey starts…</p>
@@ -12,7 +17,7 @@ const CommunityManifesto = () => {
       </div>
       <div className={`${styles.item} ${styles.backOrangeRed}`}>
         <p>Here’s to the game changers who, as Steve Jobs said, “stay hungry, stay foolish…”</p>
-        <p>Meet Sanura, the Red Cat. Together, you will tear down antiquated walls and reimagine a better future!</p>
+        <p>Meet Sanura, The Red Cat. Together, you will tear down antiquated walls and reimagine a better future!</p>
       </div>
       <div className={`${styles.item} ${styles.backDarkBlue}`}>
         Together, we can build more immersive experiences!
@@ -22,7 +27,8 @@ const CommunityManifesto = () => {
       </div>
     </div>
     <div className={styles.rightCol}>
-      <img src='./images/community/manifesto_galss.jpeg' />
+      <img src={currentTheme === 'dark' ? './images/community/manifesto_glasses_dm.png' : './images/community/manifesto_glasses.png'} />
+      {/* <img src='./images/community/manifesto_galsses.png' /> */}
     </div>
   </div >);
 };
