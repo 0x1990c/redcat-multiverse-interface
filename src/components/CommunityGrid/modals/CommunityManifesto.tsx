@@ -1,6 +1,11 @@
 import styles from './CommunityManifesto.module.scss';
+import { useTheme } from 'next-themes';
 
 const CommunityManifesto = () => {
+  const { theme, systemTheme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+
   return (<div className={styles.manifestoContainer}>
     <div className={styles.leftCol}>
       <p className={styles.subTitle}>A brand new journey starts…</p>
@@ -22,7 +27,8 @@ const CommunityManifesto = () => {
       </div>
     </div>
     <div className={styles.rightCol}>
-      <img src='./images/community/manifesto_galss.jpeg' />
+      <img src={currentTheme === 'dark' ? './images/community/manifesto_glasses_dm.png' : './images/community/manifesto_glasses.png'} />
+      {/* <img src='./images/community/manifesto_galsses.png' /> */}
     </div>
   </div >);
 };
