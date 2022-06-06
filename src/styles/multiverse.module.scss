@@ -35,9 +35,13 @@
 
 .figmentCardContainer {
   display: flex;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1360px;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 90px;
+  padding-top: 50px;
+  padding-right: 50px;
 
   .cardItem {
     margin-bottom: 60px;
@@ -45,16 +49,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .pageContentContainer {
+
+  .pageContentContainer,
+  .figmentCardContainer {
     padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+
   .pageContentContainer {
-    // width: ;
     padding: 35px;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .tagCommentContainer {
@@ -63,10 +70,16 @@
   }
 
   .figmentCardContainer {
+    padding: 35px;
+    padding-top: 0;
 
     .cardItem {
       margin-bottom: 30px;
     }
+  }
+
+  .redCatTitle {
+    margin-top: 30px;
   }
 }
 

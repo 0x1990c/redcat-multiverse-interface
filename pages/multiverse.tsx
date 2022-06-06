@@ -42,12 +42,12 @@ const Lore: NextPage = () => {
 
         {/* FIGMENTS */}
         <LoreBigTitleSection className={styles.figmentTitle} title={FIGMENTS_TITLE} texts={FIGMENTS_TEXTS} />
-        {/* FIGMENTS cards */}
-        <div className={styles.figmentCardContainer}>
-          {FIGMENTS_CARDS.map((cardContent, idx) => (
-            <FigmentCard key={idx} className={styles.cardItem} name={cardContent.name} text={cardContent.text} image={cardContent.image} />
-          ))}
-        </div>
+      </div>
+      {/* FIGMENTS cards */}
+      <div className={styles.figmentCardContainer}>
+        {FIGMENTS_CARDS.map((cardContent, idx) => (
+          <FigmentCard key={idx} className={styles.cardItem} name={cardContent.name} text={cardContent.text} image={cardContent.image} />
+        ))}
       </div>
     </div>
   )
