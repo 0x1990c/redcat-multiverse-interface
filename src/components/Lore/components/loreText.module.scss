@@ -1,8 +1,8 @@
 @import 'src/styles/colors.scss';
 
 .bigTitle {
-  font-family: 'Gotham';
-  font-size: 62px;
+  font-family: 'Gotham Ultra';
+  font-size: 60px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -13,24 +13,40 @@
 }
 
 .subTitle {
-  font-family: 'Gotham';
+  font-family: 'Gotham Ultra';
   font-size: 48px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: --var(--font-color);
+  color: var(--font-color);
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .textSentence {
-  font-family: Bariol;
+  font-family: 'Bariol';
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: --var(--font-color);
+  color: var(--font-color);
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bigTitle {
+    font-size: 32px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .textSentence {
+    font-size: 14px;
+  }
 }

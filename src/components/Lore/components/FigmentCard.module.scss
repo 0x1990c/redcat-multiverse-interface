@@ -8,8 +8,8 @@
   display: flex;
 
   .cardImage {
-    width: 151px;
-    height: 151px;
+    height: 100%;
+    width: auto;
     border-right: solid 2px #e83324;
     border-radius: 8px;
   }
@@ -21,7 +21,7 @@
     margin-left: 20px;
 
     .cardName {
-      font-family: 'Gotham';
+      font-family: 'Gotham Medium';
       font-size: 28px;
       font-weight: 900;
       font-stretch: normal;
@@ -43,5 +43,33 @@
       letter-spacing: normal;
       color: --var(--font-color);
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardContainer {
+    width: 100%;
+    max-width: 315px;
+    height: 124px;
+
+    .cardContent {
+      margin-left: 15px;
+
+      .cardName {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .cardText {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cardContainer {
+    width: 100%;
+    max-width: 100%;
   }
 }
