@@ -8,9 +8,9 @@ export const ConversationBot1 = ({ tag }: any) => {
           <img src={`${tag.img}`} alt="" />
         </div>
         <div className={styles['container-conversation-text']}>
-          <p className={styles['paragraph']}>
-            {tag.message}
-          </p>
+          <div className={styles['paragraph']}>
+            <p dangerouslySetInnerHTML={{ __html: tag.message }}></p>
+          </div>
         </div>
       </div>
     </div>

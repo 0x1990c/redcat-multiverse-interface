@@ -92,7 +92,6 @@
 
     .container-conversation-text {
       position: relative;
-      margin: 1em 0 3em;
       border: 2px solid $yellow;
       border-radius: 8px;
       display: flex;
@@ -211,10 +210,10 @@
 
 .container-play-learn-carousel {
   display: flex;
-  align-items: center;
 
   .container-carousel {
     padding: 50px;
+    padding-top: 149px;
   }
 }
 
@@ -258,7 +257,6 @@
 
 
       p {
-        font-size: 18px !important;
 
         &::after {
           left: 128px !important;
@@ -321,30 +319,34 @@
   }
 
   .container-conversation-text {
+    margin: 1em 0 9em !important;
     max-width: 74%;
-    height: 220px !important;
   }
 
+
   .container-conversation-text-2 {
+    margin: 1em 0 9em !important;
     max-width: 74%;
     height: 220px !important;
   }
 
   .container-conversation-img {
+    display: flex;
+    align-items: flex-end;
     padding: 0px 30px !important;
 
     img {
-      margin-top: 160px !important;
       min-width: 225px;
       max-width: 225px;
     }
   }
 
   .container-conversation-img-2 {
+    display: flex;
+    align-items: flex-end;
     padding: 0px 30px !important;
 
     img {
-      margin-top: 160px !important;
       min-width: 225px;
       max-width: 225px;
     }
@@ -352,7 +354,7 @@
 
   // annoucements
   .container-annoucements {
-    margin: 0px 100px;
+    margin: 0px 48px;
   }
 
   .containter-img {
@@ -361,7 +363,7 @@
 
   // multiverse{
   .container-multiverse {
-    margin: 0px 150px;
+    margin: 0px 55px;
   }
 
 }
@@ -563,12 +565,14 @@
   }
 
   .container-conversation-text {
+    margin: 1em 0 3em;
     height: auto;
     padding: 20px 15px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
   }
 
   .container-conversation-text-2 {
+    margin: 1em 0 3em;
     height: auto;
     padding: 20px 15px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
@@ -591,7 +595,7 @@
   // annoucements
 
   .container-title {
-    padding: 45px 0px;
+    padding: 45px 35px;
 
     h1 {
       font-family: 'Gotham Ultra';
@@ -683,6 +687,14 @@
 
 
 @media screen and(max-width: 576px) {
+  .container-conversation-text {
+    p {
+      font-size: 13px !important;
+      line-height: 16px !important;
+    }
+  }
+
+
 
   .subtitle {
     font-size: 33px !important;
@@ -716,12 +728,14 @@
   }
 
   .container-conversation-text {
+    margin: 1em 0 3em;
     height: auto;
     padding: 20px 15px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
   }
 
   .container-conversation-text-2 {
+    margin: 1em 0 3em;
     height: auto;
     padding: 20px 15px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
@@ -753,8 +767,17 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 16px !important;
       font-family: 'Gotham Ultra';
+    }
+
+    p {
+      font-size: 14px !important;
+
+      a {
+        color: $orange-red;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -786,11 +809,12 @@
           text-transform: uppercase;
           font-weight: 900;
           margin-top: 15px;
+          margin-bottom: 15px;
         }
 
         p {
           text-align: left;
-          font-size: 18px;
+          font-size: 13px;
           margin-bottom: 20px;
         }
 
@@ -814,6 +838,10 @@
 
   .container-multiverse {
     padding: 0px 45px;
+  }
+
+  .container-carousel {
+    padding-top: 0px !important;
   }
 }
 
