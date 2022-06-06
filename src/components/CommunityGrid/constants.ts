@@ -12,7 +12,7 @@ export const contents = [
     id: '1',
     title: "WHITEPAPER",
     numeration: "02",
-    label: "Want to know more about what we’re doing?",
+    label: "Want to know more about what we’re building?",
     column: "column_2",
     item: 'item_a',
     text: "",

@@ -4,7 +4,7 @@ export const careersInfo = [
     colorText: 'color-red',
     category: 'COMMUNITY',
     title: 'Community Lead',
-    description: 'We are looking for passionate and highly creative Community Lead in North America to lead the development and expansion of our web3 community in North America.',
+    description: 'We are looking for a passionate and highly creative Community Lead in North America to lead the development and expansion of our web3 community in North America.',
     button: 'Apply here',
     external: 'https://rcmlabs.applytojob.com/apply/B9tgGM70tE/Community-Lead'
   },
