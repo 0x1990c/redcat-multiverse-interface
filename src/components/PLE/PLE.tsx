@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import GradientText from '../gradientText/GradientText';
 import { items } from './constants';
@@ -15,7 +15,13 @@ import PLETabBarBtn from './mobile/PLETabBarBtn';
 const PLE = () => {
   const { isMobile } = useScreenWidth();
   const { theme, systemTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
+  const [currentTheme, setCurrentTheme] = useState<string | any>('light');
+
+  // const currentTheme = theme === "system" ? systemTheme : theme
+
+  useEffect(() => {
+    theme === "system" ? setCurrentTheme(systemTheme) : setCurrentTheme(theme);
+  }, [setCurrentTheme, systemTheme, theme]);
 
   const [activeTabIdx, setActiveTabIdx] = useState(0);
 
@@ -37,7 +43,7 @@ const PLE = () => {
     setActiveTabIdx((activeTabIdx + 1) % 3);
   }
 
-  return (<>
+  return (<div>
     {/* Desktop version  */}
     <div className={`${styles.container}`}>
       <img src='./images/ple/ple_background.png' className={styles.background} />
@@ -59,12 +65,12 @@ const PLE = () => {
         {/* Description Box */}
         <PLEDescriptionBox texts={items[activeTabIdx].texts} onScrollAtBottom={handleBoxScrollToBottom} />
         {/* Tag comment */}
-        <PLETagComment text={items[activeTabIdx].comment} currentTheme={currentTheme} />
+        <PLETagComment text={items[activeTabIdx].comment} />
       </div>
     </div>
     {/* Mobile version */}
     <div className={styles.mobileContainer}>
-      <PLETagCommentMobile text={items[activeTabIdx].comment} currentTheme={currentTheme} />
+      <PLETagCommentMobile text={items[activeTabIdx].comment} />
       <div className={styles.title}>
         <GradientText
           element='h1'
@@ -73,17 +79,14 @@ const PLE = () => {
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
       </div>
-      {/* Description Box */}
       <PLEDescriptionBoxMobile texts={items[activeTabIdx].texts} />
-      {/* TAB */}
       <div className={styles.pleTabBarMobile}>
-        {/* <div></div> */}
         {items.map((tab, idx) => (
           <PLETabBarBtn key={idx} text={tab.title} active={idx === activeTabIdx} onClick={() => handleMobileTabClick(idx)} />
         ))}
       </div>
     </div>
-  </>
+  </div>
 
   )
 }

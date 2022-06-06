@@ -1,6 +1,15 @@
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 import styles from '../../../styles/ple.module.scss';
 
-const PLETagCommentMobile = ({ text, currentTheme }: any) => {
+const PLETagCommentMobile = ({ text }: any) => {
+  const { theme, systemTheme } = useTheme()
+  const [currentTheme, setCurrentTheme] = useState<string | any>('light');
+
+  useEffect(() => {
+    theme === "system" ? setCurrentTheme(systemTheme) : setCurrentTheme(theme);
+  }, [setCurrentTheme, systemTheme, theme]);
+
   return (<div className={styles.pleTagCommentMobile}>
     <div className={styles.pleTagCommentBoxMobile}>
       <svg width="329" height="258" viewBox="0 0 329 258" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
