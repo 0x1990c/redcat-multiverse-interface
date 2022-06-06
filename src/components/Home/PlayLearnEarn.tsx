@@ -20,7 +20,7 @@ export const PlayLearnEarn = () => {
             <div className={styles['container-title']}>
               <h2> LEARN </h2>
               <p>
-                TAutomation is becoming a bigger and bigger part of the workplace, so the skills people need to prosper professionally are changing again.People are becoming more valuable for their ability to assess and make good decisions, as well as their ability to effectively communicate, and the Red Cat Multiverse will help you hone those skills. <a href=''>Click here for more!</a>
+                Automation is becoming a bigger and bigger part of the workplace, so the skills people need to prosper professionally are changing again.People are becoming more valuable for their ability to assess and make good decisions, as well as their ability to effectively communicate, and the Red Cat Multiverse will help you hone those skills. <a href=''>Click here for more!</a>
               </p>
             </div>
           </div>
