@@ -40,7 +40,7 @@ const PLE = () => {
   return (<>
     {/* Desktop version  */}
     <div className={`${styles.container}`}>
-      <img src='./images/ple/ple_background.jpg' className={styles.background} />
+      <img src='./images/ple/ple_background.png' className={styles.background} />
       <div className={styles.title}>
         <GradientText
           element='h1'
@@ -59,12 +59,12 @@ const PLE = () => {
         {/* Description Box */}
         <PLEDescriptionBox texts={items[activeTabIdx].texts} onScrollAtBottom={handleBoxScrollToBottom} />
         {/* Tag comment */}
-        <PLETagComment text={items[activeTabIdx].comment} />
+        <PLETagComment text={items[activeTabIdx].comment} currentTheme={currentTheme} />
       </div>
     </div>
     {/* Mobile version */}
     <div className={styles.mobileContainer}>
-      <PLETagCommentMobile text={items[activeTabIdx].comment} />
+      <PLETagCommentMobile text={items[activeTabIdx].comment} currentTheme={currentTheme} />
       <div className={styles.title}>
         <GradientText
           element='h1'

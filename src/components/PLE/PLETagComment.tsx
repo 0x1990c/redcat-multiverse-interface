@@ -1,6 +1,6 @@
 import styles from '../../styles/ple.module.scss';
 
-const PLETagComment = ({ text }: any) => {
+const PLETagComment = ({ text, currentTheme }: any) => {
   return (<div className={styles.pleTagComment}>
     <div className={styles.pleTagCommentBox}>
       <svg width="435" height="253" viewBox="0 0 435 253" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +16,7 @@ const PLETagComment = ({ text }: any) => {
         </defs>
         <g transform="matrix(-1 0 0 1 1276.97 -294)" fill="none" fillRule="evenodd">
           <use fill="#000" filter="url(#v60u4zv1ra)" xlinkHref="#44br4ndtnb" />
-          <use stroke="#F9C930" strokeWidth="2" fill="#1B1628" xlinkHref="#44br4ndtnb" />
+          <use stroke="#F9C930" strokeWidth="2" fill={currentTheme === 'dark' ? '#1B1628' : '#FFF'} xlinkHref="#44br4ndtnb" />
         </g>
       </svg>
       <p>{text}</p>
