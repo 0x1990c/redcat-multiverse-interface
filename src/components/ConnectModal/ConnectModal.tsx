@@ -27,7 +27,8 @@ const ConnectModal = ({ onClose }: any) => {
   }
 
   const backgroundImg = () => {
-    return isMobile ? './images/community/connect_form_mobile.png' : './images/community/connect_form_desktop.png';
+    // return isMobile ? './images/community/connect_form_mobile.png' : './images/community/connect_form_desktop.png';
+    return './images/community/community_05.png';
   }
 
   const handleClose = () => {

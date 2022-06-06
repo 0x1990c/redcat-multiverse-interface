@@ -12,7 +12,8 @@
   margin-top: 20px;
 
   .leftCol {
-    max-width: 673px;
+    width: 673px;
+    max-width: 60%;
 
     .subTitle {
       font-family: 'Gotham Medium';
@@ -61,12 +62,24 @@
 
   .rightCol {
     img {
-      width: 324px;
+      width: 33%;
+      max-width: 500px;
       position: absolute;
       bottom: 0;
-      right: 60px;
+      right: 30px;
     }
   }
+}
+
+@media screen and (max-width: 1300px) {
+  .manifestoContainer {
+    .rightCol {
+      img {
+        right: 10px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -88,9 +101,9 @@
 
       img {
         position: unset;
-        width: 190px;
+        width: 260px;
         float: right;
-        margin-top: 10px;
+        margin-top: 70px;
       }
     }
   }
