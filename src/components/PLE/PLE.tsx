@@ -1,5 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import GradientText from '../gradientText/GradientText';
 import { items } from './constants';
@@ -12,29 +13,43 @@ import PLETagCommentMobile from './mobile/PLETagCommentMobile';
 import PLEDescriptionBoxMobile from './mobile/PLEDescriptionBoxMobile';
 import PLETabBarBtn from './mobile/PLETabBarBtn';
 
-const PLE = () => {
+export default function PLE() {
   const { isMobile } = useScreenWidth();
   const { theme, systemTheme } = useTheme()
   const [currentTheme, setCurrentTheme] = useState<string | any>('light');
+  const router = useRouter();
 
+  const STEPS = ['play', 'learn', 'earn'];
   // const currentTheme = theme === "system" ? systemTheme : theme
 
   useEffect(() => {
     theme === "system" ? setCurrentTheme(systemTheme) : setCurrentTheme(theme);
   }, [setCurrentTheme, systemTheme, theme]);
 
+  useEffect(() => {
+    if (router.isReady) {
+      const urlStep = router?.query?.step ? router.query.step : '';
+      if (urlStep && STEPS.includes(urlStep.toString())) {
+        setActiveTabIdx(STEPS.indexOf(urlStep.toString()));
+      } else {
+        router.push({ pathname: `/play-learn-earn`, query: { step: 'play' } }, undefined, { shallow: true });
+        setActiveTabIdx(0);
+      }
+    }
+  }, [STEPS, router, router.query]);
+
   const [activeTabIdx, setActiveTabIdx] = useState(0);
 
   const handleTabClick = (tabIdx: any) => {
     if (tabIdx !== activeTabIdx) {
-      setActiveTabIdx(tabIdx);
+      router.push({ pathname: `/play-learn-earn`, query: { step: STEPS[tabIdx] } }, undefined, { shallow: true });
     }
   }
 
   const handleMobileTabClick = (tabIdx: any) => {
     if (tabIdx !== activeTabIdx) {
-      setActiveTabIdx(tabIdx);
-
+      // setActiveTabIdx(tabIdx);
+      router.push({ pathname: `/play-learn-earn`, query: { step: STEPS[tabIdx] } }, undefined, { shallow: true });
       window.scrollTo(0, 0);
     }
   }
@@ -59,7 +74,7 @@ const PLE = () => {
         {/* TAB */}
         <div className={styles.pleTabContainer}>
           {items.map((tab, idx) => (
-            <PLETabBar key={idx} active={idx === activeTabIdx} onClick={() => handleTabClick(idx)} />
+            <PLETabBar key={idx} active={idx === activeTabIdx} step={tab.title} onClick={() => handleTabClick(idx)} />
           ))}
         </div>
         {/* Description Box */}
@@ -90,5 +105,3 @@ const PLE = () => {
 
   )
 }
-
-export default PLE;
