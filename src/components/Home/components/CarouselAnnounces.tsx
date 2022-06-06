@@ -18,9 +18,11 @@ export const CarouselAnnounces = () => {
             images.map((image, index) => (
               <li key={index} className={styles['carousel__slide']}
                 style={{
+
                   backgroundImage: `url("${image.url}")`,
                   backgroundSize: '100%',
                   backgroundRepeat: 'no-repeat'
+
                 }}
               >
                 <div className={styles['carousel__snapper']}></div>
