@@ -29,6 +29,7 @@ const GradientText = (props: GradientTextProps) => {
       'background-clip': 'text',
       '-webkit-background-clip': 'text',
       '-moz-background-clip': 'text',
+      whiteSpace: 'nowrap',
       fontSize: fontSize,
     }
   })

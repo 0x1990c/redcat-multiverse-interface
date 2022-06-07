@@ -37,16 +37,16 @@ export const FIGMENTS_CARDS = [
     text: 'Avatar of communication',
     image: './images/profile.png'
   },
-  {
-    id: 1,
-    name: 'Adela',
-    text: 'Avatar of communication',
-    image: './images/profile.png'
-  },
-  {
-    id: 2,
-    name: 'Adela',
-    text: 'Avatar of communication',
-    image: './images/profile.png'
-  }
+  // {
+  //   id: 1,
+  //   name: 'Adela',
+  //   text: 'Avatar of communication',
+  //   image: './images/profile.png'
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Adela',
+  //   text: 'Avatar of communication',
+  //   image: './images/profile.png'
+  // }
 ]
