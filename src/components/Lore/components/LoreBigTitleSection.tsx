@@ -1,6 +1,5 @@
 import LoreBigTitle from './LoreBigTitle';
 import LoreTextSentence from './LoreTextSentence';
-import styles from './loreText.module.scss';
 
 const LoreBigTitleSection = ({ className, title, texts }: any) => {
   return (

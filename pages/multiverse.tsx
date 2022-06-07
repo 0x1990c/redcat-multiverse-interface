@@ -17,7 +17,6 @@ import {
 } from '../src/components/Lore/constants';
 import styles from '../src/styles/multiverse.module.scss'
 
-
 const Lore: NextPage = () => {
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
@@ -30,10 +29,10 @@ const Lore: NextPage = () => {
           innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
-        <TagComment className={styles.tagCommentContainer} />
       </Container>
       {/* Page contents */}
       <div className={styles.pageContentContainer}>
+        <TagComment className={styles.tagCommentContainer} />
         {/* THE RED CAT SECTION */}
         <LoreBigTitleSection className={styles.redCatTitle} title={RED_CAT_MULTIVERSE} texts={RED_CAT_MULTIVERSE_TEXTS} />
         {/* RED CAT SUB SECTIONS */}
@@ -43,12 +42,12 @@ const Lore: NextPage = () => {
 
         {/* FIGMENTS */}
         <LoreBigTitleSection className={styles.figmentTitle} title={FIGMENTS_TITLE} texts={FIGMENTS_TEXTS} />
-        {/* FIGMENTS cards */}
-        <div className={styles.figmentCardContainer}>
-          {FIGMENTS_CARDS.map((cardContent, idx) => (
-            <FigmentCard key={idx} className={styles.cardItem} name={cardContent.name} text={cardContent.text} image={cardContent.image} />
-          ))}
-        </div>
+      </div>
+      {/* FIGMENTS cards */}
+      <div className={styles.figmentCardContainer}>
+        {FIGMENTS_CARDS.map((cardContent, idx) => (
+          <FigmentCard key={idx} className={styles.cardItem} name={cardContent.name} text={cardContent.text} image={cardContent.image} />
+        ))}
       </div>
     </div>
   )
