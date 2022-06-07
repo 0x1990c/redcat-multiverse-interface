@@ -12,7 +12,7 @@ export const RED_CAT_CONTENTS = [
     subTitle: "Welcome to The Institute!",
     texts: [
       'To help achieve her mission, Sanura founded “The Institute for the Multiversal Convergence” (aka The Institute) as a place of learning for people to exchange ideas. Its campus is in the mountains overlooking Convergence City, a multiversal metropolis, away from the direct bustle of the city.',
-      'As one of the first groups of humans to enter Convergence City, you are privileged to have Sanura’s blessing to use her portals to travel the multiverse.You’re special and have an important job to do.'
+      'As one of the first groups of humans to enter Convergence City, you are privileged to have Sanura’s blessing to use her portals to travel the multiverse. You’re special and have an important job to do.'
     ]
   },
   {
