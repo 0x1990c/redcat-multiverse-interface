@@ -13,4 +13,22 @@
       font-size: 38px !important;
     }
   }
+
+  h2.gradient_text {
+    font-size: 60px;
+    letter-spacing: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    @media screen and (max-width: 576px) {
+      font-size: 30px !important;
+    }
+
+    @media screen and (max-width: 380px) {
+      font-size: 25px !important;
+    }
+  }
 }

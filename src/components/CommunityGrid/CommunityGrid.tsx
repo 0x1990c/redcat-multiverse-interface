@@ -22,9 +22,9 @@ const CommunityGrid = () => {
   const handleClick = (id: number) => {
     const numberId = parseInt(`${id}`);
 
-    document.body.style.overflowY = isModalOpen ? 'auto' : 'hidden';
-
     if (numberId === 0 || numberId === 2 || numberId === 3 || numberId === 4) {
+      document.body.style.overflowY = isModalOpen ? 'auto' : 'hidden';
+
       setIsModalOpen(!isModalOpen);
       setModalContent(contents[id]);
       return;
@@ -39,6 +39,13 @@ const CommunityGrid = () => {
     // Updates
     if (numberId === 5) {
       window.open('https://redcatmultiverse.substack.com/', '_blank');
+      return;
+    }
+
+    // press
+    if (numberId === 6) {
+      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      return;
     }
   }
 
@@ -107,12 +114,6 @@ const CommunityGrid = () => {
           </div>
         )
         }
-
-        {/* <div className={cx(isSubscribeFormOpen ? styles.expanded_container : styles.hidden_container)}>
-          <div className={cx(styles.modalBackDrop)} style={commGridDimension} >
-            <CommunitySubscribeForm closeModal={closeModal} />
-          </div>
-        </div> */}
       </div>
     );
 }

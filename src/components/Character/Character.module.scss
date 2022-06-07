@@ -1,0 +1,197 @@
+.characterContentContainer {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.contentSection {
+  width: 100%;
+  display: flex;
+  margin-bottom: 120px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.leftCol,
+.rightCol {
+  width: 50%;
+}
+
+.leftCol {
+  margin-right: 20px;
+}
+
+.rightCol {
+  margin-left: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  max-width: 590px;
+  max-height: 590px;
+  object-fit: contain;
+}
+
+.radar {
+  width: 100%;
+  height: auto;
+  max-width: 533px;
+  max-height: 533px;
+  object-fit: contain;
+}
+
+.descriptions {
+  font-family: 'Bariol';
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--font-color);
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.knowledgeContainer {
+  width: 100%;
+  max-width: 533px;
+  margin: 0 auto;
+  padding: 33px 60px 29px 46px;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.21);
+  border: solid 2px #e83324;
+  background-color: #e83324;
+
+  p {
+    font-family: 'Gotham Medium';
+    font-size: 48px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    li {
+      font-family: 'Bariol';
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  border: solid 2px;
+  border-color: var(--font-color);
+}
+
+.fictionTitle {
+  font-family: 'Gotham Medium';
+  font-size: 48px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #e83324;
+}
+
+.fiction {
+  font-family: 'Bariol';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--font-color);
+  margin-top: 20px;
+}
+
+.fullCharactor {
+  width: 100%;
+  max-width: 616px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .characterContentContainer {
+    margin-top: 15px;
+  }
+
+  .contentSection {
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .leftCol,
+    .rightCol {
+      width: 100%;
+      margin: 0;
+    }
+
+    .leftCol {
+      margin-bottom: 40px;
+    }
+
+    .descriptions {
+      font-size: 15px;
+    }
+
+    .knowledgeContainer {
+      padding: 34px 25px 28px 24px;
+
+      p {
+        font-size: 24px;
+      }
+
+      ul {
+
+        li {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .fictionTitle {
+      font-size: 24px;
+    }
+
+    .fiction {
+      font-size: 13px;
+    }
+  }
+}
