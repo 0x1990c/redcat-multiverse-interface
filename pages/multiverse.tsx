@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes'
+
 import GradientText from '../src/components/gradientText/GradientText'
 import Container from '../src/components/container/Container'
-// import RoadmapTimeline from '../src/components/Roadmap/RoadmapTimeline'
 import TagComment from '../src/components/Lore/components/TagComment';
 import LoreBigTitleSection from '../src/components/Lore/components/LoreBigTitleSection';
 import LoreSubTitleSection from '../src/components/Lore/components/LoreSubTitleSection';
 import FigmentCard from '../src/components/Lore/components/LoreFigmentCard';
-import { useTheme } from 'next-themes'
 import {
   FIGMENTS_TITLE,
   FIGMENTS_TEXTS,
@@ -18,8 +19,14 @@ import {
 import styles from '../src/styles/multiverse.module.scss'
 
 const Lore: NextPage = () => {
+  const router = useRouter();
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
+
+  const handleFigCardClick = (figIdx: number) => {
+    router.push({ pathname: `/character`, query: { id: figIdx } });
+  }
+
   return (
     <div>
       <Container className={`${styles.container} ${styles.hero_banner}`}>
@@ -46,7 +53,14 @@ const Lore: NextPage = () => {
       {/* FIGMENTS cards */}
       <div className={styles.figmentCardContainer}>
         {FIGMENTS_CARDS.map((cardContent, idx) => (
-          <FigmentCard key={idx} className={styles.cardItem} name={cardContent.name} text={cardContent.text} image={cardContent.image} />
+          <FigmentCard
+            key={idx}
+            className={styles.cardItem}
+            name={cardContent.name}
+            text={cardContent.text}
+            image={cardContent.image}
+            onClick={() => handleFigCardClick(cardContent.id)}
+          />
         ))}
       </div>
     </div>
