@@ -20,7 +20,6 @@ export default function PLE() {
   const router = useRouter();
 
   const STEPS = ['play', 'learn', 'earn'];
-  // const currentTheme = theme === "system" ? systemTheme : theme
 
   useEffect(() => {
     theme === "system" ? setCurrentTheme(systemTheme) : setCurrentTheme(theme);
@@ -66,7 +65,7 @@ export default function PLE() {
         <GradientText
           element='h1'
           text={items[activeTabIdx].title}
-          innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
+          innerColor={'#FFF'}
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />
       </div>

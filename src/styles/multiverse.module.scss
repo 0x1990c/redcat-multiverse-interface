@@ -19,7 +19,6 @@
 .pageContentContainer {
   width: 100%;
   padding-left: 90px;
-  max-width: 1237px;
   padding-top: 50px;
   padding-right: 50px;
 }
@@ -86,5 +85,9 @@
 @media screen and (max-width: 550px) {
   .figmentCardContainer {
     flex-direction: column;
+  }
+
+  .hero_banner {
+    background-position-x: -500px;
   }
 }
