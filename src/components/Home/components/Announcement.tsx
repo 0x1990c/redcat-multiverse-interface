@@ -21,7 +21,6 @@ export const Announcement = ({ announce }: any) => {
         </div>
       </div>
 
-
     </>
 
   )
