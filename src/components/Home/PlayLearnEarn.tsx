@@ -7,9 +7,11 @@ export const PlayLearnEarn = () => {
   return (
     <div className={styles['container-margin']}>
       <div className={styles['container-multiverse']}>
+
         <div className={styles['container-title']}>
           <h1> MULTIVERSE HIGHLIGHTS <br />PLAY-LEARN-EARN </h1>
         </div>
+
         <div className={styles['container-play-learn-carousel']}>
           <div>
             <div className={styles['container-title']}>
