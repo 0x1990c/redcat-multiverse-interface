@@ -115,7 +115,19 @@
   background: #000;
 }
 
-@media screen and(max-width: 480px) {
+@media screen and(min-width: 430px) and(max-width: 480px) {
+  .slider {
+    width: 419px !important;
+    height: 452px !important;
+  }
+
+  .slides>div {
+    width: 419px;
+    height: 415px;
+  }
+}
+
+@media screen and(max-width: 430px) {
   .slider {
     width: 285px !important;
     height: 320px !important;
@@ -125,6 +137,7 @@
     width: 285px;
     height: 285px;
   }
+
 }
 
 
@@ -175,7 +188,7 @@ $size-height: 350px;
   }
 
   .image-five {
-    background-image: url("../../../public/images/HomeHero/carousel/Red.jpeg");
+    background-image: url("../../../public/images/HomeHero/carousel/Sanura-Gas-Mask.jpg");
   }
 }
 
