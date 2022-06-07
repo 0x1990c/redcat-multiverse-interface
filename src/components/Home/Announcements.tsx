@@ -8,7 +8,7 @@ export const Announcements = () => {
     <div className={styles['container-margin']}>
       <div className={styles['container-annoucements']}>
         <div className={styles['container-title']}>
-          <h1> ANNOUCEMENTS </h1>
+          <h1> ANNOUNCEMENT </h1>
         </div>
         {
           annoucements.map((announce) => (

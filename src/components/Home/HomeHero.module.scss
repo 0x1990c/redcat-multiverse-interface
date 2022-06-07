@@ -362,10 +362,6 @@
     margin: 0px 48px;
   }
 
-  .containter-img {
-    min-width: 310px;
-  }
-
   // multiverse{
   .container-multiverse {
     margin: 0px 55px;
@@ -464,9 +460,6 @@
       }
     }
 
-    .container-img {
-      height: auto !important;
-    }
   }
 }
 
@@ -673,12 +666,6 @@
       }
     }
 
-    .container-img {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      border-radius: 8px;
-    }
   }
 
   // multiverse
@@ -832,18 +819,10 @@
         }
       }
     }
-
-    .container-img {
-      height: 300px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      border-radius: 8px;
-    }
   }
 
   .container-multiverse {
-    padding: 0px 45px;
+    padding: 0px 30px;
   }
 
   .container-carousel {
