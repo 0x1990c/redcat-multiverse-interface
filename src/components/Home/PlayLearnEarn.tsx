@@ -9,7 +9,7 @@ export const PlayLearnEarn = () => {
       <div className={styles['container-multiverse']}>
 
         <div className={styles['container-title']}>
-          <h1> MULTIVERSE HIGHLIGHTS <br />PLAY &gt; LEARN &gt; EARN </h1>
+          <h1> MULTIVERSE HIGHLIGHTS <br />PLAY -&gt; LEARN -&gt; EARN </h1>
         </div>
 
         <div className={styles['container-play-learn-carousel']}>
