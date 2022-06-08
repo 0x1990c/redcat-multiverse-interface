@@ -44,7 +44,7 @@ const CommunityGrid = () => {
 
     // press
     if (numberId === 6) {
-      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      window.open('https://rcm-labs.gitbook.io/redcat-multiverse-wiki/', '_blank');
       return;
     }
   }

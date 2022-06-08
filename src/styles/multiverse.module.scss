@@ -44,6 +44,12 @@
 
   .cardItem {
     margin-bottom: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.009, 1.009);
+    }
   }
 }
 

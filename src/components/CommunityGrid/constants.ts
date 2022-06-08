@@ -59,7 +59,7 @@ export const contents = [
     id: '6',
     title: "PRESS",
     numeration: "07",
-    label: "COMING SOON!",
+    label: "",
     column: "column_1",
     item: 'item_g',
     image: "./images/community/community_07.png"
