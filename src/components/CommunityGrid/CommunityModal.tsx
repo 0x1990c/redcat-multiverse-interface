@@ -23,10 +23,6 @@ const CommunityModal = ({ content, closeModal }: any) => {
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
-  useEffect(() => {
-    console.log('community modal');
-  }, [])
-
   const closeIconColor = () => {
     switch (item) {
       case 'item_b':
@@ -50,7 +46,6 @@ const CommunityModal = ({ content, closeModal }: any) => {
   }
 
   const handleOpenMemberModal = () => {
-    console.log('handleOpenMemberModal');
     setMemberModalOpen(true);
   }
 
