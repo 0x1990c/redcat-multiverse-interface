@@ -30,11 +30,12 @@ const ParallaxHero = () => {
           transform: "scale(1.05)",
         }}
       >
-        <div ref={cityRef.ref} className='text' style={{
+        <div ref={cityRef.ref} className={styles['bg-city']} style={{
           backgroundImage: "url(/images/HomeHero/City.png)",
+          backgroundPositionY: '25px',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          transform: "scale(1)",
+          transform: "scale(1), translateY(-2%)",
           height: "100%",
         }}>
         </div>
