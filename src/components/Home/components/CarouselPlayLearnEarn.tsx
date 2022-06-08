@@ -1,32 +1,23 @@
-import React from 'react'
-import styles from '../carouselPlayLearnEarn.module.scss'
-import Link from "next/link";
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 export const CarouselPlayLearnEarn = () => {
   return (
-    <div className={styles.slider}>
-      <div className={styles['carousel-wrapper']}>
-        <div className={styles['carousel-container']}>
-          <div className={styles['carousel']}>
-            <div id="slide-1" className={styles['image-one']}></div>
-            <div id="slide-2" className={styles['image-two']}></div>
-            <div id="slide-3" className={styles['image-three']}></div>
-            <div id="slide-4" className={styles['image-four']}></div>
-          </div>
-        </div>
-      </div>
-      <Link href="#slide-1" scroll={false}>
-        <span>1</span>
-      </Link>
-      <Link href="#slide-2" scroll={false}>
-        <span>2</span>
-      </Link>
-      <Link href="#slide-3" scroll={false}>
-        <span>3</span>
-      </Link>
-      <Link href="#slide-4" scroll={false}>
-        <span>4</span>
-      </Link>
-    </div>
+    <>
+      <AutoplaySlider
+        play={true}
+        cancelOnInteraction={false} // should stop playing on user interaction
+        interval={2000}
+        organicArrows={false}
+      >
+        <div data-src="./images/HomeHero/carousel/WellsCarousel.png" />
+        <div data-src="./images/HomeHero/carousel/FuYijunCarousel.jpg" />
+        <div data-src="./images/HomeHero/carousel/SanuraCarousel.png" />
+        <div data-src="./images/HomeHero/carousel/PlikpliCarousel.png" />
+      </AutoplaySlider>
+    </>
   )
 }
