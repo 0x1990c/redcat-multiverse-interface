@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react'
 import styles from './HomeHero.module.scss'
-import { Carousel } from './Carousel';
+import { CarouselPlayLearnEarn } from './components/CarouselPlayLearnEarn';
 
 export const PlayLearnEarn = () => {
   return (
@@ -9,7 +9,7 @@ export const PlayLearnEarn = () => {
       <div className={styles['container-multiverse']}>
 
         <div className={styles['container-title']}>
-          <h1> MULTIVERSE HIGHLIGHTS <br />PLAY-LEARN-EARN </h1>
+          <h1> MULTIVERSE HIGHLIGHTS <br />PLAY &gt; LEARN &gt; EARN </h1>
         </div>
 
         <div className={styles['container-play-learn-carousel']}>
@@ -28,7 +28,7 @@ export const PlayLearnEarn = () => {
             </div>
           </div>
           <div className={styles['container-carousel']}>
-            <Carousel />
+            <CarouselPlayLearnEarn />
           </div>
         </div>
         <div className={styles['container-play-learn-git pcarousel']}>

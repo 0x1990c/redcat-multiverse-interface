@@ -211,10 +211,6 @@
 .container-play-learn-carousel {
   display: flex;
 
-  .container-carousel {
-    padding: 50px;
-    padding-top: 149px;
-  }
 }
 
 .container-info-description {
@@ -228,78 +224,6 @@
   ------- RESPONSIVE ------
   -------------------------
 */
-
-@media screen and(max-width: 1100px) {
-  .container-play-learn-carousel {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-}
-
-
-@media screen and (max-width: 981px) {
-  .container-chat {
-    margin: 50px 0px;
-    padding: 0px 35px;
-
-    .container-conversation-text {
-
-      &:before {
-        content: "";
-        bottom: -48px !important;
-        width: 176px !important;
-        height: 48px !important;
-        left: 126px !important;
-      }
-
-      &:after {
-        content: "";
-        bottom: -27px !important;
-        left: 114px !important;
-        width: 109px !important;
-        height: 30px !important;
-      }
-
-
-      p {
-
-        &::after {
-          left: 128px !important;
-          width: 95px !important;
-        }
-      }
-    }
-
-    .container-conversation-text-2 {
-
-      &:before {
-        content: "";
-        bottom: -48px !important;
-        width: 176px !important;
-        height: 48px !important;
-        left: 63px !important;
-      }
-
-      &:after {
-        content: "";
-        bottom: -27px !important;
-        left: 142px !important;
-        width: 109px !important;
-        height: 30px !important;
-      }
-
-
-      p {
-        font-size: 18px !important;
-
-        &::after {
-          left: 142px !important;
-          width: 95px !important;
-        }
-      }
-    }
-  }
-}
 
 @media screen and(min-width: 1400px) {
 
@@ -367,6 +291,13 @@
     margin: 0px 55px;
   }
 
+}
+
+@media screen and(min-width: 1100px) {
+  .container-carousel {
+    padding: 50px;
+    padding-top: 149px !important;
+  }
 }
 
 @media screen and(min-width: 1024px) {
@@ -481,6 +412,8 @@
   .container-title {
     font-size: 60px !important;
   }
+
+
 }
 
 @media screen and(min-width: 982px) and (max-width: 1100px) {
@@ -519,6 +452,13 @@
 }
 
 @media screen and(min-width: 768px) {
+
+  .container-carousel {
+    padding: 50px;
+    padding-top: 0px;
+  }
+
+
   .container-margin {
     margin: 0px 80px;
   }
@@ -675,9 +615,91 @@
 
 }
 
+// max  widt
+
+@media screen and(max-width: 1500px) {
+  .bg-city {
+    background-position-y: 50px !important;
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .container-play-learn-carousel {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 981px) {
+  .container-chat {
+    margin: 50px 0px;
+    padding: 0px 35px;
+
+    .container-conversation-text {
+
+      &:before {
+        content: "";
+        bottom: -48px !important;
+        width: 176px !important;
+        height: 48px !important;
+        left: 126px !important;
+      }
+
+      &:after {
+        content: "";
+        bottom: -27px !important;
+        left: 114px !important;
+        width: 109px !important;
+        height: 30px !important;
+      }
+
+
+      p {
+
+        &::after {
+          left: 128px !important;
+          width: 95px !important;
+        }
+      }
+    }
+
+    .container-conversation-text-2 {
+
+      &:before {
+        content: "";
+        bottom: -48px !important;
+        width: 176px !important;
+        height: 48px !important;
+        left: 63px !important;
+      }
+
+      &:after {
+        content: "";
+        bottom: -27px !important;
+        left: 142px !important;
+        width: 109px !important;
+        height: 30px !important;
+      }
+
+
+      p {
+        font-size: 18px !important;
+
+        &::after {
+          left: 142px !important;
+          width: 95px !important;
+        }
+      }
+    }
+  }
+}
+
 
 
 @media screen and(max-width: 576px) {
+
+
   .container-conversation-text {
     p {
       font-size: 13px !important;
@@ -852,5 +874,15 @@
 
   .container-carousel {
     padding: 18px !important;
+  }
+}
+
+@media screen and(max-width: 450px) {
+  .container-carousel {
+    padding: 0px !important;
+  }
+
+  .bg-city {
+    background-position-y: 0px !important;
   }
 }
