@@ -31,7 +31,7 @@ const ParallaxHero = () => {
         }}
       >
         <div ref={cityRef.ref} className={styles['bg-city']} style={{
-          backgroundImage: "url(/images/HomeHero/City.png)",
+          backgroundImage: "url(/images/HomeHero/City.jpeg)",
           backgroundPositionY: '25px',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
