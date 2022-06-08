@@ -13,9 +13,9 @@ import {
   FIGMENTS_TEXTS,
   RED_CAT_MULTIVERSE,
   RED_CAT_MULTIVERSE_TEXTS,
-  RED_CAT_CONTENTS,
-  FIGMENTS_CARDS
+  RED_CAT_CONTENTS
 } from '../src/components/Lore/constants';
+import { characterDetails } from '../src/components/Character/constants';
 import styles from '../src/styles/multiverse.module.scss'
 
 const Lore: NextPage = () => {
@@ -52,13 +52,13 @@ const Lore: NextPage = () => {
       </div>
       {/* FIGMENTS cards */}
       <div className={styles.figmentCardContainer}>
-        {FIGMENTS_CARDS.map((cardContent, idx) => (
+        {characterDetails.map((cardContent, idx) => (
           <FigmentCard
             key={idx}
             className={styles.cardItem}
             name={cardContent.name}
-            text={cardContent.text}
-            image={cardContent.image}
+            text={cardContent.role}
+            image={cardContent.thumbnail}
             onClick={() => handleFigCardClick(cardContent.id)}
           />
         ))}

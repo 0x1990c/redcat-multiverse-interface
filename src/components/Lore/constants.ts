@@ -29,24 +29,3 @@ export const FIGMENTS_TITLE = "FIGMENTS: THE CHARACTERS OF THE MULTIVERSE";
 export const FIGMENTS_TEXTS = [
   "Meet the characters who will join you in your mission to achieve unity in the RedCat Multiverse."
 ];
-
-export const FIGMENTS_CARDS = [
-  {
-    id: 0,
-    name: 'Adela',
-    text: 'Avatar of communication',
-    image: './images/profile.png'
-  },
-  // {
-  //   id: 1,
-  //   name: 'Adela',
-  //   text: 'Avatar of communication',
-  //   image: './images/profile.png'
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Adela',
-  //   text: 'Avatar of communication',
-  //   image: './images/profile.png'
-  // }
-]

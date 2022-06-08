@@ -7,7 +7,11 @@ const Character = ({ character }: any) => {
 
   const FictionMobileUpper = () => {
     const idxArray = new Array(fictionMobileIdx + 1).fill(0);
-    return (<>{idxArray.map((zero, idx) => (<p key={idx} className={styles.fiction}>{fictions[idx]}</p>))}</>)
+    return (
+      <>
+        {idxArray.map((zero, idx) => (<p key={idx} className={styles.fiction}>{fictions[idx]}</p>))}
+      </>
+    )
   }
 
   const FictionMobileLower = () => {
@@ -45,15 +49,13 @@ const Character = ({ character }: any) => {
     </div>
     <div className={`${styles.contentSection} ${styles.separator}`}></div>
     <div className={styles.contentSection}>
-      {!isMobile
-        ?
-        (<div className={styles.leftCol}>
-          <p className={styles.fictionTitle}>Flash Fiction</p>
-          {fictions.map((fiction: any, idx: any) => (<p key={idx} className={styles.fiction}>{fiction}</p>))}
-        </div>)
-        : <FictionMobileUpper />
-      }
-
+      <div className={styles.leftCol}>
+        <p className={styles.fictionTitle}>Flash Fiction</p>
+        {!isMobile
+          ? fictions.map((fiction: any, idx: any) => (<p key={idx} className={styles.fiction}>{fiction}</p>))
+          : <FictionMobileUpper />
+        }
+      </div>
       <div className={`${styles.rightCol}`}>
         <img src={fullCharacter} className={styles.fullCharacter} />
       </div>
