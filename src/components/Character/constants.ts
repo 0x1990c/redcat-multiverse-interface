@@ -1,8 +1,10 @@
 export const characterDetails = [
   {
     id: 0,
-    thumbnail: './images/characters/0_thumbnail.png',
-    fullCharacter: './images/characters/0_full_character.png',
+    name: 'WELLS',
+    role: 'THE TIME TRAVELER',
+    thumbnail: './images/characters/wells_thumbnail.png',
+    fullCharacter: './images/characters/wells_full_character.png',
     descriptions: [
       "The Royal College said it couldn’t be done. His head was too in the clouds, they said. Not tethered to the realities and limitations of science, they said. “Poppycock,” Wells said to that, and promptly proved all of them wrong by building his very own functioning time machine, and then not letting any of them try it out.",
       "The plaque in front of his Victorian London laboratory reads Horatio Wells, Inventor & Gentleman.Wells’ birth name is actually Hayden, but he thinks Horatio is more befitting a gentleman time - adventurer.Born to a good family, all his wealthy parents wanted for him was a proper education in the sciences, which he met when he took them to see their first dinosaurs.Though Wells is absent much of the time, he never seems to miss anything important – a benefit of being a time traveler.",
@@ -38,6 +40,71 @@ export const characterDetails = [
       "Tachyons are theoretical particles which can move faster - than - light, which aren’t consistent with the laws of physics as we understand them.There are those who posit they have the ability to move through time, making them a staple of science - fiction.",
       "In digital music production, the ability to automatically align notes so they are rhythmically perfect is called quantizing."
     ],
-    radar: './images/characters/0_radar_graph.png'
+    radar: './images/characters/wells_radar.png'
+  },
+  {
+    id: 1,
+    name: 'PLIKPLIK',
+    role: 'THE COSMIC CULINARIAN',
+    thumbnail: './images/characters/plikplik_thumbnail.jpg',
+    fullCharacter: './images/characters/default_full_character.png',
+    descriptions: [
+      "Plikplik is a small, furry creature from the harsh world of Proxima Centauri b, in the Alpha Centauri system. Surviving on fairly tasteless root vegetables, these small, furry creatures were constantly testy and fighting with each other, inspiring Plikplik to leave home and search the stars for a way to unite his people. It was on his travels that he discovered all the wondrous food the cosmos had to offer. Upon returning home, Plikplik prepared a summit with accompanying feast, where his people quickly found peace under the spell of his novel culinary delights.",
+      "Since then, Plikplik has once again begun to wander the cosmos in pursuit of his passion for cooking. Despite their tasteless diet of their home, Plikplik’s people actually have one of the most developed palates in the multiverse, making him an ideal chef for many of the greatest gourmands with his ability to draw out hidden flavors of his ingredients.",
+      "Despite having tasted all wonders of the galaxy and having cooked for cosmic kings, Plikplik prefers to prepare vegetarian meals in honor of his people’s newfound peace. There's no need for anyone to panic if he licks them (which he sometimes does), though his tongue is surprisingly smooth and smells like fresh vanilla."
+    ],
+    fictions: [
+      "Sylvia had called out at the last minute with a bad case of the stomach flu, leaving Chef Rudy down a key chef and under intense pressure. Mrs. Chen-Irfan was very clear in her expectations for this benefit dinner, and she was known to be unpleasant when things didn’t go according to plan. Chef Rudy looked at the clock, while realizing no one had even started the canapes yet.",
+      "He swore, looking around to see if anyone could start the job, but everyone was cooking their little hearts out. As if one cue, a bluish rodent-like creature wearing a big smile came floating through the door at about chest height. The creature saluted Chef Rudy, nodded to the other chefs, and promptly went madly to work on the canapes at a frantic pace. Despite the intense oddity of the situation, Chef Rudy shouted, “Back to work!” He was more afraid of Mrs. Chen-Irfan than whoever or whatever this was.",
+      "Minutes later, the diminutive floating creature handed canapes to Chef Rudy to taste. They melted in his mouth, introducing him to flavors he didn’t know those ingredients had. “Keep going,” he said, finishing off the delicacy with a thumb’s up. The creature dove back in, just as Mrs. Chen-Irfan entered the kitchen.",
+      "“You are behind schedule! What are you doing to make up time?” she said before looking up and seeing the flying rodent. “My goodness! I do not believe THAT,” she said, pointing at the creature, “was part of the vetting process! Get whatever it is out of here now!”",
+      "“Believe me, maam,” Chef Rudy said. I wouldn't normally recommend accepting food from what I think is a strange extraterrestrial being, especially not one which stands about knee high and is that particular shade of puce, but in this case you should make an exception.",
+      "Standing in disbelief, Mrs. Chen-Irfan said, “You seem awfully calm about all of this nonsense.”",
+      "“You will be too after you try the canapes. They are truly out of this world,” said Chef Rudy, as the creature finished rescuing the canapes. “You’re welcome in my kitchen anytime, little buddy.” The being floated to shoulder height and raised his hand, engaging Chef Rudy in an enthusiastic high five. Then he floated out the door, with the satisfaction of a job well-done.",
+      "Mrs. Chen-Irfan finally tried one of the canapes in protest, and nearly passed out because it was so good."
+    ],
+    fictionMobileIdx: 3,
+    knowledge: [
+      "The culinary arts are often viewed as both a science and art form, mixing an understanding of the chemistry and dietary nutrition of the meal with the aesthetics and flavor of the dish itself.",
+      "Making a good dish involves making it tasty, but did you know that many culinarians also practice the art of serving their dish in a visually appealing way? There are many methods for presenting the dish, from how it is plated and decorated to the final color and appearance of the food itself.",
+      "Proxima Centauri b is a planet which Earth astronomers thought to be in a habitable zone of the red dwarf star Proxima Centauri, one of three stars that make up the Alpha Centauri star system.",
+      "The earliest recorded cookbook on Earth is a set of tablets dating back to around 1700 BC, detailing ingredients which are believed to be part of an ancient stew recipe."
+    ],
+    radar: './images/characters/plikplik_radar.png'
+  },
+  {
+    id: 2,
+    name: 'FU YIJUN',
+    role: 'DRAGON OF WISDOM',
+    thumbnail: './images/characters/fuyijun_thumbnail.jpg',
+    fullCharacter: './images/characters/default_full_character.png',
+    descriptions: [
+      "The mystical dragons of Asia have always had natures which tie them to the multiverse, and the primary reason they are rarely seen is because they are often traveling through parallel Earths.One such dragon, Fu Yijun is a dragon of wisdom who has tied himself to the season of Spring, and has a special interest in the development of life.",
+      "Fu Yijun enjoys watching everything, from plants, to people, to communities, grow and become their true selves.He doesn’t concern himself with destinations or endings, because all life ends up in the same place eventually, but rather how a being lives the journey between birth and death.To Fu Yijun, every moment is precious and living in the moment is a gift.He has an easy way about him, with great patience for all things young and new, and enjoys conversing with just about anyone.Though fearsome and powerful in appearance, those who encounter him leave with a lighter heart.",
+      "Fu Yijun’s wisdom has been accumulated through thousands of years of personal experience, but also from hearing the stories and lives of beings from all over the multiverse.Knowing that judgment is useless in the grand scheme, he listens without it.An important component of wisdom is seeing the world through the experience of others, for going by only one’s own provides an extremely limited understanding.While Fu Yijun has a better perspective on life than most sentient beings, he’s not attached to the advice he gives.He ultimately believes that people should do what they believe is right for them, as long as it is within the realms of civility and decency.",
+      "The only thing which tests Fu Yijun’s patience is deliberate ignorance.He cannot abide those who intentionally choose to remain uneducated about important things, especially those who loudly and boldly voice an opinion on things they know nothing about.While Fu Yijun does his best to help people on the road to understanding, he will leave a situation with someone who clings to their ignorance like it is justified."
+    ],
+    fictions: [
+      "The majestic dragon had shrunk himself down to about the size of a German Shepherd, in order to interact more easily with his companion.The small domestic- looking cat sat on a flower box, her tail flicking in annoyance, while Fu Yijun floated in a winding, crisscross pattern in the air.",
+      "“There are times I see this place wears on you, Jendayi,” said Fu Yijun.",
+      "“The activities of the day have tried my patience,” she said. “I find the quality of punishments in this place to be soft.”",
+      "“Always work with you, little one,” Fu Yijun said. “One of these days, mind you I do not expect it soon, we will share time untainted by duty.In the meantime, tell me more about what you mean.”",
+      "The cat sniffed at a budding red flower. “In my time and place, we were unafraid to dispense harsh justice.The worst criminals were forced into servitude or publicly executed, and even the lesser ones faced beatings or losing a body part to remind them.People were afraid to break the law.There is none of that here.”",
+      "“Things have changed in many places on Earth, in present time,” said Fu Yijun, lighting on a nearby banister. “Many judgments are no longer quite so pitiless.”",
+      "“So criminals are more emboldened to offend, because the sentence is bearable,” replied Jendayi, with the cat equivalent of a sigh. “What is your perspective on this ? Which ways are correct ?”",
+      "The diminutive dragon furrowed his brow. “I can’t answer that particular question, but I have come to learn that the reasons people engage in antisocial behavior are often complex.The amount of insight required to understand them is significant, and each offender may need different treatment for rehabilitation.I’ve often found that simple punishment does little to remove the root causes of criminal activity.”",
+      "“Isn’t punishment essential ? They must be made to feel the suffering they have caused,” said Jendayi.",
+      "“First,” said Fu Yijun, “they must be taught empathy.Suffering will organically follow, once they fully realize the impact of their actions.”",
+      "Jendayi paused thoughtfully for a moment. “What of those who cannot feel empathy ? Scientists have many names for them now.”",
+      "“That,” Fu Yijun replied, “is something I do not yet have the wisdom to speak on.”",
+    ],
+    fictionMobileIdx: 5,
+    knowledge: [
+      "In Chinese mythology, the Azure Dragon represents the east and the spring season.",
+      "The word season is from the Latin sationem meaning “sowing” or “seed time.”",
+      "Honeybees are more likely to swarm during the spring, as a way to start new colonies from successful ones.Surprisingly, swarming honey bees are very docile and the most friendly they are all year.",
+      "Not everyone marks the beginning of spring by the Spring Equinox.Meteorologists measure the seasons differently, dividing the year into four equal seasons which each start on the first day of every third month.For them, spring begins on March 1 and lasts until May 31 in the Northern Hemisphere, no matter when the equinox happens."
+    ],
+    radar: './images/characters/fuyijun_radar.png'
   }
 ]

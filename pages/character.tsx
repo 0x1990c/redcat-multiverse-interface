@@ -33,7 +33,7 @@ const character = () => {
             <div className={styles.bannerTitle}>
               <GradientText
                 element='h2'
-                text='WELLS,'
+                text={`${characterDetails[figId].name},`}
                 innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
                 gradient={['#f9c930', '#f2957c', '#7192f3']}
               />
@@ -41,7 +41,7 @@ const character = () => {
             <div className={styles.bannerTitle}>
               <GradientText
                 element='h2'
-                text='THE TIME TRAVELER'
+                text={`${characterDetails[figId].role}`}
                 innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
                 gradient={['#f9c930', '#f2957c', '#7192f3']}
               />

@@ -17,7 +17,12 @@ const contents = [
   {
     id: '1',
     title: 'First Looks',
-    bullets: ['Multiverse video', 'RedCat Multiverse game simulator built in-house', 'RedCat Multiverse White Paper published', 'Pre-seed funding finalized'],
+    bullets: [
+      'Pre-seed funding finalized',
+      'RedCat Multiverse game simulator built in-house',
+      'RedCat Multiverse White Paper published',
+      'RedCat Multiverse trailer/video'
+    ],
     buttonLabel: 'Upcoming',
     period: 'Q2 2022',
     alignment: 'right',
@@ -35,7 +40,7 @@ const contents = [
     title: 'RedCat Multiverse Orientation',
     bullets: [
       'Closed Beta release <span style="color: #e83324;">(Initially for Inception NFT Holders and select RCM Insiders)</span>',
-      'dNFT collection sale <span style="color: #7192f3;">(open to public)</span>',
+      'Accretion collection sale <span style="color: #7192f3;">(open to public)</span>',
       'RedCat Multiverse Tokenomics published'
     ],
     buttonLabel: 'Future',
@@ -45,7 +50,7 @@ const contents = [
   {
     id: '4',
     title: 'The RedCat Multiverse Opens',
-    bullets: ['iNFT collection sale', 'Governance Token Sale', 'Public Beta release'],
+    bullets: ['Conception collection sale', 'Governance Token Sale', 'Public Beta release'],
     buttonLabel: 'Future',
     period: 'Q4 2022',
     alignment: 'left',
@@ -70,8 +75,6 @@ const contents = [
     alignment: 'right',
   },
 ];
-
-
 
 const RoadmapTimeline = () => {
 
