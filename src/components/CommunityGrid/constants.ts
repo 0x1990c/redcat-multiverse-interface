@@ -57,7 +57,7 @@ export const contents = [
   },
   {
     id: '6',
-    title: "PRESS",
+    title: "RedCat Multiverse Wiki",
     numeration: "07",
     label: "",
     column: "column_1",
