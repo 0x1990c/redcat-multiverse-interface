@@ -616,17 +616,17 @@
   }
 }
 
-@media screen and(min-width: 1600px) {
+@media screen and(min-width: 1700px) {
   .bg-city {
     background-position-y: 50px !important;
   }
 
   .container-carousel {
-    width: 60%;
+    width: 55%;
     height: 450px;
 
     div:first-child {
-      height: 480px;
+      height: 390px;
       border-radius: 8px;
     }
 
@@ -638,7 +638,7 @@
 
 // max  widt
 
-@media screen and(max-width: 1600px) {
+@media screen and(max-width: 1700px) {
   .bg-city {
     background-position-y: 50px !important;
   }
