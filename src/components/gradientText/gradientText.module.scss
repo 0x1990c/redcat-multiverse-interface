@@ -9,6 +9,14 @@
     padding-left: 2px;
     line-height: 1;
 
+    @media screen and (max-width: 1400px) {
+      font-size: 72px !important;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 54px !important;
+    }
+
     @media screen and (max-width: 576px) {
       font-size: 38px !important;
     }

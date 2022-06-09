@@ -80,7 +80,7 @@ export default function PLE() {
       <div className={styles.title}>
         <GradientText
           element='h1'
-          text={'PLAY -> LEARN -> EARN'}
+          text={'PLAY >> LEARN >> EARN'}
           innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
           gradient={['#f9c930', '#f2957c', '#7192f3']}
         />

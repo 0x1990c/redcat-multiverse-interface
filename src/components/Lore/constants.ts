@@ -27,5 +27,6 @@ export const RED_CAT_CONTENTS = [
 export const FIGMENTS_TITLE = "FIGMENTS: THE CHARACTERS OF THE MULTIVERSE";
 
 export const FIGMENTS_TEXTS = [
-  "Meet the characters who will join you in your mission to achieve unity in the RedCat Multiverse."
+  "Meet the characters who will join you in your mission to achieve unity in the RedCat Multiverse.",
+  "<i>We are introducing new characters all the time, so be sure to connect to the Multiverse (subscribe) and check here for updates.</i>"
 ];
