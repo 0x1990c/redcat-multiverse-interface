@@ -23,7 +23,6 @@ export const sections = [
 ]
 
 export const TOP_CATS = [
-  '/images/ple/top/cat (1).jpg',
   '/images/ple/top/cat (1).png',
   '/images/ple/top/cat (2).png',
   '/images/ple/top/cat (3).png',
@@ -36,15 +35,14 @@ export const TOP_CATS = [
 ];
 
 export const BOTTOM_CATS = [
-  '/images/ple/bottom/cat (1).jpg',
   '/images/ple/bottom/cat (1).png',
-  '/images/ple/bottom/cat (2).png',
   '/images/ple/bottom/cat (3).png',
-  '/images/ple/bottom/cat (4).png',
   '/images/ple/bottom/cat (5).png',
-  '/images/ple/bottom/cat (6).png',
   '/images/ple/bottom/cat (7).png',
-  '/images/ple/bottom/cat (8).png',
-  '/images/ple/bottom/cat (9).png'
-]
+  '/images/ple/bottom/cat (9).png',
+  '/images/ple/bottom/cat (2).png',
+  '/images/ple/bottom/cat (4).png',
+  '/images/ple/bottom/cat (6).png',
+  '/images/ple/bottom/cat (8).png'
+];
 

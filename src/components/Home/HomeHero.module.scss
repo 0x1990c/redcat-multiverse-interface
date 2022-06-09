@@ -211,10 +211,6 @@
 .container-play-learn-carousel {
   display: flex;
 
-  .container-carousel {
-    padding: 50px;
-    padding-top: 149px;
-  }
 }
 
 .container-info-description {
@@ -228,78 +224,6 @@
   ------- RESPONSIVE ------
   -------------------------
 */
-
-@media screen and(max-width: 1100px) {
-  .container-play-learn-carousel {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-}
-
-
-@media screen and (max-width: 981px) {
-  .container-chat {
-    margin: 50px 0px;
-    padding: 0px 35px;
-
-    .container-conversation-text {
-
-      &:before {
-        content: "";
-        bottom: -48px !important;
-        width: 176px !important;
-        height: 48px !important;
-        left: 126px !important;
-      }
-
-      &:after {
-        content: "";
-        bottom: -27px !important;
-        left: 114px !important;
-        width: 109px !important;
-        height: 30px !important;
-      }
-
-
-      p {
-
-        &::after {
-          left: 128px !important;
-          width: 95px !important;
-        }
-      }
-    }
-
-    .container-conversation-text-2 {
-
-      &:before {
-        content: "";
-        bottom: -48px !important;
-        width: 176px !important;
-        height: 48px !important;
-        left: 63px !important;
-      }
-
-      &:after {
-        content: "";
-        bottom: -27px !important;
-        left: 142px !important;
-        width: 109px !important;
-        height: 30px !important;
-      }
-
-
-      p {
-        font-size: 18px !important;
-
-        &::after {
-          left: 142px !important;
-          width: 95px !important;
-        }
-      }
-    }
-  }
-}
 
 @media screen and(min-width: 1400px) {
 
@@ -481,6 +405,8 @@
   .container-title {
     font-size: 60px !important;
   }
+
+
 }
 
 @media screen and(min-width: 982px) and (max-width: 1100px) {
@@ -519,6 +445,7 @@
 }
 
 @media screen and(min-width: 768px) {
+
   .container-margin {
     margin: 0px 80px;
   }
@@ -675,9 +602,245 @@
 
 }
 
+.container-carousel {
+  nav {
+    button {
+      background-color: $orange-red  !important;
+    }
+  }
+}
 
+@media screen and(min-width: 1100px) {
+  .container-carousel {
+    padding-top: 145px;
+  }
+}
+
+@media screen and(min-width: 1700px) {
+  .bg-city {
+    background-position-y: 50px !important;
+  }
+
+  .container-carousel {
+    width: 55%;
+    height: 450px;
+
+    div:first-child {
+      height: 390px;
+      border-radius: 8px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+// max  widt
+
+@media screen and(max-width: 1700px) {
+  .bg-city {
+    background-position-y: 50px !important;
+  }
+
+
+  .container-carousel {
+    width: 100%;
+    height: 550px;
+
+    div:first-child {
+      height: 450px;
+      border-radius: 8px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 1450px) {
+  .container-carousel {
+    width: 100%;
+    height: 530px;
+
+    div:first-child {
+      height: 420px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 1350px) {
+  .container-carousel {
+    width: 110%;
+    height: 530px;
+
+    div:first-child {
+      height: 420px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 1250px) {
+  .container-carousel {
+    width: 150%;
+    height: 530px;
+
+    div:first-child {
+      height: 420px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .container-play-learn-carousel {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .container-play-learn-carousel {
+    padding: 0 2rem;
+  }
+
+  .container-carousel {
+    width: 58%;
+    height: 530px;
+
+    div:first-child {
+      height: 480px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 981px) {
+
+  .container-carousel {
+    width: 58%;
+    height: 530px;
+
+    div:first-child {
+      height: 480px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .container-play-learn-carousel {
+    padding: 0;
+  }
+
+  .container-chat {
+    margin: 50px 0px;
+    padding: 0px 35px;
+
+    .container-conversation-text {
+
+      &:before {
+        content: "";
+        bottom: -48px !important;
+        width: 176px !important;
+        height: 48px !important;
+        left: 126px !important;
+      }
+
+      &:after {
+        content: "";
+        bottom: -27px !important;
+        left: 114px !important;
+        width: 109px !important;
+        height: 30px !important;
+      }
+
+
+      p {
+
+        &::after {
+          left: 128px !important;
+          width: 95px !important;
+        }
+      }
+    }
+
+    .container-conversation-text-2 {
+
+      &:before {
+        content: "";
+        bottom: -48px !important;
+        width: 176px !important;
+        height: 48px !important;
+        left: 63px !important;
+      }
+
+      &:after {
+        content: "";
+        bottom: -27px !important;
+        left: 142px !important;
+        width: 109px !important;
+        height: 30px !important;
+      }
+
+
+      p {
+        font-size: 18px !important;
+
+        &::after {
+          left: 142px !important;
+          width: 95px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 890px) {
+
+  .container-carousel {
+    width: 70%;
+    height: 530px;
+  }
+}
+
+@media screen and(max-width: 596px) {
+
+  .container-carousel {
+    width: 80%;
+    height: 530px;
+  }
+}
 
 @media screen and(max-width: 576px) {
+
+  .container-carousel {
+    width: 100%;
+    height: 530px;
+
+    div:first-child {
+      height: 480px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
   .container-conversation-text {
     p {
       font-size: 13px !important;
@@ -825,12 +988,22 @@
     padding: 0px 30px;
   }
 
-  .container-carousel {
-    padding-top: 0px !important;
-  }
 }
 
 @media screen and(max-width: 480px) {
+  .container-carousel {
+    width: 100%;
+    height: 470px;
+
+    div:first-child {
+      height: 400px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
   .container-title {
     margin-bottom: 15px;
 
@@ -849,8 +1022,23 @@
       margin: 10px !important;
     }
   }
+}
+
+@media screen and(max-width: 420px) {
+  .bg-city {
+    background-position-y: 0px !important;
+  }
 
   .container-carousel {
-    padding: 18px !important;
+    width: 100%;
+    height: 420px;
+
+    div:first-child {
+      height: 350px;
+    }
+
+    img {
+      object-fit: cover;
+    }
   }
 }
