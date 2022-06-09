@@ -65,6 +65,16 @@ const Character = ({ character }: any) => {
         </div>
       )}
     </div>
+    <div className={`${styles.contentSection} ${styles.separator}`}></div>
+    <div className={`${styles.contentSection} ${styles.backBtnSection}`}>
+      <a
+        className={styles.backBtn}
+        href={'/multiverse'}
+        rel="noreferrer"
+      >
+        Back to the Multiverse
+      </a>
+    </div>
   </div>)
 };
 

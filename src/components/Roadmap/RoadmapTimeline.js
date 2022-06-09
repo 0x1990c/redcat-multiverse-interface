@@ -173,7 +173,7 @@ const RoadmapTimeline = () => {
         ))}
       </div>
       <div className={styles.extendedBtnContainer}>
-        <a className={styles.extendedBtn} href='https://google.com' target='_blank' rel="noreferrer">
+        <a className={styles.extendedBtn} href='https://whitepaper.redcatmultiverse.io/roadmap-for-redcat-multiverse' target='_blank' rel="noreferrer">
           For extended RCM Labs road map, please click here
         </a>
       </div>

@@ -11,6 +11,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.backBtnSection {
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 .leftCol,
@@ -31,6 +36,7 @@
   height: auto;
   max-width: 590px;
   max-height: 590px;
+  border-radius: 8px;
   object-fit: contain;
 }
 
@@ -142,6 +148,23 @@
   max-width: 616px;
   height: auto;
   object-fit: contain;
+}
+
+.backBtn {
+  width: 262px;
+  height: 49px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #e83324;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.009, 1.009);
+  }
 }
 
 @media screen and (max-width: 1024px) {
