@@ -7,7 +7,7 @@ const slideImages = [
   { url: './images/HomeHero/carousel/colorpoint.jpeg' },
   { url: './images/HomeHero/carousel/pink.jpeg' },
   { url: './images/HomeHero/carousel/rainbow.jpeg' },
-  { url: './images/HomeHero/carousel/Sanura-Gas-Mask.jpg' }
+  { url: './images/HomeHero/carousel/black.jpeg' }
 ];
 
 const properties = {
