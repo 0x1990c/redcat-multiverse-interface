@@ -22,7 +22,7 @@ export const DevelopBy = () => {
 				fontSize={'60px'}
 			></GradientText>
 
-			<h2 className={styles.subtitle}> Play -&gt; Learn -&gt; Earn </h2>
+			<h2 className={styles.subtitle}> Play &gt;&gt; Learn &gt;&gt; Earn </h2>
 
 			<div className={styles['line-gradient']}
 				style={{
