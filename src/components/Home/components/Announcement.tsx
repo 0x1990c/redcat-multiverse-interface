@@ -8,7 +8,7 @@ export const Announcement = ({ announce }: any) => {
     <>
       <div className={styles['container-annoucement-border']}>
         <div className={styles['container-annoucement']}>
-          <div className={styles['container-img']}>
+          <div className={styles['container-carousel-announce']}>
             <CarouselAnnounces />
           </div>
           <div className={cx(styles['container-description-annoucement'], styles['container-info-description'])}>

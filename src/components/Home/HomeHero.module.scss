@@ -1,5 +1,10 @@
 @import 'src/styles/colors.scss';
 
+.container-carousel-announce {
+  max-width: 450px;
+  width: 350px;
+}
+
 .container-carousel {
   max-width: 450px;
   width: 350px;
@@ -662,6 +667,12 @@
   }
 }
 
+@media screen and(max-width: 1024px) {
+  .container-carousel-announce {
+    margin: auto !important;
+  }
+}
+
 @media screen and (max-width: 981px) {
 
   .container-play-learn-carousel {
@@ -908,14 +919,36 @@
   .bg-city {
     background-position-y: 0px !important;
   }
+
+  .container-carousel-announce {
+    height: 350px;
+    width: 100% !important;
+    margin: auto;
+  }
 }
 
 @media screen and(max-width: 380px) {
+  .container-carousel-announce {
+    height: 280px !important;
+    width: 100% !important;
+  }
+
   .container-carousel {
     width: 300px !important;
   }
 
+  .container-height-carousel-announce {
+    height: 307px !important;
+  }
+
   .container-height-carousel {
     height: 300px !important;
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .container-carousel-announce {
+    height: 250px !important;
+    width: 100% !important;
   }
 }

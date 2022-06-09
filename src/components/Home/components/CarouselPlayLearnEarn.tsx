@@ -24,7 +24,6 @@ const properties = {
   indicators: true,
   arrows: false,
   pauseOnHover: true,
-
 };
 
 export const CarouselPlayLearnEarn = () => {

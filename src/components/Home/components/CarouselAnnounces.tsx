@@ -1,20 +1,45 @@
 import React from 'react'
-import styles from '../carousel.module.scss'
+import { Slide } from 'react-slideshow-image';
+import styles from '../HomeHero.module.scss'
+
+const slideImages = [
+  { url: './images/HomeHero/carousel/matrix-cat.png' },
+  { url: './images/HomeHero/carousel/colorpoint.jpeg' },
+  { url: './images/HomeHero/carousel/pink.jpeg' },
+  { url: './images/HomeHero/carousel/rainbow.jpeg' },
+  { url: './images/HomeHero/carousel/Sanura-Gas-Mask.jpg' }
+];
+
+const properties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: false,
+  arrows: false,
+  pauseOnHover: true,
+
+};
 
 export const CarouselAnnounces = () => {
   return (
     <>
-      <div className={styles['carousel-wrapper']}>
-        <div className={styles['carousel-container']}>
-          <div className={styles['carousel']}>
-            <div className={styles['image-one']}></div>
-            <div className={styles['image-two']}></div>
-            <div className={styles['image-three']}></div>
-            <div className={styles['image-four']}></div>
-            <div className={styles['image-five']}></div>
-          </div>
-        </div>
-      </div>
+      <Slide {...properties}>
+        {
+
+          slideImages.map((image, index) => (
+            <div key={index} className="each-slide">
+              <div className={styles['container-height-carousel-announce']} style={{
+                backgroundImage: `url("${image.url}")`,
+                backgroundSize: '100%',
+                backgroundRepeat: 'no-repeat',
+                height: '350px',
+                borderRadius: '8px'
+              }}>
+              </div>
+            </div>
+          ))
+        }
+      </Slide>
     </>
   )
 }
