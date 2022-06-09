@@ -46,12 +46,12 @@ export const characterDetails = [
     id: 1,
     name: 'PLIKPLIK',
     role: 'THE COSMIC CULINARIAN',
-    thumbnail: '/images/characters/plikplik_thumbnail.jpg',
+    thumbnail: '/images/characters/plikplik_thumbnail.png',
     fullCharacter: '/images/characters/plikplik_full_character.png',
     descriptions: [
       "Plikplik is a small, furry creature from the harsh world of Proxima Centauri b, in the Alpha Centauri system. Surviving on fairly tasteless root vegetables, these small, furry creatures were constantly testy and fighting with each other, inspiring Plikplik to leave home and search the stars for a way to unite his people. It was on his travels that he discovered all the wondrous food the cosmos had to offer. Upon returning home, Plikplik prepared a summit with an accompanying feast, where his people quickly found peace under the spell of his novel culinary delights.",
       "Since then, Plikplik has once again begun to wander the cosmos in pursuit of his passion for cooking. Despite the tasteless diet of their home, Plikplik’s people actually have one of the most developed palates in the multiverse, making him an ideal chef for many of the greatest gourmands with his ability to draw out hidden flavors of his ingredients.",
-      "Despite having tasted all wonders of the galaxy and having cooked for cosmic kings, Plikplik prefers to prepare vegetarian meals in honor of his peoples newfound peace. There's no need for anyone to panic if he licks them (which he sometimes does), because his tongue is surprisingly smooth and smells like fresh vanilla."
+      "Despite having tasted all wonders of the galaxy and having cooked for cosmic kings, Plikplik prefers to prepare vegetarian meals in honor of his peoples’ newfound peace. There's no need for anyone to panic if he licks them (which he sometimes does), because his tongue is surprisingly smooth and smells like fresh vanilla."
     ],
     fictions: [
       "Sylvia had called out at the last minute with a bad case of the stomach flu, leaving Chef Rudy down a key chef and under intense pressure. Mrs.Chen-Irfan was very clear in her expectations for this benefit dinner, and she was known to be unpleasant when things didn’t go according to plan. Chef Rudy looked at the clock, while realizing no one had even started the canapes yet.",
