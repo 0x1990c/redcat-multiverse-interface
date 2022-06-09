@@ -25,7 +25,7 @@ import styles from './PLECatCarousel.module.scss';
 const PLECatCarousel = ({ cats }: any) => {
   const settings = {
     centerMode: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 1,
     infinite: true,
@@ -37,12 +37,6 @@ const PLECatCarousel = ({ cats }: any) => {
     pauseOnHover: false,
     cssEase: "linear",
     responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
       {
         breakpoint: 1200,
         settings: {
