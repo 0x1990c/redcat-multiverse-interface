@@ -935,16 +935,17 @@
     width: 100% !important;
   }
 
-  .container-carousel {
-    width: 288px !important;
-  }
-
   .container-height-carousel-announce {
     height: 300px !important;
   }
 
+
+  .container-carousel {
+    width: 300px !important;
+  }
+
   .container-height-carousel {
-    height: 288px !important;
+    height: 300px !important;
   }
 }
 
@@ -952,5 +953,13 @@
   .container-carousel-announce {
     height: 250px !important;
     width: 100% !important;
+  }
+
+  .container-carousel {
+    width: 288px !important;
+  }
+
+  .container-height-carousel {
+    height: 288px !important;
   }
 }
