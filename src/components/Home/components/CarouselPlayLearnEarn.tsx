@@ -24,9 +24,6 @@ const properties = {
   indicators: true,
   arrows: false,
   pauseOnHover: true,
-  onChange: (oldIndex: any, newIndex: any) => {
-    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-  }
 };
 
 export const CarouselPlayLearnEarn = () => {

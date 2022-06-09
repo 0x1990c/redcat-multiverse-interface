@@ -7,7 +7,6 @@ import { gsap, Power1 } from "gsap";
 import { Flip } from "gsap/dist/Flip";
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import { contents } from './constants';
-import CommunitySubscribeForm from './CommunitySubscribeForm';
 
 const CommunityGrid = () => {
   const { isMobile } = useScreenWidth();
@@ -30,21 +29,21 @@ const CommunityGrid = () => {
       return;
     }
 
+    // should be whitepaper url
     if (numberId === 1) {
-      // should be white paper url
-      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      window.open('https://whitepaper.redcatmultiverse.io/', '_blank');
       return;
     }
 
     // Updates
     if (numberId === 5) {
-      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      window.open('https://blog.redcatmultiverse.io/', '_blank');
       return;
     }
 
     // press
     if (numberId === 6) {
-      window.open('https://rcm-labs.gitbook.io/redcat-multiverse-wiki/', '_blank');
+      window.open('https://wiki.redcatmultiverse.io/', '_blank');
       return;
     }
   }

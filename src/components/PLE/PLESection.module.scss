@@ -1,0 +1,155 @@
+.pleSection {
+  width: 100%;
+  color: #fff;
+}
+
+.sectionRow {
+  display: flex;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.upperSection {
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  font-family: 'Gotham Ultra';
+  font-size: 62px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.tagCommentContainer {
+  display: flex;
+  align-items: flex-start;
+
+  .tag {
+    width: 110px;
+    object-fit: contain;
+  }
+}
+
+.tagComment {
+  width: 100%;
+  max-width: 751px;
+  position: relative;
+  margin-left: 20px;
+
+  .tagCommentBox {
+    width: 100%;
+  }
+
+  .tagCommentText {
+    color: #1b1628;
+    font-family: 'Bariol';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    position: absolute;
+    padding: 22px 19px 28px 42px;
+  }
+}
+
+.textCol {
+  width: 50%;
+  padding: 0 20px;
+  font-family: 'Bariol';
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1250px) {
+  .sectionTitle {
+    font-size: 48px;
+  }
+
+  .tagComment {
+    max-width: 580px;
+    position: relative;
+    margin-left: 10px;
+
+    .tagCommentText {
+      font-size: 18px;
+      padding: 20px 15px 28px 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sectionRow {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .tagCommentContainer {
+    align-items: center;
+
+    .tag {
+      width: 62px;
+      margin-top: -30px;
+      object-fit: contain;
+    }
+  }
+
+  .tagComment {
+    width: 245px;
+    height: 189px;
+    margin-left: 20px;
+
+    .tagCommentText {
+      font-size: 14px;
+      padding: 14px 17px 14px 42px;
+
+      &.play {
+        padding-top: 12px;
+      }
+
+      &.learn {
+        padding-top: 18px;
+      }
+
+      &.earn {
+        font-size: 12px;
+        padding-top: 22px;
+      }
+    }
+  }
+
+  .textCol {
+    width: 100%;
+    font-size: 13px;
+    padding: 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tagComment {
+    margin-left: 12px;
+  }
+}

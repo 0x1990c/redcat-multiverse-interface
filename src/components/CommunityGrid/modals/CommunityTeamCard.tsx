@@ -1,5 +1,7 @@
 import { useRef } from 'react'
 import cx from 'classnames';
+import Image from 'next/image';
+import { IMAGE_BLUR_DATA_URL_PINK } from '../../../utilities/constants';
 import styles from './CommunityTeamCard.module.scss'
 
 const CommunityTeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any) => {
@@ -29,12 +31,13 @@ const CommunityTeamCard = ({ teamMemberInfo, index, onSelect, isSelected }: any)
       onClick={handleClick}
       ref={boxReference}
     >
-      <img
+      <Image
         className={cx(styles.photo)}
         src={imageCard}
         alt={role + ': ' + firstName + ' ' + lastName}
-        width={154}
-        height={154}
+        layout='fill'
+        placeholder='blur'
+        blurDataURL={IMAGE_BLUR_DATA_URL_PINK}
       />
       <div className={cx(styles.personal_info)}>
         <div className={cx(styles.full_name)} >
