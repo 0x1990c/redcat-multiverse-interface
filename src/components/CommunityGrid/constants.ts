@@ -57,7 +57,7 @@ export const contents = [
   },
   {
     id: '6',
-    title: "PRESS",
+    title: "REDCAT MULTIVERSE WIKI",
     numeration: "07",
     label: "",
     column: "column_1",
@@ -68,16 +68,16 @@ export const contents = [
 
 export const teamMembers = [
   {
-    imageCard: './images/community/team/Binici.jpg',
-    image: './images/community/team/Binici.png',
+    imageCard: '/images/community/team/Binici.jpg',
+    image: '/images/community/team/Binici.png',
     firstName: 'S.Binici',
     lastName: 'KAYA',
     role: 'CEO',
     bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder. Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others. Binici studied Physics, Mathematics, Engineering and an MBA. She is an MIT alumna.',
   },
   {
-    imageCard: './images/community/team/Matthew.jpg',
-    image: './images/community/team/Matthew.png',
+    imageCard: '/images/community/team/Matthew.jpg',
+    image: '/images/community/team/Matthew.png',
     firstName: 'Matthew',
     lastName: 'Grau',
     role: 'Creative Director',
@@ -86,36 +86,35 @@ export const teamMembers = [
   {
     firstName: 'Muhamet',
     lastName: 'Yildiz',
-    imageCard: './images/community/team/Muhamet.jpg',
-    image: './images/community/team/Muhamet.png',
+    imageCard: '/images/community/team/Muhamet.jpg',
+    image: '/images/community/team/Muhamet.png',
     role: 'Chief Economic Advisor',
     bio: 'Muhamet is recognized as one of the leading Game Theory thinkers and researchers in the world. He has been part of the MIT Economics department since 2000 and has been a tenured professor since 2007. At MIT, his areas of expertise are Game Theory and Economic Theory. Muhamet holds a Ph.D. in Economics from Stanford University as well as earlier degrees in Electrical Engineering and Mathematics. As the Chief Economic Advisor at RCM Labs, Muhamet is responsible for the design of the RedCat Multiverse economy.',
   },
   {
     firstName: 'Henderson',
     lastName: 'Hedin',
-    imageCard: './images/community/team/Henderson.jpg',
-    image: './images/community/team/Henderson.png',
+    imageCard: '/images/community/team/Henderson.jpg',
+    image: '/images/community/team/Henderson.png',
     role: 'Blockchain Team Lead',
     bio: 'Henderson is a creative fullstack blockchain developer dedicated to building and optimizing the performance of UX, testing, debugging and training staff. Previously, he was a smart contract developer and team lead at DCAU crypto gaming. Henderson holds a Masters of Computer Science degree from Stockholm University.',
   },
   {
     firstName: 'Karl',
     lastName: 'Kapp',
-    imageCard: './images/community/team/Karl.jpg',
-    image: './images/community/team/Karl.png',
+    imageCard: '/images/community/team/Karl.jpg',
+    image: '/images/community/team/Karl.png',
     role: 'Senior L&D Advisor',
     bio: 'Karl is recognized worldwide as a pioneer in the gamification of learning and instruction. He is an award-winning international keynote speaker, consultant, entrepreneur and professor of instructional technology at Bloomsburg University in Bloomsburg, PA. He has earned over one million dollars in grant funding, authored ten LinkedIn Learning courses and written several books on the convergence of learning, technology and business.',
   },
   {
     firstName: 'Daniel',
     lastName: 'Aronoff',
-    imageCard: './images/community/team/Dan.jpg',
-    image: './images/community/team/Dan.png',
+    imageCard: '/images/community/team/Dan.jpg',
+    image: '/images/community/team/Dan.png',
     role: 'Senior Digital Currency Advisor',
     bio: 'Daniel is a Ph.D. candidate in economics and a collaborator at the Media Lab Digital Currency Initiative at MIT. Daniel has published on macroeconomics, environmental economics, blockchain protocols and smart contract applications in financial markets. Daniel has been an entrepreneur in commercial and environmental real estate. He holds a B.Sc. degree in philosophy and economics with first class honors from the London School of Economics. ',
   },
-
 ];
 
 export const rcmLabsTexts = [
