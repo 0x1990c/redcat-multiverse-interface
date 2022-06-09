@@ -1,23 +1,54 @@
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
+import styles from '../HomeHero.module.scss'
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
+const slideImages = [
+  {
+    url: './images/HomeHero/carousel/WellsCarousel.png'
+  },
+  {
+    url: './images/HomeHero/carousel/FuYijunCarousel.jpg'
+  },
+  {
+    url: './images/HomeHero/carousel/SanuraCarousel.png'
+  },
+  {
+    url: './images/HomeHero/carousel/PlikpliCarousel.png'
+  }
+];
+
+const properties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  arrows: false,
+  pauseOnHover: true,
+  onChange: (oldIndex: any, newIndex: any) => {
+    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+  }
+};
 
 export const CarouselPlayLearnEarn = () => {
   return (
     <>
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false} // should stop playing on user interaction
-        interval={2000}
-        organicArrows={false}
-      >
-        <div data-src="./images/HomeHero/carousel/WellsCarousel.png" />
-        <div data-src="./images/HomeHero/carousel/FuYijunCarousel.jpg" />
-        <div data-src="./images/HomeHero/carousel/SanuraCarousel.png" />
-        <div data-src="./images/HomeHero/carousel/PlikpliCarousel.png" />
-      </AutoplaySlider>
+      <Slide {...properties}>
+        {
+
+          slideImages.map((image, index) => (
+            <div key={index} className="each-slide">
+              <div className={styles['container-height-carousel']} style={{
+                backgroundImage: `url("${image.url}")`,
+                backgroundSize: '100%',
+                backgroundRepeat: 'no-repeat',
+                height: '350px',
+                borderRadius: '8px'
+              }}>
+              </div>
+            </div>
+          ))
+        }
+      </Slide>
     </>
   )
 }
