@@ -11,7 +11,7 @@ import ConnectModal from '../ConnectModal/ConnectModal';
 const headerLinks = [
   { name: 'PLE', link: 'play-learn-earn', finished: true },
   { name: 'Roadmap', link: 'roadmap', finished: true },
-  { name: 'Multiverse', link: 'multiverse', finished: true },
+  { name: 'The Multiverse', link: 'multiverse', finished: true },
   { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
   { name: 'Community', link: 'community', finished: true },
   { name: 'Whitepaper', link: 'whitepaper', finished: true },

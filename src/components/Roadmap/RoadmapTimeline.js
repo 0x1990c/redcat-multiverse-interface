@@ -9,7 +9,12 @@ const contents = [
   {
     id: '0',
     title: 'The Red Cat Arrives',
-    bullets: ['Pre-production started', 'Core design completed', 'First minting of Meerkat Bag NFTs', 'RedCat Multiverse community begins'],
+    bullets: [
+      'Pre-production started',
+      'Core design completed',
+      'Meerkat Bag NFT Collection Sale',
+      'RedCat Multiverse community begins'
+    ],
     buttonLabel: 'Done',
     period: 'Q4 2021 & Q1 2022',
     alignment: 'left',
@@ -30,7 +35,7 @@ const contents = [
   {
     id: '2',
     title: 'Inception Begins',
-    bullets: ['Inception NFT collection announced', 'Inception NFT Sale (Summer 2022)'],
+    bullets: ['Inception NFT collection announced', 'Inception NFT Collection Sale (Summer 2022)'],
     buttonLabel: 'Upcoming',
     period: 'Q2 2022',
     alignment: 'left',
@@ -40,7 +45,7 @@ const contents = [
     title: 'RedCat Multiverse Orientation',
     bullets: [
       'Closed Beta release <span style="color: #e83324;">(Initially for Inception NFT Holders and select RCM Insiders)</span>',
-      'Accretion collection sale <span style="color: #7192f3;">(open to public)</span>',
+      'Accretion NFT Collection Sale <span style="color: #7192f3;">(open to public)</span>',
       'RedCat Multiverse Tokenomics published'
     ],
     buttonLabel: 'Future',
@@ -50,7 +55,7 @@ const contents = [
   {
     id: '4',
     title: 'The RedCat Multiverse Opens',
-    bullets: ['Conception collection sale', 'Governance Token Sale', 'Public Beta release'],
+    bullets: ['Conception NFT Collection Sale', 'Governance Token Sale', 'Public Beta release'],
     buttonLabel: 'Future',
     period: 'Q4 2022',
     alignment: 'left',
@@ -229,7 +234,12 @@ const RoadmapTimeline = () => {
           ))}
         </div>
         <div className={styles.extendedBtnContainer}>
-          <a className={styles.extendedBtn} href='https://google.com' target='_blank' rel="noreferrer">
+          <a
+            className={styles.extendedBtn}
+            href='https://whitepaper.redcatmultiverse.io/roadmap-for-redcat-multiverse'
+            target='_blank'
+            rel="noreferrer"
+          >
             For extended RCM Labs road map, please click here
           </a>
         </div>

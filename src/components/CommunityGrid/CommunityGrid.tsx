@@ -29,9 +29,9 @@ const CommunityGrid = () => {
       return;
     }
 
+    // should be whitepaper url
     if (numberId === 1) {
-      // should be white paper url
-      window.open('https://redcatmultiverse.substack.com/', '_blank');
+      window.open('https://whitepaper.redcatmultiverse.io/', '_blank');
       return;
     }
 
