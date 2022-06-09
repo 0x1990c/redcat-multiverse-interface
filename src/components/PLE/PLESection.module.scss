@@ -32,9 +32,15 @@
   display: flex;
   align-items: flex-start;
 
-  .tag {
+  .tagImg {
     width: 110px;
     object-fit: contain;
+    border-radius: 20px;
+    border: solid 5px #e83324;
+
+    &.redSection {
+      border-color: #7192f3;
+    }
   }
 }
 
@@ -105,7 +111,7 @@
   .tagCommentContainer {
     align-items: center;
 
-    .tag {
+    .tagImg {
       width: 62px;
       margin-top: -30px;
       object-fit: contain;
