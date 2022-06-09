@@ -1,3 +1,4 @@
+import parse from 'html-react-parser';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import styles from './PLESection.module.scss';
 
@@ -21,10 +22,10 @@ const PLESection = ({ content }: any) => {
     </div>
     <div className={styles.sectionRow}>
       <div className={styles.textCol}>
-        {leftText}
+        {parse(leftText)}
       </div>
       <div className={styles.textCol}>
-        {rightText}
+        {parse(rightText)}
       </div>
     </div>
   </div>)

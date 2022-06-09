@@ -29,7 +29,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 				{links.map((link: any, index: any) => {
 					if (link.link === 'whitepaper') {
 						return (
-							<a className={styles.option} key={index} href='https://redcatmultiverse.substack.com/' target='_blank' rel="noreferrer">
+							<a className={styles.option} key={index} href='https://whitepaper.redcatmultiverse.io/' target='_blank' rel="noreferrer">
 								{index !== 0 && <span>|</span>}
 								{link.name}
 							</a>
