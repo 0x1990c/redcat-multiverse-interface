@@ -1,6 +1,7 @@
 /* eslint-disable react/no-children-prop */
-import React from 'react'
-import styles from './gradientText.module.scss'
+import React from 'react';
+import parse from 'html-react-parser';
+import styles from './gradientText.module.scss';
 
 declare interface GradientTextProps {
   element: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
@@ -20,7 +21,7 @@ const getGradientScale = (gradient: string[]): string => {
 const GradientText = (props: GradientTextProps) => {
   const { text, element, innerColor, gradient, fontSize = '' } = props
   const gradientElement = React.createElement(element, {
-    children: text,
+    children: parse(text),
     className: styles.gradient_text,
     style: {
       color: innerColor,

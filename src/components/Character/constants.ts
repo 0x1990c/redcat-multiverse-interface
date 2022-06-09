@@ -3,8 +3,8 @@ export const characterDetails = [
     id: 0,
     name: 'WELLS',
     role: 'THE TIME TRAVELER',
-    thumbnail: './images/characters/wells_thumbnail.png',
-    fullCharacter: './images/characters/wells_full_character.png',
+    thumbnail: '/images/characters/wells_thumbnail.png',
+    fullCharacter: '/images/characters/wells_full_character.png',
     descriptions: [
       "The Royal College said it couldn’t be done. His head was too in the clouds, they said. Not tethered to the realities and limitations of science, they said. “Poppycock,” Wells said to that, and promptly proved all of them wrong by building his very own functioning time machine, and then not letting any of them try it out.",
       "The plaque in front of his Victorian London laboratory reads Horatio Wells, Inventor & Gentleman.Wells’ birth name is actually Hayden, but he thinks Horatio is more befitting a gentleman time - adventurer.Born to a good family, all his wealthy parents wanted for him was a proper education in the sciences, which he met when he took them to see their first dinosaurs.Though Wells is absent much of the time, he never seems to miss anything important – a benefit of being a time traveler.",
@@ -40,14 +40,14 @@ export const characterDetails = [
       "Tachyons are theoretical particles which can move faster - than - light, which aren’t consistent with the laws of physics as we understand them.There are those who posit they have the ability to move through time, making them a staple of science - fiction.",
       "In digital music production, the ability to automatically align notes so they are rhythmically perfect is called quantizing."
     ],
-    radar: './images/characters/wells_radar.png'
+    radar: '/images/characters/wells_radar.png'
   },
   {
     id: 1,
     name: 'PLIKPLIK',
     role: 'THE COSMIC CULINARIAN',
-    thumbnail: './images/characters/plikplik_thumbnail.jpg',
-    fullCharacter: './images/characters/default_full_character.png',
+    thumbnail: '/images/characters/plikplik_thumbnail.jpg',
+    fullCharacter: '/images/characters/plikplik_full_character.png',
     descriptions: [
       "Plikplik is a small, furry creature from the harsh world of Proxima Centauri b, in the Alpha Centauri system. Surviving on fairly tasteless root vegetables, these small, furry creatures were constantly testy and fighting with each other, inspiring Plikplik to leave home and search the stars for a way to unite his people. It was on his travels that he discovered all the wondrous food the cosmos had to offer. Upon returning home, Plikplik prepared a summit with accompanying feast, where his people quickly found peace under the spell of his novel culinary delights.",
       "Since then, Plikplik has once again begun to wander the cosmos in pursuit of his passion for cooking. Despite their tasteless diet of their home, Plikplik’s people actually have one of the most developed palates in the multiverse, making him an ideal chef for many of the greatest gourmands with his ability to draw out hidden flavors of his ingredients.",
@@ -70,14 +70,14 @@ export const characterDetails = [
       "Proxima Centauri b is a planet which Earth astronomers thought to be in a habitable zone of the red dwarf star Proxima Centauri, one of three stars that make up the Alpha Centauri star system.",
       "The earliest recorded cookbook on Earth is a set of tablets dating back to around 1700 BC, detailing ingredients which are believed to be part of an ancient stew recipe."
     ],
-    radar: './images/characters/plikplik_radar.png'
+    radar: '/images/characters/plikplik_radar.png'
   },
   {
     id: 2,
     name: 'FU YIJUN',
     role: 'DRAGON OF WISDOM',
-    thumbnail: './images/characters/fuyijun_thumbnail.jpg',
-    fullCharacter: './images/characters/default_full_character.png',
+    thumbnail: '/images/characters/fuyijun_thumbnail.jpg',
+    fullCharacter: '/images/characters/fuyijun_full_character.png',
     descriptions: [
       "The mystical dragons of Asia have always had natures which tie them to the multiverse, and the primary reason they are rarely seen is because they are often traveling through parallel Earths.One such dragon, Fu Yijun is a dragon of wisdom who has tied himself to the season of Spring, and has a special interest in the development of life.",
       "Fu Yijun enjoys watching everything, from plants, to people, to communities, grow and become their true selves.He doesn’t concern himself with destinations or endings, because all life ends up in the same place eventually, but rather how a being lives the journey between birth and death.To Fu Yijun, every moment is precious and living in the moment is a gift.He has an easy way about him, with great patience for all things young and new, and enjoys conversing with just about anyone.Though fearsome and powerful in appearance, those who encounter him leave with a lighter heart.",
