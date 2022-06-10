@@ -9,6 +9,7 @@
   position: relative;
   margin-top: -88px;
   background-image: url('/images/multiverse_background.jpg');
+  padding-left: 100px;
 }
 
 .tagCommentContainer {
@@ -16,11 +17,18 @@
   display: flex;
 }
 
+.contentContainer {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pageContentContainer {
   width: 100%;
-  padding-left: 90px;
-  padding-top: 50px;
-  padding-right: 50px;
 }
 
 .redCatTitle {
@@ -35,12 +43,9 @@
 .figmentCardContainer {
   display: flex;
   width: 100%;
-  max-width: 1360px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 90px;
   padding-top: 50px;
-  padding-right: 50px;
 
   .cardItem {
     margin-bottom: 60px;
@@ -53,18 +58,24 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
+  .hero_banner {
+    padding-left: 60px;
+  }
 
-  .pageContentContainer,
-  .figmentCardContainer {
+  .contentContainer {
     padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .hero_banner {
+    padding-left: 30px;
+  }
 
-  .pageContentContainer {
-    padding: 35px;
+  .contentContainer {
+    padding: 30px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -75,8 +86,7 @@
   }
 
   .figmentCardContainer {
-    padding: 35px;
-    padding-top: 0;
+    padding-top: 0px;
 
     .cardItem {
       margin-bottom: 30px;
@@ -88,6 +98,7 @@
   }
 }
 
+
 @media screen and (max-width: 550px) {
   .figmentCardContainer {
     flex-direction: column;
@@ -95,5 +106,17 @@
 
   .hero_banner {
     background-position-x: -500px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero_banner {
+    padding-left: 10px;
+  }
+
+  .contentContainer {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

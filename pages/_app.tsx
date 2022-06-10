@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>RedCat Multiverse by RCM Labs</title>
+        <title>RedCat Multiverse I Play, Learn, Earn</title>
       </Head>
       <ThemeProvider enableSystem={true}>
         <Layout>

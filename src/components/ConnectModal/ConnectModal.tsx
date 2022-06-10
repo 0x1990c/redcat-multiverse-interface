@@ -83,7 +83,7 @@ const ConnectModal = ({ onClose }: any) => {
         </div>
         {resultShow && (
           <p className={`${styles.resultText} ${isError ? styles.error : ''}`}>
-            {isError ? 'Something went wrong!' : 'Successfully done!'}
+            {isError ? 'Something went wrong!' : 'Thank you for connecting with the Multiverse!'}
           </p>
         )}
       </div>
