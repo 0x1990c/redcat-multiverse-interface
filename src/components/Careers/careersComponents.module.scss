@@ -42,6 +42,10 @@
       border-radius: 8px;
       margin-right: 11px;
       margin-bottom: 15px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       .category {
         font-size: 20px;
@@ -63,14 +67,20 @@
         line-height: 1.33;
       }
 
+      .container-button {
+        // position: absolute;
+        right: 22px;
+        bottom: 23px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
       .button {
         padding: 5px 24px;
         background-color: $orange-red;
         border-radius: 8px;
         color: white;
-        float: right;
       }
-
     }
   }
 }
