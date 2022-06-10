@@ -1,16 +1,22 @@
-import '../src/styles/globals.scss'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { ThemeProvider } from 'next-themes'
 import Layout from '../src/components/Layout'
-import {ThemeProvider} from 'next-themes'
+import '../src/styles/globals.scss'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider enableSystem={true}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <>
+      <Head>
+        <title>RedCat Multiverse by RCM Labs</title>
+      </Head>
+      <ThemeProvider enableSystem={true}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </>
   )
 }
 

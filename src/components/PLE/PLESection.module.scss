@@ -49,6 +49,8 @@
   max-width: 751px;
   position: relative;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
 
   .tagCommentBox {
     width: 100%;
@@ -64,7 +66,7 @@
     line-height: 1.33;
     letter-spacing: normal;
     position: absolute;
-    padding: 22px 19px 28px 42px;
+    padding: 0 19px 0 44px;
   }
 }
 

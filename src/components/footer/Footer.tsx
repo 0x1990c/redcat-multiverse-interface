@@ -1,6 +1,6 @@
-import Container from '../container/Container'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -13,11 +13,9 @@ const Footer = () => {
   }
 
   return (
-    <Container>
-      <footer>
-        {/* <button onClick={handleClick}>Toggle dark mode</button> */}
-      </footer>
-    </Container>
+    <footer className={styles.footer}>
+      <strong>© 2022 RCM Labs. All rights reserved.</strong>
+    </footer>
   )
 }
 

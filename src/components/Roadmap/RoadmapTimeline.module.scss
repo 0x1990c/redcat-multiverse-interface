@@ -2,6 +2,7 @@
 
 .roadmap_container {
   padding: 58px 70px;
+  padding-bottom: 0;
 }
 
 .vertical_lines {
@@ -116,7 +117,6 @@
 
   .bullet_list_general {
     list-style-type: disc;
-    list-style-position: inside;
     padding-left: 15px;
   }
 }

@@ -18,7 +18,7 @@ export const RED_CAT_CONTENTS = [
   {
     subTitle: 'The Gifted',
     texts: [
-      'The purpose of The Institute is not just education and conversation, but also to send their fellows to go between worlds seeking discovery, solving discord, and above all else fostering unity between the beings of the multiverse. Members of The Institute show potential in Power Skills and exemplify the desire to work together, as well as to learn and grow, more so than mastery of these concepts.',
+      'The purpose of The Institute is not just education and conversation, but also to send their fellows to go between worlds seeking discovery, solving discord, and above all else, fostering unity between the beings of the multiverse. Members of The Institute show potential in Power Skills and exemplify the desire to work together, as well as to learn and grow, more so than mastery of these concepts.',
       'You have been inducted into the ranks of the Gifted, the best and the brightest sent out into the multiverse by the Institute to further Sanura’s goals.'
     ]
   }
