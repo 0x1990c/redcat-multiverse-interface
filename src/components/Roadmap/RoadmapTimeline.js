@@ -34,7 +34,7 @@ const contents = [
   },
   {
     id: '2',
-    title: 'Inception Begins',
+    title: 'The Gifted Operatives Arrive',
     bullets: ['Inception NFT collection announced', 'Inception NFT Collection Sale (Summer 2022)'],
     buttonLabel: 'Upcoming',
     period: 'Q2 2022',

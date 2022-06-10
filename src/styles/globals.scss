@@ -4,6 +4,18 @@
 @import './fonts.scss';
 @import './colors.scss';
 
+* {
+  user-select: none;
+}
+
+*::selection {
+  background: none;
+}
+
+*::-moz-selection {
+  background: none;
+}
+
 
 [data-theme='light'] {
   --background: #fff;

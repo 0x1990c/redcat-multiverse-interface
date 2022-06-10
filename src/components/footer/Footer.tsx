@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <strong>© 2022 RCM Labs. All rights reserved.</strong>
+      © 2022 RCM Labs. All rights reserved.
     </footer>
   )
 }
