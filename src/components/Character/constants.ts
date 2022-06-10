@@ -7,7 +7,7 @@ export const characterDetails = [
     fullCharacter: '/images/characters/wells_full_character.png',
     descriptions: [
       "The Royal College said it couldn’t be done. His head was too in the clouds, they said. Not tethered to the realities and limitations of science, they said. “Poppycock,” Wells said to that, and promptly proved all of them wrong by building his very own functioning time machine, and then not letting any of them try it out.",
-      "The plaque in front of his Victorian London laboratory reads Horatio Wells, Inventor & Gentleman. Wells’ birth name is actually Hayden, but he thinks Horatio is more befitting a gentleman time - adventurer. Born to a good family, all his wealthy parents wanted for him was a proper education in the sciences, which he met when he took them to see their first dinosaurs. Though Wells is absent much of the time, he never seems to miss anything important – a benefit of being a time traveler.",
+      "The plaque in front of his Victorian London laboratory reads Horatio Wells, Inventor & Gentleman. Wells’ birth name is actually Hayden, but he thinks Horatio is more befitting a gentleman time-adventurer. Born to a good family, all his wealthy parents wanted for him was a proper education in the sciences, which he met when he took them to see their first dinosaurs. Though Wells is absent much of the time, he never seems to miss anything important – a benefit of being a time traveler.",
       "The freedom provided by adventuring in time is what Wells treasures most, the ability to pick up and go anywhere he fancies. His natural curiosity draws him to all kinds of places, many of which are of no particular historical importance. Naturally, the future is of significant interest to Wells, but he still doesn’t understand how causality works there in relation to him.",
       "Like many scientists, Wells is fascinated by the mathematics of music. The digital music of the future is of particular interest to him, with its perfect timing and clockwork- like assembly. To him, it’s technology taking people beyond their limits, an example of what he himself pursues."
     ],
@@ -18,9 +18,9 @@ export const characterDetails = [
       "“Seems you brought something home with you,” said Jones-Smythe, gesturing towards Wells’ discomfort.",
       "“Yes,” said Wells, settling in. “It seems our current understanding of dinosaurs is wrong in many ways. I can assure you that some of them are much faster than previously expected, with sharper teeth.”",
       "Bigglesworth chortled. “You’re saying one of those buggers bit you square on the arse?”",
-      "“Not in those words, but yes,” responded Wells. “Before that, my journey forward was quite peaceful. I brought some more music of the future.Would you like to hear it?”",
+      "“Not in those words, but yes,” responded Wells. “Before that, my journey forward was quite peaceful. I brought some more music of the future. Would you like to hear it?”",
       "“As long as it’s not that chaotic jazz again,” said Paddington. “Too much improvisation for my tastes.”",
-      "“No, it’s not,” said Wells, producing a glowing palm - sized device from his pocket. He activated the curious thing and sound began to pour out from it, a fast, hard, driving music with exploding sounds.Wells frowned and touched the device again. “Sorry, that was a music called drum and bass. Let me find something simpler.”",
+      "“No, it’s not,” said Wells, producing a glowing palm-sized device from his pocket. He activated the curious thing and sound began to pour out from it, a fast, hard, driving music with exploding sounds. Wells frowned and touched the device again. “Sorry, that was a music called drum and bass. Let me find something simpler.”",
       "Bigglesworth snorted in his drink. “I hear neither drum nor bass, man! It sounds like tin cans in a storm and unhealthy flatulence.”",
       "“You, sir, are drunk.”, said Wells, as he again activated the music device, this time playing a slower, more mechanical song. The group listened with interest as the piece evolved, adding perfectly timed layers of sound as it progressed, never slowing down.",
       "Paddington sat in astonishment. “Can a human percussionist have the endurance necessary to complete such a feat as this?”",
@@ -36,11 +36,11 @@ export const characterDetails = [
     fictionMobileIdx: 7,
     knowledge: [
       "Time travel is also space travel, as galaxies, solar systems, and planets do not stay in the same location in space over time.",
-      "One of the best known time - travel paradoxes is the Grandfather Paradox. The basic idea is that if you traveled back in time and killed your grandfather, how could you ever have been born to do it in the first place?",
-      "Tachyons are theoretical particles which can move faster - than - light, which aren’t consistent with the laws of physics as we understand them. There are those who posit they have the ability to move through time, making them a staple of science - fiction.",
+      "One of the best known time-travel paradoxes is the Grandfather Paradox. The basic idea is that if you traveled back in time and killed your grandfather, how could you ever have been born to do it in the first place?",
+      "Tachyons are theoretical particles which can move faster-than-light, which aren’t consistent with the laws of physics as we understand them. There are those who posit they have the ability to move through time, making them a staple of science-fiction.",
       "In digital music production, the ability to automatically align notes so they are rhythmically perfect is called quantizing."
     ],
-    radar: '/images/characters/wells_radar.png'
+    radar: '/images/characters/wells_radar.svg'
   },
   {
     id: 1,
@@ -54,14 +54,14 @@ export const characterDetails = [
       "Despite having tasted all wonders of the galaxy and having cooked for cosmic kings, Plikplik prefers to prepare vegetarian meals in honor of his peoples’ newfound peace. There's no need for anyone to panic if he licks them (which he sometimes does), because his tongue is surprisingly smooth and smells like fresh vanilla."
     ],
     fictions: [
-      "Sylvia had called out at the last minute with a bad case of the stomach flu, leaving Chef Rudy down a key chef and under intense pressure. Mrs.Chen-Irfan was very clear in her expectations for this benefit dinner, and she was known to be unpleasant when things didn’t go according to plan. Chef Rudy looked at the clock, while realizing no one had even started the canapes yet.",
-      "He swore, looking around to see if anyone could start the job, but everyone was cooking their little hearts out. As if on cue, a bluish rodent-like creature wearing a big smile came floating through the door at about chest height. The creature saluted Chef Rudy, nodded to the other chefs, and promptly went madly to work on the canapes at a frantic pace. Despite the intense oddity of the situation, Chef Rudy shouted, “Back to work!” He was more afraid of Mrs.Chen-Irfan than whoever or whatever this was.",
-      "Minutes later, the diminutive floating creature handed canapes to Chef Rudy to taste. They melted in his mouth, introducing him to flavors he didn’t know those ingredients had. “Keep going,” he said, finishing off the delicacy with a thumbs up. The creature dove back in, just as Mrs.Chen-Irfan entered the kitchen.",
+      "Sylvia had called out at the last minute with a bad case of the stomach flu, leaving Chef Rudy down a key chef and under intense pressure. Mrs. Chen-Irfan was very clear in her expectations for this benefit dinner, and she was known to be unpleasant when things didn’t go according to plan. Chef Rudy looked at the clock, while realizing no one had even started the canapes yet.",
+      "He swore, looking around to see if anyone could start the job, but everyone was cooking their little hearts out. As if on cue, a bluish rodent-like creature wearing a big smile came floating through the door at about chest height. The creature saluted Chef Rudy, nodded to the other chefs, and promptly went madly to work on the canapes at a frantic pace. Despite the intense oddity of the situation, Chef Rudy shouted, “Back to work!” He was more afraid of Mrs. Chen-Irfan than whoever or whatever this was.",
+      "Minutes later, the diminutive floating creature handed canapes to Chef Rudy to taste. They melted in his mouth, introducing him to flavors he didn’t know those ingredients had. “Keep going,” he said, finishing off the delicacy with a thumbs up. The creature dove back in, just as Mrs. Chen-Irfan entered the kitchen.",
       "“You are behind schedule! What are you doing to make up time?” she said before looking up and seeing the flying rodent. “My goodness! I do not believe THAT,” she said, pointing at the creature, “was part of the vetting process! Get whatever it is out of here now!”",
       "“Believe me, maam,” Chef Rudy said, “I wouldn't normally recommend accepting food from what I think is a strange extraterrestrial being, especially not one which stands about knee high and is that particular shade of puce, but in this case you should make an exception.”",
-      "Standing in disbelief, Mrs.Chen-Irfan said, “You seem awfully calm about all of this nonsense.”",
+      "Standing in disbelief, Mrs. Chen-Irfan said, “You seem awfully calm about all of this nonsense.”",
       "“You will be too after you try the canapes. They are truly out of this world,” said Chef Rudy, as the creature finished rescuing the canapes. “You’re welcome in my kitchen anytime, little buddy.” The being floated to shoulder height and raised his hand, engaging Chef Rudy in an enthusiastic high five. Then he floated out the door, with the satisfaction of a job well-done.",
-      "Mrs.Chen-Irfan finally tried one of the canapes in protest, and nearly passed out because it was so good."
+      "Mrs. Chen-Irfan finally tried one of the canapes in protest, and nearly passed out because it was so good."
     ],
     fictionMobileIdx: 3,
     knowledge: [
@@ -70,7 +70,7 @@ export const characterDetails = [
       "Proxima Centauri b is a planet which Earth astronomers thought to be in a habitable zone of the red dwarf star Proxima Centauri, one of three stars that make up the Alpha Centauri star system.",
       "The earliest recorded cookbook on Earth is a set of tablets dating back to around 1700 BC, detailing ingredients which are believed to be part of an ancient stew recipe."
     ],
-    radar: '/images/characters/plikplik_radar.png'
+    radar: '/images/characters/plikplik_radar.svg'
   },
   {
     id: 2,
@@ -105,6 +105,6 @@ export const characterDetails = [
       "Honeybees are more likely to swarm during the spring, as a way to start new colonies from successful ones. Surprisingly, swarming honey bees are very docile and the most friendly they are all year.",
       "Not everyone marks the beginning of spring by the Spring Equinox. Meteorologists measure the seasons differently, dividing the year into four equal seasons which each start on the first day of every third month. For them, spring begins on March 1 and lasts until May 31 in the Northern Hemisphere, no matter when the equinox happens."
     ],
-    radar: './images/characters/fuyijun_radar.png'
+    radar: './images/characters/fuyijun_radar.svg'
   }
 ]
