@@ -3,6 +3,7 @@
 .container-background {
   .container-description {
     margin: 12px 0px;
+    margin-top: 35px;
 
     p {
       font-family: 'Bariol';
@@ -144,6 +145,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container-background {
+    .container-description {
+      margin-top: 12px;
+    }
+  }
+
   .container-button {
     display: flex;
     justify-content: center;

@@ -26,9 +26,9 @@
       line-height: 1.33;
       letter-spacing: normal;
       color: var(--font-color);
-      padding: 25px;
-      top: 0px;
-      left: 0px;
+      padding: 0 25px;
+      top: 50%;
+      transform: translateY(-85%);
     }
   }
 
@@ -51,6 +51,8 @@
       .commentContentText {
         font-size: 12px;
         max-width: 317px;
+        padding: 0 15px;
+        transform: translateY(-75%);
       }
     }
 
@@ -61,10 +63,8 @@
     .commentContentBoxMB {
       display: unset;
 
-      img {
-        width: 100%;
-        max-width: 317px;
-      }
+      width: 100%;
+      max-width: 317px;
     }
   }
 }
