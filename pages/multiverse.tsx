@@ -45,7 +45,7 @@ const Lore: NextPage = () => {
           <LoreBigTitleSection className={styles.redCatTitle} title={RED_CAT_MULTIVERSE} texts={RED_CAT_MULTIVERSE_TEXTS} />
           {/* RED CAT SUB SECTIONS */}
           {RED_CAT_CONTENTS.map((content: any, idx) => (
-            <LoreSubTitleSection className={styles.subTitle} title={content.subTitle} texts={content.texts} key={idx} />
+            <LoreSubTitleSection className={styles.subTitleSection} title={content.subTitle} texts={content.texts} key={idx} />
           ))}
 
           {/* FIGMENTS */}
