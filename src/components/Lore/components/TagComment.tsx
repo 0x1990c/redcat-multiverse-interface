@@ -16,11 +16,15 @@ const TagComment = ({ className }: any) => {
     <div className={`${className} ${styles.commentContainer}`}>
       <img src='./images/tag-2-left.png' className={styles.commentTag} />
       <div className={styles.commentContentContainer}>
-        <LoreTagCommentBox className={styles.commentContentBoxDesktop} />
-        <div className={styles.commentContentBoxMB}>
-          <img src={currentTheme === 'dark' ? "./images/lore_comment_dark.png" : "./images/lore_comment_white.png"} />
-        </div>
-        <div className={styles.commentContentText}>{LORE_HERO_COMMENT}</div>
+        <p className={styles.commentContentText}>{LORE_HERO_COMMENT}</p>
+        <img
+          className={styles.commentContentBoxDesktop}
+          src={currentTheme === 'dark' ? "./images/lore_comment_dp_dark.png" : "./images/lore_comment_dp.png"}
+        />
+        <img
+          className={styles.commentContentBoxMB}
+          src={currentTheme === 'dark' ? "./images/lore_comment_dark.png" : "./images/lore_comment_white.png"}
+        />
       </div>
     </div>
   );

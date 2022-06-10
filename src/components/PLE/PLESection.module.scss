@@ -161,3 +161,58 @@
     margin-left: 12px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .tagComment {
+    .tagCommentText {
+      font-size: 14px;
+      padding: 14px 15px 14px 36px;
+
+      &.play {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .tagComment {
+    .tagCommentText {
+      font-size: 14px;
+      padding: 14px 15px 14px 36px;
+
+      &.play {
+        font-size: 13px;
+      }
+
+      &.learn {
+        font-size: 13px;
+      }
+
+      &.earn {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tagComment {
+    .tagCommentText {
+      font-size: 14px;
+      padding: 14px 15px 14px 36px;
+
+      &.play {
+        font-size: 11px;
+      }
+
+      &.learn {
+        font-size: 11px;
+      }
+
+      &.earn {
+        font-size: 11px;
+      }
+    }
+  }
+}
