@@ -40,7 +40,7 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 						<div className={styles['container-glass']}>
 							<div className={`${styles['container-options']} ${show && styles['slide-left']}`}>
 								<div className={styles['container-brand']}>
-									<a className={styles.brand} href="/community">
+									<a className={styles.brand} href="/">
 										{
 											theme == 'dark'
 												? (<img src='./images/rcm-logo-white.svg' alt='RCM Logo' />)
