@@ -4,7 +4,7 @@ export const RED_CAT_MULTIVERSE = "THE REDCAT MULTIVERSE";
 
 export const RED_CAT_MULTIVERSE_TEXTS = [
   "Sanura, also known as The Red Cat, is a powerful entity from a higher dimension. She has created the Convergence, a place where worlds from many universes merge through multiversal gates, to bring sentient life from across realities together.",
-  "In order to survive a terrible threat to all realities, from a place beyond space - time, Sanura is attempting to achieve unity between all people, and has enlisted the assistance of gifted individuals from across the multiverse."
+  "In order to survive a terrible threat to all realities, from a place beyond space-time, Sanura is attempting to achieve unity between all people, and has enlisted the assistance of gifted individuals from across the multiverse."
 ];
 
 export const RED_CAT_CONTENTS = [
