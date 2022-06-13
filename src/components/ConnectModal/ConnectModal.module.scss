@@ -30,9 +30,11 @@
   padding: 46px 40px;
   border-radius: 8px;
   background:
-    linear-gradient(var(--background), var(--background)) padding-box,
-    // linear-gradient(to right, $blue-blue 25%, $orange 49%, $yellow 75%) border-box;
+    linear-gradient(#14101b, #14101b) padding-box,
     linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+  // background:
+  //   linear-gradient(#fff, #fff) padding-box,
+  //   linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
   border: 2px solid transparent;
 }
 
@@ -44,11 +46,6 @@
 }
 
 .background {
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // height: 100%;
-  // width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -59,8 +56,6 @@
 
 .title {
   max-width: 718px;
-  // height: 158px;
-  // margin: 0px 512px 163px 0;
   font-family: 'Gotham Medium';
   font-size: 62px;
   font-weight: 900;
@@ -68,7 +63,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--font-color);
+  color: #fff;
 }
 
 .submitForm {
@@ -79,48 +74,10 @@
   flex-direction: column;
 }
 
-.formInput {
-  display: flex;
-  margin-top: 100px;
-  z-index: 999;
-
-  input {
-    width: 400px;
-    height: 65px;
-    background:
-      linear-gradient(var(--background), var(--background)) padding-box,
-      linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
-    border: 2px solid transparent;
-    border-right: none;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding-left: 25px;
-    font-size: 21px;
-    color: var(--font-color);
-  }
-
-  button {
-    width: 200px;
-    height: 65px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
-    background-color: #e83324;
-    font-family: 'Gotham Medium';
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-  }
-}
-
-.resultText {
-  color: var(--font-color);
-
-  &.error {
-    color: #e83324;
-  }
+.subscribeIframe {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -141,23 +98,17 @@
   .background {
     height: 230px;
   }
+}
 
-  .formInput {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  .close {
+    right: 15px;
+    top: 15px;
+  }
+}
 
-    input {
-      width: 315px;
-      background:
-        linear-gradient(var(--background), var(--background)) padding-box,
-        linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
-      border: 2px solid transparent;
-      border-radius: 8px;
-    }
-
-    button {
-      width: 315px;
-      border-radius: 8px;
-      margin-top: 25px;
-    }
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 26px;
   }
 }
