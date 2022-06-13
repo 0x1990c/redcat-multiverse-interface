@@ -75,7 +75,7 @@ const ConnectModal = ({ onClose }: any) => {
 
       <p className={styles.title}>CONNECT TO THE MULTIVERSE</p>
       <div className={styles.submitForm}>
-        <div className={styles.formInput}>
+        {/* <div className={styles.formInput}>
           <input type='email' placeholder='email@email.com' onChange={handleChange} />
           <button onClick={handleClick}>
             {isSubscribing ? 'SUSCRIBING...' : 'SUBSCRIBE'}
@@ -85,7 +85,16 @@ const ConnectModal = ({ onClose }: any) => {
           <p className={`${styles.resultText} ${isError ? styles.error : ''}`}>
             {isError ? 'Something went wrong!' : 'Thank you for connecting with the Multiverse!'}
           </p>
-        )}
+        )} */}
+        <iframe
+          src="https://blog.redcatmultiverse.io/embed"
+          width="480"
+          height="320"
+          // style="border:1px solid #EEE; background:white;"
+          className={styles.subscribeIframe}
+          frameBorder="0"
+          scrolling="no"
+        />
       </div>
     </div>
   )
