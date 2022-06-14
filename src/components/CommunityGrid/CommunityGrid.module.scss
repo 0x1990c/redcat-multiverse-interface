@@ -30,6 +30,12 @@
     font-family: Gotham Medium;
   }
 
+  &.item_g {
+    .title {
+      max-width: 300px;
+    }
+  }
+
   .numeration {
     font-size: 89px;
     letter-spacing: 0px;
