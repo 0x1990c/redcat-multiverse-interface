@@ -14,9 +14,9 @@ export const LinksIcons = () => {
 			<a href='https://twitter.com/TheRedCats' target='_blank' rel="noreferrer">
 				<img src='/images/twitter-icon.svg' />
 			</a>
-			{/* <a href='https://www.reddit.com/r/redcatmultiverse/' target='_blank' rel="noreferrer">
+			<a href='https://www.reddit.com/r/redcatmultiverse/' target='_blank' rel="noreferrer">
 				<img src='/images/reddit-icon.svg' />
-			</a> */}
+			</a>
 			<a href='https://www.instagram.com/redcatmultiverse/' target='_blank' rel="noreferrer">
 				<img src='/images/ig-icon.svg' />
 			</a>
