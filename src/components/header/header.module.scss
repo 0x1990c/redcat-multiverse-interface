@@ -40,15 +40,15 @@
                     background: $orange-red;
                     border-radius: 16px;
                     position: absolute;
-                    left: 22px;
                     font-size: 8px;
                     font-family: 'Gotham Medium';
                     // width: 100%;
-                    width: calc(100% - 22px);
+                    width: calc(100% - 30px);
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     line-height: 1;
+                    left: 22px;
                     height: 12px;
                     bottom: -12px;
                 }
