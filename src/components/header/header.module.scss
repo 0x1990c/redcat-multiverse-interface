@@ -35,13 +35,22 @@
             &.soonPage {
                 position: relative;
 
-                span.soonBadge {
+                div.soonBadge {
                     color: white;
                     background: $orange-red;
                     border-radius: 16px;
                     position: absolute;
-                    left: 40%;
-                    top: -20px;
+                    font-size: 8px;
+                    font-family: 'Gotham Medium';
+                    // width: 100%;
+                    width: calc(100% - 30px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1;
+                    left: 22px;
+                    height: 12px;
+                    bottom: -12px;
                 }
             }
         }

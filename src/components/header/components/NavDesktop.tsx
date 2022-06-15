@@ -48,7 +48,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							<a key={index} className={styles.soonPage} rel="noreferrer">
 								{index !== 0 && <span>|</span>}
 								{link.name}
-								{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
+								{link.finished === false && (<div className={styles.soonBadge}>soon</div>)}
 							</a>
 						)
 					}
