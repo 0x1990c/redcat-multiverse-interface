@@ -40,10 +40,11 @@
                     background: $orange-red;
                     border-radius: 16px;
                     position: absolute;
-                    left: 11px;
+                    left: 22px;
                     font-size: 8px;
                     font-family: 'Gotham Medium';
-                    width: 100%;
+                    // width: 100%;
+                    width: calc(100% - 22px);
                     display: flex;
                     justify-content: center;
                     align-items: center;
