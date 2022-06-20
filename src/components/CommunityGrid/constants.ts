@@ -128,7 +128,8 @@ export const rcmInsiderContents = [
     title: 'MEERKAT BAG NFTS',
     texts: [
       'Meerkat Bag NFTs are utility NFTs which provide building block primitives, upon which a foundational asset class can be built within the RedCat Multiverse. Meerkat Bags provide an opportunity to start with the content, before moving to gameplay, which in turn creates a purpose-driven community, rather than a product. Meerkat Bags are a collection of 888 NFTs, which have a unique combination of four character traits such as power skills, positive personality traits, even personality traits and quirky traits.',
-      'Meerkat Bags essentially provide a prompt or building block primitive - upon which a foundational Multiverse asset Genius can be built. Meerkat Bags are exclusively created for hypersocial RedCat Multiverse community members.'
+      'Meerkat Bags essentially provide a prompt or building block primitive - upon which a foundational Multiverse asset Genius can be built. Meerkat Bags are exclusively created for hypersocial RedCat Multiverse community members.',
+      'VERIFIED SMART CONTRACT ADDRESS: <a href="https://polygonscan.com/address/0xbF7D3b88D8F5321162D0D44baDcC7c1B7Bc4c972" target="_blank" style="text-decoration: underline;">0xbF7D3b88D8F5321162D0D44baDcC7c1B7Bc4c972</a>'
     ]
   },
   {
