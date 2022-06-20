@@ -22,7 +22,7 @@
     }
 
     p {
-      margin-bottom: 26px;
+      margin-bottom: 20px;
       font-family: 'Bariol';
       font-size: 18px;
       font-weight: normal;
@@ -31,6 +31,10 @@
       line-height: 1.33;
       letter-spacing: normal;
       color: var(--font-color);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -57,7 +61,7 @@
 
       p {
         font-size: 13px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
       }
     }
 

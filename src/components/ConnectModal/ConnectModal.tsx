@@ -15,7 +15,8 @@ const ConnectModal = ({ onClose }: any) => {
   }
 
   const backgroundImg = () => {
-    return './images/community/community_05.png';
+    // return './images/community/community_05.png';
+    return '/images/community/connect_form_desktop.png';
   }
 
   const handleClose = () => {

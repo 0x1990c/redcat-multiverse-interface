@@ -1,22 +1,12 @@
-import { useTheme } from 'next-themes'
-import { useState, useEffect } from 'react'
 import styles from './Footer.module.scss';
 
 const Footer = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
-  const currentTheme = theme === 'system' ? systemTheme : theme;
-  const handleClick = () => {
-    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-  }
-
   return (
     <footer className={styles.footer}>
-      © 2022 RCM Labs. All rights reserved.
+      <div>&#9993;&nbsp;<a href='mailto:hello@rcmlabs.io'>hello@rcmlabs.io</a></div>
+      <div>© 2022 RCM Labs. All rights reserved.</div>
     </footer>
   )
 }
 
-export default Footer
+export default Footer;
