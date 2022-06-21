@@ -13,9 +13,9 @@
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
-  }
 
-  .separator {
-    display: none;
+    .separator {
+      display: none;
+    }
   }
 }
