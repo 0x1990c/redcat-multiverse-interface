@@ -1,0 +1,38 @@
+.parallaxContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .ctaWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 40px;
+    padding-bottom: 50px;
+  }
+
+  .bigCTASubject {
+    font-family: 'Gotham Ultra';
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .ctaBtnWrapper {
+    margin-top: 30px;
+  }
+
+  .ctaBtn {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #e83324;
+    padding: 12px 24px;
+    font-family: 'Bariol';
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+}
