@@ -5,21 +5,39 @@ import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';
 import { Announcements } from '../src/components/Home/Announcements';
 import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
+import styles from '../src/styles/home.module.scss';
 
 const Home: NextPage = () => {
 
-    return (
-        <>
-            <ParallaxProvider>
-                <ParallaxHero />
-            </ParallaxProvider>
+  return (
+    <>
+      <div className={styles.parallaxContainer}>
+        <ParallaxProvider>
+          <ParallaxHero />
+        </ParallaxProvider>
+        <div className={styles.ctaWrapper}>
+          <div className={styles.bigCTASubject}>
+            From the creators and thought leaders behind League Of Legends and Algorand
+          </div>
+          <div className={styles.bigCTASubject}>
+            The world’s FIRST Play>>Learn>>Earn Blockchain Game
+          </div>
+          <div className={styles.bigCTASubject}>Enter the future of gaming</div>
+          <div className={styles.ctaBtnWrapper}>
+            <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
+              Join The Community
+            </a>
+          </div>
 
-            <DevelopBy />
-            <Conversation />
-            <Announcements />
-            <PlayLearnEarn />
-        </>
-    )
+        </div>
+      </div>
+
+      <DevelopBy />
+      <Conversation />
+      <Announcements />
+      <PlayLearnEarn />
+    </>
+  )
 }
 
-export default Home
+export default Home;
