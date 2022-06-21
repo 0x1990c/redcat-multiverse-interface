@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             From the creators and thought leaders behind League Of Legends and Algorand
           </div>
           <div className={styles.bigCTASubject}>
-            The world’s FIRST Play>>Learn>>Earn Blockchain Game
+            The world’s FIRST Play&gt; &gt; Learn&gt;&gt; Earn Blockchain Game
           </div>
           <div className={styles.bigCTASubject}>Enter the future of gaming</div>
           <div className={styles.ctaBtnWrapper}>
