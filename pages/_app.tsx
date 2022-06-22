@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import Layout from '../src/components/Layout'
 import '../src/styles/globals.scss'
-
+import AudioPlayer from '../src/components/AudioPlayer/AudioPlayer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -45,16 +44,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         </script>
 
       </Head>
-      {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1" strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-232229679-1');
-        `}
-      </Script> */}
       <ThemeProvider enableSystem={true}>
         {/* Google Tag Manager noscript */}
         <noscript>
@@ -62,6 +51,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         </noscript>
         <Layout>
           <Component {...pageProps} />
+          <AudioPlayer url='http://localhost:3000/audios/forest-lullaby-110624.mp3' />
+
         </Layout>
       </ThemeProvider>
     </>
