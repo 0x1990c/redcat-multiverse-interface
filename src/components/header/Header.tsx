@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import { useState } from 'react';
 import Container from '../container/Container'
 import styles from './header.module.scss'
 import connectModalStyles from '../../components/ConnectModal/ConnectModal.module.scss';
 import { themeChanger } from './helpers/themeChanger';
 import { NavMobile } from './NavMobile';
 import { NavDesktop } from './components/NavDesktop';
-import { useState } from 'react';
 import ConnectModal from '../ConnectModal/ConnectModal';
 
 const headerLinks = [
