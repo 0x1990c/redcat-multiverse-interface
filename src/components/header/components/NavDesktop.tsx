@@ -48,9 +48,8 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							<a
 								className={styles.option}
 								key={index}
-								href='https://drive.google.com/file/d/1nI-PsKNuEyoas9-8HKVp7Mb78xWljtpC/view?ts=62b2b125'
-								target='_blank'
-								rel="noreferrer"
+								href='./media/RCMPressRelease.pdf'
+								download
 							>
 								{index !== 0 && <span>|</span>}
 								{link.name}
