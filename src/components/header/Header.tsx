@@ -17,6 +17,7 @@ const headerLinks = [
   { name: 'Whitepaper', link: 'whitepaper', finished: true },
   { name: 'Careers', link: 'careers', finished: true },
   { name: 'Connect', link: 'connect', finished: true },
+  { name: 'Media', link: 'media', finished: true },
 ]
 
 const Header = () => {

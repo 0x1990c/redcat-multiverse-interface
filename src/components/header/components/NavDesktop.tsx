@@ -43,6 +43,20 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
+					if (link.link === 'media') {
+						return (
+							<a
+								className={styles.option}
+								key={index}
+								href='https://drive.google.com/file/d/1nI-PsKNuEyoas9-8HKVp7Mb78xWljtpC/view?ts=62b2b125'
+								target='_blank'
+								rel="noreferrer"
+							>
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						)
+					}
 					if (link.finished === false) {
 						return (
 							<a key={index} className={styles.soonPage} rel="noreferrer">
