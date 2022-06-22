@@ -31,10 +31,9 @@ export const NavMobileLinks = ({ links, onOpenConnectModal }: any) => {
 							<a
 								className={styles.option}
 								key={index}
-								href='/media/RCMPressRelease.pdf'
+								href='/medias/RCMPressRelease.pdf'
 								download
 							>
-								{index !== 0 && <span>|</span>}
 								{link.name}
 							</a>
 						)

@@ -43,18 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </script>
-
       </Head>
-      {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1" strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-232229679-1');
-        `}
-      </Script> */}
       <ThemeProvider enableSystem={true}>
         {/* Google Tag Manager noscript */}
         <noscript>
