@@ -43,19 +43,6 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
-					if (link.link === 'media') {
-						return (
-							<a
-								className={styles.option}
-								key={index}
-								href='/medias/RCMPressRelease.pdf'
-								download
-							>
-								{index !== 0 && <span>|</span>}
-								{link.name}
-							</a>
-						)
-					}
 					if (link.finished === false) {
 						return (
 							<a key={index} className={styles.soonPage} rel="noreferrer">
