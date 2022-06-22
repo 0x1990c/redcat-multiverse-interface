@@ -16,8 +16,7 @@ const headerLinks = [
   { name: 'Community', link: 'community', finished: true },
   { name: 'Whitepaper', link: 'whitepaper', finished: true },
   { name: 'Careers', link: 'careers', finished: true },
-  { name: 'Connect', link: 'connect', finished: true },
-  { name: 'Media', link: 'media', finished: true },
+  { name: 'Connect', link: 'connect', finished: true }
 ]
 
 const Header = () => {
