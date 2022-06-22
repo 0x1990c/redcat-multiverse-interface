@@ -26,6 +26,19 @@ export const NavMobileLinks = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
+					if (link.link === 'media') {
+						return (
+							<a
+								className={styles.option}
+								key={index}
+								href='/media/RCMPressRelease.pdf'
+								download
+							>
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						)
+					}
 					if (link.finished == false) {
 						return (
 							<a className={styles.option} key={index} rel="noreferrer">
