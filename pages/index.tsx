@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <ParallaxProvider>
           <ParallaxHero />
         </ParallaxProvider>
-        {/* <div className={styles.ctaWrapper}>
+        <div className={styles.ctaWrapper}>
           <div className={styles.bigCTASubject}>
             From the creators and thought leaders behind League Of Legends and Algorand
           </div>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               Join The Community
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
       <DevelopBy />
       <Conversation />
