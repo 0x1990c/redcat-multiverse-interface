@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import { ThemeProvider } from 'next-themes'
-import Layout from '../src/components/Layout'
-import '../src/styles/globals.scss'
-import AudioPlayer from '../src/components/AudioPlayer/AudioPlayer'
+import { ThemeProvider } from 'next-themes';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import Layout from '../src/components/Layout';
+import '../src/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -51,8 +50,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         </noscript>
         <Layout>
           <Component {...pageProps} />
-          <AudioPlayer url='http://localhost:3000/audios/forest-lullaby-110624.mp3' />
-
         </Layout>
       </ThemeProvider>
     </>

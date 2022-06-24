@@ -1,0 +1,17 @@
+.audioPlayerWrapper {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  z-index: 9999;
+
+  audio {
+    visibility: hidden;
+  }
+
+  button {
+    font-family: 'Gotham Ultra';
+    font-size: 32px;
+    font-weight: bold;
+    color: #e83324;
+  }
+}
