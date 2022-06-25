@@ -106,5 +106,39 @@ export const characterDetails = [
       "Not everyone marks the beginning of spring by the Spring Equinox. Meteorologists measure the seasons differently, dividing the year into four equal seasons which each start on the first day of every third month. For them, spring begins on March 1 and lasts until May 31 in the Northern Hemisphere, no matter when the equinox happens."
     ],
     radar: './images/characters/fuyijun_radar.svg'
+  },
+  {
+    id: 3,
+    name: 'CATO',
+    role: ' THE AVATAR OF MIND',
+    thumbnail: '/images/characters/cato_thumbnail.jpg',
+    fullCharacter: '/images/characters/cato_full_character.png',
+    descriptions: [
+      "At first, Cato was just an idea. A high-minded idea they may have been, but they were still transitory and fleeting, until something miraculous happened. Cato experienced a moment of sentience, in which they willed themselves into existence with the burning question, “What is self?” With that one question, Cato came into existence as an avatar of the purest expression of mind.",
+      "Free to travel the multiverse as a concept brought to life, Cato is the mind seeking to know itself. The very idea of self, its origins and complexities, is what drives them in their single-minded quest for insight. Though they have drifted through the multiverse for millennia and queried many and varied peoples, Cato has yet to find a definitive answer.",
+      "Cato is an eager, if intense, conversationalist. They ask a lot of questions to the people they meet, sometimes focusing on strange details or the events leading up to the conversation.While unusual, Cato’s lines of questioning are always innocent, and any social faux pas they commit are entirely by accident. They can be guilty of drifting off into themselves from time to time, but it’s only because Cato has a nearly infinite inner landscape."
+    ],
+    fictions: [
+      "Cato sat on a park bench on the edge of an electric garden under the waving colors of the night sky. Despite the thirty or so other bodies in the square, Cato only had one companion - Unity. Each of the humanoids looked roughly the same, more cybernetic metal than flesh. The Avatar of Mind was enjoying their first conversation with this strange entity, who seemed to be in a sharing mood.",
+      "“I find your… adaptation unusual,” said Cato. “Do all of you share a single mind?”",
+      "“Each of us cognates on our own and takes action in service of the collective,” said Unity B07-161084. “Above and surrounding our minds is the Omnimind, the protector and guide of Unity, assuring our minds and purposes are always aligned in the best interests of the collective.”",
+      "“Is the Omnimind an individual then ?” Cato said.",
+      "“No. It is the combined wisdom of thousands of years given consciousness, keeper of the imperatives of our collective,” said Unity B07-452906.",
+      "Cato thought about this unusual concept for a moment, furrowing their brow. “Without individuality, how do you come to know your own mind?”",
+      "“Our mind is the will of the collective,” Unity responded from a dozen mouths. “Why is this so difficult for you to understand? You are under the misapprehension that individuality is somehow important. It creates division and conflict within a species.We know this from experience. Within Unity, all are equal and lack nothing, and there is no division and no anti-social behavior.”",
+      "“Interesting. Let’s take you, B07-161084. You have a name and experience the world independently of the others. While that all becomes part of the collective, you, B07-161084, experience those things first,” said Cato. “Doesn’t that make you unique in some way? Doesn’t that speak to some kind of agency?”",
+      "B07-161084 paused before speaking. “Are cells individuals? Is one healthy cell important on its own? Can a biological being recognize its parts separately, each unique among the whole?”",
+      "“Hmm. What about creativity, the expression of what is inside someone or someones? Creativity is easily diluted by too many minds trying to impose their vision on the same project. Art isn’t something which can be created by group consensus,” said Cato.",
+      "“We believe our creativity expresses new perspectives which have been gained by our union as a species,” said Unity B07-452906. “The whole is greater than the sum of its parts.”",
+      "Cato smiled. “We’ll soon find out if that’s true.”"
+    ],
+    fictionMobileIdx: 4,
+    knowledge: [
+      "Despite experiencing headaches or “brain freeze,” the brain itself actually feels no pain. The pain you feel is from the casing surrounding the brain called the meninges.",
+      "Information in the brain can travel up to a rate of 268 mph/430 kph.",
+      "Most decisions made on a daily basis are made subconsciously.",
+      "Despite the popular myth, you use more than 10 % of your brain on a daily basis."
+    ],
+    radar: './images/characters/cato_radar.png'
   }
 ]
