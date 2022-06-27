@@ -108,12 +108,20 @@
 
 
 @media screen and (max-width: 550px) {
+  .figmentTitle {
+    margin-top: 30px;
+  }
+
   .figmentCardContainer {
     flex-direction: column;
   }
 
   .hero_banner {
     background-position-x: -500px;
+  }
+
+  .subTitleSection {
+    margin-bottom: 30px;
   }
 }
 

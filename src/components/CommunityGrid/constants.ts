@@ -48,7 +48,7 @@ export const contents = [
   },
   {
     id: '5',
-    title: "UPDATES",
+    title: "SIGNAL",
     numeration: "06",
     label: "Keep up on the latest in the RedCat Multiverse",
     column: "column_1",
