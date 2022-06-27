@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             League of Legends and Algorand
           </div>
           <div className={styles.ctaBtnWrapper}>
-            <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
+            <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ' target='_blank' rel="noreferrer">
               Join The Community
             </a>
           </div>
