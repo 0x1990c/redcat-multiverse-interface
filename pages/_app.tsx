@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import Script from 'next/script'
-import { ThemeProvider } from 'next-themes'
-import Layout from '../src/components/Layout'
-import '../src/styles/globals.scss'
-
+import { ThemeProvider } from 'next-themes';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import Layout from '../src/components/Layout';
+import '../src/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

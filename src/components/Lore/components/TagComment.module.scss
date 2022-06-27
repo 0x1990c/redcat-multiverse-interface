@@ -1,70 +1,214 @@
 @import 'src/styles/colors.scss';
 
-.commentContainer {
-  position: relative;
+// conversation
+.container-chat {
 
-  .commentTag {
-    width: 220px;
-    height: 220px;
-    border-radius: 12px;
-  }
+  .container-conversation {
+    display: flex;
 
-  .commentContentContainer {
-    position: relative;
-    width: fit-content;
-    margin-left: 20px;
-    margin-top: 5px;
+    .container-conversation-text {
+      position: relative;
+      border: 2px solid $yellow;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
 
-    .commentContentText {
-      width: 100%;
-      position: absolute;
-      font-family: 'Bariol';
-      font-size: 24px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.33;
-      letter-spacing: normal;
-      color: var(--font-color);
-      padding: 0 25px;
-      top: 50%;
-      transform: translateY(-85%);
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        bottom: -81px;
+        width: 176px;
+        height: 81px;
+        border-style: solid;
+        border-width: 0px 0px 0px 2px;
+        border-color: #f9c930;
+        background: transparent;
+        border-bottom-right-radius: 161px 96px;
+        display: block;
+        left: 234px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        bottom: -43px;
+        left: 219px;
+        width: 182px;
+        height: 30px;
+        border-style: solid;
+        border-width: 0 0px 2px 0;
+        border-color: #f9c930;
+        background: transparent;
+        display: block;
+        transform: rotate(-26deg);
+      }
+
+      p {
+        font-size: 24px;
+        color: var(--font-color);
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 235px;
+          width: 163px;
+          height: 15px;
+          background: var(--background);
+        }
+      }
     }
-  }
-
-  .commentContentBoxMB {
-    display: none;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .commentContainer {
-    .commentTag {
-      width: 100px;
-      height: 100px;
+
+/*
+  -------------------------
+  ------- RESPONSIVE ------
+  -------------------------
+*/
+
+@media screen and(min-width: 1400px) {
+
+  .container-conversation {
+    flex-direction: row !important;
+  }
+
+  .container-conversation-text {
+    margin: 1em 0 9em !important;
+    max-width: 74%;
+  }
+
+  .container-conversation-img {
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 30px !important;
+
+    img {
+      min-width: 225px;
+      max-width: 225px;
+    }
+  }
+}
+
+@media screen and(min-width: 1024px) {
+
+  .container-chat {
+    .container-conversation-text {
+      padding: 35px;
+      height: auto;
     }
 
-    .commentContentContainer {
-      margin-left: 0;
-      width: 100%;
+    .container-conversation-img {
+      padding: 0px;
 
-      .commentContentText {
-        font-size: 12px;
-        max-width: 317px;
-        padding: 0 15px;
-        transform: translateY(-75%);
+      img {
+        margin-top: 55px;
+        float: left;
       }
     }
+  }
+}
 
-    .commentContentBoxDesktop {
-      display: none;
+@media screen and(min-width: 992px) {
+  .container-conversation-img {
+    img {
+      margin-top: 50px;
     }
+  }
+}
 
-    .commentContentBoxMB {
-      display: unset;
+@media screen and(min-width: 768px) {
+  .container-conversation-text {
+    height: auto;
+    padding: 25px 15px;
+  }
 
-      width: 100%;
-      max-width: 317px;
+  .container-conversation-img {
+    img {
+      margin-top: 45px;
+    }
+  }
+}
+
+@media screen and(min-width: 576px) {
+
+  .container-conversation {
+    flex-direction: column-reverse;
+  }
+
+  .container-conversation-text {
+    margin: 1em 0 3em;
+    height: auto;
+    padding: 20px 15px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
+  }
+
+  .container-conversation-img {
+    img {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 981px) {
+
+  .container-chat {
+
+    .container-conversation-text {
+
+      &:before {
+        content: "";
+        bottom: -48px !important;
+        width: 176px !important;
+        height: 48px !important;
+        left: 126px !important;
+      }
+
+      &:after {
+        content: "";
+        bottom: -27px !important;
+        left: 114px !important;
+        width: 109px !important;
+        height: 30px !important;
+      }
+
+      p {
+
+        &::after {
+          left: 128px !important;
+          width: 95px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .container-conversation-text {
+    p {
+      font-size: 13px !important;
+      line-height: 16px !important;
+    }
+  }
+
+  .container-conversation {
+    flex-direction: column-reverse;
+  }
+
+  .container-conversation-text {
+    margin: 1em 0 3em;
+    height: auto;
+    padding: 20px 15px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21) !important;
+  }
+
+  .container-conversation-img {
+    img {
+      margin-top: 15px;
+      width: 160px;
     }
   }
 }
