@@ -16,10 +16,13 @@ const Home: NextPage = () => {
           <ParallaxHero />
         </ParallaxProvider>
         <div className={styles.ctaWrapper}>
-          <div className={styles.bigCTASubject}>
-            From the creators and thought leaders behind League Of Legends and Algorand
+          <div className={styles.bigCTASubject}>Enter the future of gaming</div>
+          <div className={styles.ctaSubject}>
+            <i>from the alums of</i>
           </div>
-          <div className={styles.ctaSubject}>Enter the future of gaming</div>
+          <div className={styles.bigCTASubject}>
+            League of Legends and Algorand
+          </div>
           <div className={styles.ctaBtnWrapper}>
             <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
               Join The Community
