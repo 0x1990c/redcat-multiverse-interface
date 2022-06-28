@@ -16,7 +16,7 @@ const slideImages = [
     url: './images/HomeHero/carousel/PlikpliCarousel.png'
   },
   {
-    url: './images/characters/cato_thumbnail.jpg'
+    url: './images/HomeHero/carousel/CatoCarousel.jpg'
   }
 ];
 
