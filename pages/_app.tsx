@@ -10,6 +10,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>RedCat Multiverse I Play, Learn, Earn</title>
+        <meta
+          name="description"
+          content="www.redcatmultiverse.io"
+        />
+        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="twitter:image" content="https://www.redcatmultiverse.io/images/theredcat.png" />
+        <meta
+          name="twitter:description"
+          content="Find out about the future of games and future of learning with RedCat Multiverse’s Play, Learn and Earn model. We are adding deeper rewards to players' gaming efforts, creating both intrinsic and extrinsic value. Players will earn financial rewards as they build new skills."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="RedCat Multiverse, the world’s first Play, Learn and Earn blockchain game" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1"></script>
         <script>

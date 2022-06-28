@@ -139,6 +139,6 @@ export const characterDetails = [
   //     "Most decisions made on a daily basis are made subconsciously.",
   //     "Despite the popular myth, you use more than 10 % of your brain on a daily basis."
   //   ],
-  //   radar: './images/characters/cato_radar.png'
+  //   radar: './images/characters/cato_radar.svg'
   // }
 ]
