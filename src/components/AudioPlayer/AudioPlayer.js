@@ -1,17 +1,27 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/router';
 import styles from './AudioPlayer.module.scss';
+import Image from "next/image";
 
 const AudioPlayer = () => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [playUrl, setPlayUrl] = useState();
+  const [isHover, setIsHover] = useState(false);
   const router = useRouter();
 
   const handleBackgroundAudio = () => {
     console.log('handleBackgroundAudio ==> calling')
     setPlaying(!playing);
     sessionStorage.setItem('playingAudio', (!playing).toString());
+  }
+
+  const handleMouseOver = () => {
+    setIsHover(true);
+  }
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
   }
 
   useEffect(() => {
@@ -45,13 +55,16 @@ const AudioPlayer = () => {
       console.log(router.pathname);
       switch (router.pathname) {
         case '/':
-          setPlayUrl('/audios/Sanura_Comics.mp3')
+          setPlayUrl('/audios/scifi.mp3')
+          break;
+        case '/multiverse':
+          setPlayUrl('/audios/evolution.mp3')
           break;
         case '/play-learn-earn':
-          setPlayUrl('/audios/Sanura_Comics.mp3')
+          setPlayUrl('/audios/scifi.mp3')
           break;
         default:
-          setPlayUrl('/audios/forest-lullaby-110624.mp3');
+          setPlayUrl('/audios/scifi.mp3');
           break;
       }
     }
@@ -70,7 +83,18 @@ const AudioPlayer = () => {
   return (
     <div className={styles.audioPlayerWrapper}>
       <audio preload="auto" loop={true} autoPlay={false} src={playUrl} ref={audioRef} />
-      <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button>
+      {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
+      <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+        {playing
+          ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
+          : <div className={styles.playBtn}><Image src={'/images/mute_button.jpg'} alt='Unmute' layout='fill' /></div>
+        }
+      </button>
+      {isHover && (
+        <div className={styles.toolTip}>
+          {playing ? 'Mute' : 'Unmute'}
+        </div>
+      )}
     </div>
   );
 };
