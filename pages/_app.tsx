@@ -10,6 +10,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>RedCat Multiverse I Play, Learn, Earn</title>
+        <meta
+          name="description"
+          content="Red cat description"
+        />
+        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="twitter:image" content="https://www.redcatmultiverse.io/images/sanura-red@2x.png" />
+        <meta
+          name="twitter:description"
+          content="Red cat twitter description ...."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Red cat - Sanura Twitter title" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1"></script>
         <script>
