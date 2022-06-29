@@ -1,8 +1,26 @@
+@keyframes fadeInFrame {
+  0% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .audioPlayerWrapper {
   position: fixed;
-  left: 30px;
-  bottom: 30px;
+  // left: 30px;
+  // bottom: 30px;
+  top: 16px;
+  right: 20px;
   z-index: 9999;
+  width: 60px;
+  height: 60px;
 
   audio {
     visibility: hidden;
@@ -13,5 +31,36 @@
     font-size: 32px;
     font-weight: bold;
     color: #e83324;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .toolTip {
+    background: #647170;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInFrame 0.3s ease-in-out;
+  }
+
+  .playBtn {
+    animation: fadeInFrame 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .audioPlayerWrapper {
+    width: 40px;
+    height: 40px;
+    top: 22px;
   }
 }
