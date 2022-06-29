@@ -48,7 +48,7 @@ const AudioPlayer = () => {
     const currentPath = router.pathname;
     sessionStorage.setItem('currentPath', currentPath);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     if (router.isReady) {
@@ -58,6 +58,9 @@ const AudioPlayer = () => {
           setPlayUrl('/audios/scifi.mp3')
           break;
         case '/multiverse':
+          setPlayUrl('/audios/evolution.mp3')
+          break;
+        case '/character':
           setPlayUrl('/audios/evolution.mp3')
           break;
         case '/play-learn-earn':
