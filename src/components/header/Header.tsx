@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      {/* <AudioPlayer /> */}
+      <AudioPlayer />
       <Container className={styles.headerContainer}>
         <header className={styles.header}>
           {
