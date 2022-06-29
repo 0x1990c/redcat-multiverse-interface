@@ -86,18 +86,21 @@ const AudioPlayer = () => {
   return (
     <div className={styles.audioPlayerWrapper}>
       <audio preload="auto" loop={true} autoPlay={false} src={playUrl} ref={audioRef} />
-      {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
-      <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
-        {playing
-          ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
-          : <div className={styles.playBtn}><Image src={'/images/mute_button.jpg'} alt='Unmute' layout='fill' /></div>
-        }
-      </button>
       {isHover && (
         <div className={styles.toolTip}>
           {playing ? 'Mute' : 'Unmute'}
         </div>
       )}
+      {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
+      <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+        <div className={styles.playBtn}>
+          <Image src={playing ? '/images/play_button.gif' : '/images/mute_button.jpg'} alt='Mute' layout='fill' />
+        </div>
+        {/* {playing
+          ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
+          : <div className={styles.playBtn}><Image src={'/images/mute_button.jpg'} alt='Unmute' layout='fill' /></div>
+        } */}
+      </button>
     </div>
   );
 };
