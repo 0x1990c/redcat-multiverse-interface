@@ -11,7 +11,6 @@ const AudioPlayer = () => {
   const router = useRouter();
 
   const handleBackgroundAudio = () => {
-    console.log('handleBackgroundAudio ==> calling')
     setPlaying(!playing);
     sessionStorage.setItem('playingAudio', (!playing).toString());
   }
@@ -24,31 +23,31 @@ const AudioPlayer = () => {
     setIsHover(false);
   }
 
-  useEffect(() => {
-    if (sessionStorage.getItem('playingAudio')) {
-      if (sessionStorage.getItem('currentPath')) {
-        const prevPath = sessionStorage.getItem('currentPath');
-        if (prevPath === router.pathname) { // previous page is same to current page means refresh
-          sessionStorage.setItem('playingAudio', playing.toString());
-        } else { // previous page is not same to current page means page navigation
-          setPlaying(sessionStorage.getItem('playingAudio') === 'true');
-        }
-      } else { // previous history is null means first visit website
-        sessionStorage.setItem('playingAudio', playing.toString());
-      }
+  // useEffect(() => {
+  //   if (sessionStorage.getItem('playingAudio')) {
+  //     if (sessionStorage.getItem('currentPath')) {
+  //       const prevPath = sessionStorage.getItem('currentPath');
+  //       if (prevPath === router.pathname) { // previous page is same to current page means refresh
+  //         sessionStorage.setItem('playingAudio', playing.toString());
+  //       } else { // previous page is not same to current page means page navigation
+  //         setPlaying(sessionStorage.getItem('playingAudio') === 'true');
+  //       }
+  //     } else { // previous history is null means first visit website
+  //       sessionStorage.setItem('playingAudio', playing.toString());
+  //     }
 
-    } else {
-      sessionStorage.setItem('playingAudio', playing.toString());
-    }
+  //   } else {
+  //     sessionStorage.setItem('playingAudio', playing.toString());
+  //   }
 
-    if (!sessionStorage) {
-      return;
-    }
+  //   if (!sessionStorage) {
+  //     return;
+  //   }
 
-    const currentPath = router.pathname;
-    sessionStorage.setItem('currentPath', currentPath);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [router]);
+  //   const currentPath = router.pathname;
+  //   sessionStorage.setItem('currentPath', currentPath);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [router]);
 
   useEffect(() => {
     if (router.isReady) {
@@ -71,17 +70,18 @@ const AudioPlayer = () => {
           break;
       }
     }
-  }, [router]);
+  }, [router, router.pathname]);
 
   useEffect(() => {
     if (audioRef && audioRef.current && playing === true && typeof window !== undefined) {
+      console.log('I am trying to play');
       audioRef.current.play();
     }
 
     if (audioRef && audioRef.current && playing === false) {
       audioRef.current.pause();
     }
-  }, [audioRef, playing]);
+  }, [audioRef, playing, playUrl]);
 
   return (
     <div className={styles.audioPlayerWrapper}>
@@ -94,7 +94,7 @@ const AudioPlayer = () => {
       {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
       <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <div className={styles.playBtn}>
-          <Image src={playing ? '/images/play_button.gif' : '/images/mute_button.jpg'} alt='Mute' layout='fill' />
+          <Image src={playing ? '/images/play_button.gif' : '/images/mute_button.png'} alt='Mute' layout='fill' />
         </div>
         {/* {playing
           ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
