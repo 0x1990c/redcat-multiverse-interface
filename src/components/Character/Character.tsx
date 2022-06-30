@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import styles from './Character.module.scss';
 
@@ -67,13 +68,13 @@ const Character = ({ character }: any) => {
     </div>
     <div className={`${styles.contentSection} ${styles.separator}`}></div>
     <div className={`${styles.contentSection} ${styles.backBtnSection}`}>
-      <a
-        className={styles.backBtn}
+      <Link
         href={'/multiverse'}
-        rel="noreferrer"
       >
-        Back to the Multiverse
-      </a>
+        <a className={styles.backBtn}>
+          Back to the Multiverse
+        </a>
+      </Link>
     </div>
   </div>)
 };

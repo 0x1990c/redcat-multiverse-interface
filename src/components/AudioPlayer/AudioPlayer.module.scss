@@ -50,6 +50,10 @@
     text-align: center;
     margin-top: -40px;
     animation: fadeInFrame 0.3s ease-in-out;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   .playBtn {
@@ -64,5 +68,9 @@
     // top: 22px;
     left: 15px;
     bottom: 15px;
+
+    .toolTip {
+      display: none;
+    }
   }
 }
