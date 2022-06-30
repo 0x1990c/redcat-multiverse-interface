@@ -51,7 +51,6 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      console.log(router.pathname);
       switch (router.pathname) {
         case '/':
           setPlayUrl('/audios/scifi.mp3')
@@ -74,7 +73,6 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     if (audioRef && audioRef.current && playing === true && typeof window !== undefined) {
-      console.log('I am trying to play');
       audioRef.current.play();
     }
 
@@ -86,11 +84,12 @@ const AudioPlayer = () => {
   return (
     <div className={styles.audioPlayerWrapper}>
       <audio preload="auto" loop={true} autoPlay={false} src={playUrl} ref={audioRef} />
-      {isHover && (
-        <div className={styles.toolTip}>
-          {playing ? 'Mute' : 'Unmute'}
-        </div>
-      )}
+      <div className={styles.toolTip}>
+        {isHover && (
+          <span>{playing ? 'Mute' : 'Unmute'}</span>
+        )}
+      </div>
+
       {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
       <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <div className={styles.playBtn}>
