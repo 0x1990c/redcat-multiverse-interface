@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { useState } from 'react';
+import Link from 'next/link';
 import Container from '../container/Container'
 import styles from './header.module.scss'
 import connectModalStyles from '../../components/ConnectModal/ConnectModal.module.scss';
@@ -39,10 +40,15 @@ const Header = () => {
       <AudioPlayer />
       <Container className={styles.headerContainer}>
         <header className={styles.header}>
-          {
+          {/* {
             theme != 'dark'
               ? (<a href="/"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
               : (<a href="/"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
+          } */}
+          {
+            theme != 'dark'
+              ? (<Link href="/" passHref><a><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
+              : (<Link href="/" passHref><a><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
           }
           <NavDesktop links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
           <NavMobile links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
