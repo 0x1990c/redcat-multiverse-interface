@@ -11,7 +11,6 @@ const AudioPlayer = () => {
   const router = useRouter();
 
   const handleBackgroundAudio = () => {
-    console.log('handleBackgroundAudio ==> calling')
     setPlaying(!playing);
     sessionStorage.setItem('playingAudio', (!playing).toString());
   }
@@ -24,40 +23,42 @@ const AudioPlayer = () => {
     setIsHover(false);
   }
 
-  useEffect(() => {
-    if (sessionStorage.getItem('playingAudio')) {
-      if (sessionStorage.getItem('currentPath')) {
-        const prevPath = sessionStorage.getItem('currentPath');
-        if (prevPath === router.pathname) { // previous page is same to current page means refresh
-          sessionStorage.setItem('playingAudio', playing.toString());
-        } else { // previous page is not same to current page means page navigation
-          setPlaying(sessionStorage.getItem('playingAudio') === 'true');
-        }
-      } else { // previous history is null means first visit website
-        sessionStorage.setItem('playingAudio', playing.toString());
-      }
+  // useEffect(() => {
+  //   if (sessionStorage.getItem('playingAudio')) {
+  //     if (sessionStorage.getItem('currentPath')) {
+  //       const prevPath = sessionStorage.getItem('currentPath');
+  //       if (prevPath === router.pathname) { // previous page is same to current page means refresh
+  //         sessionStorage.setItem('playingAudio', playing.toString());
+  //       } else { // previous page is not same to current page means page navigation
+  //         setPlaying(sessionStorage.getItem('playingAudio') === 'true');
+  //       }
+  //     } else { // previous history is null means first visit website
+  //       sessionStorage.setItem('playingAudio', playing.toString());
+  //     }
 
-    } else {
-      sessionStorage.setItem('playingAudio', playing.toString());
-    }
+  //   } else {
+  //     sessionStorage.setItem('playingAudio', playing.toString());
+  //   }
 
-    if (!sessionStorage) {
-      return;
-    }
+  //   if (!sessionStorage) {
+  //     return;
+  //   }
 
-    const currentPath = router.pathname;
-    sessionStorage.setItem('currentPath', currentPath);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //   const currentPath = router.pathname;
+  //   sessionStorage.setItem('currentPath', currentPath);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [router]);
 
   useEffect(() => {
     if (router.isReady) {
-      console.log(router.pathname);
       switch (router.pathname) {
         case '/':
           setPlayUrl('/audios/scifi.mp3')
           break;
         case '/multiverse':
+          setPlayUrl('/audios/evolution.mp3')
+          break;
+        case '/character':
           setPlayUrl('/audios/evolution.mp3')
           break;
         case '/play-learn-earn':
@@ -68,7 +69,7 @@ const AudioPlayer = () => {
           break;
       }
     }
-  }, [router]);
+  }, [router, router.pathname]);
 
   useEffect(() => {
     if (audioRef && audioRef.current && playing === true && typeof window !== undefined) {
@@ -78,23 +79,27 @@ const AudioPlayer = () => {
     if (audioRef && audioRef.current && playing === false) {
       audioRef.current.pause();
     }
-  }, [audioRef, playing]);
+  }, [audioRef, playing, playUrl]);
 
   return (
     <div className={styles.audioPlayerWrapper}>
       <audio preload="auto" loop={true} autoPlay={false} src={playUrl} ref={audioRef} />
+      <div className={styles.toolTip}>
+        {isHover && (
+          <span>{playing ? 'Mute' : 'Unmute'}</span>
+        )}
+      </div>
+
       {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
       <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
-        {playing
+        <div className={styles.playBtn}>
+          <Image src={playing ? '/images/play_button.gif' : '/images/mute_button.png'} alt='Mute' layout='fill' />
+        </div>
+        {/* {playing
           ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
           : <div className={styles.playBtn}><Image src={'/images/mute_button.jpg'} alt='Unmute' layout='fill' /></div>
-        }
+        } */}
       </button>
-      {isHover && (
-        <div className={styles.toolTip}>
-          {playing ? 'Mute' : 'Unmute'}
-        </div>
-      )}
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import styles from './header.module.scss'
 import { useState } from 'react';
 import { useTheme } from 'next-themes'
+import Link from 'next/link';
 import { themeChanger } from './helpers/themeChanger';
 import { NavMobileLinks } from './components/NavMobileLinks';
 import { LinksIcons } from './components/LinksIcons';
@@ -40,17 +41,19 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 						<div className={styles['container-glass']}>
 							<div className={`${styles['container-options']} ${show && styles['slide-left']}`}>
 								<div className={styles['container-brand']}>
-									<a className={styles.brand} href="/">
-										{
-											theme == 'dark'
-												? (<img src='./images/rcm-logo-white.svg' alt='RCM Logo' />)
-												: (<img src='./images/rcm-logo-red.svg' alt='RCM Logo' />)
-										}
-									</a>
+									<Link href="/">
+										<a className={styles.brand} onClick={handleShowHide}>
+											{
+												theme == 'dark'
+													? (<img src='./images/rcm-logo-white.svg' alt='RCM Logo' />)
+													: (<img src='./images/rcm-logo-red.svg' alt='RCM Logo' />)
+											}
+										</a>
+									</Link>
 									<RadioSwitch className={styles.themeSwitch} onChange={handleSwitchTheme} checked={theme === 'dark'} />
 								</div>
 								<div className={styles['container-links']}>
-									<NavMobileLinks links={links} onOpenConnectModal={handleOpenConnectModal} />
+									<NavMobileLinks links={links} onOpenConnectModal={handleOpenConnectModal} onCloseNav={handleShowHide} />
 									<LinksIcons />
 								</div>
 							</div>

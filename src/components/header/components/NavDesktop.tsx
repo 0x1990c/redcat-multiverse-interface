@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { LinksIcons } from './LinksIcons';
 import styles from '../header.module.scss'
 import RadioSwitch from '../../RadioSwitch/RadioSwitch';
@@ -53,10 +54,12 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 						)
 					}
 					return (
-						<a key={index} href={`/${link.link.toLowerCase()}`} className={styles.soonPage}>
-							{index !== 0 && <span>|</span>}
-							{link.name}
-						</a>
+						<Link key={index} href={`/${link.link.toLowerCase()}`}>
+							<a className={styles.soonPage}>
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						</Link>
 					)
 				})}
 			</div>
