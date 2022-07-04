@@ -29,6 +29,15 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
 							</a>
 						)
 					}
+					if (link.link === 'blog') {
+						return (
+							<a className={styles.option} key={index} href='https://blog.redcatmultiverse.io/' target='_blank' rel="noreferrer">
+								{link.name}
+								<div className={styles['line-gradient']}></div>
+								{link.finished === false && (<span className={styles.soonBadge}>soon</span>)}
+							</a>
+						)
+					}
 					if (link.link === 'connect') {
 						return (
 							<a className={styles.option} key={index} target='_blank' rel="noreferrer" onClick={handleConnectClick}>

@@ -26,6 +26,11 @@
       text-transform: uppercase;
     }
 
+    .subInfo {
+      display: flex;
+      align-items: center;
+    }
+
     .role {
       font-family: 'Bariol';
       font-size: 16px;
@@ -34,6 +39,7 @@
       font-style: normal;
       line-height: 1.5;
       letter-spacing: normal;
+      margin-left: 10px;
     }
   }
 }

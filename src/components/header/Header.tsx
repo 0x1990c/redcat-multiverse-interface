@@ -17,6 +17,7 @@ const headerLinks = [
   { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
   { name: 'Community', link: 'community', finished: true },
   { name: 'Whitepaper', link: 'whitepaper', finished: true },
+  { name: 'Blog', link: 'blog', finished: true },
   { name: 'Careers', link: 'careers', finished: true },
   { name: 'Connect', link: 'connect', finished: true }
 ]
