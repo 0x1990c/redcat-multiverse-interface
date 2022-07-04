@@ -73,6 +73,7 @@ export const teamMembers = [
     firstName: 'S.Binici',
     lastName: 'KAYA',
     role: 'CEO',
+    social: 'https://www.linkedin.com/in/sbinici/',
     bio: 'Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder. Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others. Binici studied Physics, Mathematics, Engineering and an MBA. She is an MIT alumna.',
   },
   {
@@ -81,6 +82,7 @@ export const teamMembers = [
     firstName: 'Matthew',
     lastName: 'Grau',
     role: 'Creative Director',
+    social: 'https://www.linkedin.com/in/matthew-grau/',
     bio: ' Matthew is an award-winning creative professional with a broad range of experience. Aaron Ehasz, lead writer of the acclaimed Avatar: The Last Airbender series, said, “Matthew is one of only like four people in this town [Hollywood] who can do what he does [with IP development].” He was part of the original team to create and launch League of Legends and he’s worked with such properties as Star Wars, Star Trek, Dune and Dungeons & Dragons.',
   },
   {
@@ -89,6 +91,8 @@ export const teamMembers = [
     imageCard: '/images/community/team/Muhamet.jpg',
     image: '/images/community/team/Muhamet.png',
     role: 'Chief Economic Advisor',
+    social: 'https://economics.mit.edu/faculty/myildiz',
+    noLinkedin: true,
     bio: 'Muhamet is recognized as one of the leading Game Theory thinkers and researchers in the world. He has been part of the MIT Economics department since 2000 and has been a tenured professor since 2007. At MIT, his areas of expertise are Game Theory and Economic Theory. Muhamet holds a Ph.D. in Economics from Stanford University as well as earlier degrees in Electrical Engineering and Mathematics. As the Chief Economic Advisor at RCM Labs, Muhamet is responsible for the design of the RedCat Multiverse economy.',
   },
   {
@@ -97,6 +101,7 @@ export const teamMembers = [
     imageCard: '/images/community/team/Henderson.jpg',
     image: '/images/community/team/Henderson.png',
     role: 'Blockchain Team Lead',
+    social: 'https://www.linkedin.com/in/henderson-hedin-2b3220237/',
     bio: 'Henderson is a creative fullstack blockchain developer dedicated to building and optimizing the performance of UX, testing, debugging and training staff. Previously, he was a smart contract developer and team lead at DCAU crypto gaming. Henderson holds a Masters of Computer Science degree from Stockholm University.',
   },
   {
@@ -105,6 +110,7 @@ export const teamMembers = [
     imageCard: '/images/community/team/Karl.jpg',
     image: '/images/community/team/Karl.png',
     role: 'Senior L&D Advisor',
+    social: 'https://www.linkedin.com/in/karlkapp/',
     bio: 'Karl is recognized worldwide as a pioneer in the gamification of learning and instruction. He is an award-winning international keynote speaker, consultant, entrepreneur and professor of instructional technology at Bloomsburg University in Bloomsburg, PA. He has earned over one million dollars in grant funding, authored ten LinkedIn Learning courses and written several books on the convergence of learning, technology and business.',
   },
   {
@@ -113,6 +119,7 @@ export const teamMembers = [
     imageCard: '/images/community/team/Dan.jpg',
     image: '/images/community/team/Dan.png',
     role: 'Senior Digital Currency Advisor',
+    social: 'https://www.linkedin.com/in/daniel-aronoff-968a19b0/',
     bio: 'Daniel is a Ph.D. candidate in economics and a collaborator at the Media Lab Digital Currency Initiative at MIT. Daniel has published on macroeconomics, environmental economics, blockchain protocols and smart contract applications in financial markets. Daniel has been an entrepreneur in commercial and environmental real estate. He holds a B.Sc. degree in philosophy and economics with first class honors from the London School of Economics. ',
   },
 ];

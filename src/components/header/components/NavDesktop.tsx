@@ -36,6 +36,14 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 							</a>
 						)
 					}
+					if (link.link === 'blog') {
+						return (
+							<a className={styles.option} key={index} href='https://blog.redcatmultiverse.io/' target='_blank' rel="noreferrer">
+								{index !== 0 && <span>|</span>}
+								{link.name}
+							</a>
+						)
+					}
 					if (link.link === 'connect') {
 						return (
 							<a className={styles.option} key={index} target='_blank' rel="noreferrer" onClick={handleConnectClick}>

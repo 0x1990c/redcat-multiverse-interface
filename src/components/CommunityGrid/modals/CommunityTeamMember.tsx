@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { IMAGE_BLUR_DATA_URL_PINK } from '../../../utilities/constants';
+import EmojiIcon from '../../Icons/EmojiIcon/EmojiIcon';
+import LinkedinIcon from '../../Icons/LinkedinIcon/LinkedinIcon';
 import styles from './CommunityTeamMember.module.scss';
 
 const CommunityTeamMember = ({ info }: any) => {
@@ -9,6 +11,8 @@ const CommunityTeamMember = ({ info }: any) => {
     firstName,
     lastName,
     role,
+    social,
+    noLinkedin,
     bio
   } = info;
   const [memberImg, setMemberImg] = useState();
@@ -34,7 +38,12 @@ const CommunityTeamMember = ({ info }: any) => {
     {/* <img src={image} alt="TM" /> */}
     <div className={styles.memberInfo}>
       <div className={styles.fullName}>{`${firstName} ${lastName}`}</div>
-      <div className={styles.role}>{role}</div>
+      <div className={styles.subInfo}>
+        <a className={styles.socialLink} href={social} target='_blank' rel="noreferrer">
+          {noLinkedin ? <EmojiIcon /> : <LinkedinIcon />}
+        </a>
+        <div className={styles.role}>{role}</div>
+      </div>
       <div className={styles.bio}>{bio}</div>
     </div>
   </div>)
