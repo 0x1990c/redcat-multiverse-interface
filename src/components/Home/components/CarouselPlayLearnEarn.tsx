@@ -17,6 +17,9 @@ const slideImages = [
   },
   {
     url: './images/HomeHero/carousel/CatoCarousel.jpg'
+  },
+  {
+    url: './images/HomeHero/carousel/MaliaCarousel.jpg'
   }
 ];
 
