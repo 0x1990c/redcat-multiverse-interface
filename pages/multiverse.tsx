@@ -60,6 +60,7 @@ const Lore: NextPage = () => {
               name={cardContent.name}
               text={cardContent.role}
               image={cardContent.thumbnail}
+              empty={cardContent.empty}
               onClick={() => handleFigCardClick(cardContent.id)}
             />
           ))}

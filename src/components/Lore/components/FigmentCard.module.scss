@@ -7,6 +7,11 @@
   border: solid 2px #e83324;
   display: flex;
 
+  &.emptyCard {
+    height: 0;
+    border: none;
+  }
+
   .cardImage {
     height: 100%;
     width: auto;

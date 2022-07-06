@@ -140,5 +140,46 @@ export const characterDetails = [
       "Despite the popular myth, you use more than 10 % of your brain on a daily basis."
     ],
     radar: './images/characters/cato_radar.svg'
+  },
+  {
+    id: 4,
+    name: 'MALIA',
+    role: ' PRIESTESS OF THE SEA',
+    thumbnail: '/images/characters/malia_thumbnail.jpg',
+    fullCharacter: '/images/characters/malia_full_character.png',
+    descriptions: [
+      "Centuries ago, in pre-colonial Tahiti, Malia was a Tahu’a and an ancient priestess of the sea. She felt one of the best ways she could serve her people was to study the oceans and life around them and share that knowledge to better their lives. Loved by the native Tahitians, Malia was seen as a bit of an adventurer, constantly running and swimming to the next mystery or wonder.",
+      "It was this trait which brought Malia into the multiverse. While exploring a cave with bright, mysterious phosphorescence, she stumbled across a slip in dimensions which led her to other worlds. Malia dove into alien oceans, her curiosity driving her to explore and experience many things before she returned to her own world and time. Eagerly sharing what she’d learned, her people listened with amazement, but it wasn’t long before the urge to explore more worlds took Malia away into the multiverse once again.",
+      "Like the oceans themselves, Malia can be fierce or gentle in equal measure. Her active lifestyle has led her to enjoy physical competition and she’s nearly always up for a challenge. Malia can be curious nearly to a fault, running towards wonder with only occasional thought for her safety. An easy and excitable conversationalist, she loves to share what she’s learned with people, whether or not they’re entirely interested. "
+    ],
+    fictions: [
+      "Malia stared at the ripple hanging in the air, almost as if the space in front of her were somehow fluid. Through this strange window through reality, Malia could see a beautiful blue ocean, its bright surface not more than five meters above.",
+      "Only minutes before, she had been investigating an amazing cave lit up by all colors of phosphorescent fungi. The beauty was enough to prompt her exploration, but more interesting was that these types of fungi did not exist in her part of the ocean.",
+      "The disturbance was clearly the answer to that mystery. Beyond, her attention was captured by what appeared to be a thick gossamer web, transparent and ghostly, hanging in the water. Malia couldn’t tell if it was a living thing or not, until with one smooth undulation the mysterious creature began to float away from view.Almost impulsively, she poked her walking stick into the ripple and withdrew it with no ill effects. Malia then dove into it, saying a small prayer as she did.",
+      "The clear, blue water felt like the saltwater of Malia’s seas as she ascended, keeping her eyes open for the creature. Breaking the surface of the lagoon, her attention quickly turned to the unusual landscape around her. The bright sun shone down on a white beach, two moons on the horizon, surrounded by plants of unnatural colors, insects she could not recognize, and birds that looked a little like rats with wings. Emerging from the water onto the beach, Malia noticed it was already occupied.",
+      "Sitting patiently on the sand was a fluffy red cat with the most unusual markings, not that Malia would recognize this having never seen a cat. It licked its paw and gave its face a quick wash while Malia wiped the water off herself as best she could.",
+      "When she was done, Malia focused on the cat. It looked her in the eyes, smiled, and said, “Hello, Malia.”",
+      "This was naturally a shock to Malia, because, while she didn’t know what the creature was, she was still sure that animals couldn’t speak. It somehow also knew her name.",
+      "“Umm, hello,” she said, cautiously. “I’ve never seen a creature like you before.What are you?”",
+      "“Why, I’m a cat,” said the red cat, as if it were obvious. “A cosmic cat, to be sure, or else I wouldn’t be able to talk, now would I?”",
+      "Curiosity had begun to overcome Malia’s caution, so she said, “A cat of the cosmos. A world with twin moons. Impossible fish.The ripple in the cave was some kind of door, wasn’t it? Have I traveled up to the stars?”",
+      "“In a sense, yes, in a sense, no,” said the cat. “This isn’t even your reality anymore.”",
+      "Malia blinked as this revelation set in. “I’ve sensed other worlds in my dreams, but you’re saying I’m finally in one?” she said. Then she giggled with glee. “This is so exciting! Do you know this place? Can you tell me more about it? Does the second moon affect the tides? What were those transparent creatures? Are they dangerous?”",
+      "“I like curiosity,” said the cat, with a sly grin. “What if I told you this wasn’t the only one?”",
+      "Malia’s jaw dropped. “I want to see them all.”",
+      "The red cat laughed. “It’s very easy to find yourself lost in the multiverse. Let Sanura show you the way.”"
+    ],
+    fictionMobileIdx: 4,
+    knowledge: [
+      "Rather than tides “coming in and out,” the bulges of water which produce the tides are a product of the moon and sun, held in place by gravity as the Earth itself spins into and out of these bulges.",
+      "According to scientists from the United States’ National Oceanic and Atmospheric Administration(NOAA), 80% of the worlds’ oceans remain unmapped, unobserved, and unexplored to this day.",
+      "The oceans are a major component in the cycle of removing carbon from the atmosphere, and as the world observes climate change the ocean serves as an excellent way to observe the carbon cycle.",
+      "Though there are some elements lost to history, the pre-colonial native culture of Tahiti had a shaman class known as Tahu’a. The title means “one who sees and knows,” and was thought to be both an almost scientific position as well as a religious one, serving as a guide for the natural world as well as spiritual matters."
+    ],
+    radar: './images/characters/malia_radar.png'
+  },
+  {
+    id: 5,
+    empty: true
   }
 ]
