@@ -176,7 +176,7 @@ export const characterDetails = [
       "The oceans are a major component in the cycle of removing carbon from the atmosphere, and as the world observes climate change the ocean serves as an excellent way to observe the carbon cycle.",
       "Though there are some elements lost to history, the pre-colonial native culture of Tahiti had a shaman class known as Tahu’a. The title means “one who sees and knows,” and was thought to be both an almost scientific position as well as a religious one, serving as a guide for the natural world as well as spiritual matters."
     ],
-    radar: './images/characters/malia_radar.png'
+    radar: './images/characters/malia_radar.svg'
   },
   {
     id: 5,
