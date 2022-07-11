@@ -37,7 +37,7 @@ const contents = [
     bullets: [
       'RedCat Multiverse trailer/video',
       'Inception NFT collection announced',
-      'Inception NFT Collection Sale (Summer 2022)'
+      'Inception NFT Collection Sale'
     ],
     buttonLabel: 'Upcoming',
     period: 'Q3 2022',
