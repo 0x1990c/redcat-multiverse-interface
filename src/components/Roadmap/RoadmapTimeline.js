@@ -25,19 +25,22 @@ const contents = [
     bullets: [
       'Pre-seed funding finalized',
       'RedCat Multiverse game simulator built in-house',
-      'RedCat Multiverse White Paper published',
-      'RedCat Multiverse trailer/video'
+      'RedCat Multiverse White Paper published'
     ],
-    buttonLabel: 'Upcoming',
+    buttonLabel: 'Done',
     period: 'Q2 2022',
     alignment: 'right',
   },
   {
     id: '2',
     title: 'The Gifted Operatives Arrive',
-    bullets: ['Inception NFT collection announced', 'Inception NFT Collection Sale (Summer 2022)'],
+    bullets: [
+      'RedCat Multiverse trailer/video',
+      'Inception NFT collection announced',
+      'Inception NFT Collection Sale (Summer 2022)'
+    ],
     buttonLabel: 'Upcoming',
-    period: 'Q2 2022',
+    period: 'Q3 2022',
     alignment: 'left',
   },
   {
