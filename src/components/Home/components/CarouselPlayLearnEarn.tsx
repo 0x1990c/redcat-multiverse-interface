@@ -62,7 +62,7 @@ export const CarouselPlayLearnEarn = () => {
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                height: '350px',
+                height: '420px',
                 borderRadius: '8px',
                 cursor: 'pointer'
               }}
