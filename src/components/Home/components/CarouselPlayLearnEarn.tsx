@@ -8,27 +8,23 @@ import styles from '../HomeHero.module.scss'
 const slideImages = [
   {
     id: 0,
-    url: './images/HomeHero/carousel/WellsCarousel.png'
+    url: './images/characters/wells_full_character.png'
   },
   {
     id: 1,
-    url: './images/HomeHero/carousel/PlikpliCarousel.png'
+    url: './images/characters/plikplik_full_character.png'
   },
   {
     id: 2,
-    url: './images/HomeHero/carousel/FuYijunCarousel.jpg'
-  },
-  {
-    id: 9999,
-    url: './images/HomeHero/carousel/SanuraCarousel.png'
+    url: './images/characters/fuyijun_full_character.png'
   },
   {
     id: 3,
-    url: './images/HomeHero/carousel/CatoCarousel.jpg'
+    url: './images/characters/cato_full_character.png'
   },
   {
     id: 4,
-    url: './images/HomeHero/carousel/MaliaCarousel.jpg'
+    url: './images/characters/malia_full_character.png'
   }
 ];
 
@@ -62,8 +58,10 @@ export const CarouselPlayLearnEarn = () => {
               className={styles['container-height-carousel']}
               style={{
                 backgroundImage: `url("${image.url}")`,
-                backgroundSize: '100%',
+                // backgroundSize: '100%',
+                backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
                 height: '350px',
                 borderRadius: '8px',
                 cursor: 'pointer'
