@@ -379,3 +379,35 @@
     column-gap: 20px;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .state_btn_general {
+    width: 60px;
+    height: 28px;
+    font-size: 8px;
+  }
+
+  .general_mobile {
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+
+  .period_general {
+    width: 200px;
+  }
+
+  .container_general {
+    padding: 10px 10px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .period_general {
+    width: 190px;
+  }
+
+  .container_general {
+    width: 190px;
+  }
+}
