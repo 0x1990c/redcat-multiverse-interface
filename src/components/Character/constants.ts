@@ -110,7 +110,7 @@ export const characterDetails = [
   {
     id: 3,
     name: 'CATO',
-    role: ' THE AVATAR OF MIND',
+    role: 'THE AVATAR OF MIND',
     thumbnail: '/images/characters/cato_thumbnail.jpg',
     fullCharacter: '/images/characters/cato_full_character.png',
     descriptions: [
@@ -144,13 +144,13 @@ export const characterDetails = [
   {
     id: 4,
     name: 'MALIA',
-    role: ' PRIESTESS OF THE SEA',
+    role: 'PRIESTESS OF THE SEA',
     thumbnail: '/images/characters/malia_thumbnail.jpg',
     fullCharacter: '/images/characters/malia_full_character.png',
     descriptions: [
       "Centuries ago, in pre-colonial Tahiti, Malia was a Tahu’a and an ancient priestess of the sea. She felt one of the best ways she could serve her people was to study the oceans and life around them and share that knowledge to better their lives. Loved by the native Tahitians, Malia was seen as a bit of an adventurer, constantly running and swimming to the next mystery or wonder.",
       "It was this trait which brought Malia into the multiverse. While exploring a cave with bright, mysterious phosphorescence, she stumbled across a slip in dimensions which led her to other worlds. Malia dove into alien oceans, her curiosity driving her to explore and experience many things before she returned to her own world and time. Eagerly sharing what she’d learned, her people listened with amazement, but it wasn’t long before the urge to explore more worlds took Malia away into the multiverse once again.",
-      "Like the oceans themselves, Malia can be fierce or gentle in equal measure. Her active lifestyle has led her to enjoy physical competition and she’s nearly always up for a challenge. Malia can be curious nearly to a fault, running towards wonder with only occasional thought for her safety. An easy and excitable conversationalist, she loves to share what she’s learned with people, whether or not they’re entirely interested. "
+      "Like the oceans themselves, Malia can be fierce or gentle in equal measure. Her active lifestyle has led her to enjoy physical competition and she’s nearly always up for a challenge. Malia can be curious nearly to a fault, running towards wonder with only occasional thought for her safety. An easy and excitable conversationalist, she loves to share what she’s learned with people, whether or not they’re entirely interested."
     ],
     fictions: [
       "Malia stared at the ripple hanging in the air, almost as if the space in front of her were somehow fluid. Through this strange window through reality, Malia could see a beautiful blue ocean, its bright surface not more than five meters above.",
@@ -180,6 +180,36 @@ export const characterDetails = [
   },
   {
     id: 5,
-    empty: true
-  }
+    name: 'MAROC',
+    role: 'THE OAKEN CLAN',
+    thumbnail: '/images/characters/maroc_thumbnail.png',
+    fullCharacter: '/images/characters/maroc_full_character.png',
+    descriptions: [
+      "On the parallel world where Maroc was born, plant life was the first to evolve to sentience and become mobile tool users. The Raken, as they came to call themselves, were a peaceful people who dedicated themselves to scholarship rather than war. They could never have imagined that generations later they would give birth to Maroc, the first multiversal traveler of their kind.",
+      "It was a chance meeting with Sanura which introduced Maroc to the multiverse, who had arrived in their universe with the intent of first contact with the Raken. Maroc was near her remotely located portal on an extended research trip to study and collect spores, molds, and fungus. The two met and Sanura offered the prospect of exploring the multiverse, and Maroc quickly decided that other worlds were far more interesting than spores, molds, and fungus, no matter how fascinating they may be. Possessed of stalwart roots, Maroc was unafraid of the unknown which lay ahead and became the Raken’s emissary in new places and times.",
+      "Maroc has since become a bit of a socialite, and endless people are fascinated by and eager to meet him. With no shortage of invitations to meet new faces across the multiverse, sometimes people refer to him as a “party animal,” which he doesn’t quite understand and so continues to assert he is most assuredly a plant while he dances the night away.",
+      "The stories of his adventures often become exaggerated as his people retell them, turning Maroc into a folk hero who hasn’t experienced half the things which are attributed to him. Though he tries to correct them when he tells the story first-hand, most dismiss Maroc as too humble when they don’t measure up to the myth."
+    ],
+    fictions: [
+      "Wells thought Sanura’s little soiree was going well and the odd little creature known as Plikplik had done wonders with the catering. Eating food prepared by an alien was not the strangest thing he’d experienced tonight, as evidenced by the conversation he was having with the tree-man in front of him. The discussion had been interspersed with attempts to involve an attractive potted tree, with the plant person translating.",
+      "Maroc belly-laughed. “This ficus is quite funny! I can’t really translate the joke, because, in their words, the ‘meaties won’t get it.’”",
+      "“Does our friendly ficus have a name?” said Wells, with some bemusement.",
+      "“They say their name is…” said Maroc while listening for the answer. “Wait, the humans can’t even pronounce that. Do any of them call you something?” Maroc paused again, before turning back. “They say the maid calls them Diego.What’s a maid?”",
+      "‘It’s someone whose job it is to clean up. I can’t imagine we’re the ones dealing with the remains after this party,” said Wells, with the distaste of a wealthy man who has been rudely confronted with manual labor.",
+      "Maroc thought this rather new idea over in his head. “Someone is cleaning in the wake of you and me and everybody? That’s madness.”",
+      "“A bit of a socialist, are we, my photosynthesizing friend?” asked Wells. “In this place, people elect to take on those jobs and are compensated for their work. It is a mutually beneficial arrangement.”",
+      "“That’s not what I meant,” said Maroc. “You all just seem oddly obsessed with dirt in a way I don’t understand.”"
+    ],
+    fictionMobileIdx: 3,
+    knowledge: [
+      "The term for an organism which produces its own food, like plants that use photosynthesis, is autotroph.",
+      "Plant cells are well-known for having a prominent cell wall which is responsible for making them tough and capable of withstanding physical damage. In addition to the larger scale circulatory system, plant cells will form bridges between them to help move nutrition and other materials called plasmodesmata.",
+      "In addition to being able to identify the age of a tree, the trunk rings visible from a cross-section are regularly used to tell the history of a forest. Major events, such as fires or droughts, create visible marks in the ring formations."
+    ],
+    radar: './images/characters/maroc_radar.png'
+  },
+  // {
+  //   id: 6,
+  //   empty: true
+  // }
 ]
