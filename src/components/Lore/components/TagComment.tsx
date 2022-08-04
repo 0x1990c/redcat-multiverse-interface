@@ -7,7 +7,7 @@ const TagComment = ({ className }: any) => {
     <div className={styles['container-chat']}>
       <div className={styles['container-conversation']}>
         <div className={styles['container-conversation-img']}>
-          <img src={`./images/tag-2-left.png`} alt="" />
+          <img src={`/images/tag-2-left.png`} alt="" />
         </div>
         <div className={styles['container-conversation-text']}>
           <div className={styles['paragraph']}>

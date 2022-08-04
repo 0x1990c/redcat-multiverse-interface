@@ -27,8 +27,8 @@ const CommunityManifesto = () => {
       </div>
     </div>
     <div className={styles.rightCol}>
-      <img src={currentTheme === 'dark' ? './images/community/manifesto_glasses_dm.png' : './images/community/manifesto_glasses.png'} />
-      {/* <img src='./images/community/manifesto_galsses.png' /> */}
+      <img src={currentTheme === 'dark' ? '/images/community/manifesto_glasses_dm.png' : '/images/community/manifesto_glasses.png'} />
+      {/* <img src='/images/community/manifesto_galsses.png' /> */}
     </div>
   </div >);
 };

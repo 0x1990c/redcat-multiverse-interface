@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import ParallaxHero from '../src/components/Home/ParallaxHero'
 import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';
@@ -9,6 +11,8 @@ import styles from '../src/styles/home.module.scss';
 
 const Home: NextPage = () => {
 
+  const { t } = useTranslation('common')
+
   return (
     <>
       <div className={styles.parallaxContainer}>
@@ -16,6 +20,7 @@ const Home: NextPage = () => {
           <ParallaxHero />
         </ParallaxProvider>
       </div>
+      <div><strong>CCC -- {t('footer')} -- {t('content.first')}</strong></div>
       <DevelopBy />
       <Conversation />
       <Announcements />
@@ -23,5 +28,11 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+export const getServerSideProps = async ({ locale }: any) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common', 'home'])
+  }
+})
 
 export default Home;

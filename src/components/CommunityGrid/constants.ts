@@ -6,7 +6,7 @@ export const contents = [
     label: "Check out our team of curious (and crazy) game changers.",
     column: "column_1",
     item: 'item_e',
-    image: "./images/community/community_01.png"
+    image: "/images/community/community_01.png"
   },
   {
     id: '1',
@@ -16,7 +16,7 @@ export const contents = [
     column: "column_2",
     item: 'item_a',
     text: "",
-    image: "./images/community/community_02.png"
+    image: "/images/community/community_02.png"
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ export const contents = [
     label: "It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to master skills that go beyond playing games and make them more employable?",
     column: "column_3",
     item: 'item_c',
-    image: "./images/community/community_03.png"
+    image: "/images/community/community_03.png"
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ export const contents = [
     label: "Let's build the RedCat Multiverse together!",
     column: "column_3",
     item: 'item_d',
-    image: "./images/community/community_04.png"
+    image: "/images/community/community_04.png"
   },
   {
     id: '4',
@@ -43,8 +43,8 @@ export const contents = [
     label: "Let's learn, grow, and dream…together!",
     column: "column_2",
     item: 'item_b',
-    // image: "./images/community/community_05.png"
-    image: "./images/community/manifesto_glasses.png"
+    // image: "/images/community/community_05.png"
+    image: "/images/community/manifesto_glasses.png"
   },
   {
     id: '5',
@@ -53,7 +53,7 @@ export const contents = [
     label: "Keep up on the latest in the RedCat Multiverse",
     column: "column_1",
     item: 'item_f',
-    image: "./images/community/community_06.png"
+    image: "/images/community/community_06.png"
   },
   {
     id: '6',
@@ -62,7 +62,7 @@ export const contents = [
     label: "",
     column: "column_1",
     item: 'item_g',
-    image: "./images/community/community_07.png"
+    image: "/images/community/community_07.png"
   },
 ];
 

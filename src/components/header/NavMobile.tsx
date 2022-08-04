@@ -32,8 +32,8 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 				<button onClick={handleShowHide}>
 					{
 						show
-							? (<img src='./images/x-symbol.svg' alt='RCM Logo' />)
-							: (<img src='./images/three-horizontal-lines.svg' alt='RCM Logo' />)
+							? (<img src='/images/x-symbol.svg' alt='RCM Logo' />)
+							: (<img src='/images/three-horizontal-lines.svg' alt='RCM Logo' />)
 					}
 				</button>
 				{
@@ -45,8 +45,8 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 										<a className={styles.brand} onClick={handleShowHide}>
 											{
 												theme == 'dark'
-													? (<img src='./images/rcm-logo-white.svg' alt='RCM Logo' />)
-													: (<img src='./images/rcm-logo-red.svg' alt='RCM Logo' />)
+													? (<img src='/images/rcm-logo-white.svg' alt='RCM Logo' />)
+													: (<img src='/images/rcm-logo-red.svg' alt='RCM Logo' />)
 											}
 										</a>
 									</Link>

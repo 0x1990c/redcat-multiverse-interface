@@ -6,7 +6,7 @@ export const Carousel = () => {
     <div className={styles.slider}>
       <div className={styles.slides}>
         <div id="slide-1" className={styles.sliderItem}>
-          <img src="./images/community/insiders/slider_1.gif" alt="" />
+          <img src="/images/community/insiders/slider_1.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
               Made by:&nbsp;<span>SLnZ#0178</span>
@@ -14,7 +14,7 @@ export const Carousel = () => {
           </div>
         </div>
         <div id="slide-2" className={styles.sliderItem}>
-          <img src="./images/community/insiders/slider_2.gif" alt="" />
+          <img src="/images/community/insiders/slider_2.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
               Made by:&nbsp;<span>Lindemann</span>
@@ -22,7 +22,7 @@ export const Carousel = () => {
           </div>
         </div>
         <div id="slide-3" className={styles.sliderItem}>
-          <img src="./images/community/insiders/slider_3.jpg" alt="" />
+          <img src="/images/community/insiders/slider_3.jpg" alt="" />
           <div className={styles.sliderDesc}>
             <div>
               Made by:&nbsp;<span>RyTiex#5590</span>

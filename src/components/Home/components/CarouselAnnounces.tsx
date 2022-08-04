@@ -3,11 +3,11 @@ import { Slide } from 'react-slideshow-image';
 import styles from '../HomeHero.module.scss'
 
 const slideImages = [
-  { url: './images/HomeHero/carousel/matrix-cat.png' },
-  { url: './images/HomeHero/carousel/colorpoint.jpeg' },
-  { url: './images/HomeHero/carousel/pink.jpeg' },
-  { url: './images/HomeHero/carousel/rainbow.jpeg' },
-  { url: './images/HomeHero/carousel/black.jpeg' }
+  { url: '/images/HomeHero/carousel/matrix-cat.png' },
+  { url: '/images/HomeHero/carousel/colorpoint.jpeg' },
+  { url: '/images/HomeHero/carousel/pink.jpeg' },
+  { url: '/images/HomeHero/carousel/rainbow.jpeg' },
+  { url: '/images/HomeHero/carousel/black.jpeg' }
 ];
 
 const properties = {

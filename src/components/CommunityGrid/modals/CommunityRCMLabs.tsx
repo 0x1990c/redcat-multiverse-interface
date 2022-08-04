@@ -15,7 +15,7 @@ const CommunityRCMLabs = () => {
         </p>))}
       </div>
       <div className={styles.rightCol}>
-        <img src='./images/sanura-red@2x.png' alt='Sanura' />
+        <img src='/images/sanura-red@2x.png' alt='Sanura' />
         {/* <div>
           <Image
             src='/images/sanura-red@2x.png'

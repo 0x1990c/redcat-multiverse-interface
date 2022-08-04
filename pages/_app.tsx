@@ -2,6 +2,7 @@
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 import Layout from '../src/components/Layout';
 import '../src/styles/globals.scss';
 
@@ -67,4 +68,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

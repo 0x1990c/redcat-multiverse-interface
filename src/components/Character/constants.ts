@@ -105,7 +105,7 @@ export const characterDetails = [
       "Honeybees are more likely to swarm during the spring, as a way to start new colonies from successful ones. Surprisingly, swarming honey bees are very docile and the most friendly they are all year.",
       "Not everyone marks the beginning of spring by the Spring Equinox. Meteorologists measure the seasons differently, dividing the year into four equal seasons which each start on the first day of every third month. For them, spring begins on March 1 and lasts until May 31 in the Northern Hemisphere, no matter when the equinox happens."
     ],
-    radar: './images/characters/fuyijun_radar.svg'
+    radar: '/images/characters/fuyijun_radar.svg'
   },
   {
     id: 3,
@@ -139,7 +139,7 @@ export const characterDetails = [
       "Most decisions made on a daily basis are made subconsciously.",
       "Despite the popular myth, you use more than 10 % of your brain on a daily basis."
     ],
-    radar: './images/characters/cato_radar.svg'
+    radar: '/images/characters/cato_radar.svg'
   },
   {
     id: 4,
@@ -176,7 +176,7 @@ export const characterDetails = [
       "The oceans are a major component in the cycle of removing carbon from the atmosphere, and as the world observes climate change the ocean serves as an excellent way to observe the carbon cycle.",
       "Though there are some elements lost to history, the pre-colonial native culture of Tahiti had a shaman class known as Tahu’a. The title means “one who sees and knows,” and was thought to be both an almost scientific position as well as a religious one, serving as a guide for the natural world as well as spiritual matters."
     ],
-    radar: './images/characters/malia_radar.png'
+    radar: '/images/characters/malia_radar.png'
   },
   {
     id: 5,
@@ -206,7 +206,7 @@ export const characterDetails = [
       "Plant cells are well-known for having a prominent cell wall which is responsible for making them tough and capable of withstanding physical damage. In addition to the larger scale circulatory system, plant cells will form bridges between them to help move nutrition and other materials called plasmodesmata.",
       "In addition to being able to identify the age of a tree, the trunk rings visible from a cross-section are regularly used to tell the history of a forest. Major events, such as fires or droughts, create visible marks in the ring formations."
     ],
-    radar: './images/characters/maroc_radar.png'
+    radar: '/images/characters/maroc_radar.png'
   },
   // {
   //   id: 6,

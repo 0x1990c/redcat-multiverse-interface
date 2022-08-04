@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import GradientText from '../gradientText/GradientText';
 import PLESection from './PLESection';
 import PLECatCarousel from './PLECatCarousel';
@@ -11,6 +12,8 @@ export default function PLE() {
   const { theme, systemTheme } = useTheme()
   const [currentTheme, setCurrentTheme] = useState<string | any>();
   const router = useRouter();
+  const { t } = useTranslation('common')
+
   const learnRef: any = useRef(null);
   const earnRef: any = useRef(null);
 
@@ -61,6 +64,7 @@ export default function PLE() {
   return (
     <div className={`${styles.container}`}>
       <div className={styles.title}>
+        <strong>Locale test - {t('content.first')}</strong>
         <GradientText
           element='h1'
           text={`PLAY >> LEARN >> EARN`}

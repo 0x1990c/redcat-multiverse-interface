@@ -8,27 +8,27 @@ import styles from '../HomeHero.module.scss'
 const slideImages = [
   {
     id: 0,
-    url: './images/characters/wells_full_character.png'
+    url: '/images/characters/wells_full_character.png'
   },
   {
     id: 1,
-    url: './images/characters/plikplik_full_character.png'
+    url: '/images/characters/plikplik_full_character.png'
   },
   {
     id: 2,
-    url: './images/characters/fuyijun_full_character.png'
+    url: '/images/characters/fuyijun_full_character.png'
   },
   {
     id: 3,
-    url: './images/characters/cato_full_character.png'
+    url: '/images/characters/cato_full_character.png'
   },
   {
     id: 4,
-    url: './images/characters/malia_full_character.png'
+    url: '/images/characters/malia_full_character.png'
   },
   {
     id: 5,
-    url: './images/characters/maroc_full_character.png'
+    url: '/images/characters/maroc_full_character.png'
   }
 ];
 

@@ -17,7 +17,7 @@ export const themeChanger = () => {
 			<div onClick={() => {
 				setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 			}}>
-				<img src='./images/discord-icon.svg' />
+				<img src='/images/discord-icon.svg' />
 			</div>
 		)
 	}

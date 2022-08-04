@@ -36,10 +36,10 @@ export const DevelopBy = () => {
 			</div>
 
 			<div className={styles['container-info-brands']}>
-				<img src='./images/HomeHero/Brands/mit-logo.svg' />
-				<img src='./images/HomeHero/Brands/stanford-university.svg' />
-				<img src='./images/HomeHero/Brands/riot-games-logo.svg' />
-				<img src='./images/HomeHero/Brands/algorand-logo.svg' />
+				<img src='/images/HomeHero/Brands/mit-logo.svg' />
+				<img src='/images/HomeHero/Brands/stanford-university.svg' />
+				<img src='/images/HomeHero/Brands/riot-games-logo.svg' />
+				<img src='/images/HomeHero/Brands/algorand-logo.svg' />
 			</div>
 
 			<div className={styles['container-info-footer']}>
