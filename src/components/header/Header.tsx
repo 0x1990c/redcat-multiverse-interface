@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import Container from '../container/Container'
 import styles from './header.module.scss'
 import connectModalStyles from '../../components/ConnectModal/ConnectModal.module.scss';
@@ -10,21 +11,23 @@ import { NavDesktop } from './components/NavDesktop';
 import ConnectModal from '../ConnectModal/ConnectModal';
 import AudioPlayer from '../AudioPlayer/AudioPlayer';
 
-const headerLinks = [
-  { name: 'PLE', link: 'play-learn-earn', finished: true },
-  { name: 'Roadmap', link: 'roadmap', finished: true },
-  { name: 'The Multiverse', link: 'multiverse', finished: true },
-  { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
-  { name: 'Community', link: 'community', finished: true },
-  { name: 'Whitepaper', link: 'whitepaper', finished: true },
-  { name: 'Blog', link: 'blog', finished: true },
-  { name: 'Careers', link: 'careers', finished: true },
-  { name: 'Connect', link: 'connect', finished: true }
-]
-
 const Header = () => {
   const [isConnectModalOpen, setIsConnectModalOpen] = useState(false);
   const { theme } = themeChanger();
+
+  const { t } = useTranslation('common')
+
+  const headerLinks = [
+    { name: 'PLE', link: 'play-learn-earn', finished: true },
+    { name: t('header.roadmap'), link: 'roadmap', finished: true },
+    { name: t('header.multiverse'), link: 'multiverse', finished: true },
+    { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
+    { name: t('header.community'), link: 'community', finished: true },
+    { name: t('header.whitepaper'), link: 'whitepaper', finished: true },
+    { name: 'Blog', link: 'blog', finished: true },
+    { name: t('header.careers'), link: 'careers', finished: true },
+    { name: 'Connect', link: 'connect', finished: true }
+  ]
 
   const handleOpenConnectModal = () => {
     document.body.style.overflowY = 'hidden';

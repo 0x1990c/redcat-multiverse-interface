@@ -1,6 +1,11 @@
 {
-  "footer": "フッター",
-  "content": {
-    "first": "フッター フッター"
+  "header": {
+    "ple": "PLE",
+    "roadmap": "ロードマップ",
+    "multiverse": "マルチバースについて",
+    "community": "コミュニティ",
+    "whitepaper": "ホワイトペーパー",
+    "careers": "採用（キャリア）",
+    "connect": "Connect"
   }
 }

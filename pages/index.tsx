@@ -10,9 +10,6 @@ import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 import styles from '../src/styles/home.module.scss';
 
 const Home: NextPage = () => {
-
-  const { t } = useTranslation('common')
-
   return (
     <>
       <div className={styles.parallaxContainer}>
@@ -20,7 +17,6 @@ const Home: NextPage = () => {
           <ParallaxHero />
         </ParallaxProvider>
       </div>
-      <div><strong>CCC -- {t('footer')} -- {t('content.first')}</strong></div>
       <DevelopBy />
       <Conversation />
       <Announcements />

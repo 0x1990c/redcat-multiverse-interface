@@ -1,6 +1,11 @@
 {
-  "footer": "footer",
-  "content": {
-    "first": "first content"
+  "header": {
+    "ple": "PLE",
+    "roadmap": "Roadmap",
+    "multiverse": "The Multiverse",
+    "community": "Community",
+    "whitepaper": "Whitepaper",
+    "careers": "Careers",
+    "connect": "Connect"
   }
 }
