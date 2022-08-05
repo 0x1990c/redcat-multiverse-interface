@@ -7,7 +7,7 @@ const PLEPage = () => {
 
 export const getServerSideProps = async ({ locale }: any) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'home'])
+    ...await serverSideTranslations(locale, ['common', 'plePage'])
   }
 })
 
