@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 import GradientText from '../gradientText/GradientText';
 import PLESection from './PLESection';
 import PLECatCarousel from './PLECatCarousel';
-import { sections, TOP_CATS, BOTTOM_CATS } from './constants';
+import { TOP_CATS, BOTTOM_CATS } from './constants';
 import styles from '../../styles/ple.module.scss';
 
 export default function PLE() {
