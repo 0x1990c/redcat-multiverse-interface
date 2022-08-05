@@ -7,5 +7,8 @@
     "whitepaper": "ホワイトペーパー",
     "careers": "採用（キャリア）",
     "connect": "Connect"
+  },
+  "connectModal": {
+    "connectToThe": "マルチバースとつながる"
   }
 }
