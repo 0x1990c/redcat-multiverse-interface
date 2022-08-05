@@ -1,4 +1,4 @@
-export const annoucements = [
+export const announcement = [
   {
     id: 1,
     img: '/images/HomeHero/tags/tag-2-left.png',

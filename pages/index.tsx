@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
 import ParallaxHero from '../src/components/Home/ParallaxHero'
 import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';

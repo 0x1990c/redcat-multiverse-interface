@@ -1,5 +1,6 @@
 import React from 'react'
 import cx from 'classnames';
+import { useTranslation } from 'next-i18next';
 import GradientText from '../gradientText/GradientText'
 import randomElement from '../../helpers/elementRandomArray'
 import styles from './HomeHero.module.scss'
@@ -7,9 +8,8 @@ import { combinationColors } from './helpers/lineCombinations'
 
 
 export const DevelopBy = () => {
-
+	const { t } = useTranslation('home');
 	const { element } = randomElement(['orange-red', 'yellow', 'orange', 'light-blue']);
-
 	const { color, color2 } = combinationColors(element)
 
 	return (
@@ -22,7 +22,7 @@ export const DevelopBy = () => {
 				fontSize={'60px'}
 			></GradientText>
 
-			<h2 className={styles.subtitle}> Play &gt;&gt; Learn &gt;&gt; Earn </h2>
+			<h2 className={`${styles.subtitle} ${'text-capitalize'}`}> {t('play')} &gt;&gt; {t('learn')} &gt;&gt; {t('earn')}</h2>
 
 			<div className={styles['line-gradient']}
 				style={{
@@ -43,7 +43,7 @@ export const DevelopBy = () => {
 			</div>
 
 			<div className={styles['container-info-footer']}>
-				<p> Backed by 25+ highly  prominent investors from around the globe. </p>
+				<p>{t('backedBy')}</p>
 			</div>
 		</div>
 	)

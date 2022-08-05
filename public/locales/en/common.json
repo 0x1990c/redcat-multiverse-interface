@@ -10,5 +10,8 @@
   },
   "connectModal": {
     "connectToThe": "Connect to the multiverse"
+  },
+  "footer": {
+    "allRights": "All rights reserved."
   }
 }
