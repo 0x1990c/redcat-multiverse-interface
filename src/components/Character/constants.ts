@@ -208,8 +208,39 @@ export const characterDetails = [
     ],
     radar: '/images/characters/maroc_radar.png'
   },
+  {
+    id: 6,
+    name: 'AXIS-12',
+    role: 'THE DIGITAL HUMAN',
+    thumbnail: '/images/characters/axis-12_thumbnail.jpg',
+    fullCharacter: '/images/characters/axis-12_full_character.png',
+    descriptions: [
+      "Axis-12, aka Adam Xandis, was an AI engineer in the distant future working with a team of neuroscientists at Twelve Point Labs, with the hope of finally achieving a lifelike artificial intelligence.Despite the high- grade talent of those working on the project, the team struggled to fully mimic the way the mind’s neurological pathways function. Adam, willing to try anything to overcome their roadblocks, decided to attempt the process using his own mind as the model. The experimental scan he used to capture his own mind’s inner working went awry, leading to a tragic accident in which he lost his physical body. Instead of creating the framework to achieve AI, the process had fully captured his consciousness in its entirety, allowing him to live on.",
+      "No longer comfortable referring to himself as Adam Xandis, who in many ways perished during the accident, the new fusion dubbed himself Axis-12 in honor of <strong>A</strong>dam <strong>X</strong>and<strong>is</strong> and the team at <strong>Twelve</strong> Point Labs. The first human to reach the digital singularity continued his effort to lead others into the digital age, exploring the limits of his now digital form, developing hybrid digital-physical bodies and pioneering the way to lead the rest of humanity forward."
+    ],
+    fictions: [
+      "Twelve Point Lab Log: Limitation tests for digital human consciousness<br>Subject matter: Perception of exertion and exhaustion in hybrid body<br>Dr.Will Tannis supervising",
+      "Tannis: Morning, Axis.Ready for your morning 2k?",
+      "Axis : On - line and powered up, as usual.You know a jog in the morning helps me remember what waking up feels like.It’s strange not having body cycles like sleep anymore.",
+      "Tannis: I, for one, would be thrilled to no longer have to waste time sleeping. <sound of paperwork rustling> Speaking of wasting time, this is the one-hundred-eighty-sixth log of this test and you haven’t felt any exhaustion in your hybrid form in the previous one-hundred-eighty-five. Being tired of filing your post-run log is the closest to fatigue we’re going to get.",
+      "Axis: Has the sun come up yet? I find my runs are much more stimulating when the sun is cresting the skyline.",
+      "Tannis: Really? You’re just going to step right over that. And you are literally neurally connected to the internet, and you can’t figure out what time it is?",
+      "Axis : So no and, while that’s true, I still enjoy engaging in small talk and was genuinely interested in my test conditions. <sound of bay doors opening> Will, I’m the Neil Armstrong of these hybrid digital-physical bodies. Every small step we take with this techno-wizardry means fewer missteps for those who come after us. Just because I haven’t felt fatigue up until now doesn’t mean I never will.",
+      "Tannis: I suppose you’re right.To answer your question, we’re in the Golden Hour.",
+      "Axis: Perfect. Now let’s see what this latest build can do.",
+      "Tannis: One more thing. Try making small talk that doesn’t involve things you can just look up on the internet. It won’t seem so mind-bogglingly inane.",
+      "Axis: <face displays laugh-out-loud emoticon> Will do."
+    ],
+    fictionMobileIdx: 5,
+    knowledge: [
+      "The understanding of human consciousness remains limited and our ability to duplicate it in a digital space is hampered by an incomplete understanding of what grants people consciousness in the first place.",
+      "It is hypothesized that if a consciousness were to be truly digitized, you would end up with both the original person and the newly created digital consciousness, each with the memories and continuous experience of being the “original.” This is why Axis- 12 decided to differentiate himself from Adam.",
+      "Though still a distant and theoretical field, many experts ponder some difficult questions which may be faced by the digital humans of the future, such as the nature of individuality and consciousness, the privacy and security of the mind, and ethical concerns for digitalized personalities."
+    ],
+    radar: './images/characters/axis-12_radar.png'
+  },
   // {
-  //   id: 6,
+  //   id: 7,
   //   empty: true
   // }
 ]
