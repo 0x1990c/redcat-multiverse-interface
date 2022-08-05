@@ -1,29 +1,30 @@
-import styles from './CommunityManifesto.module.scss';
 import { useTheme } from 'next-themes';
+import { useTranslation } from 'next-i18next';
+import styles from './CommunityManifesto.module.scss';
 
 const CommunityManifesto = () => {
+  const { t } = useTranslation('communityPage');
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-
   return (<div className={styles.manifestoContainer}>
     <div className={styles.leftCol}>
-      <p className={styles.subTitle}>A brand new journey starts…</p>
+      <p className={styles.subTitle}>{t('manefisto.subtitle')}</p>
       <div className={`${styles.item} ${styles.backOrangeLight}`}>
-        Here’s to the curious ones, those who love challenges, the inquisitive early adopters, with a never ending desire to empower the human race…
+        {t('manefisto.item_1')}
       </div>
       <div className={`${styles.item} ${styles.backBlue}`}>
-        Here’s to the crazy ones, those who think and feel beyond the present moment, the outliers who see things differently…
+        {t('manefisto.item_2')}
       </div>
       <div className={`${styles.item} ${styles.backOrangeRed}`}>
-        <p>Here’s to the game changers who, as Steve Jobs said, “stay hungry, stay foolish…”</p>
-        <p>Meet Sanura, The Red Cat. Together, you will tear down antiquated walls and reimagine a better future!</p>
+        <p>{t('manefisto.item_3_1')}</p>
+        <p>{t('manefisto.item_3_2')}</p>
       </div>
       <div className={`${styles.item} ${styles.backDarkBlue}`}>
-        Together, we can build more immersive experiences!
+        {t('manefisto.item_4')}
       </div>
       <div className={`${styles.item} ${styles.backYellow}`}>
-        Let’s learn, grow and dream…together!
+        {t('manefisto.item_5')}
       </div>
     </div>
     <div className={styles.rightCol}>

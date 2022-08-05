@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { useTranslation } from 'next-i18next';
 import styles from './carousel.module.scss'
 
 export const Carousel = () => {
+  const { t } = useTranslation('communityPage');
+
   return (
     <div className={styles.slider}>
       <div className={styles.slides}>
@@ -9,7 +12,7 @@ export const Carousel = () => {
           <img src="/images/community/insiders/slider_1.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>SLnZ#0178</span>
+              {t('madeBy')}:&nbsp;<span>SLnZ#0178</span>
             </div>
           </div>
         </div>
@@ -17,7 +20,7 @@ export const Carousel = () => {
           <img src="/images/community/insiders/slider_2.gif" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>Lindemann</span>
+              {t('madeBy')}:&nbsp;<span>Lindemann</span>
             </div>
           </div>
         </div>
@@ -25,7 +28,7 @@ export const Carousel = () => {
           <img src="/images/community/insiders/slider_3.jpg" alt="" />
           <div className={styles.sliderDesc}>
             <div>
-              Made by:&nbsp;<span>RyTiex#5590</span>
+              {t('madeBy')}:&nbsp;<span>RyTiex#5590</span>
             </div>
           </div>
         </div>
