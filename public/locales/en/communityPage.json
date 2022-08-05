@@ -1,0 +1,76 @@
+{
+  "community": "COMMUNITY",
+  "contents": {
+    "id_0": {
+      "title": "TEAM",
+      "label": "Check out our team of curious (and crazy) game changers."
+    },
+    "id_1": {
+      "title": "WHITEPAPER",
+      "label": "Want to know more about what we’re building?"
+    },
+    "id_2": {
+      "title": "RCM LABS",
+      "label": "It all started with one question: What if we could harness the engagement potential of blockchain gaming, but also encourage people to master skills that go beyond playing games and make them more employable?"
+    },
+    "id_3": {
+      "title": "RCM INSIDERS",
+      "label": "Let's build the RedCat Multiverse together!"
+    },
+    "id_4": {
+      "title": "MANIFESTO",
+      "label": "Let's learn, grow, and dream…together!"
+    },
+    "id_5": {
+      "title": "SIGNAL",
+      "label": "Keep up on the latest in the RedCat Multiverse"
+    },
+    "id_6": {
+      "title": "REDCAT MULTIVERSE COMMUNITY WIKI",
+      "label": ""
+    }
+  },
+  "team": {
+    "description_1": "Here’s our team of curious and crazy game changers.",
+    "description_2": "The RCM Labs leadership team is supported by more than 50 highly accomplished individuals from around the globe. This specialized group includes thought leaders, community managers, artists, advisors and collaborators who are all contributing to the success of this project. It also includes more than 25 investors from the U.S., Europe and Asia.",
+    "members": [
+      {
+        "firstName": "S.Binici",
+        "lastName": "KAYA",
+        "role": "CEO",
+        "bio": "Binici has been actively involved in the space by advising, investing and working with multiple Web3 startups in the US, Asia and Europe since 2016. She is a 3x founder. Her entrepreneurial journey has been featured in Fortune and CNBC. When she was not an entrepreneur, she contributed to Algorand, MIT and IBM, among others. Binici studied Physics, Mathematics, Engineering and an MBA. She is an MIT alumna."
+      },
+      {
+        "firstName": "Matthew",
+        "lastName": "Grau",
+        "role": "Creative Director",
+        "bio": "Matthew is an award-winning creative professional with a broad range of experience. Aaron Ehasz, lead writer of the acclaimed Avatar: The Last Airbender series, said, “Matthew is one of only like four people in this town [Hollywood] who can do what he does [with IP development].” He was part of the original team to create and launch League of Legends and he’s worked with such properties as Star Wars, Star Trek, Dune and Dungeons & Dragons."
+      },
+      {
+        "firstName": "Muhamet",
+        "lastName": "Yildiz",
+        "role": "Chief Economic Advisor",
+        "bio": "Muhamet is recognized as one of the leading Game Theory thinkers and researchers in the world. He has been part of the MIT Economics department since 2000 and has been a tenured professor since 2007. At MIT, his areas of expertise are Game Theory and Economic Theory. Muhamet holds a Ph.D. in Economics from Stanford University as well as earlier degrees in Electrical Engineering and Mathematics. As the Chief Economic Advisor at RCM Labs, Muhamet is responsible for the design of the RedCat Multiverse economy."
+      },
+      {
+        "firstName": "Henderson",
+        "lastName": "Hedin",
+        "role": "Blockchain Team Lead",
+        "bio": "Henderson is a creative fullstack blockchain developer dedicated to building and optimizing the performance of UX, testing, debugging and training staff. Previously, he was a smart contract developer and team lead at DCAU crypto gaming. Henderson holds a Masters of Computer Science degree from Stockholm University."
+      },
+      {
+        "firstName": "Karl",
+        "lastName": "Kapp",
+        "role": "Senior L&D Advisor",
+        "bio": "Karl is recognized worldwide as a pioneer in the gamification of learning and instruction. He is an award-winning international keynote speaker, consultant, entrepreneur and professor of instructional technology at Bloomsburg University in Bloomsburg, PA. He has earned over one million dollars in grant funding, authored ten LinkedIn Learning courses and written several books on the convergence of learning, technology and business."
+      },
+      {
+        "firstName": "Daniel",
+        "lastName": "Aronoff",
+        "role": "Senior Digital Currency Advisor",
+        "bio": "Daniel is a Ph.D. candidate in economics and a collaborator at the Media Lab Digital Currency Initiative at MIT. Daniel has published on macroeconomics, environmental economics, blockchain protocols and smart contract applications in financial markets. Daniel has been an entrepreneur in commercial and environmental real estate. He holds a B.Sc. degree in philosophy and economics with first class honors from the London School of Economics."
+      }
+    ],
+    "close": "Close"
+  }
+}

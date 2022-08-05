@@ -1,7 +1,8 @@
-import { LORE_HERO_COMMENT } from "../constants";
+import { useTranslation } from 'next-i18next';
 import styles from "./TagComment.module.scss";
 
 const TagComment = ({ className }: any) => {
+  const { t } = useTranslation('multiversePage');
 
   return (
     <div className={styles['container-chat']}>
@@ -11,7 +12,7 @@ const TagComment = ({ className }: any) => {
         </div>
         <div className={styles['container-conversation-text']}>
           <div className={styles['paragraph']}>
-            <p dangerouslySetInnerHTML={{ __html: LORE_HERO_COMMENT }}></p>
+            <p dangerouslySetInnerHTML={{ __html: t('heroComment') }}></p>
           </div>
         </div>
       </div>

@@ -1,20 +1,17 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import cx from 'classnames';
+import { useTranslation } from 'next-i18next';
 import CommunityCard from './CommunityCard'
 import CommunityModal from './CommunityModal'
 import styles from './CommunityGrid.module.scss'
-import { gsap, Power1 } from "gsap";
-import { Flip } from "gsap/dist/Flip";
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import { contents } from './constants';
 
 const CommunityGrid = () => {
+  const { t } = useTranslation('communityPage');
   const { isMobile } = useScreenWidth();
-
   const commGridRef: any = useRef(null);
-
   const [commGridDimension, setCommGridDimensions] = useState<any>({});
-
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>({});
 
