@@ -220,8 +220,8 @@ export const characterDetails = [
     ],
     fictions: [
       "Twelve Point Lab Log: Limitation tests for digital human consciousness<br>Subject matter: Perception of exertion and exhaustion in hybrid body<br>Dr.Will Tannis supervising",
-      "Tannis: Morning, Axis.Ready for your morning 2k?",
-      "Axis : On - line and powered up, as usual.You know a jog in the morning helps me remember what waking up feels like.It’s strange not having body cycles like sleep anymore.",
+      "Tannis: Morning, Axis. Ready for your morning 2k?",
+      "Axis : On-line and powered up, as usual.You know a jog in the morning helps me remember what waking up feels like.It’s strange not having body cycles like sleep anymore.",
       "Tannis: I, for one, would be thrilled to no longer have to waste time sleeping. <sound of paperwork rustling> Speaking of wasting time, this is the one-hundred-eighty-sixth log of this test and you haven’t felt any exhaustion in your hybrid form in the previous one-hundred-eighty-five. Being tired of filing your post-run log is the closest to fatigue we’re going to get.",
       "Axis: Has the sun come up yet? I find my runs are much more stimulating when the sun is cresting the skyline.",
       "Tannis: Really? You’re just going to step right over that. And you are literally neurally connected to the internet, and you can’t figure out what time it is?",
