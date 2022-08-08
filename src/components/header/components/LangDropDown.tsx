@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from 'next/router';
+import styles from './LangDropDown.module.scss';
 
 const langItems = [
   'en', 'jp'
@@ -8,9 +9,10 @@ const LangDropDown = () => {
   const router = useRouter();
   const { pathname, asPath, query } = router
   const [activeIdx, setActiveIdx] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClickMenu = () => {
-
+    setIsOpen(!isOpen);
   }
 
   const handleClickItem = (idx: any) => {
@@ -22,16 +24,18 @@ const LangDropDown = () => {
   }
 
   return (
-    <div>
-      <div onClick={handleClickMenu}>{langItems[activeIdx]}</div>
-      <div>
-        {langItems.map((item: any, idx: any) => {
-          if (idx === activeIdx) {
-            return <></>
-          }
-          return <div key={idx} onClick={() => handleClickItem(idx)}>{langItems[idx]}</div>
-        })}
-      </div>
+    <div className={styles.langDropDownContainer}>
+      <div className={styles.langDropDown} onClick={handleClickMenu}>{langItems[activeIdx]}</div>
+      {isOpen && (
+        <div>
+          {langItems.map((item: any, idx: any) => {
+            if (idx === activeIdx) {
+              return <></>
+            }
+            return <div key={idx} onClick={() => handleClickItem(idx)}>{langItems[idx]}</div>
+          })}
+        </div>
+      )}
     </div>
   )
 };

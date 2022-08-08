@@ -7,7 +7,6 @@ import styles from '../header.module.scss'
 import RadioSwitch from '../../RadioSwitch/RadioSwitch';
 import LangDropDown from './LangDropDown';
 
-
 export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const router = useRouter();
 	const { systemTheme, theme, setTheme } = useTheme();
