@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Container from '../src/components/container/Container'
 import GradientText from '../src/components/gradientText/GradientText'
 import styles from '../src/styles/character.module.scss'
@@ -10,7 +12,7 @@ import { characterDetails } from '../src/components/Character/constants';
 
 const character = () => {
   const [figId, setFigId] = useState<number | null>();
-  const { theme, systemTheme } = useTheme()
+  const { theme, systemTheme } = useTheme();
   const router = useRouter();
 
   useEffect(() => {
@@ -53,5 +55,11 @@ const character = () => {
     </div>
   )
 }
+
+export const getServerSideProps = async ({ locale }: any) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common', 'charactersPage'])
+  }
+});
 
 export default character
