@@ -28,7 +28,7 @@ const Character = ({ character }: any) => {
       <div className={styles.leftCol}>
         <img src={thumbnail} className={styles.thumbnail} />
       </div>
-      <div className={`${styles.rightCol}`}>
+      <div className={`${styles.rightCol} ${styles.imgContainer}`}>
         <img src={radar} className={styles.radar} />
       </div>
     </div>
@@ -58,7 +58,7 @@ const Character = ({ character }: any) => {
           : <FictionMobileUpper />
         }
       </div>
-      <div className={`${styles.rightCol}`}>
+      <div className={`${styles.rightCol} ${styles.imgContainer}`}>
         <img src={fullCharacter} className={styles.fullCharacter} />
       </div>
       {isMobile && (
