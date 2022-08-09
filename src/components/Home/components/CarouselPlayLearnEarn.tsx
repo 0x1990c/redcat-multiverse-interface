@@ -29,6 +29,10 @@ const slideImages = [
   {
     id: 5,
     url: './images/characters/maroc_full_character.png'
+  },
+  {
+    id: 6,
+    url: './images/characters/axis-12_full_character.png'
   }
 ];
 

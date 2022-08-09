@@ -29,6 +29,12 @@
 
 .rightCol {
   margin-left: 20px;
+
+  &.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .thumbnail {
