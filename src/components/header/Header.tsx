@@ -24,8 +24,8 @@ const Header = () => {
     { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
     { name: t('header.community'), link: 'community', finished: true },
     { name: t('header.whitepaper'), link: 'whitepaper', finished: true },
-    { name: 'Blog', link: 'blog', finished: true },
-    { name: t('header.careers'), link: 'careers', finished: true },
+    // { name: 'Blog', link: 'blog', finished: true },
+    // { name: t('header.careers'), link: 'careers', finished: true },
     { name: 'Connect', link: 'connect', finished: true }
   ]
 

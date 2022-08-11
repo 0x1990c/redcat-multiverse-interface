@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -73,7 +73,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 			</div>
 			{/* nav icons social media */}
 			<LinksIcons />
-			<LangDropDown />
+			<LangDropDown isDarkPage={isDarkBackgroundPage()} />
 			<RadioSwitch className={styles.themeSwitch} onChange={handleClick} checked={currentTheme === 'dark'} />
 		</nav>
 	)

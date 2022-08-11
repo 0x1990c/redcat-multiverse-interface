@@ -1,3 +1,15 @@
+.langDropDownContainer {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.langDropDownWrapper {
+  position: absolute;
+  text-transform: uppercase;
+}
+
 .langDropDown {
   width: 48px;
   height: 24px;
@@ -7,4 +19,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--header-nav-background);
+
+  &.darkPage {
+    background-color: #1b1628;
+    color: #fff;
+  }
+}
+
+.langDropDownPanel {
+  border: solid 1px #e83324;
+  border-radius: 4px;
+  border-top: none;
+  border-bottom: none;
+  background-color: var(--header-nav-background);
+
+  &.darkPage {
+    background-color: #1b1628;
+    color: #fff;
+  }
+
+
+}
+
+.langDropDownItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px #e83324;
+  transform-origin: top center;
+  animation: dropDownEffect 300ms ease-in-out
+}
+
+.emptyItem {
+  display: none;
+}
+
+@keyframes dropDownEffect {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+
+  50% {
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
 }

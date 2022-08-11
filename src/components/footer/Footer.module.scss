@@ -5,6 +5,10 @@
   align-items: center;
   padding: 10px 0 30px 0;
 
+  .footerLinks {
+    display: flex;
+  }
+
   .separator {
     display: unset;
   }
@@ -16,6 +20,12 @@
 
     .separator {
       display: none;
+    }
+
+    .footerLinks {
+      .separator {
+        display: unset;
+      }
     }
   }
 }
