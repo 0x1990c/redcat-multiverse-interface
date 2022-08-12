@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <div className={styles.ctaWrapper}>
           <div className={styles.bigCTASubject}>Enter the future of gaming</div>
           <div className={styles.ctaSubject}>
-            <i>from the creators and thoughts leaders behind</i>
+            <i>from the creators and thought leaders behind</i>
           </div>
           <div className={styles.bigCTASubject}>
             League of Legends and Algorand
