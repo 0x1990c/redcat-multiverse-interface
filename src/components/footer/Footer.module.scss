@@ -20,8 +20,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+.footerLogo {
+  width: 160px;
+  height: 160px;
+}
 
+@media screen and (max-width: 768px) {
   .footerRow {
     &.rcmInfo {
       flex-direction: column;
@@ -31,5 +35,10 @@
         display: none;
       }
     }
+  }
+
+  .footerLogo {
+    width: 100px;
+    height: 100px;
   }
 }
