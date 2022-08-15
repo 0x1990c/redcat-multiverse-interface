@@ -36,7 +36,7 @@ const LangDropDown = ({ isDarkPage }: any) => {
     <OutSideClickHandler onOutsideClick={() => setIsOpen(false)}>
       <div className={styles.langDropDownContainer}>
         <div className={styles.langDropDownWrapper}>
-          {activeIdx && activeIdx !== null &&
+          {activeIdx !== undefined && activeIdx !== null &&
             <div className={`${styles.langDropDown} ${isDarkPage ? styles.darkPage : ''}`} onClick={handleClickMenu}>
               {langItems[activeIdx]}
             </div>

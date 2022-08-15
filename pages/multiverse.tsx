@@ -15,6 +15,7 @@ import styles from '../src/styles/multiverse.module.scss'
 const Lore: NextPage = () => {
   const router = useRouter();
   const { t } = useTranslation('multiversePage');
+  const { t: characterT } = useTranslation('charactersPage');
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -70,8 +71,8 @@ const Lore: NextPage = () => {
             <FigmentCard
               key={idx}
               className={styles.cardItem}
-              name={cardContent.name}
-              text={cardContent.role}
+              name={characterT(`characters.${idx}.name`)}
+              text={characterT(`characters.${idx}.role`)}
               image={cardContent.thumbnail}
               empty={cardContent.empty}
               onClick={() => handleFigCardClick(cardContent.id)}
@@ -85,7 +86,7 @@ const Lore: NextPage = () => {
 
 export const getServerSideProps = async ({ locale }: any) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'multiversePage'])
+    ...await serverSideTranslations(locale, ['common', 'multiversePage', 'charactersPage'])
   }
 });
 

@@ -2,208 +2,211 @@
   "characters": [
     {
       "name": "WELLS",
-      "role": "THE TIME TRAVELER",
+      "role": "タイムトラベラー",
       "descriptions": [
-        "The Royal College said it couldn’t be done. His head was too in the clouds, they said. Not tethered to the realities and limitations of science, they said. “Poppycock,” Wells said to that, and promptly proved all of them wrong by building his very own functioning time machine, and then not letting any of them try it out.",
-        "The plaque in front of his Victorian London laboratory reads Horatio Wells, Inventor & Gentleman. Wells’ birth name is actually Hayden, but he thinks Horatio is more befitting a gentleman time-adventurer. Born to a good family, all his wealthy parents wanted for him was a proper education in the sciences, which he met when he took them to see their first dinosaurs. Though Wells is absent much of the time, he never seems to miss anything important – a benefit of being a time traveler.",
-        "The freedom provided by adventuring in time is what Wells treasures most, the ability to pick up and go anywhere he fancies. His natural curiosity draws him to all kinds of places, many of which are of no particular historical importance. Naturally, the future is of significant interest to Wells, but he still doesn’t understand how causality works there in relation to him.",
-        "Like many scientists, Wells is fascinated by the mathematics of music. The digital music of the future is of particular interest to him, with its perfect timing and clockwork-like assembly. To him, it’s technology taking people beyond their limits, an example of what he himself pursues."
+        "ロイヤルカレッジは、無理だと断言していた。彼の頭は雲の中にありすぎるというのだ。「科学の現実と限界に縛られているのではない」と。ウェルズはこれに対して「とんでもない」と言い、自分で機能するタイムマシンを構築し、それを試してみないようにすることで、すべてが間違っていることをすぐに証明したのだ。",
+        "ビクトリア朝時代のロンドンの研究所の前には、「Horatio Wells, Inventor & Gentleman」と書かれたプレートが掲げられている。ウェルズの出生時の名前はヘイデンだが、彼はホレイショの方が紳士的な時間冒険家としてふさわしいと考えている。良家に生まれ、裕福な両親が彼に望んだのは、科学に関する適切な教育であり、それは彼が両親を初めて恐竜に会わせたときに満たされた。ウェルズは不在の時間が多いが、重要なことを見逃すことはない-タイムトラベラーであることの利点である。",
+        "ウェルズが最も大切にしているのは、時間の旅をすることで得られる自由、つまり自分の好きな場所に行けるということだ。持ち前の好奇心で、歴史的に重要でない場所にもどんどん出かけていく。当然、未来にも興味を持つが、そこでの因果関係が自分との関係でどうなっているのか、まだ理解していない。",
+        "多くの科学者がそうであるように、ウェルズも音楽の数学に魅了されている。未来のデジタル音楽は、完璧なタイミングと時計仕掛けのような組み立てが特徴で、特に興味を引かれる。彼にとっては、それは人間の限界を超えたテクノロジーであり、彼自身が追求していることの一例なのだ。"
       ],
       "fictions": [
-        "Wells sat down with the lads in the warm and richly appointed Gentleman's Club, a servant following him with warmed brandy in tow. As usual, the hawkish Jones-Smythe sat half-reading, half-participating in the conversation, this time something anatomy-related. The portly Bigglesworth’s cheeks were rosy, as he’d been in his cups longer than the others. Paddington, with his boyish charm, greeted Wells with a warm smile and a toast of his snifter.",
-        "“Wells, my good man! Welcome home. Sit and tell us of your travels!”",
-        "Wells sat down gingerly, as the wound on his posterior was still fresh. “I’ve just come in from the Jurassic Era.”",
-        "“Seems you brought something home with you,” said Jones-Smythe, gesturing towards Wells’ discomfort.",
-        "“Yes,” said Wells, settling in. “It seems our current understanding of dinosaurs is wrong in many ways. I can assure you that some of them are much faster than previously expected, with sharper teeth.”",
-        "Bigglesworth chortled. “You’re saying one of those buggers bit you square on the arse?”",
-        "“Not in those words, but yes,” responded Wells. “Before that, my journey forward was quite peaceful. I brought some more music of the future. Would you like to hear it?”",
-        "“As long as it’s not that chaotic jazz again,” said Paddington. “Too much improvisation for my tastes.”",
-        "“No, it’s not,” said Wells, producing a glowing palm-sized device from his pocket. He activated the curious thing and sound began to pour out from it, a fast, hard, driving music with exploding sounds. Wells frowned and touched the device again. “Sorry, that was a music called drum and bass. Let me find something simpler.”",
-        "Bigglesworth snorted in his drink. “I hear neither drum nor bass, man! It sounds like tin cans in a storm and unhealthy flatulence.”",
-        "“You, sir, are drunk.”, said Wells, as he again activated the music device, this time playing a slower, more mechanical song. The group listened with interest as the piece evolved, adding perfectly timed layers of sound as it progressed, never slowing down.",
-        "Paddington sat in astonishment. “Can a human percussionist have the endurance necessary to complete such a feat as this?”",
-        "“No,” responded Wells. “This is a machine which has been instructed what and how to play by a human.”",
-        "“Automated music?” said Paddington. “Not unlike player pianos?”",
-        "Wells shut off the device. “That would be a gross under-simplification, but yes.”",
-        "Jones-Smythe paused long enough to poke his nose out from behind his book. “All of this nonsense. Those sounds are unnatural and assault the delicate ears. No one will ever listen to that.”",
-        "“Um, Jonesy,” Paddington said. “You forget. Our good man here has brought this music from the future. It is elementary logic to deduce that people must listen to it.”",
-        "Jones-Smythe scoffed, “If that’s the future, I am relieved I will be long dead of natural causes before it arrives.”",
-        "“You, sir, are a party pooper and lack imagination,” said Wells. “Go back to your body parts.”",
-        "Bigglesworth belched loudly in approval. “By the gods, man, that last bit wasn’t too shabby. Show us what else you’ve got!”"
+        "ウェルズは、暖かく豪華な紳士クラブに若者たちと腰を下ろし、使用人が温めたブランデーを持ってついてきた。いつものように、鷹揚なジョーンズ・スマイスは半分何かを読みながら、半分会話に加わっていた。今回は解剖学に関連した話だった。太ったビグルスワースの頬は、他の人より長く飲んでいたため、バラ色になっていた。 ",
+        "「ウェルズ、いい男だ！おかえり！ 座って旅の話を聞かせてくれ！」",
+        "「ジュラ紀から帰って来たんだ。」ウェルズは、後頭部の傷がまだ新しいので、そっと座った。",
+        "「何か持って帰ってきたようだね。」 ジョーンズ・スマイスは、ウェルズに違和感を示すジェスチャーをしながら言った。",
+        "「そうだな...」ウェルズは落ち着いた様子で言った。「どうやら、現在の恐竜に対する理解は、いろいろな意味で間違っているようなんだ。その中には、これまで予想されていたよりもはるかに速く、鋭い歯を持った恐竜がいることは確かだよ。」",
+        "ビグルスワースはほくそ笑んだ。「その野郎どもがお前の尻を噛んだってことか？」",
+        " 「言い方はあるけど、そんなようなとこかな。」とウェルズは答えた。「その前までは、すごく平和な旅だった。未来の音楽を持っていったんだ。聴きたい？」ウェルズは言った。",
+        "「またあのカオスなジャズでない限りな」 とパディントンは言った。「俺の好みからすると即興が多すぎる」",
+        "「そんなことはないよ」とウェルズは言った。ポケットから光る手のひらサイズのデバイスを取り出し、彼がその不思議なものを作動させると、そこから音が流れ出した。爆発音的な、速く、硬い、ドライブ用のような音楽だった。ウェルズは顔をしかめながら、再びデバイスに触れた。「ごめんごめん、今のはドラム＆ベースという音楽なんだけど、もっとシンプルなものを探させてくれ。」",
+        "  ビグルスワースは飲み物の中で鼻を鳴らした。「ドラムもベースも聞こえないぞ。嵐の中のブリキ缶と変な鼓腸のような音だ。」",
+        " 「あんたが酔っぱらっているからだよ」とウェルズは言い、今度は、もっとゆっくりした機械的な曲を流した。一行は興味深げに耳を傾けていたが、曲が進むにつれて、完璧なタイミングで音の層が追加され、決して遅れることはなかった。",
+        " パディントンは驚いて「人間の打楽器奏者に、こんな完璧で持久力が必要な技がどうやってこなせるんだ？」と言った。",
+        "「違うよ。」とウェルズは答えた。「これは人間が何をどのように演奏するかを指示した機械なんだよ。」",
+        "「自動演奏？」「プレーヤーピアノとは違うのか？」 とパディントンが言った。",
+        " ウェルズは装置を止め、「それは単純化しすぎだが、まぁ、そういくことかな。」と言った。",
+        " ジョーンズ・スマイスは、長く考えた後に「こんな無意味なことはない。サウンドがとても不自然で耳を傷つける。誰もそんなの聴かないだろ。」",
+        "「あのさ、ジョーンズ...」 パディントンが言った。「忘れているかもしれないが、これは彼がが未来から持ってきた音楽なんだよ。多くの人々はこれを聴いていると推論するのは、初歩的な論理だよ。」",
+        "「それが未来なら、来る前に自然死でとっくに死んでるから安心だな」ジョーンズ・スマイスは嘲笑した。",
+        "「あんたは、想像力に欠けているよ。」とウェルズは言った。「自分の体の一部に戻ったらどうだ。笑」",
+        "ビグルスワースは大きな声で賛同の意を表した。「ちょっと見窄らしすぎる。他にどんなものがあるか見せてくれ！笑」"
       ],
       "knowledge": [
-        "Time travel is also space travel, as galaxies, solar systems, and planets do not stay in the same location in space over time.",
-        "One of the best known time-travel paradoxes is the Grandfather Paradox. The basic idea is that if you traveled back in time and killed your grandfather, how could you ever have been born to do it in the first place?",
-        "Tachyons are theoretical particles which can move faster-than-light, which aren’t consistent with the laws of physics as we understand them. There are those who posit they have the ability to move through time, making them a staple of science-fiction.",
-        "In digital music production, the ability to automatically align notes so they are rhythmically perfect is called quantizing."
+        "銀河、太陽系、惑星は時間が経つと空間の同じ場所に留まらなくなるため、時間旅行は空間旅行でもあるのだ。",
+        " タイムトラベルのパラドックスとして有名なものに、「祖父のパラドックス」がある。これは、もしあなたが過去にタイムトラベルして祖父を殺してしまったとしたら、そもそもあなたはどうやって生まれてきたのだろうか、というものである。",
+        " タキオンとは、光よりも速く移動できる理論上の粒子で、我々が理解する物理法則とは一致しない。時間を移動する能力があるとする説もあり、SFの定番となっている。",
+        "デジタル音楽制作において、音符を自動的に整列させ、リズム的に完璧な状態にすることを量子化という。"
       ]
     },
     {
       "name": "PLIKPLIK",
-      "role": "THE COSMIC CULINARIAN",
+      "role": "宇宙食研究家",
       "descriptions": [
-        "Plikplik is a small, furry creature from the harsh world of Proxima Centauri b, in the Alpha Centauri system. Surviving on fairly tasteless root vegetables, these small, furry creatures were constantly testy and fighting with each other, inspiring Plikplik to leave home and search the stars for a way to unite his people. It was on his travels that he discovered all the wondrous food the cosmos had to offer. Upon returning home, Plikplik prepared a summit with an accompanying feast, where his people quickly found peace under the spell of his novel culinary delights.",
-        "Since then, Plikplik has once again begun to wander the cosmos in pursuit of his passion for cooking. Despite the tasteless diet of their home, Plikplik’s people actually have one of the most developed palates in the multiverse, making him an ideal chef for many of the greatest gourmands with his ability to draw out hidden flavors of his ingredients.",
-        "Despite having tasted all wonders of the galaxy and having cooked for cosmic kings, Plikplik prefers to prepare vegetarian meals in honor of his peoples’ newfound peace. There's no need for anyone to panic if he licks them (which he sometimes does), because his tongue is surprisingly smooth and smells like fresh vanilla."
+        "プリックプリックはアルファケンタウリ星系にあるプロキシマケンタウリbという厳しい世界に住む小さな毛皮の生き物である。味気ない根菜類で生き延びてきたこの小さな毛むくじゃらの生き物は、常に険悪で、お互いに喧嘩をしていたため、彼は家を出て、仲間をまとめる方法を探すために星を探すようになった。そしてその旅先で、彼は宇宙の不思議な食べ物に出会った。帰国後、プリックプリックはサミットとそれに伴う祝宴を準備し、人々は彼の斬新な料理の魔法にかかり、すぐに平和を取り戻した。",
+        "それ以来、プリックプリックは再び料理への情熱を追い求め、宇宙を放浪するようになった。プリックリックの人々は無味乾燥な食生活を送っているが、実は宇宙で最も発達した味覚を持っており、食材の隠れた味を引き出す能力を持つ彼は、多くの偉大な美食家にとって理想的なシェフなのである。",
+        "銀河のあらゆる驚異を味わい、宇宙の王たちのために料理をしてきたプリックプリックだが、彼の民族が新たに得た平和に敬意を表してベジタリアン料理を好んで作る。彼の舌は驚くほど滑らかで、新鮮なバニラの香りがするので、舐められても慌てる必要はない。"
       ],
       "fictions": [
-        "Sylvia had called out at the last minute with a bad case of the stomach flu, leaving Chef Rudy down a key chef and under intense pressure. Mrs. Chen-Irfan was very clear in her expectations for this benefit dinner, and she was known to be unpleasant when things didn’t go according to plan. Chef Rudy looked at the clock, while realizing no one had even started the canapes yet.",
-        "He swore, looking around to see if anyone could start the job, but everyone was cooking their little hearts out. As if on cue, a bluish rodent-like creature wearing a big smile came floating through the door at about chest height. The creature saluted Chef Rudy, nodded to the other chefs, and promptly went madly to work on the canapes at a frantic pace. Despite the intense oddity of the situation, Chef Rudy shouted, “Back to work!” He was more afraid of Mrs. Chen-Irfan than whoever or whatever this was.",
-        "Minutes later, the diminutive floating creature handed canapes to Chef Rudy to taste. They melted in his mouth, introducing him to flavors he didn’t know those ingredients had. “Keep going,” he said, finishing off the delicacy with a thumbs up. The creature dove back in, just as Mrs. Chen-Irfan entered the kitchen.",
-        "“You are behind schedule! What are you doing to make up time?” she said before looking up and seeing the flying rodent. “My goodness! I do not believe THAT,” she said, pointing at the creature, “was part of the vetting process! Get whatever it is out of here now!”",
-        "“Believe me, maam,” Chef Rudy said, “I wouldn't normally recommend accepting food from what I think is a strange extraterrestrial being, especially not one which stands about knee high and is that particular shade of puce, but in this case you should make an exception.”",
-        "Standing in disbelief, Mrs. Chen-Irfan said, “You seem awfully calm about all of this nonsense.”",
-        "“You will be too after you try the canapes. They are truly out of this world,” said Chef Rudy, as the creature finished rescuing the canapes. “You’re welcome in my kitchen anytime, little buddy.” The being floated to shoulder height and raised his hand, engaging Chef Rudy in an enthusiastic high five. Then he floated out the door, with the satisfaction of a job well-done.",
-        "Mrs. Chen-Irfan finally tried one of the canapes in protest, and nearly passed out because it was so good."
+        "シルビアが胃腸炎で休んだため、1人少なくなり、シェフのルディがプレッシャーにさらされた。夫人は、このチャリティーディナーに非常に期待をしていて、物事が計画通りに進まないと不機嫌になることで知られていた。ルディシェフは時計を見て、まだ誰もカナッペを作り始めていないことに気づいてしまった。",
+        "彼は誰かが仕事を始めることができるかどうか周りを見回したが、誰もが一生懸命に料理を作っていた。その時、満面の笑みを浮かべた青みがかった齧歯類のような生き物がドアから胸の高さくらいまで浮いてきた。その生き物はルディシェフに敬礼し、他のシェフに頷くと、すぐに夢中でカナッペを作り始めた。あまりの異様さに、ルディシェフは「仕事に戻れ！」と叫んだ。彼は、これが誰であろうと何であろうと、それよりもチェン・イルファン夫人を恐れていたのだ。",
+        "数分後、小柄な浮遊物がルディシェフにカナッペを手渡し、味見させた。それはルディシェフの口の中で溶けていき、その食材が持っている知らない味を味わわせてくれた。「続けてください」と言いながら、ルディはそのカナッペを食べ終え、親指を立ててみせた。そのとき、夫人が厨房に入ってきた。",
+        "「予定より遅れているじゃない。何をやっているんですか！」彼女はそう言うと、顔を上げて飛んでいるネズミを見た。「なんてこと...信じられない」彼女は生き物を指して「今すぐここから出て行きなさい！」と言った。",
+        "「信じてください、奥様」シェフのルディは言った。「 普通なら、奇妙な生命体に作ってもらった食べ物を食べるなんてことはことは勧めません。でも今回は完全に例外です！」",
+        "不信感を抱いたまま、チェン-イルファン夫人は言った。「なんて能天気なの、あなたは。」",
+        "「カナッペを食べたら、あなたもきっとそうなりますよ。」ルディシェフは、続けて「これは本当にこの世のものとは思えない」と言った。「私のキッチンにはいつでも歓迎するよ、相棒！」 その生き物は肩の高さまで浮き上がり、手を上げてルディシェフと熱烈なハイタッチをした。そして、彼は仕事をやり遂げた満足感とともに、ドアの外に浮かんでいった。",
+        " チェン・イルファン夫人は拒みながらもようやくカナッペを1つ食べてみたが、あまりのおいしさに気を失いそうになった。"
       ],
       "knowledge": [
-        "The culinary arts are often viewed as both a science and art form, mixing an understanding of the chemistry and dietary nutrition of the meal with the aesthetics and flavor of the dish itself.",
-        "Making a good dish involves making it tasty, but did you know that many culinarians also practice the art of serving their dish in a visually appealing way? There are many methods for presenting the dish, from how it is plated and decorated to the final color and appearance of the food itself.",
-        "Proxima Centauri b is a planet which Earth astronomers thought to be in a habitable zone of the red dwarf star Proxima Centauri, one of three stars that make up the Alpha Centauri star system.",
-        "The earliest recorded cookbook on Earth is a set of tablets dating back to around 1700 BC, detailing ingredients which are believed to be part of an ancient stew recipe."
+        "料理は、科学と芸術の両面で捉えられることが多く、食事に含まれる化学物質や栄養への理解と、料理そのものの美学や風味がミックスされている。",
+        " 良い料理を作るには、美味しく作ることが必要だが、多くの料理研究家は、料理を視覚的に魅力的に提供する技術も実践していることをご存知だろうか？盛り付けや装飾の仕方、最終的な料理そのものの色や見た目など、プレゼンテーションの方法はさまざまである。",
+        "プロキシマ・ケンタウリbは、アルファ・ケンタウリ星系を構成する3つの星のうちの1つ、赤色矮星プロキシマ・ケンタウリのハビタブルゾーンにあると地球の天文学者が考えていた惑星である。",
+        "紀元前1700年頃のタブレットに、古代のシチューのレシピと思われる材料が詳細に記されているのが、地球上で最も古い料理本の記録だ。"
       ]
     },
     {
       "name": "FU YIJUN",
-      "role": "DRAGON OF WISDOM",
+      "role": "智恵の龍",
       "descriptions": [
-        "The mystical dragons of Asia have always had natures which tie them to the multiverse, and the primary reason they are rarely seen is because they are often traveling through parallel Earths. One such dragon, Fu Yijun, is a dragon of wisdom who has tied himself to the season of Spring, and has a special interest in the development of life.",
-        "Fu Yijun enjoys watching everything, from plants, to people, to communities, grow and become their true selves. He doesn’t concern himself with destinations or endings, because all life ends up in the same place eventually, but rather how a being lives the journey between birth and death. To Fu Yijun, every moment is precious and living in the moment is a gift. He has an easy way about him, with great patience for all things young and new, and enjoys conversing with just about anyone. Though fearsome and powerful in appearance, those who encounter him leave with a lighter heart.",
-        "Fu Yijun’s wisdom has been accumulated through thousands of years of personal experience, but also from hearing the stories and lives of beings from all over the multiverse. Knowing that judgment is useless in the grand scheme, he listens without it. An important component of wisdom is seeing the world through the experience of others, for going by only one’s own provides an extremely limited understanding. While Fu Yijun has a better perspective on life than most sentient beings, he’s not attached to the advice he gives. He ultimately believes that people should do what they believe is right for them, as long as it is within the realms of civility and decency.",
-        "The only thing which tests Fu Yijun’s patience is deliberate ignorance. He cannot abide those who intentionally choose to remain uneducated about important things, especially those who loudly and boldly voice an opinion on things they know nothing about. While Fu Yijun does his best to help people on the road to understanding, he will leave a situation with someone who clings to their ignorance like it is justified."
+        " アジアの神秘的な龍は、常にマルチバースと結びついた性質を持ち、彼らが滅多に姿を現さないのは、パラレルアースを旅していることが多いからである。 そのようなドラゴンの 1 つである フー・イージュン は、春の季節に身を結び、生命の発展に特別な関心を持っている知恵のドラゴンだ。",
+        "フー・イージュン は、植物から人、コミュニティに至るまで、すべてが成長し、真の自分になるのを見ることを楽しんでいる。すべての人生は最終的に同じ場所で終わるため、彼は目的地や結末には関心がなく、生と死の間の旅をどのように生きるかということに興味があった。 彼にとって、すべての瞬間が貴重であり、その瞬間を生きることは贈り物なのだ。彼は持論を持っており、若くて新しいことすべてに非常に忍耐強く、ほぼ誰とでも会話を楽しんでいる。見た目は恐ろしく力強いが、彼に出くわした者は心を軽くして立ち去るのだ。",
+        "イージュンの知恵は、数千年にわたる個人的な経験によって蓄積されたものであり、また、マルチバース中の生き物の物語と人生を聞くことによっても蓄積されたものである。判断が役に立たないことを知りながら、彼は判断せずに話を聞く。知恵の重要な要素は、他人の経験を通じて世界を見ることである。傅懿は他の衆生より優れた人生観を持っているが、自分のアドバイスに執着はない。人は自分が正しいと思うことを、礼節と良識の範囲内で行うべきだというのが彼の考えだ。",
+        "フー・イージュンの忍耐力を試すのは、意図的な無知だけである。特に、何も知らないのに偉そうに意見を言う人は許せない。彼は、人々が理解への道を歩むのを助けるために最善を尽くすが、自分の無知を正当化するようにしがみつく人とは、その場から離れようとする。"
       ],
       "fictions": [
-        "The majestic dragon had shrunk himself down to about the size of a German Shepherd, in order to interact more easily with his companion. The small domestic-looking cat sat on a flower box, her tail flicking in annoyance, while Fu Yijun floated in a winding, crisscross pattern in the air.",
-        "“There are times I see this place wears on you, Jendayi,” said Fu Yijun.",
-        "“The activities of the day have tried my patience,” she said. “I find the quality of punishments in this place to be soft.”",
-        "“It’s always work with you, little one,” Fu Yijun said. “One of these days, mind you I do not expect it soon, we will share time untainted by duty. In the meantime, tell me more about what you mean.”",
-        "The cat sniffed at a budding red flower. “In my time and place, we were unafraid to dispense harsh justice. The worst criminals were forced into servitude or publicly executed, and even the lesser ones faced beatings or losing a body part to remind them. People were afraid to break the law. There is none of that here.”",
-        "“Things have changed in many places on Earth, in present time,” said Fu Yijun, lighting on a nearby banister. “Many judgments are no longer quite so pitiless.”",
-        "“So criminals are more emboldened to offend, because the sentence is bearable,” replied Jendayi, with the cat equivalent of a sigh. “What is your perspective on this? Which ways are correct?”",
-        "The diminutive dragon furrowed his brow. “I can’t answer that particular question, but I have come to learn that the reasons people engage in antisocial behavior are often complex. The amount of insight required to understand them is significant, and each offender may need different treatment for rehabilitation. I’ve often found that simple punishment does little to remove the root causes of criminal activity.”",
-        "“Isn’t punishment essential? They must be made to feel the suffering they have caused,” said Jendayi.",
-        "“First,” said Fu Yijun, “they must be taught empathy. Suffering will organically follow, once they fully realize the impact of their actions.”",
-        "Jendayi paused thoughtfully for a moment. “What of those who cannot feel empathy? Scientists have many names for them now.”",
-        "“That,” Fu Yijun replied, “is something I do not yet have the wisdom to speak on.”"
+        "竜は仲間との交流を深めるために、ジャーマンシェパードほどの大きさに身を縮めていた。家庭で飼われているような小さな猫は花瓶の上に座り、尻尾をフリフリして迷惑そうにしている。",
+        "「時折、この場所が君を苦しめるるだろ？ジェンデイ。」イージュンは言った。",
+        "「以前は結構忍耐が必要だったけど、ここの罰はそこまでですよ。」とその小さな猫は言った。",
+        "「そうかい、おチビちゃん。」 イージュンは言った。「でも、まあ、近いうちに僕たちは義務に縛られない時間を過ごすことになるだろう。だから今のうちに君のことをもっと教えてよ。」",
+        "猫は芽吹いた赤い花の匂いを嗅いだ。「私の前にいた場所では、厳しい裁きを下すことが普通でした。 悪い犯罪者は奴隷みたいに扱われたり、公開処刑されたりしました。 人々は法律を破ることを恐れていました。 でも、ここにはそのどれもありません。」",
+        "イージュンは近くの手すりに火をつけながら、「現代は地球のあちこちで状況が変わっている。」「多くの刑罰は、もはやそれほど冷酷なものではなくなったよ。」と言った。",
+        "「だから犯罪者たちは、刑が耐えうるものであるために、より大胆に犯罪を犯すののかもしれないですね。」と、ため息のような声でジェンダイは答えた。「あなたはどのように考えているんですか？どっちの方法が正しいのでしょうか？」彼女は聞いた。",
+        "小柄なドラゴンは眉をひそめた。「その質問には答えられないが、人が反社会的な行動をとる理由は複雑であることが多い。それを理解するために必要な洞察力は大きく、犯罪者の更生にはそれぞれ異なる治療が必要かもしれないね。単純な罰では、犯罪行為の根本的な原因を取り除くことは難しいと感じるよ。」",
+        "「罰は必要不可欠ではないでしょうか？自分が引き起こした苦しみを感じさせなければならないですよね？」とジェンダイは続けた。",
+        "「まずはね、共感することを教えなければならないと思うんだ。自分の行いがもたらす影響を十分に理解すれば、苦しみは自ずとついてくるはずじゃないかな。」イージュンは言った。",
+        "ジェンダイはしばらく考え込んだ。「共感できない人はどうするのですか？科学者たちは彼らのことを多くの名前で呼んでいますよね。」",
+        "「それはね、、、」イージュンは続けて言った。「私の知恵がまだまだ足りないということみたいだ。」"
       ],
       "knowledge": [
-        "In Chinese mythology, the Azure Dragon represents the east and the spring season.",
-        "The word season is from the Latin sationem meaning “sowing” or “seed time.”",
-        "Honeybees are more likely to swarm during the spring, as a way to start new colonies from successful ones. Surprisingly, swarming honey bees are very docile and the most friendly they are all year.",
-        "Not everyone marks the beginning of spring by the Spring Equinox. Meteorologists measure the seasons differently, dividing the year into four equal seasons which each start on the first day of every third month. For them, spring begins on March 1 and lasts until May 31 in the Northern Hemisphere, no matter when the equinox happens."
+        " 中国の神話では、蒼龍は東洋と春の季節を表している。",
+        "季節という言葉は、ラテン語で「種まき」や「種子の時期」を意味するサティオム（sationem）に由来している。",
+        "ミツバチは、成功したものから新しいコロニーを開始する方法として、春に群がる可能性が高くなり、意外にも、群がるミツバチはとてもおとなしく、一年中で最も友好的だそうだ。",
+        "誰もが春分によって春の始まりと考えているわけではなく、気象学者は、季節を別の方法で測定し、各3ヶ月目の最初の日に始まる4つの等しい季節に年間を分割している。そのため、北半球では春分の日に関係なく、3月1日から5月31日までが春となる。"
       ]
     },
     {
       "name": "CATO",
-      "role": "THE AVATAR OF MIND",
+      "role": "アバター・オブ・マインド(心の化身)",
       "descriptions": [
-        "At first, Cato was just an idea. A high-minded idea they may have been, but they were still transitory and fleeting, until something miraculous happened. Cato experienced a moment of sentience, in which they willed themselves into existence with the burning question, “What is self?” With that one question, Cato came into existence as an avatar of the purest expression of mind.",
-        "Free to travel the multiverse as a concept brought to life, Cato is the mind seeking to know itself. The very idea of self, its origins and complexities, is what drives them in their single-minded quest for insight. Though they have drifted through the multiverse for millennia and queried many and varied peoples, Cato has yet to find a definitive answer.",
-        "Cato is an eager, if intense, conversationalist. They ask a lot of questions to the people they meet, sometimes focusing on strange details or the events leading up to the conversation.While unusual, Cato’s lines of questioning are always innocent, and any social faux pas they commit are entirely by accident. They can be guilty of drifting off into themselves from time to time, but it’s only because Cato has a nearly infinite inner landscape."
+        "当初、ケイトーは単なるアイデアだった。そして、奇跡的な出来事が起こるまでは、とても儚い存在だった。ケイトーは感覚を取り戻し 「自己とは何か？” 」という問いを発し 自らの存在を意思表示したのである。その一問一答で、彼は最も純粋な心を表現する存在として誕生した。",
+        "生命を吹き込まれた概念としてマルチバースを自由に旅するケイトーは、自分自身を知ろうとする心そのものである。自己という概念、その起源と複雑さこそが、彼らの洞察への一途な探求の原動力である。数千年にわたりマルチバースを旅し、様々な民族に問いかけたが、ケイトーはまだ決定的な答えを見出すことができていない。",
+        "ケイトーは、熱心な、しかし激しい会話者である。出会った人々に多くの質問をし、時には奇妙な細部や会話に至るまでの出来事に焦点を当てる。珍しいことではあるが、彼の質問のラインは常に無邪気であり、彼らが犯した社交上の失敗は完全に偶然のものである。時折、自分自身の中に入り込んでしまうことがあるが、それはケイトーが無限に近い内的風景を持っているからにほかならない。"
       ],
       "fictions": [
-        "Cato sat on a park bench on the edge of an electric garden under the waving colors of the night sky. Despite the thirty or so other bodies in the square, Cato only had one companion - Unity. Each of the humanoids looked roughly the same, more cybernetic metal than flesh. The Avatar of Mind was enjoying their first conversation with this strange entity, who seemed to be in a sharing mood.",
-        "“I find your… adaptation unusual,” said Cato. “Do all of you share a single mind?”",
-        "“Each of us cognates on our own and takes action in service of the collective,” said Unity B07-161084. “Above and surrounding our minds is the Omnimind, the protector and guide of Unity, assuring our minds and purposes are always aligned in the best interests of the collective.”",
-        "“Is the Omnimind an individual then ?” Cato said.",
-        "“No. It is the combined wisdom of thousands of years given consciousness, keeper of the imperatives of our collective,” said Unity B07-452906.",
-        "Cato thought about this unusual concept for a moment, furrowing their brow. “Without individuality, how do you come to know your own mind?”",
-        "“Our mind is the will of the collective,” Unity responded from a dozen mouths. “Why is this so difficult for you to understand? You are under the misapprehension that individuality is somehow important. It creates division and conflict within a species.We know this from experience. Within Unity, all are equal and lack nothing, and there is no division and no anti-social behavior.”",
-        "“Interesting. Let’s take you, B07-161084. You have a name and experience the world independently of the others. While that all becomes part of the collective, you, B07-161084, experience those things first,” said Cato. “Doesn’t that make you unique in some way? Doesn’t that speak to some kind of agency?”",
-        "B07-161084 paused before speaking. “Are cells individuals? Is one healthy cell important on its own? Can a biological being recognize its parts separately, each unique among the whole?”",
-        "“Hmm. What about creativity, the expression of what is inside someone or someones? Creativity is easily diluted by too many minds trying to impose their vision on the same project. Art isn’t something which can be created by group consensus,” said Cato.",
-        "“We believe our creativity expresses new perspectives which have been gained by our union as a species,” said Unity B07-452906. “The whole is greater than the sum of its parts.”",
-        "Cato smiled. “We’ll soon find out if that’s true.”"
+        "ケイトーは夜空の色に揺れる電気庭園の端にある公園のベンチに座っていた。広場には他に30体ほどがいたが、彼の仲間はユニティただ一人だった。どのヒューマノイドもほぼ同じ姿をしており、肉体というよりサイバネティックな金属に近い。アバター・オブ・マインドは、この奇妙な存在との初めての会話を楽しみ、分かち合いの気分になっているようだった。",
+        "「君の適応能力は普通じゃない。君たちは皆、心を共有しているのかい？」ケイトーが言った。",
+        "「私たち一人一人が自分自身で認知し、集団のために行動を起こします。私たちの心の上と周囲には、ユニティのプロテクター、そしてガイドであるオムニマインドがあり、私たちの心と目的が常に集団の最善の利益のために一緒であることを保証しているんです。」とユニティB07-161084は言った。",
+        "ケイトーは「オムニマインドは個体なの？」 と聞いた。",
+        "「いいや、それは何千年も与えられた意識の結合された知恵、私たち集団の命令の番人みたいなものです。」と ユニティB07-452906は答えた。",
+        "ケイトーはこの珍しい概念について、眉をひそめてしばらく考えていた。「個性がなければ、どうやって自分の心を知ることができるのだろう？」",
+        "「我々の心は集団自体の意志なんです。」ユニティが12個ある口で答えた。「この炭塵なことが理解できないですかね？きっとあなたは、個性が重要だと誤解しているのです。それは種の中に分裂と対立を生み出します。私たちは経験からそれを知っています。統一体内では、すべてが平等で何も欠けておらず、分裂も反社会的行動もありません。」",
+        "おもしろいね。じゃあ、君を例にとってみようよ。B07-161084。君は名前を持っていて、他の人たちとは独立して世界を体験しているよね？それがすべて集団の一部となる一方で、君、B07-161084は最初に経験することもあるよね。それって、君をある意味でユニークな存在にないかな？なんていうか、ある種の代理権があるんじゃないのかな？」とケイトーは言った。",
+        "B07-161084は、それを聞いて一瞬フリーズした。 「細胞ひとつひとつは個体なのでしょうか？一つの細胞はそれだけで重要なのでしょうか？生物はその細胞ひとつひとつそれぞれが全体の中でユニークであると認識できるのでしょうか？」",
+        "「創造性とは、誰かや誰かの内側にあるものを表現することだよね。創造性というのは、多くの人が同じプロジェクトに自分のビジョンを押し付けようとすると、簡単に希薄になってしまう。アートは集団の合意で作れるものではないと思うよ」とケイトーは言った。",
+        "ユニティB07-452906は、「私たちの創造性は、種としての結合によって得られた新しい視点を表現するものだと信じているんです。全体は一部分の総和よりも偉大で大きいと思うんですよね。」",
+        "ケイトーは微笑んで「もうすぐに、それが本当かどうか知れるといいね。」と言った。"
       ],
       "knowledge": [
-        "Despite experiencing headaches or “brain freeze,” the brain itself actually feels no pain. The pain you feel is from the casing surrounding the brain called the meninges.",
-        "Information in the brain can travel up to a rate of 268 mph/430 kph.",
-        "Most decisions made on a daily basis are made subconsciously.",
-        "Despite the popular myth, you use more than 10 % of your brain on a daily basis."
+        "頭痛や「ブレイン・フリーズ」を経験しても、実は脳そのものは痛みを感じないのである。痛みを感じるのは、髄膜と呼ばれる脳を包む “箱” の部分なのだ。",
+        "脳内の情報は時速268マイル（約430キロ）もの速さで移動することができる。",
+        "日常的に行われる意思決定のほとんどは、無意識のうちに行われている。",
+        "一般的に信じられていることとは裏腹に、人間は日常的に脳の10％以上を使っている。"
       ]
     },
     {
       "name": "MALIA",
-      "role": "PRIESTESS OF THE SEA",
+      "role": "海の巫女",
       "descriptions": [
-        "Centuries ago, in pre-colonial Tahiti, Malia was a Tahu’a and an ancient priestess of the sea. She felt one of the best ways she could serve her people was to study the oceans and life around them and share that knowledge to better their lives. Loved by the native Tahitians, Malia was seen as a bit of an adventurer, constantly running and swimming to the next mystery or wonder.",
-        "It was this trait which brought Malia into the multiverse. While exploring a cave with bright, mysterious phosphorescence, she stumbled across a slip in dimensions which led her to other worlds. Malia dove into alien oceans, her curiosity driving her to explore and experience many things before she returned to her own world and time. Eagerly sharing what she’d learned, her people listened with amazement, but it wasn’t long before the urge to explore more worlds took Malia away into the multiverse once again.",
-        "Like the oceans themselves, Malia can be fierce or gentle in equal measure. Her active lifestyle has led her to enjoy physical competition and she’s nearly always up for a challenge. Malia can be curious nearly to a fault, running towards wonder with only occasional thought for her safety. An easy and excitable conversationalist, she loves to share what she’s learned with people, whether or not they’re entirely interested."
+        "何世紀も前、植民地時代以前のタヒチで、マリアはタファ族と呼ばれる海の巫女だった。彼女は、海や周りの生命を研究し、その知識を分かち合って人々の生活を向上させることが、人々に貢献できる最善の方法の一つだと考えており、タヒチの人々に愛され、マリアはちょっとした冒険家として、常に次の謎や不思議に向かって走り、泳ぎ続けていた。",
+        "この性格が、マリアをマルチバースに導いたのだ。明るく神秘的な燐光を放つ洞窟を探検していたとき、彼女は次元のズレに遭遇し、他の世界へと導かれ、マリアは異星の海に飛び込み、好奇心のおもむくままにさまざまなことを経験し、自分の世界と時間に戻ってきた。しかし、もっと多くの世界を探検したいという衝動に駆られ、マリアは再びマルチバースへと旅立ったのである。",
+        "海がそうであるように、マリアもまた、獰猛さと優しさを併せ持つ。アクティブなライフスタイルのため、肉体的な競争を好み、常に挑戦的である。好奇心旺盛で、自分の身の危険を顧みず、不思議なものに向かって走り出す。好奇心旺盛な彼女は、自分が学んだことを、相手が興味を示すかどうかに関わらず、人々と共有するのが大好きなのだ。"
       ],
       "fictions": [
-        "Malia stared at the ripple hanging in the air, almost as if the space in front of her were somehow fluid. Through this strange window through reality, Malia could see a beautiful blue ocean, its bright surface not more than five meters above.",
-        "Only minutes before, she had been investigating an amazing cave lit up by all colors of phosphorescent fungi. The beauty was enough to prompt her exploration, but more interesting was that these types of fungi did not exist in her part of the ocean.",
-        "The disturbance was clearly the answer to that mystery. Beyond, her attention was captured by what appeared to be a thick gossamer web, transparent and ghostly, hanging in the water. Malia couldn’t tell if it was a living thing or not, until with one smooth undulation the mysterious creature began to float away from view.Almost impulsively, she poked her walking stick into the ripple and withdrew it with no ill effects. Malia then dove into it, saying a small prayer as she did.",
-        "The clear, blue water felt like the saltwater of Malia’s seas as she ascended, keeping her eyes open for the creature. Breaking the surface of the lagoon, her attention quickly turned to the unusual landscape around her. The bright sun shone down on a white beach, two moons on the horizon, surrounded by plants of unnatural colors, insects she could not recognize, and birds that looked a little like rats with wings. Emerging from the water onto the beach, Malia noticed it was already occupied.",
-        "Sitting patiently on the sand was a fluffy red cat with the most unusual markings, not that Malia would recognize this having never seen a cat. It licked its paw and gave its face a quick wash while Malia wiped the water off herself as best she could.",
-        "When she was done, Malia focused on the cat. It looked her in the eyes, smiled, and said, “Hello, Malia.”",
-        "This was naturally a shock to Malia, because, while she didn’t know what the creature was, she was still sure that animals couldn’t speak. It somehow also knew her name.",
-        "“Umm, hello,” she said, cautiously. “I’ve never seen a creature like you before.What are you?”",
-        "“Why, I’m a cat,” said the red cat, as if it were obvious. “A cosmic cat, to be sure, or else I wouldn’t be able to talk, now would I?”",
-        "Curiosity had begun to overcome Malia’s caution, so she said, “A cat of the cosmos. A world with twin moons. Impossible fish.The ripple in the cave was some kind of door, wasn’t it? Have I traveled up to the stars?”",
-        "“In a sense, yes, in a sense, no,” said the cat. “This isn’t even your reality anymore.”",
-        "Malia blinked as this revelation set in. “I’ve sensed other worlds in my dreams, but you’re saying I’m finally in one?” she said. Then she giggled with glee. “This is so exciting! Do you know this place? Can you tell me more about it? Does the second moon affect the tides? What were those transparent creatures? Are they dangerous?”",
-        "“I like curiosity,” said the cat, with a sly grin. “What if I told you this wasn’t the only one?”",
-        "Malia’s jaw dropped. “I want to see them all.”",
-        "The red cat laughed. “It’s very easy to find yourself lost in the multiverse. Let Sanura show you the way.”"
+        "マリアは、まるで目の前の空間が動いているかのような空中に漂う波紋を見つめた。この奇妙な現実の窓から、マリアは美しい青い海を見ることができた。その明るい海面は5メートルもない。",
+        "ほんの数分前まで、彼女は色とりどりの発光するキノコに照らされた素晴らしい洞窟を調査していたのだ。その美しさもさることながら、彼女の住む海域にはこのようなキノコ類が存在しないことが、彼女にとってより興味深かった。",
+        "この現象は、明らかにその謎に対する答えであった。その向こうに、透明で幽霊のような太いゴッサムの網のようなものが水中にぶら下がっているのが目に入った。マリアはそれが生き物なのか、そうでないのか分からなかったが、その不思議な生き物が滑らかにうねりながら視界から消え始めた。ほとんど衝動的に、彼女は杖を波紋に突き刺し、何の影響もなくそれを引き抜いた。マリアはその波紋の中に飛び込み、小さく祈った。",
+        "青く澄んだ水は、まるでマリアの海の塩水のように感じられた。彼女は生き物を探すために目を凝らしながら、海へと上がっていった。ラグーンの水面を割って、彼女は周りの珍しい風景に目を向けた。白い砂浜には明るい太陽が降り注ぎ、水平線には2つの月。その周りには不自然な色の植物、見知らぬ昆虫、羽の生えたネズミのような鳥がいた。海から砂浜に出ると、マリアはすでに人がいることに気づいた。",
+        "砂の上にじっと座っていたのは、ふわふわの赤い猫で、とても変わった模様をしていた。マリアが水滴を拭いている間、猫は前足を舐めて顔を軽く洗った。",
+        "マリアはその猫を見た。猫は彼女の目を見て、微笑み「ハロー、マリア」と挨拶した。",
+        "マリアは、その猫が何であるかはわからないが、もちろん動物が言葉を話せないことは確かだったので、とても驚いた。そして、その猫はなぜか彼女の名前も知っていたのだ。",
+        "「あっ、うん！こんにちは。」彼女は驚きながらも挨拶を返した。「あなたのような話す動物を初めて見たんだけど、一体何者なの？」",
+        "「なんで？猫ですよ。笑」赤い猫は、それが当然であるかのように言った。「まあ、ちゃんというと宇宙の猫ってところかな？だから話せるんですよ。」",
+        "マリアは不安よりも好奇心が勝り始めてきて、「宇宙の猫...双子の月がある世界。洞窟の波紋は扉のようなものだったし、私は星の上まで旅をしてきたのかな？」と独り言を言った。",
+        "「まあ、ある意味、イエス、ある意味、ノー ですね。」と猫は言った。「これはもうあなたの現実ではないのです。」",
+        "マリアは目をぱちぱちさせながら、この事実を理解し、「夢の中で他の世界を感じていたけれど、ついにその中に入ったってこと？」と言った。そして、彼女は嬉しそうに笑った。「これってすごく面白い！この場所のなにを知っているの？もっと教えてよ。2番目の月は潮の満ち引きに影響を与えるの？あの透明な生き物は何？危険なの？...」",
+        "「好奇心がある人は好きですよ。」と猫は言って、はにかんだように笑った。「でも、たとえば、これだけじゃないと言ったらどうです？」",
+        "マリアは頷いて「全部知りたい！」と言った。",
+        "赤い猫は笑った。「マルチバースで迷子になるのはとても簡単です。サヌラに道を教えてもらいましょう。」"
       ],
       "knowledge": [
-        "Rather than tides “coming in and out,” the bulges of water which produce the tides are a product of the moon and sun, held in place by gravity as the Earth itself spins into and out of these bulges.",
-        "According to scientists from the United States’ National Oceanic and Atmospheric Administration(NOAA), 80% of the worlds’ oceans remain unmapped, unobserved, and unexplored to this day.",
-        "The oceans are a major component in the cycle of removing carbon from the atmosphere, and as the world observes climate change the ocean serves as an excellent way to observe the carbon cycle.",
-        "Though there are some elements lost to history, the pre-colonial native culture of Tahiti had a shaman class known as Tahu’a. The title means “one who sees and knows,” and was thought to be both an almost scientific position as well as a religious one, serving as a guide for the natural world as well as spiritual matters."
+        "潮の満ち引きは、月と太陽によってもたらされるもので、地球が自転して潮の満ち引きを繰り返すことで、重力に支えられているのである。",
+        "米国海洋大気庁（NOAA）の科学者によると、世界の海の80％は現在も地図に載っておらず、観測もされておらず、未踏のままであることが分かっている。",
+        "海洋は、大気中の炭素を除去するサイクルの主要な構成要素であり、世界が気候変動を観測する中で、海洋は炭素サイクルを観測する優れた方法として機能している。",
+        "歴史的に失われている部分もあるが、植民地時代以前のタヒチの先住民文化には、タフアと呼ばれるシャーマン階級が存在した。この称号は「見る者、知る者」を意味し、自然界や精神的な事柄を導く、ほとんど科学的な立場であると同時に、宗教的な立場でもあると考えられていた。"
       ]
     },
     {
       "name": "MAROC",
-      "role": "THE OAKEN CLAN",
+      "role": "オーケン一族",
       "descriptions": [
-        "On the parallel world where Maroc was born, plant life was the first to evolve to sentience and become mobile tool users. The Raken, as they came to call themselves, were a peaceful people who dedicated themselves to scholarship rather than war. They could never have imagined that generations later they would give birth to Maroc, the first multiversal traveler of their kind.",
-        "It was a chance meeting with Sanura which introduced Maroc to the multiverse, who had arrived in their universe with the intent of first contact with the Raken. Maroc was near her remotely located portal on an extended research trip to study and collect spores, molds, and fungus. The two met and Sanura offered the prospect of exploring the multiverse, and Maroc quickly decided that other worlds were far more interesting than spores, molds, and fungus, no matter how fascinating they may be. Possessed of stalwart roots, Maroc was unafraid of the unknown which lay ahead and became the Raken’s emissary in new places and times.",
-        "Maroc has since become a bit of a socialite, and endless people are fascinated by and eager to meet him. With no shortage of invitations to meet new faces across the multiverse, sometimes people refer to him as a “party animal,” which he doesn’t quite understand and so continues to assert he is most assuredly a plant while he dances the night away.",
-        "The stories of his adventures often become exaggerated as his people retell them, turning Maroc into a folk hero who hasn’t experienced half the things which are attributed to him. Though he tries to correct them when he tells the story first-hand, most dismiss Maroc as too humble when they don’t measure up to the myth."
+        "マロックが生まれたパラレルワールドでは、植物がいち早く感覚を獲得し、モバイルツールの使い手として進化を遂げていた。ラーケン族は、戦争よりも学問に専念する平和な民族であった。その何世代か後に、自分たちの種族で初めてのマルチバース・トラベラーであるマロクを産むことになろうとは、想像もしなかったことだろう。",
+        "マルチバースにマロックを紹介したのはサヌラとの偶然の出会いだった。彼はレイケンとのファーストコンタクトを意図して彼らの宇宙に到着していたのだ。マロックは、胞子、カビ、菌類を研究し収集するための長期研究旅行で、彼女の遠隔に位置するポータルの近くにいた。2人は出会い、サヌラはマルチバース探検を提案した。マロックはすぐに、他の世界は胞子やカビや菌よりもはるかに興味深いものであると判断したのである。そして、どんなに魅力的な世界であっても、胞子やカビや菌よりも、他の世界の方がずっと面白いと思ったのだ。",
+        "それ以来、マロックはちょっとした社交的になり、限りない人々が彼に魅了され、会いたがっている。マルチバースでの出会いの誘いには事欠かないが、時々「パーティ・アニマル」と呼ばれることもあり、本人にはよくわからないまま、自分は植物だと言い張りながら踊り続けている。",
+        "彼の冒険談は、民衆が語り継ぐうちにしばしば大袈裟になってしまい、マロックはその半分も体験していないにもかかわらず、たちまち民衆のヒーローになってしまうのだった。"
       ],
       "fictions": [
-        "Wells thought Sanura’s little soiree was going well and the odd little creature known as Plikplik had done wonders with the catering. Eating food prepared by an alien was not the strangest thing he’d experienced tonight, as evidenced by the conversation he was having with the tree-man in front of him. The discussion had been interspersed with attempts to involve an attractive potted tree, with the plant person translating.",
-        "Maroc belly-laughed. “This ficus is quite funny! I can’t really translate the joke, because, in their words, the ‘meaties won’t get it.’”",
-        "“Does our friendly ficus have a name?” said Wells, with some bemusement.",
-        "“They say their name is…” said Maroc while listening for the answer. “Wait, the humans can’t even pronounce that. Do any of them call you something?” Maroc paused again, before turning back. “They say the maid calls them Diego.What’s a maid?”",
-        "‘It’s someone whose job it is to clean up. I can’t imagine we’re the ones dealing with the remains after this party,” said Wells, with the distaste of a wealthy man who has been rudely confronted with manual labor.",
-        "Maroc thought this rather new idea over in his head. “Someone is cleaning in the wake of you and me and everybody? That’s madness.”",
-        "“A bit of a socialist, are we, my photosynthesizing friend?” asked Wells. “In this place, people elect to take on those jobs and are compensated for their work. It is a mutually beneficial arrangement.”",
-        "“That’s not what I meant,” said Maroc. “You all just seem oddly obsessed with dirt in a way I don’t understand.”"
+        "ウェルズはサヌラの小さな夜会がうまくいっていると思っており、プリックプリックは、ケータリングで奇跡を起こしていた。異星人が作った料理を食べることは、彼が今夜経験したことの中で最も奇妙なことというわけではなかった。それは、彼が目の前の木人と会話していることからもわかる。その会話は、魅力的な鉢植えの木を巻き込もうとする試みと、植物担当者の通訳を交えて行われていた。",
+        "マロックは腹を抱えて笑っていた。「このフィカス（植物の種類）、なかなか面白いですねぇ。彼らの言葉を借りれば、“肉食系には通じない”ということなんですが、この冗談はうまく訳せ無いのが残念です。」",
+        "「このフレンドリーなフィカスに、名前はあるのですか？」と、ウェルズさんはちょっと面白そうに言った。",
+        "「彼の名前は... 」と、彼に名前を聞きながらマロックは言った。「待てよ、人間たちはその発音すらできない。何か呼び名があるのかな？」 マロックは再び間を置いてから、後ろを向いて彼に聞いた。「メイド（ウェルズ）にはディエゴと呼んでほしいらしいです。メイドってなんですかね？」",
+        "「片付けをするのが仕事の人をメイドと呼ぶんですよ。このパーティーの後の残りを処理するのが私たちとは思えないですけどね。」と、ウェルズは、無礼にも肉体労働を突きつけられた富豪のような嫌悪感をあらわにしながら言った。",
+        "マロクは、このちょっと新しい着想 を頭の中でじっくり考えた。「誰かが、あなたや私やみんなの後始末をしてるんですか？それは狂気の沙汰だ。」",
+        "「光合成をするそこの友人よ、あなたはちょっとした社会主義者か何かなんですか。笑」とウェルズは尋ねた。「この場所では、人々はその仕事を引き受けることを選択し、その仕事に対して報酬をもらっています。お互いにメリットのある取り決めなんですよ。」",
+        "「そういう意味じゃないんですよね。」とマロックは言った。「皆さんは、私が理解できない方法で、異様に汚れにこだわっているように見えるんです。」"
       ],
       "knowledge": [
-        "The term for an organism which produces its own food, like plants that use photosynthesis, is autotroph.",
-        "Plant cells are well-known for having a prominent cell wall which is responsible for making them tough and capable of withstanding physical damage. In addition to the larger scale circulatory system, plant cells will form bridges between them to help move nutrition and other materials called plasmodesmata.",
-        "In addition to being able to identify the age of a tree, the trunk rings visible from a cross-section are regularly used to tell the history of a forest. Major events, such as fires or droughts, create visible marks in the ring formations."
+        "光合成を行う植物のように、自分で食料を生産する生物を「独立栄養生物」という。",
+        "植物細胞は、物理的なダメージに耐える強靭な細胞壁を持つことがよく知られている。また、植物細胞は、大規模な循環系に加え、細胞間に橋をかけ、栄養や他の物質を移動させるためのプラスモデマタと呼ばれる構造を持つ。",
+        "樹木の樹齢を特定するだけでなく、断面から見える幹の年輪は、森林の歴史を物語るものとしてよく利用されている。火災や干ばつなどの大きな出来事によって、環状列石は目に見える形で形成される。"
       ]
     },
     {
       "name": "AXIS-12",
-      "role": "THE DIGITAL HUMAN",
+      "role": "デジタルヒューマン",
       "descriptions": [
-        "Axis-12, aka Adam Xandis, was an AI engineer in the distant future working with a team of neuroscientists at Twelve Point Labs, with the hope of finally achieving a lifelike artificial intelligence.Despite the high- grade talent of those working on the project, the team struggled to fully mimic the way the mind’s neurological pathways function. Adam, willing to try anything to overcome their roadblocks, decided to attempt the process using his own mind as the model. The experimental scan he used to capture his own mind’s inner working went awry, leading to a tragic accident in which he lost his physical body. Instead of creating the framework to achieve AI, the process had fully captured his consciousness in its entirety, allowing him to live on.",
-        "No longer comfortable referring to himself as Adam Xandis, who in many ways perished during the accident, the new fusion dubbed himself Axis-12 in honor of <strong>A</strong>dam <strong>X</strong>and<strong>is</strong> and the team at <strong>Twelve</strong> Point Labs. The first human to reach the digital singularity continued his effort to lead others into the digital age, exploring the limits of his now digital form, developing hybrid digital-physical bodies and pioneering the way to lead the rest of humanity forward."
+        "アダム・ザンディスことAxis-12は、遠い未来のAIエンジニアで、12 Point Labsの神経科学者チームと協力して、実物そっくりの人工知能を実現することを目指していた。アダムは、自分自身の心をモデルとして、このプロジェクトに挑戦することにした。しかし、自分の心の動きをとらえるための実験的なスキャンがうまくいかず、その結果、肉体を失うという悲劇に見舞われた。AIを実現するための枠組みを作るのではなく、彼の意識をまるごと取り込み、生き続けることを可能にするプロセスだったのだ。",
+        "事故で亡くなったアダム・ザンディスを名乗ることに抵抗はなく、アダム・ザンディスと12ポイントラボのチームに敬意を表して、Axis-12と名乗るようになった。デジタル特異点に到達した最初の人類は、他の人々をデジタル時代へと導く努力を続け、デジタル化された自分の姿の限界を探り、デジタルと肉体のハイブリッド体を開発し、他の人類を前進させる道を切り開いたのである。"
       ],
       "fictions": [
-        "Twelve Point Lab Log: Limitation tests for digital human consciousness<br>Subject matter: Perception of exertion and exhaustion in hybrid body<br>Dr.Will Tannis supervising",
-        "Tannis: Morning, Axis.Ready for your morning 2k?",
-        "Axis : On - line and powered up, as usual.You know a jog in the morning helps me remember what waking up feels like.It’s strange not having body cycles like sleep anymore.",
-        "Tannis: I, for one, would be thrilled to no longer have to waste time sleeping. <sound of paperwork rustling> Speaking of wasting time, this is the one-hundred-eighty-sixth log of this test and you haven’t felt any exhaustion in your hybrid form in the previous one-hundred-eighty-five. Being tired of filing your post-run log is the closest to fatigue we’re going to get.",
-        "Axis: Has the sun come up yet? I find my runs are much more stimulating when the sun is cresting the skyline.",
-        "Tannis: Really? You’re just going to step right over that. And you are literally neurally connected to the internet, and you can’t figure out what time it is?",
-        "Axis : So no and, while that’s true, I still enjoy engaging in small talk and was genuinely interested in my test conditions. <sound of bay doors opening> Will, I’m the Neil Armstrong of these hybrid digital-physical bodies. Every small step we take with this techno-wizardry means fewer missteps for those who come after us. Just because I haven’t felt fatigue up until now doesn’t mean I never will.",
-        "Tannis: I suppose you’re right.To answer your question, we’re in the Golden Hour.",
-        "Axis: Perfect. Now let’s see what this latest build can do.",
-        "Tannis: One more thing. Try making small talk that doesn’t involve things you can just look up on the internet. It won’t seem so mind-bogglingly inane.",
-        "Axis: <face displays laugh-out-loud emoticon> Will do."
+        "Twelve Point Lab Log: デジタルヒューマン意識の限界テスト<br>Subject matter: ハイブリッド・ボディにおける労力と疲労の知覚<br>ウィル・タニス博士監修",
+        "タニス博士: おはよう、アクシス。朝の2kの準備はいいかな？",
+        "Axis : いつものようにオンラインにして電源を入れています。朝、ジョギングをすると、目覚めの感覚を思い出すことができるんですが、睡眠のような体のサイクルがもうないのは不思議な感じです。",
+        "タニス博士: 私としては、もう寝る時間を無駄にしなくていいことはすごいと思うよ。 時間の無駄といえば、このテストのログは100-86回目ですが、それまでの100-85回でハイブリッドフォームに疲れを感じることはなかったよな。走った後のログを提出するのに疲れたというのが、最も疲労に近いと言えるかもしれないね。",
+        "Axis: もう日が昇ってきましたか？太陽が昇っているときのほうが、ランニングの刺激になるんです。",
+        "タニス博士: 本当に？君はネットに繋がってるのに今何時か解らないのか？",
+        "Axis : その通りですが、私は世間話をするのが好きで、私のテスト条件に純粋に興味を持っていました。 博士、私はこのデジタルと物理のハイブリッドな身体のニール・アームストロングなんです。この技術で小さな一歩を踏み出すことは、 後に続く人たちのために失敗を少なくすることなんです。今まで疲れを感じなかったからと言って、決してそうなるとは限らないですから。",
+        "タニス博士: まあ、君のいうとおり、今はゴールデンアワーだよ。",
+        "Axis: 完璧です。では、この最新ビルドで何ができるのか見てみましょう。",
+        "タニス博士: もうひとつ。ネットで調べれば済むようなこと以外の世間話をしてみなさい。そうすれば、そんなに気の遠くなるような無意味な話にはならないはずだ。",
+        "Axis: 承知しました。"
       ],
       "knowledge": [
-        "The understanding of human consciousness remains limited and our ability to duplicate it in a digital space is hampered by an incomplete understanding of what grants people consciousness in the first place.",
-        "It is hypothesized that if a consciousness were to be truly digitized, you would end up with both the original person and the newly created digital consciousness, each with the memories and continuous experience of being the “original.” This is why Axis- 12 decided to differentiate himself from Adam.",
-        "Though still a distant and theoretical field, many experts ponder some difficult questions which may be faced by the digital humans of the future, such as the nature of individuality and consciousness, the privacy and security of the mind, and ethical concerns for digitalized personalities."
+        "人間の意識についての理解はまだ限られており、デジタル空間でそれを複製する能力は、そもそも何が人間に意識を与えるのかについての不完全な理解によって妨げられている。",
+        "もし意識が本当にデジタル化されたら、オリジナルの人間と新しく作られたデジタル意識の両方が、それぞれ “オリジナル ”としての記憶と継続的な経験を持つことになると仮定されている。そのため、Axis-12はアダムと区別することにしたのである。",
+        "個性や意識のあり方、心のプライバシーやセキュリティ、デジタル化された人格の倫理的問題など、まだ遠い理論的な分野ではあるが、多くの専門家が未来のデジタルヒューマンが直面するであろう難問に思いを巡らせている。"
       ]
     }
-  ]
+  ],
+  "knowledgeLabel": "Did you know?",
+  "flashFiction": "Flash Fiction",
+  "goBack": "Back to the Multiverse"
 }
