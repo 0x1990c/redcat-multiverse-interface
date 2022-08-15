@@ -13,7 +13,11 @@ const Character = ({ character, characterId }: any) => {
     const idxArray = new Array(fictionMobileIdx + 1).fill(0);
     return (
       <>
-        {idxArray.map((zero, idx) => (<p key={idx} className={styles.fiction}>{parse(t(`characters.${characterId}.fictions.${idx}`))}</p>))}
+        {idxArray.map((zero, idx) => (
+          <p key={idx} className={styles.fiction}>
+            {parse(t(`characters.${characterId}.fictions.${idx}`))}
+          </p>)
+        )}
       </>
     )
   }
