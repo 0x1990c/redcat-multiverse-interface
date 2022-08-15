@@ -16,9 +16,9 @@ const headerLinks = [
   { name: 'The Multiverse', link: 'multiverse', finished: true },
   { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
   { name: 'Community', link: 'community', finished: true },
-  { name: 'Whitepaper', link: 'whitepaper', finished: true },
-  { name: 'Blog', link: 'blog', finished: true },
-  { name: 'Careers', link: 'careers', finished: true },
+  // { name: 'Whitepaper', link: 'whitepaper', finished: true },
+  // { name: 'Blog', link: 'blog', finished: true },
+  // { name: 'Careers', link: 'careers', finished: true },
   { name: 'Connect', link: 'connect', finished: true }
 ]
 
@@ -43,14 +43,14 @@ const Header = () => {
         <header className={styles.header}>
           {/* {
             theme != 'dark'
-              ? (<a href="/"><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
-              : (<a href="/"><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
+              ? (<Link href="/"><a><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
+              : (<Link href="/"><a><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
           } */}
-          {
-            theme != 'dark'
-              ? (<Link href="/" passHref><a><img src='./images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
-              : (<Link href="/" passHref><a><img src='./images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
-          }
+          <Link href="/">
+            <a>
+              <img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} />
+            </a>
+          </Link>
           <NavDesktop links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
           <NavMobile links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
           {/* Connect Modal part */}
