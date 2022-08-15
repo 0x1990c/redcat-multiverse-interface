@@ -7,17 +7,13 @@ const Footer = () => {
       <div className={styles.footerRow}>
         <Link href="/">
           <a>
-            <img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} />
+            <img src='/images/rcm_base_logo.png' alt='RCM Logo' className={styles.footerLogo} />
           </a>
         </Link>
       </div>
       <div className={styles.footerRow}>
         <a className={styles.option} href='https://blog.redcatmultiverse.io/' target='_blank' rel="noreferrer">
           Blog
-        </a>
-        <div className={styles.separator}>&nbsp;|&nbsp;</div>
-        <a className={styles.option} href='https://whitepaper.redcatmultiverse.io/' target='_blank' rel="noreferrer">
-          Whitepaper
         </a>
         <div className={styles.separator}>&nbsp;|&nbsp;</div>
         <Link href={`/careers`}>
