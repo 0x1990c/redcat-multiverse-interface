@@ -3,14 +3,18 @@ import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { appWithTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Layout from '../src/components/Layout';
 import '../src/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <Head>
-        <title>RedCat Multiverse I Play, Learn, Earn</title>
+        <title>RedCat Multiverse I Play, Learn, Earn {t('header.roadmap')}</title>
         <meta
           name="description"
           content="www.redcatmultiverse.io"
@@ -19,10 +23,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:image" content="https://www.redcatmultiverse.io/images/theredcat.png" />
         <meta
           name="twitter:description"
-          content="Find out about the future of games and future of learning with RedCat Multiverse’s Play, Learn and Earn model. We are adding deeper rewards to players' gaming efforts, creating both intrinsic and extrinsic value. Players will earn financial rewards as they build new skills."
+          content={`Find out about the future of games and future of learning with RedCat Multiverse’s Play, Learn and Earn model. We are adding deeper rewards to players' gaming efforts, creating both intrinsic and extrinsic value. Players will earn financial rewards as they build new skills. ${t('header.roadmap')}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="RedCat Multiverse, the world’s first Play, Learn and Earn blockchain game" />
+        <meta name="twitter:title" content={`RedCat Multiverse, the world’s first Play, Learn and Earn blockchain game ${t('header.roadmap')}`} />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1"></script>
         <script>
@@ -67,5 +71,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+export const getServerSideProps = async ({ locale }: any) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common'])
+  }
+})
 
 export default appWithTranslation(MyApp)
