@@ -32,7 +32,6 @@ export const contents = [
     numeration: "05",
     column: "column_2",
     item: 'item_b',
-    // image: "/images/community/community_05.png"
     image: "/images/community/manifesto_glasses.png"
   },
   {

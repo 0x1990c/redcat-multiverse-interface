@@ -46,14 +46,14 @@ const Header = () => {
         <header className={styles.header}>
           {/* {
             theme != 'dark'
-              ? (<a href="/"><img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
-              : (<a href="/"><img src='/images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a>)
-          } */}
-          {
-            theme != 'dark'
               ? (<Link href="/" passHref><a><img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
               : (<Link href="/" passHref><a><img src='/images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
-          }
+          } */}
+          <Link href="/">
+            <a>
+              <img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} />
+            </a>
+          </Link>
           <NavDesktop links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
           <NavMobile links={headerLinks} onOpenConnectModal={handleOpenConnectModal} />
           {/* Connect Modal part */}

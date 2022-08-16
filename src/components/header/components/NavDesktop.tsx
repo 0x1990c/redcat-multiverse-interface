@@ -63,7 +63,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 					}
 					return (
 						<Link key={index} href={`/${link.link.toLowerCase()}`}>
-							<a className={styles.soonPage}>
+							<a>
 								{index !== 0 && <span>|</span>}
 								{link.name}
 							</a>
