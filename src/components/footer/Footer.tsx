@@ -9,9 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerLinks}>
         <Link href='/careers'>
-          <a>
-            Careers
-          </a>
+          <a>{t('header.careers')}</a>
         </Link>
         <div className={styles.separator}>&nbsp;|&nbsp;</div>
         <a className={styles.option} href='https://blog.redcatmultiverse.io/' target='_blank' rel="noreferrer">
