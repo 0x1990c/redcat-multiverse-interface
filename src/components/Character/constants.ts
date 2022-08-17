@@ -8,12 +8,7 @@ export const characterDetails = [
     descriptions: [0, 1, 2, 3],
     fictions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
     fictionMobileIdx: 7,
-    knowledge: [
-      0,
-      1,
-      2,
-      3
-    ],
+    knowledge: [0, 1, 2, 3],
     radar: '/images/characters/wells_radar.svg'
   },
   {
@@ -36,7 +31,7 @@ export const characterDetails = [
     thumbnail: '/images/characters/fuyijun_thumbnail.jpg',
     fullCharacter: '/images/characters/fuyijun_full_character.png',
     descriptions: [0, 1, 2, 3],
-    fictions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    fictions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11],
     fictionMobileIdx: 5,
     knowledge: [0, 1, 2, 3],
     radar: '/images/characters/fuyijun_radar.svg'
@@ -60,7 +55,7 @@ export const characterDetails = [
     thumbnail: '/images/characters/malia_thumbnail.jpg',
     fullCharacter: '/images/characters/malia_full_character.png',
     descriptions: [0, 1, 2],
-    fictions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    fictions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
     fictionMobileIdx: 4,
     knowledge: [0, 1, 2, 3],
     radar: '/images/characters/malia_radar.png'
