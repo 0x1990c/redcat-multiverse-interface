@@ -89,7 +89,7 @@ export const characterDetails = [
     knowledge: [
       0, 1, 2
     ],
-    radar: './images/characters/axis-12_radar.png',
+    radar: '/images/characters/axis-12_radar.png',
     empty: false
   },
   // {
