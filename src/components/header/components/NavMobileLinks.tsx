@@ -80,25 +80,14 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
         <div
           className={`${styles.langMenuItem}`}
           {...getToggleProps({
-            onClick: () => setIsLangExpanded((x) => !x)
-          })}
-        >
-          <div>LanguagA</div>
-        </div>
-        <div className={styles['line-gradient']}></div>
-      </a>
-      <a className={styles.langMobDropDownContainer}>
-        <div
-          className={`${styles.langMenuItem}`}
-          {...getToggleProps({
             style: { display: "flex", justifyContent: "space-between", alignItems: "center", paddingLeft: 0, paddingRight: 0 },
             onClick: () => setIsLangExpanded((x) => !x)
           })}
         >
           Language
-          {/* <div className={`${styles.arrowWrapper} ${isLangExpanded ? styles.expanded : ''}`}>
+          <div className={`${styles.arrowWrapper} ${isLangExpanded ? styles.expanded : ''}`}>
             <ArrowDown />
-          </div> */}
+          </div>
         </div>
         <div className={styles['line-gradient']}></div>
         <div {...getCollapseProps()}>
