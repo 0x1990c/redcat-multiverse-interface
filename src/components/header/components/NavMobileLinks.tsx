@@ -79,6 +79,10 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
       <a className={styles.langMobDropDownContainer}>
         <div
           className={`${styles.langMenuItem}`}
+          {...getToggleProps({
+            style: { display: "flex", justifyContent: "space-between", alignItems: "center", paddingLeft: 0, paddingRight: 0 },
+            onClick: () => setIsLangExpanded((x) => !x)
+          })}
         >
           Language
         </div>
