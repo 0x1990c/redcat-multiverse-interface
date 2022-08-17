@@ -85,9 +85,9 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
           })}
         >
           Language
-          <div className={`${styles.arrowWrapper} ${isLangExpanded ? styles.expanded : ''}`}>
+          {/* <div className={`${styles.arrowWrapper} ${isLangExpanded ? styles.expanded : ''}`}>
             <ArrowDown />
-          </div>
+          </div> */}
         </div>
         <div className={styles['line-gradient']}></div>
         <div {...getCollapseProps()}>
