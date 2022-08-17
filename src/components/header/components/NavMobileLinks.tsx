@@ -83,7 +83,7 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
             onClick: () => setIsLangExpanded((x) => !x)
           })}
         >
-          LanguagA
+          <div>LanguagA</div>
         </div>
         <div className={styles['line-gradient']}></div>
       </a>
