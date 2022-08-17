@@ -80,7 +80,6 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
         <div
           className={`${styles.langMenuItem}`}
           {...getToggleProps({
-            style: { display: "flex" },
             onClick: () => setIsLangExpanded((x) => !x)
           })}
         >
