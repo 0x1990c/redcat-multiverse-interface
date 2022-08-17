@@ -124,6 +124,7 @@
         // container brand
         .container-brand {
           padding: 20px 10px;
+          padding-bottom: 0px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -148,7 +149,7 @@
               display: block;
               margin: 0px 0px 0px 42px;
               padding: 8px 0px;
-              font-size: 24px;
+              font-size: 22px;
               line-height: 1.33;
               position: relative;
 
@@ -168,7 +169,7 @@
               .line-gradient {
                 background: linear-gradient(to right, #f9c930 25%, #f2957c 49%, #7192f3 75%);
                 height: 2px;
-                margin-top: 17px;
+                margin-top: 6px;
                 width: 100%;
               }
 
@@ -190,8 +191,9 @@
                 }
 
                 .langMobItem {
-                  padding-top: 17px;
+                  padding-top: 12px;
                   padding-left: 27px;
+                  font-size: 20px;
                 }
               }
             }
