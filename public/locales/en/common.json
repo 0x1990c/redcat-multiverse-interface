@@ -20,6 +20,9 @@
     "twitterTitle": "RedCat Multiverse, the world’s first Play, Learn and Earn blockchain game"
   },
   "cta": {
-    "btnLabel": "Join The Community"
+    "btnLabel": "Join The Community",
+    "first": "Enter the future of gaming",
+    "second": "from the creators and thought leaders behind",
+    "third": "League of Legends and Algorand"
   }
 }

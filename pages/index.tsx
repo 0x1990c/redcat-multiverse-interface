@@ -19,12 +19,12 @@ const Home: NextPage = () => {
           <ParallaxHero />
         </ParallaxProvider>
         <div className={styles.ctaWrapper}>
-          <div className={styles.bigCTASubject}>Enter the future of gaming</div>
+          <div className={styles.bigCTASubject}>{t('cta.first')}</div>
           <div className={styles.ctaSubject}>
-            <i>from the creators and thought leaders behind</i>
+            <i>{t('cta.second')}</i>
           </div>
           <div className={styles.bigCTASubject}>
-            League of Legends and Algorand
+            {t('cta.third')}
           </div>
           <div className={styles.ctaBtnWrapper}>
             <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
