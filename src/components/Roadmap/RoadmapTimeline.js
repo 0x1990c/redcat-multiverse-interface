@@ -28,6 +28,7 @@ const RoadmapTimeline = () => {
         t('contents.id_0.bullets.id_3')
       ],
       buttonLabel: t('done'),
+      status: 'done',
       period: t('contents.id_0.period'),
       alignment: 'left',
     },
@@ -40,6 +41,7 @@ const RoadmapTimeline = () => {
         t('contents.id_1.bullets.id_2')
       ],
       buttonLabel: t('done'),
+      status: 'done',
       period: t('contents.id_1.period'),
       alignment: 'right',
     },
@@ -52,6 +54,7 @@ const RoadmapTimeline = () => {
         t('contents.id_2.bullets.id_2')
       ],
       buttonLabel: t('upcoming'),
+      status: 'upcoming',
       period: t('contents.id_2.period'),
       alignment: 'left',
     },
@@ -64,6 +67,7 @@ const RoadmapTimeline = () => {
         t('contents.id_3.bullets.id_2')
       ],
       buttonLabel: t('future'),
+      status: 'future',
       period: t('contents.id_3.period'),
       alignment: 'right',
     },
@@ -76,6 +80,7 @@ const RoadmapTimeline = () => {
         t('contents.id_4.bullets.id_2')
       ],
       buttonLabel: t('future'),
+      status: 'future',
       period: t('contents.id_4.period'),
       alignment: 'left',
     },
@@ -94,6 +99,7 @@ const RoadmapTimeline = () => {
         t('contents.id_5.bullets.id_8')
       ],
       buttonLabel: t('future'),
+      status: 'future',
       period: t('contents.id_5.period'),
       alignment: 'right',
     },
@@ -144,9 +150,7 @@ const RoadmapTimeline = () => {
       <div ref={roadMapCont}>
         {contents.map((content, contId) => (
           <div
-            className={
-              cx(styles[content.buttonLabel.toLowerCase()],
-                styles.general_mobile)}
+            className={cx(styles[content.status], styles.general_mobile)}
             key={contId}>
             <div>
               <div
@@ -183,7 +187,7 @@ const RoadmapTimeline = () => {
       </div>
       <div className={styles.extendedBtnContainer}>
         <a className={styles.extendedBtn} href='https://whitepaper.redcatmultiverse.io/roadmap-for-redcat-multiverse' target='_blank' rel="noreferrer">
-          For extended RCM Labs road map, please click here
+          {t('extendedBtn')}
         </a>
       </div>
     </div>
@@ -207,9 +211,7 @@ const RoadmapTimeline = () => {
         <div ref={roadMapCont}>
           {contents.map((content, contId) => (
             <div
-              className={
-                cx(styles[content.buttonLabel.toLowerCase()],
-                  styles.general)}
+              className={cx(styles[content.status], styles.general)}
               key={contId}>
               <div className={cx(styles.container_corner)}>
                 <div className={cx(styles.container_general, styles.container)}>
@@ -249,7 +251,7 @@ const RoadmapTimeline = () => {
             target='_blank'
             rel="noreferrer"
           >
-            For extended RCM Labs road map, please click here
+            {t('extendedBtn')}
           </a>
         </div>
       </div>

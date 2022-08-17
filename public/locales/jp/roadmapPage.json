@@ -1,8 +1,9 @@
 {
   "roadmap": "ロードマップ",
-  "done": "DONE",
+  "done": "達成済",
   "upcoming": "UPCOMING",
   "future": "未来",
+  "extendedBtn": "RCM ラボのロードマップ詳細はこちらをご覧ください。",
   "contents": {
     "id_0": {
       "title": "REDCAT始動",

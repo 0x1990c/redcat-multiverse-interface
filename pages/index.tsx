@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import ParallaxHero from '../src/components/Home/ParallaxHero'
 import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';
@@ -9,6 +10,8 @@ import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 import styles from '../src/styles/home.module.scss';
 
 const Home: NextPage = () => {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <div className={styles.parallaxContainer}>
@@ -25,7 +28,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.ctaBtnWrapper}>
             <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
-              Join The Community
+              {t('cta.btnLabel')}
             </a>
           </div>
         </div>
