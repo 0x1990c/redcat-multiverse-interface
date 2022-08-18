@@ -31,7 +31,6 @@ const Header = () => {
 
   const handleOpenConnectModal = () => {
     document.body.style.overflowY = 'hidden';
-    // document.body.style.transform = 'translateZ(0)';
     setIsConnectModalOpen(true);
   }
 
