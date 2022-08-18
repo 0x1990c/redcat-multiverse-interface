@@ -84,7 +84,7 @@ export const NavMobileLinks = ({ links, onOpenConnectModal, onCloseNav }: any) =
             onClick: () => setIsLangExpanded((x) => !x)
           })}
         >
-          LanguageA
+          LanguageB
           <div className={`${styles.arrowWrapper} ${isLangExpanded ? styles.expanded : ''}`}>
             <ArrowDown />
           </div>
