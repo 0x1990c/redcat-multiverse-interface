@@ -8,6 +8,8 @@ import { NavMobileLinks } from './components/NavMobileLinks';
 import { LinksIcons } from './components/LinksIcons';
 import RadioSwitch from '../RadioSwitch/RadioSwitch';
 
+import { enableScroll, disableScroll } from './helpers/scrollFix';
+
 export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 	const { setTheme } = useTheme();
 	const [show, setShow] = useState(false);
@@ -15,7 +17,9 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 
 	const handleShowHide = () => {
 		document.body.style.overflow = !show ? 'hidden' : 'auto';
-		document.body.style.overflow = 'hidden';
+		disableScroll();
+		// document.body.style.overflow = 'hidden';
+		// document.body.style.position = 'fixed';
 		// document.body.style.isolation = 'isolate';
 		// document.body.style.transform = 'translateZ(0)'
 		setShow(!show);
