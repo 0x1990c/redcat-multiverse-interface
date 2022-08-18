@@ -14,6 +14,7 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 	const { theme } = themeChanger();
 
 	const handleShowHide = () => {
+		document.body.style.overflowY = !show ? 'hidden' : 'auto';
 		setShow(!show);
 	}
 
