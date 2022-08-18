@@ -1,8 +1,13 @@
 import parse from 'html-react-parser';
+import { useEffect } from 'react';
 import styles from './PLESection.module.scss';
 
 const PLESection = ({ content, colorSection }: any) => {
   const { title, comment, leftText, rightText } = content;
+
+  // useEffect(() => {
+  //   console.log('content =>', content);
+  // }, [content]);
 
   return (<div className={styles.pleSection}>
     <div className={`${styles.sectionRow} ${styles.upperSection}`}>

@@ -63,3 +63,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}

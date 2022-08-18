@@ -1,90 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
 import cx from 'classnames';
 import parse from 'html-react-parser';
-import { title } from 'process';
+import { useTranslation } from 'next-i18next';
 import styles from './RoadmapTimeline.module.scss'
 import useDimensions from '../../utilities/useDimension'
 
-const contents = [
-  {
-    id: '0',
-    title: 'The Red Cat Arrives',
-    bullets: [
-      'Pre-production started',
-      'Core design completed',
-      'Meerkat Bag NFT Collection Sale',
-      'RedCat Multiverse community begins'
-    ],
-    buttonLabel: 'Done',
-    period: 'Q4 2021 & Q1 2022',
-    alignment: 'left',
-  },
-  {
-    id: '1',
-    title: 'First Looks',
-    bullets: [
-      'Pre-seed funding finalized',
-      'RedCat Multiverse game simulator built in-house',
-      'RedCat Multiverse White Paper published'
-    ],
-    buttonLabel: 'Done',
-    period: 'Q2 2022',
-    alignment: 'right',
-  },
-  {
-    id: '2',
-    title: 'The Gifted Operatives Arrive',
-    bullets: [
-      'RedCat Multiverse trailer/video',
-      'Inception NFT collection announced',
-      'Inception NFT Collection Sale'
-    ],
-    buttonLabel: 'Upcoming',
-    period: 'Q3 2022',
-    alignment: 'left',
-  },
-  {
-    id: '3',
-    title: 'RedCat Multiverse Orientation',
-    bullets: [
-      'Closed Beta release <span style="color: #e83324;">(Initially for Inception NFT Holders and select RCM Insiders)</span>',
-      'Accretion NFT Collection Sale <span style="color: #7192f3;">(open to public)</span>',
-      'RedCat Multiverse Tokenomics published'
-    ],
-    buttonLabel: 'Future',
-    period: 'Q3 2022',
-    alignment: 'right',
-  },
-  {
-    id: '4',
-    title: 'The RedCat Multiverse Opens',
-    bullets: ['Conception NFT Collection Sale', 'Governance Token Sale', 'Public Beta release'],
-    buttonLabel: 'Future',
-    period: 'Q4 2022',
-    alignment: 'left',
-  },
-  {
-    id: '5',
-    title: 'New Era of Smart Fun Expands',
-    bullets: [
-      'Live design balance updates',
-      'New campaigns & more power skills',
-      'New Figment NFTs(characters)',
-      'Introduction of DAOs',
-      'Introduction of DEFI Liquidity Pools',
-      'Visual upgrades with more universes',
-      'Land in the Convergence & PVE game mode',
-      '3rd party and community content',
-      'Introduction of DAOs',
-      'Open metaverse'
-    ],
-    buttonLabel: 'Future',
-    period: '2023 & Beyond',
-    alignment: 'right',
-  },
-];
+
 
 const RoadmapTimeline = () => {
+  const { t } = useTranslation('roadmapPage');
 
   const [isMobile, vpWidth] = useDimensions(1300);
 
@@ -93,14 +17,102 @@ const RoadmapTimeline = () => {
   const btnStart = useRef(null);
   const btnEnd = useRef(null);
 
+  const contents = [
+    {
+      id: '0',
+      title: t('contents.id_0.title'),
+      bullets: [
+        t('contents.id_0.bullets.id_0'),
+        t('contents.id_0.bullets.id_1'),
+        t('contents.id_0.bullets.id_2'),
+        t('contents.id_0.bullets.id_3')
+      ],
+      buttonLabel: t('done'),
+      status: 'done',
+      period: t('contents.id_0.period'),
+      alignment: 'left',
+    },
+    {
+      id: '1',
+      title: t('contents.id_1.title'),
+      bullets: [
+        t('contents.id_1.bullets.id_0'),
+        t('contents.id_1.bullets.id_1'),
+        t('contents.id_1.bullets.id_2')
+      ],
+      buttonLabel: t('done'),
+      status: 'done',
+      period: t('contents.id_1.period'),
+      alignment: 'right',
+    },
+    {
+      id: '2',
+      title: t('contents.id_2.title'),
+      bullets: [
+        t('contents.id_2.bullets.id_0'),
+        t('contents.id_2.bullets.id_1'),
+        t('contents.id_2.bullets.id_2')
+      ],
+      buttonLabel: t('upcoming'),
+      status: 'upcoming',
+      period: t('contents.id_2.period'),
+      alignment: 'left',
+    },
+    {
+      id: '3',
+      title: t('contents.id_3.title'),
+      bullets: [
+        t('contents.id_3.bullets.id_0'),
+        t('contents.id_3.bullets.id_1'),
+        t('contents.id_3.bullets.id_2')
+      ],
+      buttonLabel: t('future'),
+      status: 'future',
+      period: t('contents.id_3.period'),
+      alignment: 'right',
+    },
+    {
+      id: '4',
+      title: t('contents.id_4.title'),
+      bullets: [
+        t('contents.id_4.bullets.id_0'),
+        t('contents.id_4.bullets.id_1'),
+        t('contents.id_4.bullets.id_2')
+      ],
+      buttonLabel: t('future'),
+      status: 'future',
+      period: t('contents.id_4.period'),
+      alignment: 'left',
+    },
+    {
+      id: '5',
+      title: t('contents.id_5.title'),
+      bullets: [
+        t('contents.id_5.bullets.id_0'),
+        t('contents.id_5.bullets.id_1'),
+        t('contents.id_5.bullets.id_2'),
+        t('contents.id_5.bullets.id_3'),
+        t('contents.id_5.bullets.id_4'),
+        t('contents.id_5.bullets.id_5'),
+        t('contents.id_5.bullets.id_6'),
+        t('contents.id_5.bullets.id_7'),
+        t('contents.id_5.bullets.id_8')
+      ],
+      buttonLabel: t('future'),
+      status: 'future',
+      period: t('contents.id_5.period'),
+      alignment: 'right',
+    },
+  ];
+
   const btnReference = (id) => {
     const lastId = contents.length - 1;
     return (
-      id === '0' ? btnStart
-        :
-        id === lastId.toString() ? btnEnd
-          :
-          null
+      id === '0'
+        ? btnStart
+        : id === lastId.toString()
+          ? btnEnd
+          : null
     );
   }
 
@@ -138,9 +150,7 @@ const RoadmapTimeline = () => {
       <div ref={roadMapCont}>
         {contents.map((content, contId) => (
           <div
-            className={
-              cx(styles[content.buttonLabel.toLowerCase()],
-                styles.general_mobile)}
+            className={cx(styles[content.status], styles.general_mobile)}
             key={contId}>
             <div>
               <div
@@ -177,7 +187,7 @@ const RoadmapTimeline = () => {
       </div>
       <div className={styles.extendedBtnContainer}>
         <a className={styles.extendedBtn} href='https://whitepaper.redcatmultiverse.io/roadmap-for-redcat-multiverse' target='_blank' rel="noreferrer">
-          For extended RCM Labs road map, please click here
+          {t('extendedBtn')}
         </a>
       </div>
     </div>
@@ -201,9 +211,7 @@ const RoadmapTimeline = () => {
         <div ref={roadMapCont}>
           {contents.map((content, contId) => (
             <div
-              className={
-                cx(styles[content.buttonLabel.toLowerCase()],
-                  styles.general)}
+              className={cx(styles[content.status], styles.general)}
               key={contId}>
               <div className={cx(styles.container_corner)}>
                 <div className={cx(styles.container_general, styles.container)}>
@@ -243,7 +251,7 @@ const RoadmapTimeline = () => {
             target='_blank'
             rel="noreferrer"
           >
-            For extended RCM Labs road map, please click here
+            {t('extendedBtn')}
           </a>
         </div>
       </div>

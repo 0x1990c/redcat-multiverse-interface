@@ -8,12 +8,20 @@ import { NavMobileLinks } from './components/NavMobileLinks';
 import { LinksIcons } from './components/LinksIcons';
 import RadioSwitch from '../RadioSwitch/RadioSwitch';
 
+import { enableScroll, disableScroll } from './helpers/scrollFix';
+
 export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 	const { setTheme } = useTheme();
 	const [show, setShow] = useState(false);
 	const { theme } = themeChanger();
 
 	const handleShowHide = () => {
+		document.body.style.overflow = !show ? 'hidden' : 'auto';
+		// disableScroll();
+		// document.body.style.overflow = 'hidden';
+		// document.body.style.position = 'fixed';
+		// document.body.style.isolation = 'isolate';
+		// document.body.style.transform = 'translateZ(0)'
 		setShow(!show);
 	}
 
@@ -32,8 +40,8 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 				<button onClick={handleShowHide}>
 					{
 						show
-							? (<img src='./images/x-symbol.svg' alt='RCM Logo' />)
-							: (<img src='./images/three-horizontal-lines.svg' alt='RCM Logo' />)
+							? (<img src='/images/x-symbol.svg' alt='RCM Logo' />)
+							: (<img src='/images/three-horizontal-lines.svg' alt='RCM Logo' />)
 					}
 				</button>
 				{
@@ -45,8 +53,8 @@ export const NavMobile = ({ links, onOpenConnectModal }: any) => {
 										<a className={styles.brand} onClick={handleShowHide}>
 											{
 												theme == 'dark'
-													? (<img src='./images/rcm-logo-white.svg' alt='RCM Logo' />)
-													: (<img src='./images/rcm-logo-red.svg' alt='RCM Logo' />)
+													? (<img src='/images/rcm-logo-white.svg' alt='RCM Logo' />)
+													: (<img src='/images/rcm-logo-red.svg' alt='RCM Logo' />)
 											}
 										</a>
 									</Link>

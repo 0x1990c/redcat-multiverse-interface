@@ -1,7 +1,10 @@
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerRow}>
@@ -13,13 +16,11 @@ const Footer = () => {
       </div>
       <div className={styles.footerRow}>
         <a className={styles.option} href='https://blog.redcatmultiverse.io/' target='_blank' rel="noreferrer">
-          Blog
+          {t('header.blog')}
         </a>
         <div className={styles.separator}>&nbsp;|&nbsp;</div>
         <Link href={`/careers`}>
-          <a>
-            Careers
-          </a>
+          <a>{t('header.careers')}</a>
         </Link>
       </div>
       <div className={`${styles.footerRow} ${styles.rcmInfo}`}>
@@ -27,7 +28,6 @@ const Footer = () => {
         <div className={styles.separator}>&nbsp;|&nbsp;</div>
         <div>© 2022 RCM Labs. All rights reserved.</div>
       </div>
-
     </footer>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
 import styles from './ConnectModal.module.scss';
 
 const ConnectModal = ({ onClose }: any) => {
+  const { t } = useTranslation('common');
   const { isMobile } = useScreenWidth();
-
 
   const closeIconSize = () => {
     if (isMobile) {
@@ -29,7 +30,7 @@ const ConnectModal = ({ onClose }: any) => {
         <CloseIcon width={closeIconSize().width} height={closeIconSize().height} fill='#fff' />
       </div>
 
-      <p className={styles.title}>CONNECT TO THE MULTIVERSE</p>
+      <p className={styles.title}>{t('connectModal.connectToThe')}</p>
       <div className={styles.submitForm}>
         {/* <iframe
           src="https://blog.redcatmultiverse.io/embed"

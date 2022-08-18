@@ -1,0 +1,70 @@
+{
+  "roadmap": "ROADMAP",
+  "done": "DONE",
+  "upcoming": "UPCOMING",
+  "future": "FUTURE",
+  "extendedBtn": "For extended RCM Labs road map, please click here",
+  "contents": {
+    "id_0": {
+      "title": "THE RED CAT ARRIVES",
+      "bullets": {
+        "id_0": "Pre-production started",
+        "id_1": "Core design completed",
+        "id_2": "Meerkat Bag NFT Collection Sale",
+        "id_3": "RedCat Multiverse community begins"
+      },
+      "period": "Q4 2021 & Q1 2022"
+    },
+    "id_1": {
+      "title": "FIRST LOOKS",
+      "bullets": {
+        "id_0": "Pre-seed funding finalized",
+        "id_1": "RedCat Multiverse game simulator built in-house",
+        "id_2": "RedCat Multiverse White Paper published"
+      },
+      "period": "Q2 2022"
+    },
+    "id_2": {
+      "title": "THE GIFTED OPERATIVES ARRIVE",
+      "bullets": {
+        "id_0": "RedCat Multiverse trailer/video",
+        "id_1": "Inception NFT collection announced",
+        "id_2": "Inception NFT Collection Sale"
+      },
+      "period": "Q3 2022"
+    },
+    "id_3": {
+      "title": "RedCat Multiverse Orientation",
+      "bullets": {
+        "id_0": "Closed Beta release <span style='color: #e83324;'>(Initially for Inception NFT Holders and select RCM Insiders)</span>",
+        "id_1": "Accretion NFT Collection Sale <span style='color: #7192f3;'>(open to public)</span>",
+        "id_2": "RedCat Multiverse Tokenomics published"
+      },
+      "period": "Q3 2022"
+    },
+    "id_4": {
+      "title": "The RedCat Multiverse Opens",
+      "bullets": {
+        "id_0": "Conception NFT Collection Sale",
+        "id_1": "Governance Token Sale",
+        "id_2": "Public Beta release"
+      },
+      "period": "Q4 2022"
+    },
+    "id_5": {
+      "title": "New Era of Smart Fun Expands",
+      "bullets": {
+        "id_0": "Live design balance updates",
+        "id_1": "New campaigns & more power skills",
+        "id_2": "New Figment NFTs(characters)",
+        "id_3": "Introduction of DAOs",
+        "id_4": "Introduction of DEFI Liquidity Pools",
+        "id_5": "Visual upgrades with more universes",
+        "id_6": "Land in the Convergence & PVE game mode",
+        "id_7": "3rd party and community content",
+        "id_8": "Open metaverse"
+      },
+      "period": "2023 & Beyond"
+    }
+  }
+}
