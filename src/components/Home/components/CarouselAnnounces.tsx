@@ -25,14 +25,14 @@ export const CarouselAnnounces = () => {
     <>
       <Slide {...properties}>
         {
-
           slideImages.map((image, index) => (
             <div key={index} className="each-slide">
               <div className={styles['container-height-carousel-announce']} style={{
                 backgroundImage: `url("${image.url}")`,
                 backgroundSize: '100%',
                 backgroundRepeat: 'no-repeat',
-                height: '350px',
+                minHeight: '350px',
+                height: '100%',
                 borderRadius: '8px'
               }}>
               </div>
