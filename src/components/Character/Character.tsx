@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import parse from 'html-react-parser';
+import { useTranslation } from 'next-i18next';
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import styles from './Character.module.scss';
 
-const Character = ({ character }: any) => {
+const Character = ({ character, characterId }: any) => {
+  const { t } = useTranslation('charactersPage');
   const { thumbnail, fullCharacter, descriptions, fictions, fictionMobileIdx, knowledge, radar } = character;
   const { isMobile } = useScreenWidth();
 
@@ -11,7 +13,11 @@ const Character = ({ character }: any) => {
     const idxArray = new Array(fictionMobileIdx + 1).fill(0);
     return (
       <>
-        {idxArray.map((zero, idx) => (<p key={idx} className={styles.fiction}>{parse(fictions[idx])}</p>))}
+        {idxArray.map((zero, idx) => (
+          <p key={idx} className={styles.fiction}>
+            {parse(t(`characters.${characterId}.fictions.${idx}`))}
+          </p>)
+        )}
       </>
     )
   }
@@ -19,7 +25,7 @@ const Character = ({ character }: any) => {
   const FictionMobileLower = () => {
     const idxArray = new Array(fictions.length - fictionMobileIdx - 1).fill(0);
     return (<>{idxArray.map((zero, idx) => (
-      <p key={idx} className={styles.fiction}>{parse(fictions[idx + fictionMobileIdx + 1])}</p>)
+      <p key={idx} className={styles.fiction}>{t(`characters.${characterId}.fictions.${idx + fictionMobileIdx + 1}`)}</p>)
     )}</>)
   }
 
@@ -35,15 +41,15 @@ const Character = ({ character }: any) => {
     <div className={styles.contentSection}>
       <div className={`${styles.leftCol} ${styles.descriptions}`}>
         {descriptions.map((desc: any, idx: any) => (
-          <p key={idx}>{parse(desc)}</p>
+          <p key={idx}>{parse(t(`characters.${characterId}.descriptions.${desc}`))}</p>
         ))}
       </div>
       <div className={`${styles.rightCol}`}>
         <div className={styles.knowledgeContainer}>
-          <p>Did you know?</p>
+          <p>{t('knowledgeLabel')}</p>
           <ul>
             {knowledge.map((item: any, idx: any) => (
-              <li key={idx}>{item}</li>
+              <li key={idx}>{t(`characters.${characterId}.knowledge.${item}`)}</li>
             ))}
           </ul>
         </div>
@@ -52,9 +58,11 @@ const Character = ({ character }: any) => {
     <div className={`${styles.contentSection} ${styles.separator}`}></div>
     <div className={styles.contentSection}>
       <div className={styles.leftCol}>
-        <p className={styles.fictionTitle}>Flash Fiction</p>
+        <p className={styles.fictionTitle}>{t('flashFiction')}</p>
         {!isMobile
-          ? fictions.map((fiction: any, idx: any) => (<p key={idx} className={styles.fiction}>{parse(fiction)}</p>))
+          ? fictions.map((fiction: any, idx: any) => (
+            <p key={idx} className={styles.fiction}>{parse(t(`characters.${characterId}.fictions.${fiction}`))}</p>
+          ))
           : <FictionMobileUpper />
         }
       </div>
@@ -73,7 +81,7 @@ const Character = ({ character }: any) => {
         href={'/multiverse'}
       >
         <a className={styles.backBtn}>
-          Back to the Multiverse
+          {t(`goBack`)}
         </a>
       </Link>
     </div>

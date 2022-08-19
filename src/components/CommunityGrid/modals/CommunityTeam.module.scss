@@ -3,7 +3,7 @@
 }
 
 .leftCol {
-  max-width: 609px;
+  max-width: fit-content;
 }
 
 .teamDescription {
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 1300px) {
   .leftCol {
-    max-width: 570px;
+    max-width: 600px;
   }
 
   .team_grid {
@@ -80,6 +80,7 @@
 
   .leftCol {
     width: 100%;
+    max-width: 800px;
   }
 
   .teamDescription {
@@ -88,5 +89,17 @@
 
   .rightCol {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .team_grid {
+    justify-content: center;
   }
 }

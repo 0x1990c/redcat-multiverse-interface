@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Container from '../src/components/container/Container'
 import GradientText from '../src/components/gradientText/GradientText'
 import styles from '../src/styles/character.module.scss'
@@ -10,7 +12,8 @@ import { characterDetails } from '../src/components/Character/constants';
 
 const character = () => {
   const [figId, setFigId] = useState<number | null>();
-  const { theme, systemTheme } = useTheme()
+  const { t } = useTranslation('charactersPage');
+  const { theme, systemTheme } = useTheme();
   const router = useRouter();
 
   useEffect(() => {
@@ -33,7 +36,7 @@ const character = () => {
             <div className={styles.bannerTitle}>
               <GradientText
                 element='h2'
-                text={`${characterDetails[figId].name},`}
+                text={`${t(`characters.${figId}.name`)},`}
                 innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
                 gradient={['#f9c930', '#f2957c', '#7192f3']}
               />
@@ -41,17 +44,23 @@ const character = () => {
             <div className={styles.bannerTitle}>
               <GradientText
                 element='h2'
-                text={`${characterDetails[figId].role}`}
+                text={`${t(`characters.${figId}.role`)}`}
                 innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
                 gradient={['#f9c930', '#f2957c', '#7192f3']}
               />
             </div>
-            <Character character={characterDetails[figId]} />
+            <Character character={characterDetails[figId]} characterId={figId} />
           </Container>
         )
       }
     </div>
   )
 }
+
+export const getServerSideProps = async ({ locale }: any) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common', 'charactersPage'])
+  }
+});
 
 export default character

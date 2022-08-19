@@ -1,17 +1,20 @@
 import React from 'react'
+import { useTranslation } from 'next-i18next';
 import styles from './HomeHero.module.scss'
 import { Announcement } from './components/Announcement'
-import { annoucements } from './helpers/announce'
+import { announcement } from './helpers/announce'
 
 export const Announcements = () => {
+  const { t } = useTranslation('home');
+
   return (
     <div className={styles['container-margin']}>
-      <div className={styles['container-annoucements']}>
+      <div className={styles['container-announcements']}>
         <div className={styles['container-title']}>
-          <h1> ANNOUNCEMENT </h1>
+          <h1>{t('announcement')}</h1>
         </div>
         {
-          annoucements.map((announce) => (
+          announcement.map((announce) => (
             <Announcement key={announce.id} announce={announce} />
           ))
         }

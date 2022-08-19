@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import cx from 'classnames';
-import styles from "./CommunityModal.module.scss"
 import { useTheme } from 'next-themes'
 import { gsap } from "gsap";
 import { Flip } from "gsap/dist/Flip";
+import { useTranslation } from 'next-i18next';
+import styles from "./CommunityModal.module.scss"
 import { useScreenWidth } from '../../hooks/useScreenCheck';
 import CloseIcon from '../Icons/CloseIcon';
 import CommunityTeam from './modals/CommunityTeam';
@@ -17,7 +18,9 @@ import CommunityPress from './modals/CommunityPress';
 
 const CommunityModal = ({ content, closeModal }: any) => {
   const { systemTheme, theme } = useTheme();
-  const { title, text, item, id } = content;
+  const { t } = useTranslation('communityPage');
+
+  const { item, id } = content;
   const { isMobile } = useScreenWidth();
   const [memberModalOpen, setMemberModalOpen] = useState(false);
 
@@ -91,7 +94,7 @@ const CommunityModal = ({ content, closeModal }: any) => {
         <CloseIcon width={closeIconSize().width} height={closeIconSize().height} fill={closeIconColor()} />
       </div>
       <div className={cx(styles.header)}>
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>{t(`contents.id_${id}.title`)}</h3>
       </div>
       {modalContentComponent()}
     </div>

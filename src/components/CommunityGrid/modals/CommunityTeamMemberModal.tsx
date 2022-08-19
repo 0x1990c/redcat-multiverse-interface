@@ -1,10 +1,13 @@
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 import { IMAGE_BLUR_DATA_URL_PINK } from '../../../utilities/constants';
 import EmojiIcon from '../../Icons/EmojiIcon/EmojiIcon';
 import LinkedinIcon from '../../Icons/LinkedinIcon/LinkedinIcon';
 import styles from './CommunityTeamMemberModal.module.scss';
 
 const CommunityTeamMemberModal = ({ info, onClose }: any) => {
+  const { t } = useTranslation('communityPage');
+
   const {
     image,
     firstName,
@@ -17,7 +20,7 @@ const CommunityTeamMemberModal = ({ info, onClose }: any) => {
 
   return (<div className={styles.teamMemberModal}>
     <div className={styles.teamDescription}>
-      <div>Here’s our team of the curious and crazy game changers.</div>
+      <div>{t('team.description_1')}</div>
     </div>
     <div className={styles.memberImg}>
       <Image
@@ -40,7 +43,7 @@ const CommunityTeamMemberModal = ({ info, onClose }: any) => {
       </div>
       <div className={styles.bio}>{bio}</div>
     </div>
-    <button className={styles.closeBtn} onClick={onClose} >Close</button>
+    <button className={styles.closeBtn} onClick={onClose} >{t('team.close')}</button>
   </div>);
 }
 

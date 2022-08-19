@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { LinksIcons } from './LinksIcons';
 import styles from '../header.module.scss'
 import RadioSwitch from '../../RadioSwitch/RadioSwitch';
-
+import LangDropDown from './LangDropDown';
 
 export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const router = useRouter();
@@ -73,6 +73,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 			</div>
 			{/* nav icons social media */}
 			<LinksIcons />
+			<LangDropDown isDarkPage={isDarkBackgroundPage()} />
 			<RadioSwitch className={styles.themeSwitch} onChange={handleClick} checked={currentTheme === 'dark'} />
 		</nav>
 	)
