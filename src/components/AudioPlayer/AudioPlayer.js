@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/router';
 import styles from './AudioPlayer.module.scss';
-import Image from "next/image";
+import { PlaySvg, MuteSvg } from "./AudioSvg";
 
 const AudioPlayer = () => {
   const audioRef = useRef(null);
@@ -93,7 +93,7 @@ const AudioPlayer = () => {
       {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
       <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <div className={styles.playBtn}>
-          <Image src={playing ? '/images/play_button.gif' : '/images/mute_button.png'} alt='Mute' layout='fill' />
+          {playing ? <PlaySvg /> : <MuteSvg />}
         </div>
         {/* {playing
           ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
