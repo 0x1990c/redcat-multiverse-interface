@@ -11,9 +11,9 @@ export const PlaySvg = () => {
   return (
     <svg viewBox="0 0 80 80">
       <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1" >
-        <stop offset="0%" stop-color="black" stop-opacity="0.4" />
-        <stop offset="50%" stop-color="black" stop-opacity="0.8" />
-        <stop offset="100%" stop-color="black" stop-opacity="1" />
+        <stop offset="0%" stopColor="black" stopOpacity="0.4" />
+        <stop offset="50%" stopColor="black" stopOpacity="0.8" />
+        <stop offset="100%" stopColor="black" stopOpacity="1" />
       </linearGradient>
 
       <rect width="100%" height="100%" fill="url(#Gradient1)" />
