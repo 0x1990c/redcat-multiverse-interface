@@ -93,7 +93,8 @@ const AudioPlayer = () => {
       {/* <button onClick={handleBackgroundAudio}>{playing === true ? "PAUSE" : "PLAY"}</button> */}
       <button onClick={handleBackgroundAudio} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <div className={styles.playBtn}>
-          {playing ? <PlaySvg /> : <MuteSvg />}
+          <PlaySvg visibility={playing}/>
+          <MuteSvg visibility={playing}/>
         </div>
         {/* {playing
           ? <div className={styles.playBtn}><Image src={'/images/play_button.gif'} alt='Mute' layout='fill' /></div>
