@@ -33,6 +33,10 @@ const slideImages = [
   {
     id: 6,
     url: '/images/characters/axis-12_full_character.png'
+  },
+  {
+    id: 7,
+    url: '/images/characters/the_king_in_yellow_full_character.png'
   }
 ];
 

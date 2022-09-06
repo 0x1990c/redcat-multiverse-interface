@@ -36,7 +36,7 @@ const character = () => {
             <div className={styles.bannerTitle}>
               <GradientText
                 element='h2'
-                text={`${t(`characters.${figId}.name`)},`}
+                text={`${t(`characters.${figId}.name`)}${figId === 7 ? '' : ','}`}
                 innerColor={currentTheme === 'dark' ? '#FFF' : '#1b1628'}
                 gradient={['#f9c930', '#f2957c', '#7192f3']}
               />
