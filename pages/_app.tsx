@@ -27,6 +27,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('meta.twitterTitle')} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={t('meta.twitterTitle')} />
+        <meta property="og:description" content={t('meta.twitterDescription')} />
+        <meta property="og:image" content="https://www.redcatmultiverse.io/images/theredcat.png" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1"></script>
         <script>
