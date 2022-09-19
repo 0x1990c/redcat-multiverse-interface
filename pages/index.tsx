@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             {t('cta.third')}
           </div>
           <div className={styles.ctaBtnWrapper}>
-            <a className={styles.ctaBtn} href='https://discord.gg/JTnry5xubQ'>
+            <a className={styles.ctaBtn} href='https://redcatmultiverse.co'>
               {t('cta.btnLabel')}
             </a>
           </div>
