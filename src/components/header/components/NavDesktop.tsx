@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { LinksIcons } from './LinksIcons';
+import { useICNFTContext } from '../../../contexts/ICNFTContext';
 import styles from '../header.module.scss'
 import RadioSwitch from '../../RadioSwitch/RadioSwitch';
 import LangDropDown from './LangDropDown';
@@ -18,14 +19,47 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 		setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 	}
 
+	const { slideIdx } = useICNFTContext();
+
 	const isDarkBackgroundPage = () => darkBackgroundPages.includes(router.pathname);
+
+	const isInceptionPage = () => (['/inceptionnft']).includes(router.pathname);
+
+	const inceptionBack = () => {
+		switch (slideIdx) {
+			case 0:
+				return 'dark';
+			case 1:
+				return 'dark';
+			case 2:
+				return 'dark';
+			case 3:
+				return 'dark';
+			case 4:
+				return 'light';
+			case 5:
+				return 'light';
+			case 6:
+				return 'dark';
+			case 7:
+				return 'dark';
+			default:
+				return 'dark';
+		}
+	}
 
 	const handleConnectClick = () => {
 		onOpenConnectModal()
 	}
 
 	return (
-		<nav className={`${styles.navbar} ${isDarkBackgroundPage() ? styles.darkPage : ''}`}>
+		<nav
+			className={`
+				${styles.navbar}
+				${isDarkBackgroundPage() ? styles.darkPage : ''}
+				${isInceptionPage() ? `${styles.inceptionPage} ${styles[inceptionBack()]}` : ''}
+			`}
+		>
 			<div>
 				{links.map((link: any, index: any) => {
 					if (link.link === 'whitepaper') {

@@ -1,0 +1,95 @@
+.icNFTRosterCard {
+  width: 593px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 8px;
+  margin: 20px;
+
+  &.common {
+    border-color: #e83324;
+  }
+
+  &.uncommon {
+    border-color: #e83324;
+  }
+
+  &.rare {
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, #e83324 1%, #7494f3) border-box;
+    border: 3px solid transparent;
+  }
+
+  &.legendary {
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, #7192f3 0%, #f2957c 37%, #f9c930 65%, #e83324 100%) border-box;
+    border: 3px solid transparent;
+  }
+}
+
+.cardTitle {
+  font-family: 'Gotham Medium';
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px 60px;
+
+  &.common {
+    background: #e83324;
+  }
+
+  &.uncommon {
+    background: #e83324;
+  }
+
+  &.rare {
+    background: linear-gradient(to right, #e83324, #7693f0, #7693f0),
+      linear-gradient(to bottom, #e83324, #e83324);
+  }
+
+  &.legendary {
+    background: linear-gradient(to right, #7494f3, #f2957c 31%, #f9c930 71%, #e83324);
+  }
+}
+
+.content {
+  padding: 37px 10px;
+  width: 100%;
+
+  .rosterContent {
+    margin: 0 auto;
+    font-family: 'Bariol';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--font-color);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .icNFTRosterCard {
+    margin: 20px 0;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+
+  .content {
+    padding: 30px 10px;
+
+    .rosterContent {
+      font-size: 13px;
+    }
+  }
+}

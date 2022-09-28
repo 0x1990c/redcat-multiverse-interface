@@ -1,0 +1,184 @@
+{
+  "clickWhisker": "Click on my whiskers",
+  "redCatMultiverse": "REDCAT MULTIVERSE",
+  "multiverseText1": "Inception NFTs are like nothing you've ever seen before.",
+  "multiverseText2": "They come jam-packed with in-game assets and actually multiply into six (or more) NFTs that you get to choose when you begin gameplay.",
+  "collectionAdvertTitle": "A collection built with utility & community at the foundation",
+  "collectionAdvertDescription": "Each Inception NFT is a collection of in-game assets, and each type of icNFT will provide you with different levels of rarity for those resources. Remember two things: both characters and play cards are NFTs and both will be chosen by you at the launch.",
+  "collectionAdvertComment": "IF YOU'VE GOT YOUR EYE ON A RARE OR LEGENDARY icNFT, YOU MIGHT WANT TO ARRIVE TO THE PARTY EARLY.",
+  "rarity": {
+    "essential": {
+      "category": "essential",
+      "available": "6222 Available",
+      "character": [
+        "3 Common",
+        "3 Uncommon"
+      ],
+      "playCard": [
+        "2 Common",
+        "1 Uncommon"
+      ],
+      "inGame": [
+        "30 Common",
+        "30 Uncommon (random)"
+      ]
+    },
+    "rare": {
+      "category": "rare",
+      "available": "1778 Available",
+      "character": [
+        "2 Common",
+        "2 Uncommon",
+        "2 Rare"
+      ],
+      "playCard": [
+        "1 Common",
+        "1 Uncommon",
+        "1 Rare"
+      ],
+      "inGame": [
+        "30 Common",
+        "20 Uncommon",
+        "10 Rare"
+      ]
+    },
+    "legendary": {
+      "category": "legendary",
+      "available": "888 Available",
+      "character": [
+        "1 Common",
+        "2 Uncommon",
+        "2 Rare",
+        "1 Legendary"
+      ],
+      "playCard": [
+        "1 Common",
+        "2 Uncommon",
+        "1 Legendary"
+      ],
+      "inGame": [
+        "40 Common",
+        "20 Uncommon",
+        "10 Rare (random)",
+        "5 Legendary (random)"
+      ]
+    },
+    "characterNFT": "CHARACTER NFTs",
+    "playCardNFT": "PLAY CARD NFTs",
+    "inGameItems": "IN-GAME ITEMS"
+  },
+  "ownerReward": {
+    "title": "ALL icNFT OWNERS ALSO RECEIVE:",
+    "iconBadge": "Limited edition badge",
+    "iconAvatar": "Limited edition avatar",
+    "iconTradingCard": "Limited edition trading card",
+    "iconVideo": "Lower third RCM-branded graphic for video",
+    "iconRedCat": "3D printing file (stl) of Sanura, the Red Cat (drm-free)",
+    "text": "Exclusive access to RedCat Multiverse Private Beta later in the Fall"
+  },
+  "multiverseGate": {
+    "title": "THE PORTALS OPEN: LAUNCH EVENT",
+    "text1": "Are you excited to join the multiverse as soon as possible? You’ll have your chance with our LIMITED collection of Inception NFTs!",
+    "text2": "Each Inception NFT is one-of-a-kind, featuring variations of our very own Red Cat, Sanura. In addition to being able to appreciate it in your wallet and use it as your PFP, each icNFT includes all of the character NFTs and in-game resources you’ll need to start playing the game upon launch.",
+    "text3": "As an Inception NFT holder, you’ll also have exclusive access to early play during the RedCat Multiverse Private Beta."
+  },
+  "mintingDetails": {
+    "label": "Inception Collection Minting Details",
+    "launchDate": "Launch Date",
+    "launchDate_value": "Fall, 2022",
+    "supply": "Supply",
+    "mintingLimit": "Minting Limit",
+    "mintingLimit_value": "Max 5 icNFTs per wallet"
+  },
+  "roster": {
+    "title": "A Sampling of the Character Roster",
+    "text": "Here’s a sneak-peek look at just a few of the many possibilities you will have for character selections through your icNFT",
+    "common": {
+      "title": "A few Common characters from our first set include:",
+      "data": [
+        "Call-Me-Steve, the Little Green Man",
+        "Cato, the Avatar of Mind",
+        "Citrine, the Sunflower Knight",
+        "Fuku, the Bakeneko",
+        "K’kagim, the Death - Leaper",
+        "Lusid, the Equanimity",
+        "Ronan, Child of the Beast",
+        "Sari, the Human Android",
+        "Song Gang, the Dreaming Firefly"
+      ]
+    },
+    "uncommon": {
+      "title": "A few Uncommon characters from our first set include:",
+      "data": [
+        "Despair, the Slow Poison",
+        "Fayde, the Shadowcat",
+        "Femi, the Avatar of Love",
+        "Fu Yijun, Dragon of Wisdom",
+        "Gishkim, the Anunnaki of Nibiru",
+        "Malia, Priestess of the Sea",
+        "Maroc, of the Oaken Clan",
+        "The Reaper",
+        "Wells, the Temporal Explorer"
+      ]
+    },
+    "rare": {
+      "title": "A few Rare characters from our first set include:",
+      "data": [
+        "Ellon, the Avatar of Freedom",
+        "Fairness, the Compassionate",
+        "Lulu, the Ghostess with the Mostess",
+        "Plikplik, the Cosmic Culinarian",
+        "Orchid, the Violet Queen",
+        "The Undying, the Spectral Circuit"
+      ]
+    },
+    "legendary": {
+      "title": "The two Legendary characters available in the first set are:",
+      "data": [
+        "The King in Yellow",
+        "Scatr, the Distributed Human"
+      ]
+    }
+  },
+  "builtStatus": {
+    "label": "Built Right from the Start",
+    "iconETH": "Minted on ETH, but carbon offset",
+    "iconIPFS": "IPFS hosted",
+    "iconUtility": "Utility NFT that unlocks while held",
+    "iconRedCat": "Access to the RedCat Multiverse"
+  },
+  "faq": [
+    {
+      "question": "What is the RedCat Multiverse?",
+      "answer": "RCM Labs is creating a brand new concept with the world’s first  Play, Learn and Earn (PLE) model within a highly engaging blockchain gaming economy. The Red Cat Multiverse is a community-first and operated decentralized NFT collection utilized in arena-style challenges and story-based adventure campaigns, cooperative matches  through a variety of times, places, and parallel universes."
+    },
+    {
+      "question": "What are character NFTs?",
+      "answer": "Characters are the main assets players use to interact with the game, each with proof of ownership stored on blockchain."
+    },
+    {
+      "question": "How many characters will be created?",
+      "answer": "The most important and valuable NFTs in the RedCat Multiverse are characters. The initial release will include 104 characters, growing to more than 160 over the next 18 months. There will be a limited supply of these characters."
+    },
+    {
+      "question": "How are Play & Trading Cards NFTs?",
+      "answer": "Play and Trading Cards will be minted on ERC-1155, meaning that you can own multiple of the same card. This allows you to customize your strategy as you see fit."
+    },
+    {
+      "question": "When will the first NFTs be launched?",
+      "answer": "The first batch of NFTs will be minted in Q4."
+    },
+    {
+      "question": "How can I purchase Inception NFTs?",
+      "answer": "All NFTs can be purchased with ETH directly from www.redcatmultiverse.io"
+    },
+    {
+      "question": "How much do Inception NFTs cost?",
+      "answer": "Pricing details for Inception NFTs will be announced at a later date."
+    },
+    {
+      "question": "Who’s the creator?",
+      "answer": "The thought leadership behind this project features some of the top minds in the industry including alumni from MIT and Stanford as well as Algorand and Riot Games. RCM Labs is working with some of the foremost experts in game theory and Web3 technology to ensure that this game meets the expectations of our growing online community."
+    }
+  ]
+}
