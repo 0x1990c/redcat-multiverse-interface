@@ -1,0 +1,35 @@
+@import '../../styles/colors.scss';
+
+.faqContainer {
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.faqTitle {
+  font-family: 'Gotham Medium';
+  font-size: 62px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--font-color);
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(to right, $yellow 25%, $orange-light 49%, $blue-light 75%) border-box;
+  border-bottom: 2px solid transparent;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .faqContainer {
+    margin-top: 40px;
+  }
+
+  .faqTitle {
+    font-size: 40px;
+  }
+}

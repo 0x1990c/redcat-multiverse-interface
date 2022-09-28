@@ -86,6 +86,24 @@
         color: $white;
       }
     }
+
+    &.inceptionPage {
+      background-color: transparent;
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+
+      &.dark {
+        a {
+          color: $white;
+        }
+      }
+
+      &.light {
+        a {
+          color: $dark-blue;
+        }
+      }
+    }
   }
 
   // styles navbar mobile

@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { appWithTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { ICNFTContextProvider } from '../src/contexts/ICNFTContext';
 import Layout from '../src/components/Layout';
 import '../src/styles/globals.scss';
 
@@ -68,9 +69,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS2MRTS" height="0" width="0"></iframe>
         </noscript>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <ICNFTContextProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ICNFTContextProvider>
       </ThemeProvider>
     </>
   )

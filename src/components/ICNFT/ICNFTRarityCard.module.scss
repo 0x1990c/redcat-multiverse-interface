@@ -1,0 +1,331 @@
+.rarityCard {
+  width: 380px;
+  height: 1080px;
+  padding-top: 38px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 3px;
+  position: relative;
+
+  &.essential {
+    border-color: #e83324;
+  }
+
+  &.rare {
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, #e83324 1%, #7494f3) border-box;
+    border: 3px solid transparent;
+  }
+
+  &.legendary {
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, #e83324 10%, #f2957c 27%, #f9c930 52%, #7192f3 10%);
+    border: 3px solid transparent;
+  }
+}
+
+.cardHeader {
+  margin-bottom: 34px;
+  font-family: 'Gotham Medium';
+  line-height: normal;
+  text-align: center;
+  color: var(--font-color);
+
+  .rarityCategory {
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .rarityCategoryNFT {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+
+.rarityCat {
+  width: 268px;
+  height: 268px;
+  border-radius: 8px;
+  margin: 0 auto;
+  position: relative;
+
+  .catBanner {
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    font-family: 'Gotham Medium';
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    line-height: 1;
+    position: absolute;
+    top: -31px;
+    right: -31px;
+  }
+
+  &.essential {
+    background: url('/images/inception/rarity_cat_essential.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .catBanner {
+      background: #e83324;
+    }
+  }
+
+  &.rare {
+    background: url('/images/inception/rarity_cat_rare.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .catBanner {
+      background: linear-gradient(to top, #e83324, #7693f0, #7693f0);
+    }
+  }
+
+  &.legendary {
+    background: url('/images/inception/rarity_cat_legendary.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .catBanner {
+      background: linear-gradient(to bottom, #7494f3 -10%, #f2957c 40%, #e83324 90%);
+    }
+  }
+}
+
+.availableNumber {
+  margin-top: 42px;
+  width: 100%;
+  height: 48px;
+  font-family: 'Gotham Medium';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.essential {
+    background: #e83324;
+  }
+
+  &.rare {
+    background: linear-gradient(to right, #e83324, #7693f0, #7693f0);
+  }
+
+  &.legendary {
+    background: linear-gradient(to right, #7494f3, #f2957c 35%, #f9c930 69%, #e83324, #7693f0);
+  }
+}
+
+.cardContent {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.cardContentItem {
+  display: flex;
+
+  .content {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.33;
+    color: var(--font-color);
+    margin-left: 20px;
+    margin-top: -5px;
+
+    .contentTitle {
+      font-family: 'Gotham Medium';
+      font-weight: 500;
+    }
+  }
+
+  &.character {
+    height: 160px;
+  }
+
+  &.card {
+    height: 140px;
+  }
+
+  &.game {
+    height: unset;
+  }
+
+  .characterIcon {
+    width: 42px;
+    height: 38px;
+    margin-right: -6px;
+  }
+
+  .cardIcon {
+    width: 42px;
+    height: 33px;
+  }
+
+  .gameIcon {
+    width: 42px;
+    height: 38px;
+  }
+
+  &.essential {
+    .characterIcon {
+      background: url('/images/inception/icon_character_essential.png');
+      background-repeat: no-repeat;
+    }
+
+    .cardIcon {
+      background: url('/images/inception/icon_card_essential.png');
+      background-repeat: no-repeat;
+    }
+
+    .gameIcon {
+      background: url('/images/inception/icon_gem_essential.png');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.rare {
+    .characterIcon {
+      background: url('/images/inception/icon_character_rare.png');
+      background-repeat: no-repeat;
+    }
+
+    .cardIcon {
+      background: url('/images/inception/icon_card_rare.png');
+      background-repeat: no-repeat;
+    }
+
+    .gameIcon {
+      background: url('/images/inception/icon_gem_rare.png');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.legendary {
+    .characterIcon {
+      background: url('/images/inception/icon_character_legendary.png');
+      background-repeat: no-repeat;
+    }
+
+    .cardIcon {
+      background: url('/images/inception/icon_card_legendary.png');
+      background-repeat: no-repeat;
+    }
+
+    .gameIcon {
+      background: url('/images/inception/icon_gem_legendary.png');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.catImg {
+  position: absolute;
+
+  &.essential {
+    width: 117px;
+    height: 122px;
+    left: 0;
+    bottom: 0;
+  }
+
+  &.rare {
+    width: 170px;
+    height: 130px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &.legendary {
+    width: 96px;
+    height: 214px;
+    right: 0;
+    bottom: 52px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rarityCard {
+    width: 100%;
+    max-width: 380px;
+    height: unset;
+    padding-bottom: 80px;
+  }
+
+  .cardHeader {
+    .rarityCategory {
+      font-size: 32px;
+    }
+
+    .rarityCategoryNFT {
+      font-size: 20px;
+    }
+  }
+
+  .rarityCat {
+    width: 222px;
+    height: 222px;
+
+    .catBanner {
+      width: 50px;
+      height: 50px;
+      font-size: 10px;
+      top: -25px;
+      right: -25px;
+    }
+  }
+
+  .availableNumber {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .cardContentItem {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.character,
+    &.card {
+      height: unset;
+    }
+
+    .content {
+      font-size: 15px;
+    }
+  }
+
+  .catImg {
+
+    &.essential {
+      width: auto;
+      height: 101px;
+    }
+
+    &.rare {
+      width: auto;
+      height: 114px;
+    }
+
+    &.legendary {
+      width: 85px;
+      height: auto;
+      bottom: 30px;
+    }
+  }
+}

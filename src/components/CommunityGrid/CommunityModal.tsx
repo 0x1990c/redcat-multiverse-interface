@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import cx from 'classnames';
 import { useTheme } from 'next-themes'
-import { gsap } from "gsap";
-import { Flip } from "gsap/dist/Flip";
 import { useTranslation } from 'next-i18next';
 import styles from "./CommunityModal.module.scss"
 import { useScreenWidth } from '../../hooks/useScreenCheck';

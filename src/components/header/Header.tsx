@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import Container from '../container/Container'
 import styles from './header.module.scss'
 import connectModalStyles from '../../components/ConnectModal/ConnectModal.module.scss';
@@ -15,13 +16,13 @@ const Header = () => {
   const [isConnectModalOpen, setIsConnectModalOpen] = useState(false);
   const { theme } = themeChanger();
 
-  const { t } = useTranslation('common')
+  const { t } = useTranslation('common');
 
   const headerLinks = [
     { name: 'PLE', link: 'play-learn-earn', finished: true },
     { name: t('header.roadmap'), link: 'roadmap', finished: true },
     { name: t('header.multiverse'), link: 'multiverse', finished: true },
-    { name: 'InceptionNFT', link: 'inceptionnft', finished: false },
+    { name: 'InceptionNFT', link: 'inceptionnft', finished: true },
     { name: t('header.community'), link: 'community', finished: true },
     { name: t('header.whitepaper'), link: 'whitepaper', finished: true },
     // { name: 'Blog', link: 'blog', finished: true },
@@ -44,11 +45,6 @@ const Header = () => {
       <AudioPlayer />
       <Container className={styles.headerContainer}>
         <header className={styles.header}>
-          {/* {
-            theme != 'dark'
-              ? (<Link href="/" passHref><a><img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
-              : (<Link href="/" passHref><a><img src='/images/rcm-logo-white.svg' alt='RCM Logo' className={styles.headerLogo} /></a></Link>)
-          } */}
           <Link href="/">
             <a>
               <img src='/images/rcm-logo-red.svg' alt='RCM Logo' className={styles.headerLogo} />
@@ -62,7 +58,6 @@ const Header = () => {
               <div className={connectModalStyles.modalWrapper}>
                 <ConnectModal onClose={handleCloseConnectModal} />
               </div>
-
             </div>
           )}
         </header>
