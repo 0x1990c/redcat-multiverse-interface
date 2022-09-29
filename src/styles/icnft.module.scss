@@ -62,6 +62,21 @@
     width: 100%;
     max-width: 888px;
     margin: 0 auto;
+
+    .fellowShipLink {
+      margin-top: 10px;
+      font-family: 'Bariol';
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.09;
+      letter-spacing: normal;
+      text-align: center;
+      text-decoration: underline;
+      cursor: pointer;
+      display: block;
+    }
   }
 }
 
@@ -80,6 +95,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .raritySection {
+    flex-direction: column;
+  }
+
+  .rarityCardWrapper {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .icNFTContainer {
     margin-bottom: 60px;
@@ -95,10 +121,19 @@
 
     .collectionAdvertDescription {
       font-size: 13px;
+      text-align: left;
     }
 
     .collectionAdvertComment {
       font-size: 16px;
+      padding: 14px 12px;
+
+      .fellowShipLink {
+        font-size: 12px;
+        max-width: 222px;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
     }
   }
 
