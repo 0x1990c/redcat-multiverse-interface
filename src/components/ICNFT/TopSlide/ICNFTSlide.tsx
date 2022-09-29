@@ -111,6 +111,7 @@ const ICNFTSlide = () => {
         >
           Apply for RCM Fellowship
         </a>
+        <p className={styles.fellowshipPerk} style={{color: slideData[selectedIdx].textColor}}>{t('rcmFellowshipPerk')}</p>
       </div>
     </div>
   )

@@ -3,6 +3,8 @@ import parse from 'html-react-parser';
 import styles from './FAQItem.module.scss';
 
 import useCollapse from 'react-collapsed';
+import IconPlus from '../../Icons/IconPlus/IconPlus';
+import IconMinus from '../../Icons/IconMinus/IconMinus';
 
 const FAQItem = ({ question, answer }: any) => {
   const [isExpanded, setExpanded] = useState(false);
@@ -20,7 +22,7 @@ const FAQItem = ({ question, answer }: any) => {
             onClick: () => setExpanded((x) => !x)
           })}
         >
-          {isExpanded ? parse("&#8722;") : parse("&#43;")}
+          {isExpanded ? <IconMinus /> : <IconPlus />}
         </button>
       </div>
       <div className={styles.answer} {...getCollapseProps()}>

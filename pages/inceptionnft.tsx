@@ -41,7 +41,10 @@ const ICNFT: NextPage = () => {
         <p className={styles.collectionAdvertDescription}>
           {t('collectionAdvertDescription')}
         </p>
-        <div className={styles.collectionAdvertComment}>{t('collectionAdvertComment')}</div>
+        <div className={styles.collectionAdvertComment}>
+          <div>{t('collectionAdvertComment')}</div>
+          <a className={styles.fellowShipLink}>{t('applyRCMFellowship')}</a>
+        </div>
       </div>
       <div className={styles.raritySection}>
         <div className={styles.rarityCardWrapper}>

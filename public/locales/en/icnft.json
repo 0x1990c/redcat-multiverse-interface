@@ -1,11 +1,13 @@
 {
   "clickWhisker": "Click on my whiskers",
-  "redCatMultiverse": "REDCAT MULTIVERSE",
+  "redCatMultiverse": "THE REDCAT MULTIVERSE",
   "multiverseText1": "Inception NFTs are like nothing you've ever seen before.",
   "multiverseText2": "They come jam-packed with in-game assets and actually multiply into six (or more) NFTs that you get to choose when you begin gameplay.",
+  "rcmFellowshipPerk": "*An RCM Fellowship includes special perks including a whitelisted invite to the sale of Inception NFTs.",
   "collectionAdvertTitle": "A collection built with utility & community at the foundation",
   "collectionAdvertDescription": "Each Inception NFT is a collection of in-game assets, and each type of icNFT will provide you with different levels of rarity for those resources. Remember two things: both characters and play cards are NFTs and both will be chosen by you at the launch.",
   "collectionAdvertComment": "IF YOU'VE GOT YOUR EYE ON A RARE OR LEGENDARY icNFT, YOU MIGHT WANT TO ARRIVE TO THE PARTY EARLY.",
+  "applyRCMFellowship": "Apply for the RCM Fellowship to get early whitelist access to the icNFT launch.",
   "rarity": {
     "essential": {
       "category": "essential",

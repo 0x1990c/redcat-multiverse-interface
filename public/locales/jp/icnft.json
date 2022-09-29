@@ -1,11 +1,13 @@
 {
   "clickWhisker": "ヒゲをクリックしてね。",
-  "redCatMultiverse": "REDCAT MULTIVERSE",
+  "redCatMultiverse": "THE REDCAT MULTIVERSE",
   "multiverseText1": "InceptionのNFTは、これまで見たこともないようなものです。",
   "multiverseText2": "ゲーム内の資産が詰め込まれており、実際には6つ（またはそれ以上）のNFTに倍増し、ゲームプレイ開始時に選択することができます。",
+  "rcmFellowshipPerk": "*RCMフェローシップには、Inception NFTの販売にホワイトリストで招待されるなど、特別な特典があります。",
   "collectionAdvertTitle": "ユーティリティとコミュニティを基本に構築されたコレクション",
   "collectionAdvertDescription": "各 Inception NFTはゲーム内資産の集合体であり、icNFTの種類によって、それらの資源のレアリティが異なるレベルを提供します。以下の2つにご注意ください。キャラクターとプレイカードの両方がNFTであり、いずれも立ち上げ時にお客様によって選択されることになります。",
   "collectionAdvertComment": "レアやレジェンダリーのicNFTを狙いたい方は、お早めにパーティにお越しください。",
+  "applyRCMFellowship": "RCMフェローシップに応募すると、icNFTの立ち上げにいち早くホワイトリストでアクセスできます。",
   "rarity": {
     "essential": {
       "category": "エッセンシャル",
@@ -174,7 +176,7 @@
     },
     {
       "question": "Inception NFTの価格を教えてください",
-      "answer": "Inception NFTの発行は、後日詳細を発表する予定です。"
+      "answer": "Inception NFTの価格詳細については、後日発表いたします。"
     },
     {
       "question": "クリエイターは誰ですか？",
