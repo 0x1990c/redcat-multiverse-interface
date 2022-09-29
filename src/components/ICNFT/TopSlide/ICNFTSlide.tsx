@@ -109,9 +109,9 @@ const ICNFTSlide = () => {
           style={{ background: slideData[selectedIdx].textColor, color: slideData[selectedIdx].btnLabelColor }}
           href='https://redcatmultiverse.co'
         >
-          Apply for RCM Fellowship
+          Apply for RCM Fellowship*
         </a>
-        <p className={styles.fellowshipPerk} style={{color: slideData[selectedIdx].textColor}}>{t('rcmFellowshipPerk')}</p>
+        <p className={styles.fellowshipPerk} style={{ color: slideData[selectedIdx].textColor }}>{t('rcmFellowshipPerk')}</p>
       </div>
     </div>
   )
