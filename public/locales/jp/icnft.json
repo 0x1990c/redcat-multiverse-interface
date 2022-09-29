@@ -1,0 +1,186 @@
+{
+  "clickWhisker": "ヒゲをクリックしてね。",
+  "redCatMultiverse": "THE REDCAT MULTIVERSE",
+  "multiverseText1": "InceptionのNFTは、これまで見たこともないようなものです。",
+  "multiverseText2": "ゲーム内の資産が詰め込まれており、実際には6つ（またはそれ以上）のNFTに倍増し、ゲームプレイ開始時に選択することができます。",
+  "rcmFellowshipPerk": "*RCMフェローシップには、Inception NFTの販売にホワイトリストで招待されるなど、特別な特典があります。",
+  "collectionAdvertTitle": "ユーティリティとコミュニティを基本に構築されたコレクション",
+  "collectionAdvertDescription": "各 Inception NFTはゲーム内資産の集合体であり、icNFTの種類によって、それらの資源のレアリティが異なるレベルを提供します。以下の2つにご注意ください。キャラクターとプレイカードの両方がNFTであり、いずれも立ち上げ時にお客様によって選択されることになります。",
+  "collectionAdvertComment": "レアやレジェンダリーのicNFTを狙いたい方は、お早めにパーティにお越しください。",
+  "applyRCMFellowship": "RCMフェローシップに応募すると、icNFTの立ち上げにいち早くホワイトリストでアクセスできます。",
+  "rarity": {
+    "essential": {
+      "category": "エッセンシャル",
+      "available": "6222 利用可能",
+      "character": [
+        "3 Common",
+        "3 Uncommon"
+      ],
+      "playCard": [
+        "2 Common",
+        "1 Uncommon"
+      ],
+      "inGame": [
+        "30 Common",
+        "30 Uncommon (random)"
+      ]
+    },
+    "rare": {
+      "category": "レア",
+      "available": "1778 利用可能",
+      "character": [
+        "2 Common",
+        "2 Uncommon",
+        "2 Rare"
+      ],
+      "playCard": [
+        "1 Common",
+        "1 Uncommon",
+        "1 Rare"
+      ],
+      "inGame": [
+        "30 Common",
+        "20 Uncommon",
+        "10 Rare"
+      ]
+    },
+    "legendary": {
+      "category": "レジェンダリー",
+      "available": "888利用可能",
+      "character": [
+        "1 Common",
+        "2 Uncommon",
+        "2 Rare",
+        "1 Legendary"
+      ],
+      "playCard": [
+        "1 Common",
+        "2 Uncommon",
+        "1 Legendary"
+      ],
+      "inGame": [
+        "40 Common",
+        "20 Uncommon",
+        "10 Rare (random)",
+        "5 Legendary (random)"
+      ]
+    },
+    "characterNFT": "キャラクターNTF",
+    "playCardNFT": "プレイカードNTF",
+    "inGameItems": "ゲーム内アイテム"
+  },
+  "ownerReward": {
+    "title": "icNFTのオーナー様全員には、こんなプレゼントがあります。",
+    "iconBadge": "限定バッジ",
+    "iconAvatar": "限定アバター",
+    "iconTradingCard": "限定トレーディングカード",
+    "iconVideo": "動画用RCMブランドグラフィック",
+    "iconRedCat": "赤猫サヌラの3Dプリントファイル(stl) (drmフリー)",
+    "text": "秋に開催されるRedCat Multiverse Private Betaへの独占参加権もGET!!"
+  },
+  "multiverseGate": {
+    "title": "ポータルズ・オープン: ローンチイベント",
+    "text1": "一刻も早くマルチバースに参加したいと思いませんか？インセプションNFTの限定コレクションを手に入れるチャンスです。",
+    "text2": "インセプションNFTは、レッドキャットのサヌラをモチーフにした1点ものです。お財布に入れたり、PFPとして使用したりできるほか、各icNFTにはゲーム起動時に必要なキャラクターNFTやゲーム内リソースがすべて含まれています。",
+    "text3": "また、Inception NFTをお持ちの方は、RedCat Multiverse Private Betaの期間中、特別に早期プレイをお楽しみいただくことができます。"
+  },
+  "mintingDetails": {
+    "label": "インセプション・コレクション 発行の詳細",
+    "launchDate": "発売時期",
+    "launchDate_value": "2022年秋",
+    "supply": "供給量",
+    "mintingLimit": "ミンティングの限度額",
+    "mintingLimit_value": "1ウォレットあたり最大5icNFT"
+  },
+  "roster": {
+    "title": "A Sampling of the Character Roster",
+    "text": "ここでは、第1弾で登場するキャラクターの一部をご紹介します。",
+    "common": {
+      "title": "最初のセットで登場するCommonキャラクターをいくつか紹介します。",
+      "data": [
+        "コール・ミー・スティーブ (リトル・グリーン・マン)",
+        "ケイトー（心の化身）",
+        "シトリン（ひまわりの騎士）",
+        "フク（バケネコ）",
+        "ク・カギム（死神）",
+        "ルシード（静寂）",
+        "ローナン（獣の子） ",
+        "サリ（人造人間サリ）",
+        "ソンガン（夢見蛍）"
+      ]
+    },
+    "uncommon": {
+      "title": "最初のセットで登場するUncommonのキャラクターをいくつか紹介します。",
+      "data": [
+        "スロウ・ポイズン（絶望）",
+        "フェイデ（シャドウキャット）",
+        "愛のアバターフェミ",
+        "フー・イージュン（知恵のドラゴン）",
+        "ギシュキム（ニビルのアヌンナキ）",
+        "マリア（海の巫女）",
+        "マロック（樫の一族）",
+        "死神",
+        "ウェルズ（時間的探検家）"
+      ]
+    },
+    "rare": {
+      "title": "最初のセットで登場するレアキャラクターをいくつか紹介します。",
+      "data": [
+        "エロン（自由の化身）",
+        "フェアネス（慈悲）",
+        "ルル（幽霊のような女)",
+        "プリックプリック（宇宙の料理人）",
+        "オーキッド（ヴァイオレットクイーン）",
+        "スペクタル・サーキット（不死身の者）"
+      ]
+    },
+    "legendary": {
+      "title": "第1弾で入手できるレジェンダリーキャラクターは2種類。",
+      "data": [
+        "黄衣の王",
+        "スカットル（分散型人間）"
+      ]
+    }
+  },
+  "builtStatus": {
+    "label": "初めから構築されるモノ",
+    "iconETH": "カーボン オフセット（ETH で発行される）",
+    "iconIPFS": "IPFSでのホスティング",
+    "iconUtility": "ホールド中にアンロックされるユーティリティNFT",
+    "iconRedCat": "RedCat Multiverseへのアクセス"
+  },
+  "faq": [
+    {
+      "question": "RedCat Multiverseとは？",
+      "answer": "RCM Labsは、非常に魅力的なブロックチェーンゲーム経済の中で、世界初のPLE（Play, Learn and Earn）モデルによる全く新しい概念を創造しています。Red Cat Multiverseは、アリーナ形式のチャレンジやストーリーベースのアドベンチャーキャンペーン、様々な時間、場所、パラレルワールドを通じた協力マッチで利用される、コミュニティ主導で運営される分散型NFTコレクションです。"
+    },
+    {
+      "question": "キャラクターNFTとは？",
+      "answer": "キャラクターは、プレイヤーがゲームに参加するための主要な資産であり、それぞれがブロックチェーン上に所有者証明として保存されています。"
+    },
+    {
+      "question": "何人のキャラクターが今後誕生するのでしょうか？",
+      "answer": "RedCat Multiverseで最も重要で価値のあるNFTはキャラクターです。最初のリリースでは104のキャラクターが含まれ、今後18ヶ月で160以上に増加する予定です。これらのキャラクターは数量に限りがあります。"
+    },
+    {
+      "question": "プレイ＆トレーディングカードNFTはどうですか？",
+      "answer": "プレイカードとトレーディングカードはERC-1155で鋳造されるため、同じカードを複数枚所持することができます。これにより、自分の好きなように戦略をカスタマイズすることができます。"
+    },
+    {
+      "question": "最初のNFTはいつ発売されるのですか？",
+      "answer": "NFTの最初のバッチは、第4四半期に作られる予定です。"
+    },
+    {
+      "question": "Inception NFTを購入するにはどうすればよいですか？",
+      "answer": "すべてのNFTは、www.redcatmultiverse.io から直接ETHで購入することができます"
+    },
+    {
+      "question": "Inception NFTの価格を教えてください",
+      "answer": "Inception NFTの価格詳細については、後日発表いたします。"
+    },
+    {
+      "question": "クリエイターは誰ですか？",
+      "answer": "このプロジェクトを支えるソートリーダーシップには、MITやスタンフォードの卒業生をはじめ、AlgorandやRiot Gamesなど、業界トップクラスの頭脳が集結しています。RCM Labsは、ゲーム理論やWeb3技術の第一人者たちと協力し、このゲームが成長するオンラインコミュニティの期待に応えることを確実にしています。"
+    }
+  ]
+}

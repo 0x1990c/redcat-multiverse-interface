@@ -50,11 +50,10 @@ const RoadmapTimeline = () => {
       title: t('contents.id_2.title'),
       bullets: [
         t('contents.id_2.bullets.id_0'),
-        t('contents.id_2.bullets.id_1'),
-        t('contents.id_2.bullets.id_2')
+        t('contents.id_2.bullets.id_1')
       ],
-      buttonLabel: t('upcoming'),
-      status: 'upcoming',
+      buttonLabel: t('done'),
+      status: 'done',
       period: t('contents.id_2.period'),
       alignment: 'left',
     },
@@ -64,10 +63,11 @@ const RoadmapTimeline = () => {
       bullets: [
         t('contents.id_3.bullets.id_0'),
         t('contents.id_3.bullets.id_1'),
-        t('contents.id_3.bullets.id_2')
+        t('contents.id_3.bullets.id_2'),
+        t('contents.id_3.bullets.id_3')
       ],
-      buttonLabel: t('future'),
-      status: 'future',
+      buttonLabel: t('upcoming'),
+      status: 'upcoming',
       period: t('contents.id_3.period'),
       alignment: 'right',
     },

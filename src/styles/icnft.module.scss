@@ -1,13 +1,156 @@
-.container {
-  // margin-top: 60px;
-  padding-top: 120px;
+.icNFTContainer {
   margin-bottom: 150px;
 }
 
-.hero_banner {
+.collectionAdvertSection {
   width: 100%;
-  height: 780px;
-  position: relative;
-  margin-top: -88px;
-  background-image: url('https://igamingidol.com/wp-content/uploads/2016/07/hero-background.jpg');
+  padding: 60px 30px 70px 30px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: solid 3px #e83324;
+  background-color: #e83324;
+
+  .collectionAdvertTitle {
+    font-family: 'Gotham Ultra';
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .collectionAdvertDescription {
+    font-family: 'Bariol';
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 1113px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+
+  .collectionAdvertComment {
+    padding: 21px 36px 20px 37px;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: solid 2px #f9c930;
+    background-color: #e83324;
+    font-family: 'Gotham Medium';
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 888px;
+    margin: 0 auto;
+
+    .fellowShipLink {
+      margin-top: 30px;
+      font-family: 'Bariol';
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.09;
+      letter-spacing: normal;
+      text-align: center;
+      text-decoration: underline;
+      cursor: pointer;
+      display: block;
+    }
+  }
+}
+
+.raritySection {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 117px;
+}
+
+.rarityCardWrapper {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .raritySection {
+    flex-direction: column;
+  }
+
+  .rarityCardWrapper {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .icNFTContainer {
+    margin-bottom: 60px;
+  }
+
+  .collectionAdvertSection {
+    padding: 50px 30px 50px 30px;
+
+    .collectionAdvertTitle {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .collectionAdvertDescription {
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .collectionAdvertComment {
+      font-size: 16px;
+      padding: 14px 12px;
+
+      .fellowShipLink {
+        font-size: 12px;
+        max-width: 222px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .raritySection {
+    flex-direction: column;
+    margin-top: 55px;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .rarityCardWrapper {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 50px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }

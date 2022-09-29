@@ -1,0 +1,206 @@
+.ownerReward {
+  margin-top: 124px;
+  background: #1b1628;
+  padding-top: 100px;
+}
+
+.ownerRewardTitle {
+  font-family: 'Gotham Ultra';
+  font-size: 48px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.iconSection {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 50px;
+
+  .iconItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .rewardAmount {
+      margin-top: 20px;
+      font-family: 'Gotham Medium';
+      font-weight: 900;
+    }
+
+    .rewardText {
+      font-family: 'Bariol';
+      font-size: 18px;
+    }
+
+    &.badge {
+      max-width: 120px;
+    }
+
+    &.avatar {
+      max-width: 120px;
+    }
+
+    &.tradingCard {
+      max-width: 169px;
+    }
+
+    &.brandedGraphic {
+      max-width: 186px;
+    }
+
+    &.sanura {
+      max-width: 186px;
+    }
+  }
+}
+
+.icNFTRewardContainer {
+  padding: 25px 50px;
+  border: solid 2px #f9c930;
+  display: flex;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: fit-content;
+
+  .rewardDescription {
+    font-family: 'Gotham Medium';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #fff;
+    margin-left: 40px;
+    text-transform: uppercase;
+    max-width: 576px;
+  }
+}
+
+.multiverseGateContainer {
+  background: #1b1628;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.multiverseGate {
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+
+
+  img {
+    min-height: 592px;
+    object-fit: cover;
+  }
+
+  .multiverseContent {
+    max-width: 473px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .multiverseTitle {
+      font-family: 'Gotham Medium';
+      font-size: 38px;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+
+    .multiverseText {
+      font-family: 'Bariol';
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ownerReward {
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 80px;
+  }
+
+  .ownerRewardTitle {
+    max-width: 315px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  .iconSection {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+
+    .iconItem {
+      margin-right: 0;
+      margin-top: 60px;
+    }
+  }
+
+  .icNFTRewardContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+
+    .rewardDescription {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+  .multiverseGate {
+
+
+    .multiverseContent {
+      width: 100%;
+      padding: 0 30px;
+
+      .multiverseTitle {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+      .multiverseText {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

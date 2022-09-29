@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next';
 import ParallaxHero from '../src/components/Home/ParallaxHero'
 import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';
-import { Announcements } from '../src/components/Home/Announcements';
 import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 import styles from '../src/styles/home.module.scss';
 
@@ -21,10 +20,10 @@ const Home: NextPage = () => {
         <div className={styles.ctaWrapper}>
           <div className={styles.bigCTASubject}>{t('cta.first')}</div>
           <div className={styles.ctaSubject}>
-            <i>{t('cta.second')}</i>
+            {/* <i>{t('cta.second')}</i> */}
           </div>
           <div className={styles.bigCTASubject}>
-            {t('cta.third')}
+            <i>{t('cta.third')}</i>
           </div>
           <div className={styles.ctaBtnWrapper}>
             <a className={styles.ctaBtn} href='https://redcatmultiverse.co'>
@@ -35,7 +34,6 @@ const Home: NextPage = () => {
       </div>
       <DevelopBy />
       <Conversation />
-      <Announcements />
       <PlayLearnEarn />
     </>
   )

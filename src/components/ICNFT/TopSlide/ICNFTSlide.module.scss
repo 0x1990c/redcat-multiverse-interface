@@ -1,0 +1,169 @@
+.icNFTSlide {
+  width: 100%;
+}
+
+.icNFTSlideItem {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redCatLogo {
+  height: 76px;
+  width: auto;
+}
+
+.whiskerWrapper {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.icNFTCatComment {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+
+  .commentWrapper {
+    width: 153px;
+    height: 122px;
+  }
+
+  .commentTxt {
+    font-family: 'Bariol';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.catImg {
+  height: 350px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.whiskerClickable {
+  width: 240px;
+  height: 120px;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  left: 120px;
+  top: 80px;
+  // border: 3px solid black;
+}
+
+.slideTitle {
+  font-family: 'Gotham Ultra';
+  font-size: 48px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.slideDescription {
+  font-family: 'Bariol';
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  text-align: center;
+  max-width: 875px;
+}
+
+.fellowShipBtn {
+  margin-top: 30px;
+  font-family: 'Bariol';
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.09;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 15px 40px;
+  border-radius: 8px;
+  color: #1b1628;
+}
+
+.fellowshipPerk {
+  font-family: 'Bariol';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .icNFTSlideItem {
+    min-height: unset;
+    padding-bottom: 60px;
+  }
+
+  .redCatLogo {
+    width: 156px;
+    height: auto;
+  }
+
+  .icNFTCatComment {
+    .commentWrapper {
+      width: 94px;
+      height: 76px;
+    }
+
+    .commentTxt {
+      font-size: 10px;
+    }
+  }
+
+  .catImg {
+    height: 240px;
+  }
+
+  .whiskerClickable {
+    width: 140px;
+    height: 100px;
+    left: 80px;
+    top: 50px;
+  }
+
+  .slideTitle {
+    display: none;
+  }
+
+  .slideDescription {
+    font-size: 13px;
+    max-width: 312px;
+  }
+
+  .fellowShipBtn {
+    font-size: 16px;
+  }
+
+  .fellowshipPerk {
+    font-size: 12px;
+    max-width: 250px;
+  }
+}
