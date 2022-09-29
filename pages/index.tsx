@@ -21,10 +21,10 @@ const Home: NextPage = () => {
           <div className={styles.bigCTASubject}>{t('cta.first')}</div>
           {/* <div className={styles.ctaSubject}>
             <i>{t('cta.second')}</i>
-          </div>
+          </div> */}
           <div className={styles.bigCTASubject}>
             {t('cta.third')}
-          </div> */}
+          </div>
           <div className={styles.ctaBtnWrapper}>
             <a className={styles.ctaBtn} href='https://redcatmultiverse.co'>
               {t('cta.btnLabel')}
