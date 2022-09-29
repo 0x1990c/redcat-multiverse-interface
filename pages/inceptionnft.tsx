@@ -43,7 +43,9 @@ const ICNFT: NextPage = () => {
         </p>
         <div className={styles.collectionAdvertComment}>
           <div>{t('collectionAdvertComment')}</div>
-          <a className={styles.fellowShipLink}>{t('applyRCMFellowship')}</a>
+          <a className={styles.fellowShipLink} href='https://redcatmultiverse.co' target="_blank" rel="noreferrer">
+            {t('applyRCMFellowship')}
+          </a>
         </div>
       </div>
       <div className={styles.raritySection}>
