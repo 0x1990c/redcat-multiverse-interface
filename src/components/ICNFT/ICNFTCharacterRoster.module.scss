@@ -33,6 +33,14 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1279px) {
+  .rosterCardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .characterRosterContainer {
     padding: 0 40px;
