@@ -87,7 +87,7 @@
   "mintingDetails": {
     "label": "インセプション・コレクション 発行の詳細",
     "launchDate": "発売時期",
-    "launchDate_value": "2022年秋",
+    "launchDate_value": "2022年後半",
     "supply": "供給量",
     "mintingLimit": "ミンティングの限度額",
     "mintingLimit_value": "1ウォレットあたり最大5icNFT"
