@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </ParallaxProvider>
         <div className={styles.ctaWrapper}>
           <div className={styles.bigCTASubject}>{t('cta.first')}</div>
-          <div className={styles.bigCTASubject}>
+          <div className={styles.ctaSubjectSecond}>
             <i>{t('cta.second')}</i> 
           </div>
           <div className={styles.ctaSubject}>
