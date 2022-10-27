@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="www.redcatmultiverse.io"
         />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://www.redcatmultiverse.io/images/theredcat.jpg" />
+        <meta name="twitter:image" content="https://www.redcatmultiverse.io/images/theredcat.png" />
         <meta
           name="twitter:description"
           content={t('meta.twitterDescription')}
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={t('meta.twitterTitle')} />
         <meta property="og:description" content={t('meta.twitterDescription')} />
-        <meta property="og:image" content="https://www.redcatmultiverse.io/images/theredcat.jpg" />
+        <meta property="og:image" content="https://www.redcatmultiverse.io/images/theredcat.png" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232229679-1"></script>
         <script>
