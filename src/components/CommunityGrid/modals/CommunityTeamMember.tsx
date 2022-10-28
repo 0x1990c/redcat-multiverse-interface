@@ -39,14 +39,20 @@ const CommunityTeamMember = ({ info }: any) => {
     <div className={styles.memberInfo}>
       <div className={styles.fullName}>{`${firstName} ${lastName}`}</div>
       <div className={styles.subInfo}>
-        <a className={styles.socialLink} href={social} target='_blank' rel="noreferrer">
-          {noLinkedin ? <EmojiIcon /> : <LinkedinIcon />}
+        {social == "" ?  
+        <a className={styles.socialLink} target='_blank' rel="noreferrer"> 
+        {noLinkedin ? <EmojiIcon /> : <LinkedinIcon />}
         </a>
+        :
+        <a className={styles.socialLink} href={social} target='_blank' rel="noreferrer">
+           {noLinkedin ? <EmojiIcon /> : <LinkedinIcon />}
+        </a>}
+
         <div className={styles.role}>{role}</div>
       </div>
       <div className={styles.bio}>{bio}</div>
     </div>
-  </div>)
+    </div>)
 };
 
-export default CommunityTeamMember;
+    export default CommunityTeamMember;
