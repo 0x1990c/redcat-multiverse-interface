@@ -68,9 +68,10 @@ export const teamMembers = [
     noLinkedin: true
   },
   {
-    imageCard: '/images/community/team/Henderson.jpg',
-    image: '/images/community/team/Henderson.png',
-    social: 'https://www.linkedin.com/in/henderson-hedin-2b3220237/'
+    imageCard: '/images/community/team/Kadir.jpg',
+    image: '/images/community/team/Kadir.png',
+    social: '',
+    noLinkedin: true
   },
   {
     imageCard: '/images/community/team/Karl.jpg',
