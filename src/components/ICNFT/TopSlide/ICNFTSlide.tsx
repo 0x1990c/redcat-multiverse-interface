@@ -11,6 +11,13 @@ const ICNFTSlide = () => {
 
   const slideData = [
     {
+      logoImg: '/images/inception/logo6.png',
+      catImg: '/images/inception/cat6.png',
+      textColor: '#cc182d',
+      backgroundColor: '#ffefe4',
+      btnLabelColor: '#fff'
+    },
+    {
       logoImg: '/images/inception/logo1.png',
       catImg: '/images/inception/cat1.png',
       textColor: '#f1d2c2',
@@ -43,13 +50,6 @@ const ICNFTSlide = () => {
       catImg: '/images/inception/cat5.png',
       textColor: '#55372f',
       backgroundColor: '#d3feea',
-      btnLabelColor: '#fff'
-    },
-    {
-      logoImg: '/images/inception/logo6.png',
-      catImg: '/images/inception/cat6.png',
-      textColor: '#cc182d',
-      backgroundColor: '#ffefe4',
       btnLabelColor: '#fff'
     },
     {
