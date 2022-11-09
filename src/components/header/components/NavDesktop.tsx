@@ -28,7 +28,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 	const inceptionBack = () => {
 		switch (slideIdx) {
 			case 0:
-				return 'dark';
+				return 'light';
 			case 1:
 				return 'dark';
 			case 2:
@@ -36,7 +36,7 @@ export const NavDesktop = ({ links, onOpenConnectModal }: any) => {
 			case 3:
 				return 'dark';
 			case 4:
-				return 'light';
+				return 'dark';
 			case 5:
 				return 'light';
 			case 6:
