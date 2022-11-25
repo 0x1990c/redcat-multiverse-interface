@@ -28,7 +28,7 @@ const VideoPlayer = ({ open, toggleModal }: VideoPlayerProps) => {
       center
     >
       <ReactPlayer
-        url='videos/trailer.mp4'
+        url='https://vimeo.com/775093795'
         width='100%'
         height='calc(100vh - 100px)'
         controls={true}
