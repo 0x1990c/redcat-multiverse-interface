@@ -7,6 +7,7 @@ import { DevelopBy } from '../src/components/Home/DevelopBy';
 import { Conversation } from '../src/components/Home/Conversation';
 import { PlayLearnEarn } from '../src/components/Home/PlayLearnEarn';
 import styles from '../src/styles/home.module.scss';
+import Trailer from '../src/components/Home/components/Trailer';
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common');
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.ctaTrailerWrapper}>
           <div className={styles.ctaTrailerTitle}>
-            <i>{t('cta.trailer')}</i>
+            <Trailer />
           </div>
         </div>
       </div>
