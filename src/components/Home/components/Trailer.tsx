@@ -52,7 +52,7 @@ const Trailer = () => {
         {hasWindow && (
           <ReactPlayer
             playing={playing}
-            url='https://vimeo.com/775093795'
+            url='videos/trailer.mp4'
             width='100%'
             height='calc(100vh - 100px)'
             controls={true}
