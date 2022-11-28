@@ -52,7 +52,7 @@ const Trailer = () => {
         {hasWindow && (
           <ReactPlayer
             playing={playing}
-            url='https://player.vimeo.com/progressive_redirect/playback/775910876/rendition/1080p/file.mp4?loc=external&signature=f3db7d46329b0586998ede513e6d01cdffa9048f9fd7e081181e7ea71eb0d8dd'
+            url='https://player.vimeo.com/progressive_redirect/playback/775958945/rendition/720p/file.mp4?loc=external&signature=3507ed150f402af215ed6d517f964b79766c8b980d0c8f679d4ea2fb4304a42c'
             width='100%'
             height='calc(100vh - 100px)'
             controls={true}
