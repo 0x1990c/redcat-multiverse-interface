@@ -1,0 +1,11 @@
+.trailer-title {
+  cursor: pointer;
+}
+
+@media screen and(max-width: 860px) {
+    .trailer-title {
+      font-size: 22px;
+      color: yellow;
+      text-decoration: underline;
+    }
+}
